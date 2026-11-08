@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-Super Ketovore v4.4 — Automated 12-Creator Video Radar & Sync Engine
-====================================================================
-Polls YouTube Atom/RSS feeds for Shaun's 12 Tier-1 Health, Hypertrophy,
-Metabolic & Longevity Creators, filters against Shaun's biomarker/protocol
-keywords, updates creator_radar_feed.json, and optionally downloads new
-transcripts/videos via yt-dlp on a Weekly (Sunday 08:00 AM) or Bi-Weekly cadence.
+Super Ketovore v4.5 — Automated 13-Creator Video Radar, Mindset & Sync Engine
+=============================================================================
+Polls YouTube Atom/RSS feeds for Shaun's 13 Tier-1 Health, Hypertrophy,
+Metabolic, Longevity & Mindset Creators (Original 5 + The Diary Of A CEO +
+7 Specialized Clinical Authorities), filters against Shaun's biomarker/protocol
+keywords, updates creator_radar_feed.json, and downloads new transcripts via yt-dlp.
 
 Usage:
   python3 sync_creator_videos.py --check          # Poll feeds & update creator_radar_feed.json
   python3 sync_creator_videos.py --download-new   # Download newly detected videos/transcripts via yt-dlp
-  python3 sync_creator_videos.py --roster         # Print the 12-Creator Roster & Sync Cadence
+  python3 sync_creator_videos.py --roster         # Print the 13-Creator Roster & Sync Cadence
 """
 
 import argparse
@@ -26,7 +26,7 @@ FEED_OUTPUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cre
 DOWNLOAD_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "creator_downloads")
 
 # ============================================================================
-# 12-CREATOR ROSTER: ORIGINAL 5 + EXPANDED 7 LONGEVITY & METABOLIC AUTHORITIES
+# 13-CREATOR ROSTER: ORIGINAL 5 + THE DIARY OF A CEO + 7 CLINICAL AUTHORITIES
 # ============================================================================
 CREATOR_ROSTER: List[Dict[str, Any]] = [
     # --- ORIGINAL 5 CORE CREATORS ---
@@ -35,10 +35,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Jeremy Ethier",
         "handle": "@JeremyEthier",
         "channel_id": "UCERm5yFZ1SptUEU4wZ2vJvw",
+        "subscribers": "7.99M",
         "tier": "Original Core 5",
         "domain": "EMG Biomechanics, Minimum Effective Volume & Tendon-Safe Exercise Selection",
         "shaun_genotype_link": "ACTN3 CC (Power/Sprint) + COL1A1 AC / MMP3 CT (Right Bicep Tendon Protection)",
-        "cadence": "Every Sunday 08:00 AM EST (Uploads every 2–3 weeks)",
+        "cadence": "Tier B — Weekly Sunday 08:00 AM EST Sync",
         "priority_keywords": ["workout", "split", "time", "ab", "bicep", "shoulder", "volume", "stretch", "fat"],
         "latest_verified_drops": [
             {
@@ -69,10 +70,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Annette Bosworth (Dr. Boz, MD)",
         "handle": "@DoctorBoz",
         "channel_id": "UCLGu62anfPbFDkdQj0p-hQw",
+        "subscribers": "890K",
         "tier": "Original Core 5",
         "domain": "72h–7d Sardine Fasting, Dr. Boz Ratio (GKI), Autophagy & Deep Ketogenesis",
         "shaun_genotype_link": "TCF7L2 CT + MTNR1B CG (Fasting Glucose 102 mg/dL & Post-Binge Insulin Reset)",
-        "cadence": "Every Wednesday & Sunday (Uploads 2x/week + Substack)",
+        "cadence": "Tier A — Every Wednesday & Sunday @ 08:00 AM EST",
         "priority_keywords": ["sardine", "ketone", "ketosis", "fasting", "autophagy", "insulin", "mct", "carnivore"],
         "latest_verified_drops": [
             {
@@ -110,10 +112,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Jeff Nippard",
         "handle": "@JeffNippard",
         "channel_id": "UC68TLK0mAEzUyHx5x5k-S1Q",
+        "subscribers": "8.13M",
         "tier": "Original Core 5",
         "domain": "Lengthened Partials, Body Recomposition Macros & Evidence-Based Hypertrophy",
-        "shaun_genotype_link": "FFM Preservation (150.4 lb -> 158.0+ lb Target during Aggressive Cut)",
-        "cadence": "Every Sunday 08:00 AM EST (Uploads every 1–2 weeks)",
+        "shaun_genotype_link": "FFM Preservation (151.0 lb -> 164.5 lb Target during Aggressive Cut)",
+        "cadence": "Tier B — Weekly Sunday 08:00 AM EST Sync",
         "priority_keywords": ["hypertrophy", "recomp", "calories", "peptide", "protein", "volume", "stretch", "muscle"],
         "latest_verified_drops": [
             {
@@ -144,10 +147,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Ryan Humiston",
         "handle": "@RyanHumiston",
         "channel_id": "UCj209lI3ZOmOCkK8e3qFFNQ",
+        "subscribers": "2.26M",
         "tier": "Original Core 5",
         "domain": "High-Tension Mechanical Isolation, Joint-Friendly Angles & Supplement Audits",
         "shaun_genotype_link": "Right Bicep/Shoulder Protection via Constant-Tension Cable/OxeFit Curves",
-        "cadence": "Bi-Weekly Sunday Sync",
+        "cadence": "Tier C — Bi-Weekly Sunday Sync",
         "priority_keywords": ["bicep", "shoulder", "scam", "supplement", "hypertrophy", "cable", "isolation"],
         "latest_verified_drops": [
             {
@@ -164,10 +168,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Bryan Johnson (Blueprint)",
         "handle": "@BryanJohnson",
         "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+        "subscribers": "1.95M",
         "tier": "Original Core 5",
         "domain": "Circadian Cutoff, Sleep Architecture, Biological Age & Biomarker Tracking",
         "shaun_genotype_link": "MTNR1B CG (Early Dinner Cutoff) + COMT GG (Evening Parasympathetic Downregulation)",
-        "cadence": "Bi-Weekly Sunday Sync",
+        "cadence": "Tier C — Bi-Weekly Sunday Sync",
         "priority_keywords": ["sleep", "hrv", "resting heart rate", "biomarker", "longevity", "fasting", "microplastics"],
         "latest_verified_drops": [
             {
@@ -180,16 +185,75 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         ]
     },
 
-    # --- EXPANDED 7 TIER-1 LONGEVITY, METABOLIC & TENDON AUTHORITIES ---
+    # --- CREATOR #6: THE DIARY OF A CEO (HEALTH, METABOLIC & MINDSET HUB) ---
+    {
+        "id": "diary_of_a_ceo",
+        "name": "Steven Bartlett — The Diary Of A CEO",
+        "handle": "@TheDiaryOfACEO",
+        "channel_id": "UCGq-a57w-aPwyi3pW7XLiHw",
+        "subscribers": "21.7M (2.02B Views)",
+        "tier": "Expanded Authority #6 (Health, Metabolic & Mindset Masterclasses)",
+        "domain": "World-Class Doctor Roundtable Interviews, Liver/Visceral Fat Reversal, Dopamine/Stress Control & Identity Mindset",
+        "shaun_genotype_link": "COMT GG + BDNF CT (Stress/Dopamine Binge Prevention) + PEMT CT (ALT 48 Fatty Liver Drain) + FTO AT (Identity Habits)",
+        "cadence": "Tier A — Every Thursday & Sunday @ 08:00 AM EST (Uploads 2x/wk, +124.45M views/mo)",
+        "priority_keywords": ["insulin", "fasting", "keto", "ketone", "visceral", "liver", "sugar", "brain", "dopamine", "stress", "habit", "muscle"],
+        "latest_verified_drops": [
+            {
+                "date": "2026-10-12",
+                "video_id": "Zqrn4XwscY8",
+                "title": "The Most Valuable 40 Minutes You'll Spend This Year (High-Performance Mindset & Control)",
+                "views": "4.8M",
+                "protocol_takeaway": "Reframes success from external/scale outcomes to controllable daily execution inputs—eliminating the 'weekend reward binge' trap after a strong week."
+            },
+            {
+                "date": "2026-01-08",
+                "video_id": "C7LL7VwP8Nc",
+                "title": "Insulin Expert (Dr. Ben Bikman): How To 'Drain' Your Liver of Fat (Do This!) + Ketone Meter Live Test",
+                "views": "6.4M",
+                "protocol_takeaway": "Steven pricks his finger daily for blood BHB on camera while Dr. Bikman explains how crashing insulin via ketosis reverses de novo lipogenesis and drains liver fat (your ALT = 48 U/L -> <25 target)."
+            },
+            {
+                "date": "2025-12-26",
+                "video_id": "Oipkl53n938",
+                "title": "The 6 Science-Backed Brain Fixes Most People Are Ignoring! (CGM Glucose 'Sticky Glue' & Nitric Oxide)",
+                "views": "5.1M",
+                "protocol_takeaway": "Shows how glucose spikes (>140 mg/dL) glycate proteins and shut down endothelial Nitric Oxide (NO), and why ketosis + nasal breathing restore vascular flow and brain clarity."
+            },
+            {
+                "date": "2025-12-11",
+                "video_id": "rtufWBLOXgw",
+                "title": "The Man Who Wrote Atomic Habits (James Clear): Your Goals Are Holding You Back",
+                "views": "7.2M",
+                "protocol_takeaway": "Identity-based habit architecture: shifting from 'trying to lose weight' to 'I am an athlete who executes a 72h Sardine Slingshot after any off-plan meal and locks the kitchen at 5:30 PM.'"
+            },
+            {
+                "date": "2025-10-02",
+                "video_id": "ZE_H7rijrVk",
+                "title": "No. 1 Sugar Expert (Dr. Robert Lustig): You've Been Sold A Lie About 'Healthy' Food!",
+                "views": "8.9M",
+                "protocol_takeaway": "Explains how ultra-processed fructose/sucrose poisons hepatic mitochondria and blocks leptin signaling (FTO AT), causing back-to-back 4,000+ kcal weekend binges."
+            },
+            {
+                "date": "2025-09-22",
+                "video_id": "gryta3KZKU4",
+                "title": "Insulin Doctor (Dr. Pradip Jamnadas): The Fastest Way To Burn Dangerous Visceral Fat!",
+                "views": "7.8M",
+                "protocol_takeaway": "Clinical blueprint for targeting visceral abdominal fat (your VF 10 -> 4 target) and gut-derived hs-CRP inflammation via targeted fasting windows."
+            }
+        ]
+    },
+
+    # --- EXPANDED 7 TIER-1 LONGEVITY, METABOLIC & TENDON AUTHORITIES (#7 TO #13) ---
     {
         "id": "peter_attia",
         "name": "Dr. Peter Attia, MD (The Drive)",
         "handle": "@PeterAttiaMD",
         "channel_id": "UC8kGsMa0LygSX9nkBcBH1Sg",
-        "tier": "Expanded Authority #6",
+        "subscribers": "1.15M",
+        "tier": "Expanded Authority #7",
         "domain": "ApoB / Small LDL Particle Clearance, Zone 2 Mitochondrial Base & VO2 Max",
         "shaun_genotype_link": "APOA2 CC + CETP AA (LDL-P 1,554 nmol/L, Small LDL 389 nmol/L -> Saturated Fat Cap)",
-        "cadence": "Every Monday Morning (Weekly Podcast & Clips)",
+        "cadence": "Tier B — Weekly Sunday 08:00 AM EST Sync",
         "priority_keywords": ["apob", "ldl", "zone 2", "vo2 max", "insulin", "strength", "longevity", "lipid"],
         "latest_verified_drops": [
             {
@@ -206,10 +270,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Andrew Huberman, PhD (Huberman Lab)",
         "handle": "@hubermanlab",
         "channel_id": "UC2D2CMWXMOVWx7giW1n3LIg",
-        "tier": "Expanded Authority #7",
+        "subscribers": "6.85M",
+        "tier": "Expanded Authority #8",
         "domain": "COMT GG Dopamine/Cortisol Regulation, 50-Min Workout Cap & Circadian Light",
         "shaun_genotype_link": "COMT GG (Warrior Fast Dopamine Clearance) + BDNF CT + MTNR1B CG",
-        "cadence": "Every Monday Morning",
+        "cadence": "Tier B — Weekly Sunday 08:00 AM EST Sync",
         "priority_keywords": ["cortisol", "dopamine", "sleep", "recovery", "hydration", "sodium", "zone 2"],
         "latest_verified_drops": [
             {
@@ -226,10 +291,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Rhonda Patrick, PhD (FoundMyFitness)",
         "handle": "@FoundMyFitness",
         "channel_id": "UCWF8SqJVNlx-ctXbLswcTcA",
-        "tier": "Expanded Authority #8",
+        "subscribers": "590K",
+        "tier": "Expanded Authority #9",
         "domain": "Omega-3 Index (FADS1 TT), Marine Phospholipids, Micronutrients & Heat/Sauna",
         "shaun_genotype_link": "FADS1 TT (Low Plant-to-EPA Conversion -> Needs Direct Marine Sardine/Salmon EPA/DHA)",
-        "cadence": "Bi-Weekly Sunday Sync",
+        "cadence": "Tier C — Bi-Weekly Sunday Sync",
         "priority_keywords": ["omega-3", "fads1", "protein", "dietary fat", "lactate", "bdnf", "sulforaphane"],
         "latest_verified_drops": [
             {
@@ -260,12 +326,20 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Ben Bikman, PhD (The Metabolic Classroom)",
         "handle": "@BenBikmanPhD",
         "channel_id": "UC2N2c93282022BikmanMetabolic",
-        "tier": "Expanded Authority #9",
-        "domain": "Insulin-to-Glucagon Ratio, Ketogenic Adipocyte Uncoupling & Whole-Food Protein",
-        "shaun_genotype_link": "TCF7L2 CT + FTO AT (Glucagon-Driven Lipolysis & Ketone Uncoupling)",
-        "cadence": "Every Wednesday (The Metabolic Classroom)",
-        "priority_keywords": ["insulin", "glucagon", "ketone", "fat cell", "protein", "whey", "fasting", "visceral"],
+        "subscribers": "365K",
+        "tier": "Expanded Authority #10",
+        "domain": "Insulin-to-Glucagon Ratio, Asprosin Hunger Hormone, Ketogenic Uncoupling & Whole-Food Protein",
+        "shaun_genotype_link": "TCF7L2 CT + FTO AT (Glucagon-Driven Lipolysis, Asprosin Suppression & Ketone Uncoupling)",
+        "cadence": "Tier A — Every Wednesday & Sunday @ 08:00 AM EST",
+        "priority_keywords": ["insulin", "glucagon", "ketone", "asprosin", "fat cell", "protein", "whey", "fasting", "visceral"],
         "latest_verified_drops": [
+            {
+                "date": "2026-11-02",
+                "video_id": "AZtu3RSXbiE",
+                "title": "Ep 169: How Your Body Fat Can Make You Hungrier (Asprosin & Hepatic Glucose Dumping)",
+                "views": "92K (6 days ago!)",
+                "protocol_takeaway": "Explains how fat cells secrete Asprosin after carb binges to trigger ravenous hunger and overnight liver glucose dumping—and how hitting >2.5 mmol/L ketosis on Sardines shuts Asprosin off."
+            },
             {
                 "date": "2026-10-21",
                 "video_id": "bb_oct2026",
@@ -280,10 +354,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Thomas DeLauer",
         "handle": "@ThomasDeLauerOfficial",
         "channel_id": "UC70srI3VkT1MXALRtf0pcHg",
-        "tier": "Expanded Authority #10",
+        "subscribers": "3.92M",
+        "tier": "Expanded Authority #11",
         "domain": "Applied Sardine Fast Variations, C8 MCT Timing & 2026 Ketovore Cycling",
         "shaun_genotype_link": "Practical 72h–7d Sardine Fast + C8 MCT Oil Execution & Refeed Transitions",
-        "cadence": "Every Wednesday & Sunday (Uploads 3–4x/week)",
+        "cadence": "Tier A — Every Wednesday & Sunday @ 08:00 AM EST",
         "priority_keywords": ["sardine", "keto", "mct", "fast", "visceral", "protein", "electrolyte", "carnivore"],
         "latest_verified_drops": [
             {
@@ -307,10 +382,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Mike Israetel, PhD (Renaissance Periodization)",
         "handle": "@RenaissancePeriodization",
         "channel_id": "UCfQgsKhHjSyRLOp9mnffqVg",
-        "tier": "Expanded Authority #11",
+        "subscribers": "3.15M",
+        "tier": "Expanded Authority #12",
         "domain": "Minimum Effective Volume (MEV), Maximum Recoverable Volume (MRV) & Deficit Fatigue",
         "shaun_genotype_link": "Deficit Volume Calibration (Cutting Junk Sets During 200–1,450 kcal Phases)",
-        "cadence": "Bi-Weekly Sunday Sync",
+        "cadence": "Tier C — Bi-Weekly Sunday Sync",
         "priority_keywords": ["volume", "deficit", "fat loss", "stretch", "recovery", "hypertrophy", "deload"],
         "latest_verified_drops": [
             {
@@ -327,10 +403,11 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Keith Baar, PhD (UC Davis Tendon Lab)",
         "handle": "@KeithBaarLab",
         "channel_id": "UCKBaarTendonMatrixLab",
-        "tier": "Expanded Authority #12",
+        "subscribers": "Academic / Podcast Features",
+        "tier": "Expanded Authority #13",
         "domain": "Isometric Tendon Creep Loading, Collagen Synthesis & Scar Remodeling",
         "shaun_genotype_link": "COL1A1 AC + MMP3 CT (Jul 10, 2025 Right Bicep Distal Tendon & Mar 13, 2025 Shoulder)",
-        "cadence": "Monthly Research Digest",
+        "cadence": "Tier C — Monthly Research Digest",
         "priority_keywords": ["tendon", "isometric", "collagen", "bicep", "shoulder", "scar", "extracellular matrix"],
         "latest_verified_drops": [
             {
@@ -353,7 +430,7 @@ def fetch_rss_for_creator(creator: Dict[str, Any], max_items: int = 5) -> List[D
 
     rss_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
     try:
-        req = urllib.request.Request(rss_url, headers={"User-Agent": "Mozilla/5.0 (SuperKetovoreRadar/4.4)"})
+        req = urllib.request.Request(rss_url, headers={"User-Agent": "Mozilla/5.0 (SuperKetovoreRadar/4.5)"})
         with urllib.request.urlopen(req, timeout=8) as resp:
             xml_bytes = resp.read()
         root = ET.fromstring(xml_bytes)
@@ -366,7 +443,6 @@ def fetch_rss_for_creator(creator: Dict[str, Any], max_items: int = 5) -> List[D
             vid_id = vid_el.text if vid_el is not None else ""
             title = title_el.text if title_el is not None else ""
             published = (pub_el.text or "")[:10] if pub_el is not None else ""
-            # Check keyword match
             kw_hits = [kw for kw in creator.get("priority_keywords", []) if kw.lower() in title.lower()]
             entries.append({
                 "date": published,
@@ -378,18 +454,33 @@ def fetch_rss_for_creator(creator: Dict[str, Any], max_items: int = 5) -> List[D
             })
         return entries if entries else creator.get("latest_verified_drops", [])
     except Exception:
-        # Fallback to verified snapshot when running inside an offline/proxied sandbox
         return creator.get("latest_verified_drops", [])
 
 
 def build_radar_feed() -> Dict[str, Any]:
-    """Generates the complete 12-creator radar snapshot and writes creator_radar_feed.json."""
+    """Generates the complete 13-creator radar snapshot and writes creator_radar_feed.json."""
     feed_data = {
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "cadence_schedule": {
-            "fast_movers_wed_sun": ["Dr. Boz (@DoctorBoz)", "Thomas DeLauer (@ThomasDeLauerOfficial)", "Dr. Ben Bikman (@BenBikmanPhD)"],
-            "weekly_sunday_0800_sync": ["Jeremy Ethier (@JeremyEthier)", "Jeff Nippard (@JeffNippard)", "Dr. Peter Attia (@PeterAttiaMD)", "Dr. Andrew Huberman (@hubermanlab)"],
-            "biweekly_deep_audit": ["Dr. Rhonda Patrick (@FoundMyFitness)", "Ryan Humiston (@RyanHumiston)", "Bryan Johnson (@BryanJohnson)", "Dr. Mike Israetel (@RenaissancePeriodization)", "Dr. Keith Baar (@KeithBaarLab)"]
+            "tier_a_fast_movers_wed_thu_sun": [
+                "Dr. Boz (@DoctorBoz)",
+                "Steven Bartlett — The Diary Of A CEO (@TheDiaryOfACEO)",
+                "Thomas DeLauer (@ThomasDeLauerOfficial)",
+                "Dr. Ben Bikman (@BenBikmanPhD)"
+            ],
+            "tier_b_weekly_sunday_0800_sync": [
+                "Jeremy Ethier (@JeremyEthier)",
+                "Jeff Nippard (@JeffNippard)",
+                "Dr. Peter Attia (@PeterAttiaMD)",
+                "Dr. Andrew Huberman (@hubermanlab)"
+            ],
+            "tier_c_biweekly_deep_audit": [
+                "Dr. Rhonda Patrick (@FoundMyFitness)",
+                "Ryan Humiston (@RyanHumiston)",
+                "Bryan Johnson (@BryanJohnson)",
+                "Dr. Mike Israetel (@RenaissancePeriodization)",
+                "Dr. Keith Baar (@KeithBaarLab)"
+            ]
         },
         "total_creators": len(CREATOR_ROSTER),
         "creators": []
@@ -407,7 +498,7 @@ def build_radar_feed() -> Dict[str, Any]:
 
 
 def download_new_videos(max_per_creator: int = 1) -> None:
-    """Downloads transcripts/subtitles (and optional MP4s) for the newest verified drops via yt-dlp."""
+    """Downloads transcripts/subtitles for the newest verified drops via yt-dlp."""
     os.makedirs(DOWNLOAD_DIR, exist_ok=True)
     feed = build_radar_feed()
     for creator in feed["creators"]:
@@ -435,7 +526,7 @@ def download_new_videos(max_per_creator: int = 1) -> None:
 def print_roster_summary() -> None:
     feed = build_radar_feed()
     print("=" * 88)
-    print(f"SUPER KETOVORE v4.4 — 12-CREATOR RADAR & SYNC ENGINE ({feed['generated_at']})")
+    print(f"SUPER KETOVORE v4.5 — 13-CREATOR RADAR & SYNC ENGINE ({feed['generated_at']})")
     print("=" * 88)
     for idx, c in enumerate(feed["creators"], 1):
         print(f"\n{idx:02d}. {c['name']} ({c['handle']}) — [{c['tier']}]")
@@ -449,10 +540,10 @@ def print_roster_summary() -> None:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Super Ketovore 12-Creator Video Radar & Sync CLI")
+    parser = argparse.ArgumentParser(description="Super Ketovore 13-Creator Video Radar & Sync CLI")
     parser.add_argument("--check", action="store_true", help="Poll creator feeds & write creator_radar_feed.json")
     parser.add_argument("--download-new", action="store_true", help="Fetch English transcripts/videos via yt-dlp")
-    parser.add_argument("--roster", action="store_true", help="Print the 12-creator roster and latest drops")
+    parser.add_argument("--roster", action="store_true", help="Print the 13-creator roster and latest drops")
     args = parser.parse_args()
 
     if args.download_new:

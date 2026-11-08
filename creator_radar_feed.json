@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-11-08 17:27:01",
+  "generated_at": "2026-11-08 17:39:30",
   "cadence_schedule": {
-    "fast_movers_wed_sun": [
+    "tier_a_fast_movers_wed_thu_sun": [
       "Dr. Boz (@DoctorBoz)",
+      "Steven Bartlett \u2014 The Diary Of A CEO (@TheDiaryOfACEO)",
       "Thomas DeLauer (@ThomasDeLauerOfficial)",
       "Dr. Ben Bikman (@BenBikmanPhD)"
     ],
-    "weekly_sunday_0800_sync": [
+    "tier_b_weekly_sunday_0800_sync": [
       "Jeremy Ethier (@JeremyEthier)",
       "Jeff Nippard (@JeffNippard)",
       "Dr. Peter Attia (@PeterAttiaMD)",
       "Dr. Andrew Huberman (@hubermanlab)"
     ],
-    "biweekly_deep_audit": [
+    "tier_c_biweekly_deep_audit": [
       "Dr. Rhonda Patrick (@FoundMyFitness)",
       "Ryan Humiston (@RyanHumiston)",
       "Bryan Johnson (@BryanJohnson)",
@@ -20,17 +21,18 @@
       "Dr. Keith Baar (@KeithBaarLab)"
     ]
   },
-  "total_creators": 12,
+  "total_creators": 13,
   "creators": [
     {
       "id": "jeremy_ethier",
       "name": "Jeremy Ethier",
       "handle": "@JeremyEthier",
       "channel_id": "UCERm5yFZ1SptUEU4wZ2vJvw",
+      "subscribers": "7.99M",
       "tier": "Original Core 5",
       "domain": "EMG Biomechanics, Minimum Effective Volume & Tendon-Safe Exercise Selection",
       "shaun_genotype_link": "ACTN3 CC (Power/Sprint) + COL1A1 AC / MMP3 CT (Right Bicep Tendon Protection)",
-      "cadence": "Every Sunday 08:00 AM EST (Uploads every 2\u20133 weeks)",
+      "cadence": "Tier B \u2014 Weekly Sunday 08:00 AM EST Sync",
       "priority_keywords": [
         "workout",
         "split",
@@ -119,10 +121,11 @@
       "name": "Dr. Annette Bosworth (Dr. Boz, MD)",
       "handle": "@DoctorBoz",
       "channel_id": "UCLGu62anfPbFDkdQj0p-hQw",
+      "subscribers": "890K",
       "tier": "Original Core 5",
       "domain": "72h\u20137d Sardine Fasting, Dr. Boz Ratio (GKI), Autophagy & Deep Ketogenesis",
       "shaun_genotype_link": "TCF7L2 CT + MTNR1B CG (Fasting Glucose 102 mg/dL & Post-Binge Insulin Reset)",
-      "cadence": "Every Wednesday & Sunday (Uploads 2x/week + Substack)",
+      "cadence": "Tier A \u2014 Every Wednesday & Sunday @ 08:00 AM EST",
       "priority_keywords": [
         "sardine",
         "ketone",
@@ -215,10 +218,11 @@
       "name": "Jeff Nippard",
       "handle": "@JeffNippard",
       "channel_id": "UC68TLK0mAEzUyHx5x5k-S1Q",
+      "subscribers": "8.13M",
       "tier": "Original Core 5",
       "domain": "Lengthened Partials, Body Recomposition Macros & Evidence-Based Hypertrophy",
-      "shaun_genotype_link": "FFM Preservation (150.4 lb -> 158.0+ lb Target during Aggressive Cut)",
-      "cadence": "Every Sunday 08:00 AM EST (Uploads every 1\u20132 weeks)",
+      "shaun_genotype_link": "FFM Preservation (151.0 lb -> 164.5 lb Target during Aggressive Cut)",
+      "cadence": "Tier B \u2014 Weekly Sunday 08:00 AM EST Sync",
       "priority_keywords": [
         "hypertrophy",
         "recomp",
@@ -306,10 +310,11 @@
       "name": "Ryan Humiston",
       "handle": "@RyanHumiston",
       "channel_id": "UCj209lI3ZOmOCkK8e3qFFNQ",
+      "subscribers": "2.26M",
       "tier": "Original Core 5",
       "domain": "High-Tension Mechanical Isolation, Joint-Friendly Angles & Supplement Audits",
       "shaun_genotype_link": "Right Bicep/Shoulder Protection via Constant-Tension Cable/OxeFit Curves",
-      "cadence": "Bi-Weekly Sunday Sync",
+      "cadence": "Tier C \u2014 Bi-Weekly Sunday Sync",
       "priority_keywords": [
         "bicep",
         "shoulder",
@@ -379,10 +384,11 @@
       "name": "Bryan Johnson (Blueprint)",
       "handle": "@BryanJohnson",
       "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+      "subscribers": "1.95M",
       "tier": "Original Core 5",
       "domain": "Circadian Cutoff, Sleep Architecture, Biological Age & Biomarker Tracking",
       "shaun_genotype_link": "MTNR1B CG (Early Dinner Cutoff) + COMT GG (Evening Parasympathetic Downregulation)",
-      "cadence": "Bi-Weekly Sunday Sync",
+      "cadence": "Tier C \u2014 Bi-Weekly Sunday Sync",
       "priority_keywords": [
         "sleep",
         "hrv",
@@ -445,14 +451,126 @@
       ]
     },
     {
+      "id": "diary_of_a_ceo",
+      "name": "Steven Bartlett \u2014 The Diary Of A CEO",
+      "handle": "@TheDiaryOfACEO",
+      "channel_id": "UCGq-a57w-aPwyi3pW7XLiHw",
+      "subscribers": "21.7M (2.02B Views)",
+      "tier": "Expanded Authority #6 (Health, Metabolic & Mindset Masterclasses)",
+      "domain": "World-Class Doctor Roundtable Interviews, Liver/Visceral Fat Reversal, Dopamine/Stress Control & Identity Mindset",
+      "shaun_genotype_link": "COMT GG + BDNF CT (Stress/Dopamine Binge Prevention) + PEMT CT (ALT 48 Fatty Liver Drain) + FTO AT (Identity Habits)",
+      "cadence": "Tier A \u2014 Every Thursday & Sunday @ 08:00 AM EST (Uploads 2x/wk, +124.45M views/mo)",
+      "priority_keywords": [
+        "insulin",
+        "fasting",
+        "keto",
+        "ketone",
+        "visceral",
+        "liver",
+        "sugar",
+        "brain",
+        "dopamine",
+        "stress",
+        "habit",
+        "muscle"
+      ],
+      "latest_verified_drops": [
+        {
+          "date": "2026-10-12",
+          "video_id": "Zqrn4XwscY8",
+          "title": "The Most Valuable 40 Minutes You'll Spend This Year (High-Performance Mindset & Control)",
+          "views": "4.8M",
+          "protocol_takeaway": "Reframes success from external/scale outcomes to controllable daily execution inputs\u2014eliminating the 'weekend reward binge' trap after a strong week."
+        },
+        {
+          "date": "2026-01-08",
+          "video_id": "C7LL7VwP8Nc",
+          "title": "Insulin Expert (Dr. Ben Bikman): How To 'Drain' Your Liver of Fat (Do This!) + Ketone Meter Live Test",
+          "views": "6.4M",
+          "protocol_takeaway": "Steven pricks his finger daily for blood BHB on camera while Dr. Bikman explains how crashing insulin via ketosis reverses de novo lipogenesis and drains liver fat (your ALT = 48 U/L -> <25 target)."
+        },
+        {
+          "date": "2025-12-26",
+          "video_id": "Oipkl53n938",
+          "title": "The 6 Science-Backed Brain Fixes Most People Are Ignoring! (CGM Glucose 'Sticky Glue' & Nitric Oxide)",
+          "views": "5.1M",
+          "protocol_takeaway": "Shows how glucose spikes (>140 mg/dL) glycate proteins and shut down endothelial Nitric Oxide (NO), and why ketosis + nasal breathing restore vascular flow and brain clarity."
+        },
+        {
+          "date": "2025-12-11",
+          "video_id": "rtufWBLOXgw",
+          "title": "The Man Who Wrote Atomic Habits (James Clear): Your Goals Are Holding You Back",
+          "views": "7.2M",
+          "protocol_takeaway": "Identity-based habit architecture: shifting from 'trying to lose weight' to 'I am an athlete who executes a 72h Sardine Slingshot after any off-plan meal and locks the kitchen at 5:30 PM.'"
+        },
+        {
+          "date": "2025-10-02",
+          "video_id": "ZE_H7rijrVk",
+          "title": "No. 1 Sugar Expert (Dr. Robert Lustig): You've Been Sold A Lie About 'Healthy' Food!",
+          "views": "8.9M",
+          "protocol_takeaway": "Explains how ultra-processed fructose/sucrose poisons hepatic mitochondria and blocks leptin signaling (FTO AT), causing back-to-back 4,000+ kcal weekend binges."
+        },
+        {
+          "date": "2025-09-22",
+          "video_id": "gryta3KZKU4",
+          "title": "Insulin Doctor (Dr. Pradip Jamnadas): The Fastest Way To Burn Dangerous Visceral Fat!",
+          "views": "7.8M",
+          "protocol_takeaway": "Clinical blueprint for targeting visceral abdominal fat (your VF 10 -> 4 target) and gut-derived hs-CRP inflammation via targeted fasting windows."
+        }
+      ],
+      "active_drops": [
+        {
+          "date": "2026-11-07",
+          "video_id": "Ox4ZEuKTDJQ",
+          "title": "UK GOVERNMENT WARNING...",
+          "url": "https://www.youtube.com/watch?v=Ox4ZEuKTDJQ",
+          "matched_keywords": [],
+          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+        },
+        {
+          "date": "2026-11-06",
+          "video_id": "jQvw3PDo1Do",
+          "title": "GET READY FOR THE NEXT EIGHT WEEKS",
+          "url": "https://www.youtube.com/watch?v=jQvw3PDo1Do",
+          "matched_keywords": [],
+          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+        },
+        {
+          "date": "2026-11-05",
+          "video_id": "a1mI-ozLyYM",
+          "title": "Iran War Expert: \"The 8 Weeks After Midterms Could Be The Most Dangerous!\" | Prof Robert Pape",
+          "url": "https://www.youtube.com/watch?v=a1mI-ozLyYM",
+          "matched_keywords": [],
+          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+        },
+        {
+          "date": "2026-11-03",
+          "video_id": "k-ldMhfIuJE",
+          "title": "CAN AMERICA BE FIXED?",
+          "url": "https://www.youtube.com/watch?v=k-ldMhfIuJE",
+          "matched_keywords": [],
+          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+        },
+        {
+          "date": "2026-11-02",
+          "video_id": "FpIN6tYC5XM",
+          "title": "James Talarico: Here Is How They Designed The System To Keep You Poor!",
+          "url": "https://www.youtube.com/watch?v=FpIN6tYC5XM",
+          "matched_keywords": [],
+          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+        }
+      ]
+    },
+    {
       "id": "peter_attia",
       "name": "Dr. Peter Attia, MD (The Drive)",
       "handle": "@PeterAttiaMD",
       "channel_id": "UC8kGsMa0LygSX9nkBcBH1Sg",
-      "tier": "Expanded Authority #6",
+      "subscribers": "1.15M",
+      "tier": "Expanded Authority #7",
       "domain": "ApoB / Small LDL Particle Clearance, Zone 2 Mitochondrial Base & VO2 Max",
       "shaun_genotype_link": "APOA2 CC + CETP AA (LDL-P 1,554 nmol/L, Small LDL 389 nmol/L -> Saturated Fat Cap)",
-      "cadence": "Every Monday Morning (Weekly Podcast & Clips)",
+      "cadence": "Tier B \u2014 Weekly Sunday 08:00 AM EST Sync",
       "priority_keywords": [
         "apob",
         "ldl",
@@ -520,10 +638,11 @@
       "name": "Dr. Andrew Huberman, PhD (Huberman Lab)",
       "handle": "@hubermanlab",
       "channel_id": "UC2D2CMWXMOVWx7giW1n3LIg",
-      "tier": "Expanded Authority #7",
+      "subscribers": "6.85M",
+      "tier": "Expanded Authority #8",
       "domain": "COMT GG Dopamine/Cortisol Regulation, 50-Min Workout Cap & Circadian Light",
       "shaun_genotype_link": "COMT GG (Warrior Fast Dopamine Clearance) + BDNF CT + MTNR1B CG",
-      "cadence": "Every Monday Morning",
+      "cadence": "Tier B \u2014 Weekly Sunday 08:00 AM EST Sync",
       "priority_keywords": [
         "cortisol",
         "dopamine",
@@ -590,10 +709,11 @@
       "name": "Dr. Rhonda Patrick, PhD (FoundMyFitness)",
       "handle": "@FoundMyFitness",
       "channel_id": "UCWF8SqJVNlx-ctXbLswcTcA",
-      "tier": "Expanded Authority #8",
+      "subscribers": "590K",
+      "tier": "Expanded Authority #9",
       "domain": "Omega-3 Index (FADS1 TT), Marine Phospholipids, Micronutrients & Heat/Sauna",
       "shaun_genotype_link": "FADS1 TT (Low Plant-to-EPA Conversion -> Needs Direct Marine Sardine/Salmon EPA/DHA)",
-      "cadence": "Bi-Weekly Sunday Sync",
+      "cadence": "Tier C \u2014 Bi-Weekly Sunday Sync",
       "priority_keywords": [
         "omega-3",
         "fads1",
@@ -674,14 +794,16 @@
       "name": "Dr. Ben Bikman, PhD (The Metabolic Classroom)",
       "handle": "@BenBikmanPhD",
       "channel_id": "UC2N2c93282022BikmanMetabolic",
-      "tier": "Expanded Authority #9",
-      "domain": "Insulin-to-Glucagon Ratio, Ketogenic Adipocyte Uncoupling & Whole-Food Protein",
-      "shaun_genotype_link": "TCF7L2 CT + FTO AT (Glucagon-Driven Lipolysis & Ketone Uncoupling)",
-      "cadence": "Every Wednesday (The Metabolic Classroom)",
+      "subscribers": "365K",
+      "tier": "Expanded Authority #10",
+      "domain": "Insulin-to-Glucagon Ratio, Asprosin Hunger Hormone, Ketogenic Uncoupling & Whole-Food Protein",
+      "shaun_genotype_link": "TCF7L2 CT + FTO AT (Glucagon-Driven Lipolysis, Asprosin Suppression & Ketone Uncoupling)",
+      "cadence": "Tier A \u2014 Every Wednesday & Sunday @ 08:00 AM EST",
       "priority_keywords": [
         "insulin",
         "glucagon",
         "ketone",
+        "asprosin",
         "fat cell",
         "protein",
         "whey",
@@ -689,6 +811,13 @@
         "visceral"
       ],
       "latest_verified_drops": [
+        {
+          "date": "2026-11-02",
+          "video_id": "AZtu3RSXbiE",
+          "title": "Ep 169: How Your Body Fat Can Make You Hungrier (Asprosin & Hepatic Glucose Dumping)",
+          "views": "92K (6 days ago!)",
+          "protocol_takeaway": "Explains how fat cells secrete Asprosin after carb binges to trigger ravenous hunger and overnight liver glucose dumping\u2014and how hitting >2.5 mmol/L ketosis on Sardines shuts Asprosin off."
+        },
         {
           "date": "2026-10-21",
           "video_id": "bb_oct2026",
@@ -698,6 +827,13 @@
         }
       ],
       "active_drops": [
+        {
+          "date": "2026-11-02",
+          "video_id": "AZtu3RSXbiE",
+          "title": "Ep 169: How Your Body Fat Can Make You Hungrier (Asprosin & Hepatic Glucose Dumping)",
+          "views": "92K (6 days ago!)",
+          "protocol_takeaway": "Explains how fat cells secrete Asprosin after carb binges to trigger ravenous hunger and overnight liver glucose dumping\u2014and how hitting >2.5 mmol/L ketosis on Sardines shuts Asprosin off."
+        },
         {
           "date": "2026-10-21",
           "video_id": "bb_oct2026",
@@ -712,10 +848,11 @@
       "name": "Thomas DeLauer",
       "handle": "@ThomasDeLauerOfficial",
       "channel_id": "UC70srI3VkT1MXALRtf0pcHg",
-      "tier": "Expanded Authority #10",
+      "subscribers": "3.92M",
+      "tier": "Expanded Authority #11",
       "domain": "Applied Sardine Fast Variations, C8 MCT Timing & 2026 Ketovore Cycling",
       "shaun_genotype_link": "Practical 72h\u20137d Sardine Fast + C8 MCT Oil Execution & Refeed Transitions",
-      "cadence": "Every Wednesday & Sunday (Uploads 3\u20134x/week)",
+      "cadence": "Tier A \u2014 Every Wednesday & Sunday @ 08:00 AM EST",
       "priority_keywords": [
         "sardine",
         "keto",
@@ -764,10 +901,11 @@
       "name": "Dr. Mike Israetel, PhD (Renaissance Periodization)",
       "handle": "@RenaissancePeriodization",
       "channel_id": "UCfQgsKhHjSyRLOp9mnffqVg",
-      "tier": "Expanded Authority #11",
+      "subscribers": "3.15M",
+      "tier": "Expanded Authority #12",
       "domain": "Minimum Effective Volume (MEV), Maximum Recoverable Volume (MRV) & Deficit Fatigue",
       "shaun_genotype_link": "Deficit Volume Calibration (Cutting Junk Sets During 200\u20131,450 kcal Phases)",
-      "cadence": "Bi-Weekly Sunday Sync",
+      "cadence": "Tier C \u2014 Bi-Weekly Sunday Sync",
       "priority_keywords": [
         "volume",
         "deficit",
@@ -834,10 +972,11 @@
       "name": "Dr. Keith Baar, PhD (UC Davis Tendon Lab)",
       "handle": "@KeithBaarLab",
       "channel_id": "UCKBaarTendonMatrixLab",
-      "tier": "Expanded Authority #12",
+      "subscribers": "Academic / Podcast Features",
+      "tier": "Expanded Authority #13",
       "domain": "Isometric Tendon Creep Loading, Collagen Synthesis & Scar Remodeling",
       "shaun_genotype_link": "COL1A1 AC + MMP3 CT (Jul 10, 2025 Right Bicep Distal Tendon & Mar 13, 2025 Shoulder)",
-      "cadence": "Monthly Research Digest",
+      "cadence": "Tier C \u2014 Monthly Research Digest",
       "priority_keywords": [
         "tendon",
         "isometric",
