@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "shaun-super-ketovore-dashboard",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/dashboard", "destination": "/index.html" }
+  ]
+}
