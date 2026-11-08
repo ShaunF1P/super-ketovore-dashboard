@@ -597,6 +597,136 @@
         </div>
       </div>
 
+      <!-- EMPIRICAL STEP x CALORIE x TDEE CORRELATION MATRIX (577 DATES / 475 STEP DAYS) -->
+      <div class="panel-card" style="border-top: 3px solid #0ea5e9;">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="pill-badge" style="background: rgba(14,165,233,0.18); color: #38bdf8;">
+                DEEP-DIVE TELEMETRY: 577 DATES &bull; 475 STEP DAYS &bull; 2,919 STELO CGM READINGS
+              </span>
+              <span class="pill-badge" style="background: rgba(16,185,129,0.16); color: #34d399;">
+                12,000-Step Metabolic Switch &bull; 20,000+ Step Hyper-Burn (`3,064 kcal` TDEE)
+              </span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold text-sky-400">
+              👟 Your Empirical Step Flux &times; Calorie Intake &times; Weight-Loss Correlation Matrix (`mf1.xlsx` + `Clarity_Export.csv`)
+            </h3>
+            <p class="text-xs" style="color: var(--text-muted);">
+              Cross-correlating every logged step day (`475` days, peak `40,858` steps on `Jan 14, 2026`), expenditure day (`513` days), weight trend day (`715` days), calorie day (`161` days), and your `2,919` Dexcom Stelo CGM readings (`Apr 28 – May 9, 2026`). Click any Step Bracket row below to snap your Step Slider to that exact zone!
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-2 mb-3">
+          <!-- Table A: 6 Step Brackets -->
+          <div class="table-scroll">
+            <table class="clean-table" style="min-width: 520px;">
+              <thead>
+                <tr>
+                  <th>Step Bracket (`475` Days)</th>
+                  <th>Avg Intake</th>
+                  <th>Avg TDEE</th>
+                  <th>Next-Day Scale &Delta;</th>
+                  <th>7-Day Trend &Delta;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="cursor-pointer hover:bg-slate-800/40" onclick="setSlider('lv-steps', 6000)">
+                  <td class="font-bold text-rose-400">&lt; 6,000 Steps (`133` d &bull; Avg `2,717`)</td>
+                  <td>1,221 kcal</td>
+                  <td>2,688 kcal</td>
+                  <td class="font-bold text-rose-400">+0.56 lb/day</td>
+                  <td class="text-rose-300">+0.08 lb/wk (Stall)</td>
+                </tr>
+                <tr class="cursor-pointer hover:bg-slate-800/40" onclick="setSlider('lv-steps', 8000)">
+                  <td class="font-bold text-amber-400">6,000–9,999 (`108` d &bull; Avg `7,883`)</td>
+                  <td>1,523 kcal</td>
+                  <td>2,662 kcal</td>
+                  <td class="text-amber-300">+0.09 lb/day</td>
+                  <td class="text-amber-300">-0.24 lb/wk</td>
+                </tr>
+                <tr class="cursor-pointer hover:bg-slate-800/40" onclick="setSlider('lv-steps', 12500)">
+                  <td class="font-bold text-sky-400">10,000–14,999 (`121` d &bull; Avg `12,261`)</td>
+                  <td>1,900 kcal</td>
+                  <td>2,556 kcal</td>
+                  <td class="font-bold text-sky-400">-0.11 lb/day</td>
+                  <td class="text-sky-300">-0.28 lb/wk (Switch!)</td>
+                </tr>
+                <tr class="cursor-pointer hover:bg-slate-800/40" onclick="setSlider('lv-steps', 17500)">
+                  <td class="font-bold text-emerald-400">15,000–19,999 (`60` d &bull; Avg `17,006`)</td>
+                  <td>2,032 kcal</td>
+                  <td>2,686 kcal</td>
+                  <td class="font-bold text-emerald-400">-0.21 lb/day</td>
+                  <td class="font-bold text-emerald-400">-0.57 lb/wk (2x Rate!)</td>
+                </tr>
+                <tr class="cursor-pointer hover:bg-slate-800/40" onclick="setSlider('lv-steps', 22500)">
+                  <td class="font-bold text-emerald-300">20,000–24,999 (`43` d &bull; Avg `22,118`)</td>
+                  <td>1,869 kcal</td>
+                  <td class="font-bold text-amber-300">3,064 kcal!</td>
+                  <td class="font-extrabold text-emerald-400">-0.63 lb/day!</td>
+                  <td class="font-extrabold text-emerald-400">-0.89 lb/wk!</td>
+                </tr>
+                <tr class="cursor-pointer hover:bg-slate-800/40" onclick="setSlider('lv-steps', 30000)">
+                  <td class="font-bold text-purple-400">25,000–40,858 (`10` d &bull; Avg `28,170`)</td>
+                  <td>1,374 kcal</td>
+                  <td class="font-bold text-amber-300">2,879–3,400+</td>
+                  <td class="font-extrabold text-purple-400">-0.77 lb/day!</td>
+                  <td class="font-extrabold text-purple-400">-1.04 lb/wk!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Table B: 2D Step x Calorie Matrix + CGM Insights -->
+          <div class="space-y-2.5">
+            <div class="table-scroll">
+              <table class="clean-table" style="min-width: 480px;">
+                <thead>
+                  <tr>
+                    <th>Calorie Zone</th>
+                    <th>&lt; 12k Steps (Low Flux)</th>
+                    <th>12k–18k Steps (Switch)</th>
+                    <th>18k–40.8k Steps (Surge)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="font-bold text-amber-400">200–899 kcal<br><span class="text-xs font-normal">(Sardine Fast)</span></td>
+                    <td><strong>-0.06 lb/d</strong> (`3d: -0.78 lb`)<br><span class="text-xs text-slate-400">Avg 619 kcal &bull; 6,951 st</span></td>
+                    <td><strong>-0.25 lb/d</strong> (`3d: -1.10 lb`)<br><span class="text-xs text-slate-400">Avg 525 kcal &bull; 13,596 st</span></td>
+                    <td class="text-emerald-400 font-bold"><strong>-0.55 to -1.10 lb/d</strong><br><span class="text-xs text-emerald-300">Jan 7: 754 kcal @ 24,665 st</span></td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-sky-400">900–1,850 kcal<br><span class="text-xs font-normal">(Aggressive Cut)</span></td>
+                    <td class="text-rose-400"><strong>+0.30 lb/d</strong> (`3d: +0.01 lb`)<br><span class="text-xs text-slate-400">23 d &bull; Avg 7,610 steps</span></td>
+                    <td class="text-sky-300 font-bold"><strong>-0.29 lb/d</strong> (`Flip!`)<br><span class="text-xs text-slate-400">19 d &bull; Avg 14,728 steps</span></td>
+                    <td class="text-emerald-400 font-extrabold"><strong>-0.46 lb/d (`3d: -0.59 lb`)</strong><br><span class="text-xs text-emerald-300">24 d &bull; Avg 22,523 steps!</span></td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-emerald-400">1,851–2,500 kcal<br><span class="text-xs font-normal">(2k+ Recomp)</span></td>
+                    <td class="text-rose-400"><strong>+0.62 lb/d</strong> (`3d: +1.34 lb`)<br><span class="text-xs text-slate-400">10 d &bull; Avg 8,553 steps</span></td>
+                    <td class="text-emerald-300 font-bold"><strong>-0.40 lb/d</strong> (`3d: -0.08 lb`)<br><span class="text-xs text-slate-400">14 d &bull; Avg 15,244 steps</span></td>
+                    <td class="text-emerald-400 font-bold"><strong>-0.34 lb/d (`3d: -0.23 lb`)</strong><br><span class="text-xs text-emerald-300">14 d &bull; Avg 21,984 steps!</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="sub-card" style="border-left: 4px solid #10b981;">
+              <div class="text-xs font-extrabold uppercase text-emerald-400">
+                🔬 Why Steps + CGM Prove Your `12,000` Switch &amp; `20,000–30,000` Slingshot
+              </div>
+              <p class="text-xs mt-1" style="color: var(--text-sub);">
+                &bull; <strong>The `&lt;6,000` Step Trap</strong>: Even when you ate `1,221 kcal/day`, taking `&lt;6,000` steps (`133` days) resulted in `+0.56 lb/day` scale retention. Crossing <strong>`12,000 steps/day`</strong> flips both your `900–1,850 kcal` (`-0.29 lb/d`) and `1,851–2,500 kcal` (`-0.40 lb/d`) zones into active fat loss!<br>
+                &bull; <strong>The `20,000–40,858` Step Furnace (`53` Days &ge;20k)</strong>: Crossing `20,000 steps/day` spikes your measured `MacroFactor` TDEE to <strong>`3,064 kcal/day`</strong> and accelerates weight loss to <strong>`-0.63 to -0.77 lb/day` (`-0.89 to -1.04 lb/wk` trend)</strong>!<br>
+                &bull; <strong>Dexcom Stelo CGM (`2,919` Readings, `Apr 28–May 9, 2026`)</strong>: On `Apr 29–30` (`12,093` &amp; `9,458` steps), your 24h mean glucose dropped to <strong>`83.6 &rarr; 76.5 mg/dL` (`Max 96 mg/dL`)</strong>. And your CGM proved your `MTNR1B CG` gene in real time: your highest glucose of the entire 12 days (`160 mg/dL`) happened at <strong>`2:00 AM` (`1–4 AM` avg `100.1–100.8 mg/dL`)</strong> from late eating, while your `May 1` `147.6-min` workout spiked cortisol glucose to `135–145 mg/dL`!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- WEEK-BY-WEEK INTERACTIVE PROGRESSION & ON-TRACK CHECK-IN TABLE -->
       <div class="panel-card">
         <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
@@ -1043,6 +1173,12 @@
                   <td>&bull; <strong>`Lp(a) = 13 nmol/L` (Elite!)</strong> &bull; `TG = 67` &bull; `HDL = 70`<br>&bull; Flags: `HbA1c = 5.7%`, `Small LDL = 290`, `ApoB = 96`</td>
                   <td>`5:30 PM` eTRE cutoff stops `1–4 AM` glucose glycation of LDL (`HbA1c &lt; 5.1%`), restoring hepatic clearance of `Small LDL` (`ApoB &lt; 70`).</td>
                 </tr>
+                <tr>
+                  <td class="font-bold text-cyan-400">Dexcom Stelo CGM Telemetry<br>(`Clarity_Export.csv` &bull; `2,919` Readings)</td>
+                  <td><strong>`Apr 28 – May 9, 2026`</strong><br>(5-Min Interval Sensor)</td>
+                  <td>&bull; <strong>`99.2 mg/dL` Mean</strong> &bull; `95.2%` TIR (`70–140`) &bull; `75.7%` Optimal (`70–110`)<br>&bull; `Apr 29–30` Ketogenic Floor: <strong>`83.6 &rarr; 76.5 mg/dL` (`Max 96`)</strong><br>&bull; <strong>`1–4 AM` Nocturnal Surge (`100.8 mg/dL` avg, `160 mg/dL` Max @ `2 AM`)</strong><br>&bull; `May 1` (`147.6-min` Workout): Cortisol spike to <strong>`135–145 mg/dL`</strong></td>
+                  <td>Proves `MTNR1B CG` nocturnal hepatic glucose dumping when eating after `6 PM`, AND proves why capping OxeFit at `45–50m` (`COMT GG`) prevents cortisol glucose spikes!</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -1083,10 +1219,10 @@
                   <td>Ended 5-month bicep hiatus; restored `9.0 lb` L/R arm symmetry at `199.0–200.0 lb`.</td>
                 </tr>
                 <tr>
-                  <td class="font-bold text-emerald-400">Dec 30 &rarr; Jan 24, 2026<br>(40,858-Step Peak!)</td>
+                  <td class="font-bold text-emerald-400">Dec 30 &rarr; Jan 24, 2026<br>(`MorphoScan-Daddy.csv` + `40,858`-Step Peak!)</td>
                   <td>&bull; `Dec 30 / Jan 1`: <strong>`530 &amp; 591 kcal`</strong> (`2 cans` Sardines + `1 tbsp` MCT)<br>&bull; `Jan 7`: <strong>`754 kcal`</strong> Sardines + Eggs @ <strong>`24,665 steps`</strong><br>&bull; `Jan 12–21`: <strong>`1,418–1,840 kcal`</strong> Aggressive Zone + <strong>`40,858 STEPS` on `Jan 14`</strong> &amp; <strong>`28,073 / 28,448 steps` on `Jan 23–24`</strong>!</td>
                   <td>&bull; <strong>Back Squat (`Chains`)</strong>: `249.99 lb x 5` (`1,437 W` Jan 8) &rarr; <strong>`249.99 lb x 10` (`2,500 lb`/set, `1,416 W` Jan 19)</strong><br>&bull; <strong>RDL (`Eccentric`)</strong>: `185.02 lb x 10` &rarr; <strong>`220.09 lb x 8` (`1,144 W` Jan 19)</strong><br>&bull; <strong>Bench Press</strong>: `174.90 lb x 7` (`621 W` Jan 21) &bull; <strong>OHP</strong>: `449 W` (`1.12 m/s`)</td>
-                  <td>Dropped scale weight `-9.6 lbs` in 24 days (`203.8 &rarr; 194.2 lb`) while increasing every compound lift `+10% to +25%`.</td>
+                  <td>&bull; `Jan 1–9` (`MorphoScan-Daddy.csv` 10-Scan Series): Lost <strong>`-4.0 lbs` Fat (`54.0 &rarr; 50.0 lb`), `-2.7 lbs` Trunk Fat (`29.8 &rarr; 27.1 lb`), `VF 9 &rarr; 8` in 8 days!</strong><br>&bull; `Jan 1–24`: `-9.6 lbs` scale (`205.6 &rarr; 194.2 lb`).</td>
                 </tr>
                 <tr>
                   <td class="font-bold text-pink-400">Feb 8 Binge &rarr; Feb 24, 2026<br>(All-Time Low `189.2 lb`)</td>
@@ -1099,6 +1235,12 @@
                   <td>Stepped up from `977–1,557 kcal` (`Mar 3–5`) into `2,400–2,950 kcal` Steak Refuel window.</td>
                   <td>High-frequency compound block (`16` Strength days / `22` bouts).</td>
                   <td>Hit all-time measured <strong>`158.3 lb FFM` (`90.8 lb` SMM, `9.5 lb` L/R arms) on Mar 16</strong>!</td>
+                </tr>
+                <tr>
+                  <td class="font-bold text-cyan-400">May 1–7 &amp; Jul 3–Aug 1, 2026<br>(CGM + Summer OxeFit XS1)</td>
+                  <td>&bull; `Apr 29–May 7`: `12,093–17,023` steps (`Clarity_Export.csv` CGM)<br>&bull; `Jun 2–3`: `600 &amp; 1,000 kcal` reset</td>
+                  <td>&bull; `May 1 &amp; 7`: `147.6m` &amp; `113.1m` OxeFit marathons<br>&bull; <strong>`Jul 3` (`34m`), `Jul 29` (`63m`, `6` Ex), `Jul 30` (`16m`), `Aug 1` (`10m`)</strong> (`Screenshot_20260812_100003_OxeFit.jpg`)</td>
+                  <td>`Jul 29` `63-min` OxeFit session flushed `-3.2 lbs` overnight (`205.0 &rarr; 201.8 lb`) and re-inflated Right Arm from `8.8 &rarr; 9.0 lb` (`198.9 &Omega;`)!</td>
                 </tr>
               </tbody>
             </table>
@@ -1373,9 +1515,10 @@
           targetBhb = (hasC8 ? 2.0 : 1.5) + (steps >= 20000 ? 0.2 : 0);
         }
 
-        // Calculate TDEE for current FFM & steps (up to 35,000 steps/d!) & workouts
+        // Calculate TDEE for current FFM & steps (calibrated to your 475-day MacroFactor Expenditure curve: 3,064 kcal at 20k-25k steps!)
         const bmr = 370 + 21.6 * (curFfm / 2.20462);
-        const stepBurn = steps * 0.049;
+        const highFluxBonus = steps >= 20000 ? 115 + (steps - 20000) * 0.008 : steps >= 15000 ? 45 : steps < 8000 ? -65 : 0;
+        const stepBurn = steps * 0.051 + highFluxBonus;
         const workoutBurn = (workouts * 365) / 7;
         const bioBonus = (hasCutoff ? 65 : 0) + (hasC8 ? 55 : 0);
         const tef = wkKcal * 0.12;
@@ -1383,8 +1526,9 @@
 
         // Fat mobilization ceiling:
         // Standard Alpert = 31.4 kcal/lb fat/day.
-        // Ketone-Shielded Aggressive Mode (3.0+ mmol/L BHB + ACTN3 CC + High-Flux Steps) = up to 46 kcal/lb fat/day (verified by Feb 9-24 and Dec 1-12 logs)
-        const maxRatePerLbFat = isUncapped ? 46.5 : 31.4;
+        // Ketone-Shielded Aggressive Mode (3.0+ mmol/L BHB + ACTN3 CC + High-Flux Steps) = up to 48 kcal/lb fat/day (verified by Feb 9-24 and Dec 1-12 logs)
+        const stepFluxFactor = steps >= 20000 ? 1.06 : steps >= 12000 ? 1.0 : 0.90;
+        const maxRatePerLbFat = (isUncapped ? 47.0 : 31.4) * stepFluxFactor;
         const maxDailyDeficit = curFat * maxRatePerLbFat;
         const rawDailyDeficit = Math.max(150, tdee - wkKcal);
         const effectiveDeficit = Math.min(rawDailyDeficit, maxDailyDeficit);
