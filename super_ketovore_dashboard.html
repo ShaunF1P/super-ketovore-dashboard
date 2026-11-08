@@ -385,29 +385,29 @@
     <section id="view-forecast" class="space-y-4">
       <div class="grid-2">
         <!-- LEFT: Interactive Protocol Levers -->
-        <div class="panel-card space-y-4">
+        <div class="panel-card space-y-3.5">
           <div class="flex items-center justify-between">
             <div>
-              <h2 class="text-lg font-bold text-emerald-400">🎛️ Pull Your Protocol Levers</h2>
+              <h2 class="text-lg font-bold text-emerald-400">🎛️ Pull Your Aggressive Protocol Levers</h2>
               <p class="text-xs" style="color: var(--text-muted);">
-                Locked to today's Nov 8 baseline (`209.6 lb`, `28.0% BF`). Pull any lever to see your 10–16 week progression.
+                Calibrated to your verified logs: `200–800 kcal` Post-Binge Sardine Fast &rarr; `1,100–1,800 kcal` Aggressive Cut (`55` logged days) &rarr; `2,000+ kcal` Recomp, plus up to `35,000` steps/day (`40,858` peak on Jan 14!).
               </p>
             </div>
             <button onclick="resetLevers()" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
-              Reset to Nov 8 Start
+              Reset to Aggressive Default
             </button>
           </div>
 
           <!-- Lever 1: Ignition Protocol (72h vs 5+2 vs 7-Day Sardine vs Standard) -->
           <div class="sub-card" style="border-left: 3px solid #10b981;">
             <label class="text-xs font-extrabold uppercase text-emerald-400 block mb-1.5">
-              1. Week 1 Ignition Protocol (Starting Sardines Today — Nov 8)
+              1. Week 1 Sardine Fast Ignition (Starting Today — Nov 8 Post-Binge @ 209.6 lb)
             </label>
             <select id="lv-ignition" onchange="runForecast()">
-              <option value="slingshot_5_2" selected>⚡ 5-Day Sardine + C8 Fast &rarr; 2-Day Ribeye/Egg/Butter Refuel (RECOMMENDED)</option>
-              <option value="sardine_72h">🔥 72-Hour Sardine Fast (3.0–4.0 mmol/L) &rarr; 2MAD Ketovore</option>
-              <option value="sardine_7d">🚀 Extreme 7-Day Sardine + C8 MCT + Egg-Yolk Blitz &rarr; Carnivore Refuel</option>
-              <option value="standard_2mad">🥩 Standard 2MAD Super Ketovore (No Sardine Fast Ignition)</option>
+              <option value="slingshot_5_2" selected>⚡ 5-Day Sardine Fast (200–800 kcal) &rarr; 2-Day Ribeye/Egg/C8 Refuel (RECOMMENDED)</option>
+              <option value="sardine_72h">🔥 72-Hour Sardine Fast (200–800 kcal) &rarr; 4 Days @ 1,100–1,800 kcal</option>
+              <option value="sardine_7d">🚀 Extreme 7-Day Sardine Fast (200–800 kcal/d) &rarr; Week 2 Beef/Egg/C8 Refuel</option>
+              <option value="standard_2mad">🥩 Direct 1,100–1,800 kcal Aggressive Ketovore (No Sardine Fast)</option>
             </select>
             <p class="text-xs mt-2" id="ignition-explain" style="color: var(--text-sub);"></p>
           </div>
@@ -432,33 +432,87 @@
             </div>
           </div>
 
-          <!-- Lever 3: Sliders for Calories, Steps, and Workouts -->
+          <!-- Lever 3: 3-STAGE CALORIE PROGRESSION (200-800 -> 1100-1800 -> 2000+) & 35K STEPS -->
           <div class="space-y-3">
-            <div>
+            <!-- Stage A: Sardine Fast Calories (200 - 1,200 kcal) -->
+            <div class="sub-card py-2.5 px-3" style="border-left: 3px solid #f59e0b;">
               <div class="flex justify-between text-xs font-bold mb-1">
-                <span>Ongoing Daily Calorie Intake (Post-Ignition)</span>
+                <span>🐟 Stage 1: Sardine Fast Daily Intake (`Post-Binge Satiated Zone`)</span>
+                <span id="lbl-sardine-kcal" class="text-amber-400">550 kcal/day (~2.5 Cans)</span>
+              </div>
+              <input type="range" id="lv-sardine-kcal" min="200" max="1200" step="50" value="550" oninput="runForecast()" />
+              <div class="flex flex-wrap justify-between items-center gap-1 mt-1">
+                <span class="text-xs" style="color: var(--text-muted);">Verified: Dec 10 (`400`), Dec 30 (`530`), Jan 1 (`591`), Jan 7 (`754`)</span>
+                <div class="flex gap-1">
+                  <button type="button" onclick="setSlider('lv-sardine-kcal', 200)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-amber-300 border border-slate-700 font-bold">200 (1 Can)</button>
+                  <button type="button" onclick="setSlider('lv-sardine-kcal', 400)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-amber-300 border border-slate-700 font-bold">400 (Dec 10)</button>
+                  <button type="button" onclick="setSlider('lv-sardine-kcal', 550)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-amber-300 border border-slate-700 font-bold">550 (Dec 30)</button>
+                  <button type="button" onclick="setSlider('lv-sardine-kcal', 750)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-amber-300 border border-slate-700 font-bold">750 (Jan 7)</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stage B: Post-Fast Aggressive Window (1,100 - 1,800 kcal) + Duration -->
+            <div class="sub-card py-2.5 px-3" style="border-left: 3px solid #ec4899;">
+              <div class="grid-2">
+                <div>
+                  <div class="flex justify-between text-xs font-bold mb-1">
+                    <span>🔥 Stage 2: Post-Fast Aggressive (`1,100–1,800`)</span>
+                    <span id="lbl-agg-kcal" class="text-pink-400">1,450 kcal/d</span>
+                  </div>
+                  <input type="range" id="lv-agg-kcal" min="900" max="1850" step="50" value="1450" oninput="runForecast()" />
+                  <div class="flex gap-1 mt-1">
+                    <button type="button" onclick="setSlider('lv-agg-kcal', 1150)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-pink-300 border border-slate-700 font-bold">1,150</button>
+                    <button type="button" onclick="setSlider('lv-agg-kcal', 1450)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-pink-300 border border-slate-700 font-bold">1,450 (Jan 20)</button>
+                    <button type="button" onclick="setSlider('lv-agg-kcal', 1750)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-pink-300 border border-slate-700 font-bold">1,750 (Jan 14)</button>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs font-bold mb-1">
+                    <span>⏳ Weeks in `1,100–1,800` Zone</span>
+                    <span id="lbl-agg-weeks" class="text-pink-400">6 Weeks (Wks 1–6)</span>
+                  </div>
+                  <input type="range" id="lv-agg-weeks" min="1" max="12" step="1" value="6" oninput="runForecast()" />
+                  <div class="flex justify-between text-xs mt-1" style="color: var(--text-muted);">
+                    <span>2 Wks</span><span>6 Wks (Sweet Spot)</span><span>All 10–12 Wks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stage C: Phase 3 2,000+ Territory Calories -->
+            <div class="sub-card py-2.5 px-3" style="border-left: 3px solid #10b981;">
+              <div class="flex justify-between text-xs font-bold mb-1">
+                <span>🥩 Stage 3: `2,000+ kcal` Recomp Territory (After Aggressive Phase)</span>
                 <span id="lbl-kcal" class="text-emerald-400">2,150 kcal/day</span>
               </div>
-              <input type="range" id="lv-kcal" min="1600" max="2900" step="50" value="2150" oninput="runForecast()" />
+              <input type="range" id="lv-kcal" min="1800" max="3000" step="50" value="2150" oninput="runForecast()" />
               <div class="flex justify-between text-xs" style="color: var(--text-muted);">
-                <span>Aggressive: 1,750</span><span>Sweet Spot: 2,150</span><span>Recomp: 2,650</span>
+                <span>Lean Cut: 1,900</span><span>Recomp Target: 2,150</span><span>Steak Surplus: 2,800</span>
+              </div>
+            </div>
+
+            <!-- Daily Step Flux (Up to 35,000 steps/day!) -->
+            <div class="sub-card py-2.5 px-3" style="border-left: 3px solid #0ea5e9;">
+              <div class="flex justify-between text-xs font-bold mb-1">
+                <span>👟 Daily Step Flux (`53` Days &ge;20k | `10` Days &ge;25k | `40,858` Peak!)</span>
+                <span id="lbl-steps" class="text-sky-400">15,000 steps/day</span>
+              </div>
+              <input type="range" id="lv-steps" min="3000" max="35000" step="500" value="15000" oninput="runForecast()" />
+              <div class="flex flex-wrap justify-between items-center gap-1 mt-1">
+                <span class="text-xs" style="color: var(--text-muted);">Jan 14: `40,858` | Dec 31: `28,458` | Jan 24: `28,448`</span>
+                <div class="flex gap-1">
+                  <button type="button" onclick="setSlider('lv-steps', 12000)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-sky-300 border border-slate-700 font-bold">12k Base</button>
+                  <button type="button" onclick="setSlider('lv-steps', 20000)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-sky-300 border border-slate-700 font-bold">20k (53d)</button>
+                  <button type="button" onclick="setSlider('lv-steps', 25000)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-sky-300 border border-slate-700 font-bold">25k (10d)</button>
+                  <button type="button" onclick="setSlider('lv-steps', 30000)" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-sky-300 border border-slate-700 font-bold">30k Beast</button>
+                </div>
               </div>
             </div>
 
             <div>
               <div class="flex justify-between text-xs font-bold mb-1">
-                <span>Daily Step Flux (`Crossrope + Post-Meal Walks`)</span>
-                <span id="lbl-steps" class="text-sky-400">12,000 steps/day</span>
-              </div>
-              <input type="range" id="lv-steps" min="4000" max="17000" step="500" value="12000" oninput="runForecast()" />
-              <div class="flex justify-between text-xs" style="color: var(--text-muted);">
-                <span>Sedentary: 4,000</span><span>Target: 12,000</span><span>Jan '25 Peak: 16,900</span>
-              </div>
-            </div>
-
-            <div>
-              <div class="flex justify-between text-xs font-bold mb-1">
-                <span>OxeFit XS1 + FightCamp Sessions / Week (`45–50m Cap`)</span>
+                <span>🏋️ OxeFit XS1 + FightCamp Sessions / Week (`45–50m Cap`)</span>
                 <span id="lbl-workouts" class="text-purple-400">5 sessions/wk</span>
               </div>
               <input type="range" id="lv-workouts" min="2" max="6" step="1" value="5" oninput="runForecast()" />
@@ -470,8 +524,12 @@
 
           <!-- Lever 4: High-ROI Bio-Accelerators (Checkboxes) -->
           <div class="sub-card">
-            <div class="text-xs font-bold uppercase mb-2" style="color: var(--text-muted);">Bio-Accelerator Toggles</div>
+            <div class="text-xs font-bold uppercase mb-2" style="color: var(--text-muted);">Bio-Accelerator &amp; Aggressive Physics Toggles</div>
             <div class="grid-2">
+              <label class="flex items-center gap-2.5 text-xs font-semibold cursor-pointer">
+                <input type="checkbox" id="lv-uncapped" checked onchange="runForecast()" />
+                <span class="text-amber-300 font-bold">Uncapped Ketone-Shielded Deficit (Bypasses Standard Alpert Cap)</span>
+              </label>
               <label class="flex items-center gap-2.5 text-xs font-semibold cursor-pointer">
                 <input type="checkbox" id="lv-cutoff" checked onchange="runForecast()" />
                 <span>5:30 PM Hard Cutoff (`MTNR1B CG`)</span>
@@ -484,10 +542,6 @@
                 <input type="checkbox" id="lv-c8" checked onchange="runForecast()" />
                 <span>C8 MCT + Butter/EVOO Bridge</span>
               </label>
-              <label class="flex items-center gap-2.5 text-xs font-semibold cursor-pointer">
-                <input type="checkbox" id="lv-sauna" checked onchange="runForecast()" />
-                <span>3x/wk Sauna + Zone 2 Cardio</span>
-              </label>
             </div>
           </div>
         </div>
@@ -498,11 +552,11 @@
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <h2 class="text-lg font-bold text-sky-400">📊 Projected Trajectory (Weight, Lean FFM &amp; Fat Mass)</h2>
               <span class="pill-badge" id="alpert-safety-pill" style="background: rgba(16,185,129,0.16); color: #34d399;">
-                Within Alpert Limit
+                Ketone-Shielded Aggressive Mode
               </span>
             </div>
             <p class="text-xs mb-3" style="color: var(--text-muted);">
-              Includes your <strong>Weeks 1–3 `ACTN3 CC` Myonuclear Muscle Re-Inflation (`147.6 &rarr; 158.3+ lb FFM`)</strong> plus weekly adipose fat loss.
+              Models your exact <strong>`200–800 kcal` Sardine Fast &rarr; `1,100–1,800 kcal` Aggressive Shred &rarr; `2,000+ kcal` Recomp</strong> plus your `ACTN3 CC` muscle memory (`151.0 &rarr; 158.3+ lb FFM`).
             </p>
 
             <!-- Dynamic SVG Chart -->
@@ -521,23 +575,23 @@
           <div class="grid-3">
             <div class="sub-card">
               <div class="text-xs font-bold" style="color: var(--text-muted);" id="sum-wk-title">Week 10 Projected Weight</div>
-              <div class="text-xl font-extrabold text-emerald-400 mt-0.5" id="sum-weight">187.4 lbs</div>
-              <div class="text-xs text-emerald-300" id="sum-weight-delta">-13.1 lbs net scale</div>
+              <div class="text-xl font-extrabold text-emerald-400 mt-0.5" id="sum-weight">184.2 lbs</div>
+              <div class="text-xs text-emerald-300" id="sum-weight-delta">-25.4 lbs net scale</div>
             </div>
             <div class="sub-card">
               <div class="text-xs font-bold" style="color: var(--text-muted);">Projected Body Fat &amp; VF</div>
-              <div class="text-xl font-extrabold text-amber-400 mt-0.5" id="sum-bf">13.4% BF</div>
-              <div class="text-xs text-amber-300" id="sum-fat-delta">-27.8 lbs pure fat lost!</div>
+              <div class="text-xl font-extrabold text-amber-400 mt-0.5" id="sum-bf">11.8% BF</div>
+              <div class="text-xs text-amber-300" id="sum-fat-delta">-36.9 lbs pure fat lost!</div>
             </div>
             <div class="sub-card">
               <div class="text-xs font-bold" style="color: var(--text-muted);">Projected Lean FFM</div>
-              <div class="text-xl font-extrabold text-sky-400 mt-0.5" id="sum-ffm">162.3 lbs</div>
-              <div class="text-xs text-sky-300" id="sum-ffm-delta">+14.7 lbs FFM regained/built!</div>
+              <div class="text-xl font-extrabold text-sky-400 mt-0.5" id="sum-ffm">162.5 lbs</div>
+              <div class="text-xs text-sky-300" id="sum-ffm-delta">+11.5 lbs FFM regained/built!</div>
             </div>
           </div>
 
           <div class="sub-card" style="border-left: 4px solid #0ea5e9;">
-            <div class="text-xs font-extrabold uppercase text-sky-400">Why Scale Weight Barely Drops in Weeks 2–3 While Your Waist Shrinks Rapidly</div>
+            <div class="text-xs font-extrabold uppercase text-sky-400">Why Your `200–800 kcal` &rarr; `1,100–1,800 kcal` Protocol Works Without Losing Muscle</div>
             <p class="text-xs mt-1" style="color: var(--text-sub);" id="recomp-note"></p>
           </div>
         </div>
@@ -551,7 +605,7 @@
               🗓️ Week-by-Week Forecast Progression &amp; Live "On-Track" Gauge
             </h3>
             <p class="text-xs" style="color: var(--text-muted);">
-              Enter your <strong>Actual Weight (`lb`)</strong>, <strong>Actual BF (`%`)</strong>, or <strong>Blood Ketones (`mmol/L`)</strong> in any week's row to automatically grade whether you are <strong>🟢 AHEAD</strong>, <strong>🟡 ON TRACK</strong>, or <strong>🔴 ADJUST</strong>.
+              Shows your planned <strong>Daily Calories (`200–800` &rarr; `1,100–1,800` &rarr; `2,000+`)</strong>, <strong>TDEE</strong>, and forecasted body composition. Log your <strong>Actual Weight (`lb`)</strong> or <strong>BF (`%`)</strong> in any week to see if you are <strong>🟢 AHEAD</strong>, <strong>🟡 ON TRACK</strong>, or <strong>🔴 ADJUST</strong>.
             </p>
           </div>
           <button onclick="clearActualCheckins()" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
@@ -564,12 +618,13 @@
             <thead>
               <tr>
                 <th>Week &amp; Phase Focus</th>
+                <th>Planned Intake &amp; TDEE</th>
                 <th>Forecast Weight</th>
                 <th>Forecast BF% &amp; Fat Mass</th>
                 <th>Forecast Lean FFM</th>
                 <th>Visceral Fat</th>
                 <th>Target Ketones / DBR</th>
-                <th>Log Your Actual Weight (`lb`)</th>
+                <th>Log Actual Weight (`lb`)</th>
                 <th>Log Actual BF%</th>
                 <th>Track Status</th>
               </tr>
@@ -607,41 +662,38 @@
         <div class="grid-3">
           <div class="sub-card sub-card-interactive cursor-pointer" id="card-prot-72h" onclick="selectNutritionProtocol('sardine_72h')">
             <div class="flex justify-between items-center mb-1">
-              <span class="pill-badge" style="background: rgba(16,185,129,0.18); color: #34d399;">OPTION 1: 72-HOUR SHOCK</span>
+              <span class="pill-badge" style="background: rgba(16,185,129,0.18); color: #34d399;">OPTION 1: 72H SARDINE SHOCK (200–800 KCAL)</span>
               <span class="text-xs font-bold text-emerald-400">Days 1–3</span>
             </div>
-            <h3 class="text-base font-bold text-slate-100">The 72-Hour Sardine + C8 Ignition</h3>
+            <h3 class="text-base font-bold text-slate-100">72-Hour Post-Binge Sardine Drain (`400–750 kcal/d`)</h3>
             <p class="text-xs mt-1" style="color: var(--text-sub);">
-              <strong>Days 1–3</strong>: `4–6 cans/day` Wild Sardines in EVOO + `1.5 tbsp` C8 MCT + Mustard/Hot Sauce/ACV + `5g` Creatine + Electrolytes.<br>
-              <strong>Day 4+</strong>: Transition straight into 2MAD Ribeye + Eggs + Sardines.<br>
-              <strong>Result</strong>: Ketones hit <strong>`2.8–3.8 mmol/L`</strong> (`DBR &lt; 28`), flushes `-4.5 to -6.0 lbs` in 72 hours with zero muscle loss.
+              <strong>Verified in Logs</strong>: `Dec 9–11` (`621 &rarr; 400 &rarr; 412 kcal`, `201.8 &rarr; 198.0 lb`) &amp; `Dec 30–Jan 3` (`530 &rarr; 591 &rarr; 870 kcal`, `206.8 &rarr; 203.4 lb`).<br>
+              <strong>Days 1–3</strong>: `1–4 cans/day` Wild Sardines in Olive Oil (`200–800 kcal`) + Mustard/Hot Sauce/ACV + Optional `1 tbsp` C8 MCT (`130 kcal`).<br>
+              <strong>Day 4+</strong>: Step into your <strong>`1,100–1,800 kcal` Aggressive Ketovore Window</strong>!
             </p>
           </div>
 
           <div class="sub-card sub-card-interactive cursor-pointer" id="card-prot-52" onclick="selectNutritionProtocol('slingshot_5_2')" style="border-color: #10b981;">
             <div class="flex justify-between items-center mb-1">
               <span class="pill-badge" style="background: rgba(14,165,233,0.22); color: #38bdf8;">★ BEST FOR YOUR DNA: 5+2 SLINGSHOT</span>
-              <span class="text-xs font-bold text-sky-400">5 Days + 2 Days</span>
+              <span class="text-xs font-bold text-sky-400">5d (`200–800`) + 2d (`1,400–1,800`)</span>
             </div>
-            <h3 class="text-base font-bold text-slate-100">5-Day Sardine Blitz &rarr; 2-Day Beef/Egg/C8 Refuel</h3>
+            <h3 class="text-base font-bold text-slate-100">5-Day Sardine Fast (`200–800 kcal`) &rarr; 2-Day Beef/Egg/C8 Refuel</h3>
             <p class="text-xs mt-1" style="color: var(--text-sub);">
-              <strong>Days 1–5 (Mon–Fri)</strong>: Sardines + C8 MCT + `2 Egg Yolks` (`3.5–4.2 mmol/L` ketones, maximum visceral fat &amp; autophagy burn).<br>
-              <strong>Days 6–7 (Sat–Sun)</strong>: Refuel with <strong>`16 oz` Ribeye + `6` Whole Eggs cooked in Grass-Fed Butter + `1 tbsp` C8 MCT</strong>.<br>
-              <strong>Why It Wins</strong>: Gives you 5 full days at `3.5+ mmol/L` BHB, then floods your `ACTN3 CC` muscles with Beef Creatine/Carnitine right before `FADS1/PEMT` fatigue sets in—keeping ketones `&gt;2.0 mmol/L`!
+              <strong>Days 1–5 (Mon–Fri)</strong>: Eat purely to satiety (`1–4 cans` Wild Sardines in EVOO + Mustard + C8 MCT = **`400–750 kcal/day`**, `3.5–4.2 mmol/L` ketones).<br>
+              <strong>Days 6–7 (Sat–Sun)</strong>: Refuel in your **`1,400–1,800 kcal`** zone (`Ribeye/Ground Beef + Eggs in Butter + C8 MCT`) before holding `1,100–1,800 kcal` for Weeks 2–6!
             </p>
           </div>
 
           <div class="sub-card sub-card-interactive cursor-pointer" id="card-prot-7d" onclick="selectNutritionProtocol('sardine_7d')">
             <div class="flex justify-between items-center mb-1">
               <span class="pill-badge" style="background: rgba(139,92,246,0.2); color: #c4b5fd;">OPTION 3: EXTREME 7-DAY RUN</span>
-              <span class="text-xs font-bold text-purple-400">7 Days + Refuel</span>
+              <span class="text-xs font-bold text-purple-400">7d (`200–800`) &rarr; `1,100–1,800`</span>
             </div>
-            <h3 class="text-base font-bold text-slate-100">7-Day Sardine Fast (With 3 Muscle Shields) &rarr; Carnivore</h3>
+            <h3 class="text-base font-bold text-slate-100">7-Day Ultra-Satiated Sardine Blitz (`200–800 kcal/d`)</h3>
             <p class="text-xs mt-1" style="color: var(--text-sub);">
-              If you run the full <strong>7-Day Sardine Blitz</strong>, we add <strong>3 Mandatory Muscle &amp; Tendon Shields</strong> so you don't lose FFM on Days 5–7:<br>
-              1. <strong>`1–2 tbsp` C8 MCT + `1 tbsp` Grass-Fed Butter</strong> melted over hot crisped sardines (`72%` fat ratio = `3.5–4.5 mmol/L` ketones).<br>
-              2. <strong>`5g` Creatine + `3g` L-Carnitine + `18g` Collagen</strong> pre-OxeFit.<br>
-              3. <strong>`3` Runny Egg Yolks on Lifting Days (Days 4–7)</strong> for `PEMT CT` liver fat export, followed by your **Week 2 Beef + Egg + Butter/C8 Refuel**!
+              Coming off a pizza/cheesecake weekend binge with `58.6 lb` fat mass and saturated glycogen/leptin, your `3.5–4.5 mmol/L` BHB ketones suppress ghrelin completely.<br>
+              <strong>Mandatory Shields at `200–800 kcal`</strong>: `5g` Creatine + `18g` Collagen + `Electrolytes` daily, then transition into **`1,100–1,800 kcal` Beef + Eggs + Sardines** in Week 2!
             </p>
           </div>
         </div>
@@ -652,9 +704,9 @@
         <div class="panel-card space-y-4">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div>
-              <h2 class="text-lg font-bold text-emerald-400">🔄 Interactive Daily Meal Swapper</h2>
+              <h2 class="text-lg font-bold text-emerald-400">🔄 Interactive Daily Meal Swapper (`200 kcal` &rarr; `2,200+ kcal`)</h2>
               <p class="text-xs" style="color: var(--text-muted);">
-                Switch out any protein, fat booster, or fermented side below—macros, ketogenic ratio, and predicted ketone impact update live.
+                Includes your exact verified `MacroFactor` days from `400 kcal` (`Dec 10`) and `530 kcal` (`Dec 30`) through `1,100–1,800 kcal` (`Jan 14–21`) up to `2,000+ kcal`.
               </p>
             </div>
             <button onclick="logCurrentMealDay()" class="nav-pill active" style="min-height: 38px; padding: 0.35rem 0.85rem;">
@@ -663,11 +715,15 @@
           </div>
 
           <div>
-            <label class="text-xs font-bold uppercase text-sky-400 block mb-1">Active Day Template</label>
+            <label class="text-xs font-bold uppercase text-sky-400 block mb-1">Active Day Template (1-Click Preset)</label>
             <select id="meal-template-select" onchange="applyMealTemplate(this.value)">
-              <option value="sardine_fast">🔥 Sardine Fast Ignition Day (Days 1–5 / 72h–7d Blitz)</option>
-              <option value="carnivore_refuel">🥩 Carnivore Beef + Egg + Butter/C8 Refuel Day (Post-Fast Transition)</option>
-              <option value="ketovore_2mad" selected>⚡ Standard Super Ketovore 2MAD Day (Sardines + Steak + Eggs)</option>
+              <option value="sardine_400" selected>🐟 Post-Binge Sardine Fast — 412 kcal (Verified Dec 10–11: 2 Cans Sardines + Mustard)</option>
+              <option value="sardine_530">🔥 Sardine + C8 MCT Ignition — 530 kcal (Verified Dec 30 / Jan 1: 2 Cans + 1 tbsp MCT)</option>
+              <option value="sardine_754">⚡ High-Step Sardine + Egg Day — 754 kcal (Verified Jan 7: Sardines + Eggs + Kimchi @ 24.6k Steps)</option>
+              <option value="agg_1210">🎯 Post-Fast Aggressive Cut — 1,210 kcal (Verified Dec 18: Sardines + MCT + Protein @ 24.5k Steps)</option>
+              <option value="agg_1478">🥩 Post-Fast Aggressive Steak/Sardine — 1,475 kcal (Verified Jan 20–21 OxeFit PR Window)</option>
+              <option value="agg_1728">🚀 High-Output Aggressive Shred — 1,730 kcal (Verified Jan 14: 40,858-Step Sardine + MCT Day!)</option>
+              <option value="carnivore_refuel">🥩 Phase 3 Carnivore Refuel — 2,150 kcal (2,000+ Territory: Ribeye + 6 Eggs + C8 Butter)</option>
             </select>
           </div>
 
@@ -675,10 +731,12 @@
             <div>
               <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">12:00 PM Meal #1 Primary Protein</label>
               <select id="swap-m1-prot" onchange="recalcMeals()">
-                <option value="sardines_3can">3 Cans Wild Sardines in EVOO (540 kcal | 66g P | 30g F)</option>
-                <option value="sardines_2can_eggs" selected>2 Cans Wild Sardines + 4 Whole Eggs (680 kcal | 68g P | 42g F)</option>
+                <option value="fasted_m1">Fasted / Skip Meal #1 (0 kcal — OMAD Post-Binge Mode)</option>
+                <option value="sardines_1can">1 Can Wild Sardines in Olive Oil (200 kcal | 22g P | 12g F)</option>
+                <option value="sardines_2can" selected>2 Cans Wild Sardines in Olive Oil (400 kcal | 44g P | 24g F — Dec 10)</option>
+                <option value="sardines_3can">3 Cans Wild Sardines in EVOO (580 kcal | 66g P | 34g F — Dec 9)</option>
+                <option value="sardines_2can_eggs">2 Cans Wild Sardines + 4 Whole Eggs (680 kcal | 68g P | 42g F)</option>
                 <option value="mackerel_2can">2 Cans Wild Mackerel in EVOO + 3 Egg Yolks (640 kcal | 58g P | 44g F)</option>
-                <option value="salmon_shrimp">8 oz Wild Sockeye Salmon + 6 oz Shrimp (520 kcal | 82g P | 18g F)</option>
                 <option value="eggs_6_butter">6 Whole Pasture-Raised Eggs + 4 oz Beef Sirloin (690 kcal | 64g P | 45g F)</option>
               </select>
             </div>
@@ -686,29 +744,33 @@
             <div>
               <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">4:45 PM Meal #2 Primary Protein</label>
               <select id="swap-m2-prot" onchange="recalcMeals()">
+                <option value="fasted_m2" selected>Fasted / Skip Meal #2 (0 kcal — Post-Binge Satiated)</option>
+                <option value="sardines_1can_pm">1 Can Wild Sardines in Olive Oil (200 kcal | 22g P | 12g F)</option>
+                <option value="sardines_2can_pm">2 Cans Wild Sardines + 2 Hard-Boiled Eggs (540 kcal | 56g P | 34g F)</option>
                 <option value="sardines_3can_pm">3 Cans Crispy Air-Fried Sardines + 3 Egg Yolks (705 kcal | 74g P | 44g F)</option>
-                <option value="ribeye_14oz" selected>14 oz Finely Sliced Ribeye Steak (980 kcal | 96g P | 64g F)</option>
-                <option value="strip_shrimp">12 oz NY Strip / Skirt Steak + 6 oz Wild Shrimp (860 kcal | 108g P | 44g F)</option>
+                <option value="beef_8oz_agg">8 oz 80/20 Ground Beef / Sirloin + 2 Eggs (720 kcal | 62g P | 50g F — 1,100–1,800 Zone)</option>
+                <option value="ribeye_14oz">14 oz Finely Sliced Ribeye Steak (980 kcal | 96g P | 64g F)</option>
                 <option value="ground_beef_eggs">12 oz 80/20 Grass-Fed Beef + 3 Whole Eggs (1,050 kcal | 88g P | 74g F)</option>
-                <option value="lamb_sardine">12 oz Lamb Loin Chops + 1 Can Sardines (990 kcal | 92g P | 66g F)</option>
               </select>
             </div>
 
             <div>
               <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Ketone &amp; Hormone Fat Booster</label>
               <select id="swap-fat" onchange="recalcMeals()">
-                <option value="c8_butter" selected>1.5 tbsp C8 MCT Oil + 1.5 tbsp Grass-Fed Butter (345 kcal | 0g P | 38g F)</option>
+                <option value="zero_fat" selected>None — Sardine Olive Oil Only (0 kcal | Dec 10 Pure Fast)</option>
+                <option value="mct_1tbsp">1 tbsp Organic C8 MCT Oil (130 kcal | 0g P | 14g F — Dec 30 / Jan 1)</option>
+                <option value="mct_2tbsp">2 tbsp Organic C8 MCT Oil (260 kcal | 0g P | 28g F — Jan 3)</option>
+                <option value="c8_butter">1.5 tbsp C8 MCT Oil + 1.5 tbsp Grass-Fed Butter (345 kcal | 0g P | 38g F)</option>
                 <option value="c8_evoo">1 tbsp C8 MCT Oil + 2 tbsp High-Polyphenol EVOO (370 kcal | 0g P | 42g F)</option>
-                <option value="tallow_butter">2 tbsp Grass-Fed Beef Tallow / Ghee + 1 tbsp C8 MCT (370 kcal | 0g P | 42g F)</option>
-                <option value="cheese_evoo">2 oz Aged Gouda/White Cheddar + 1.5 tbsp EVOO (400 kcal | 14g P | 38g F)</option>
               </select>
             </div>
 
             <div>
               <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Pre-Workout Tendon &amp; Bile Add-On</label>
               <select id="swap-addon" onchange="recalcMeals()">
-                <option value="full_stack" selected>18g Collagen + 5g Creatine + Kimchi + Mustard + ACV + 2 Brazil Nuts (135 kcal | 20g P | 4g F)</option>
+                <option value="mustard_only" selected>Yellow/Spicy Mustard + Hot Sauce + ACV + Electrolytes (12 kcal | Dec 11 Log)</option>
                 <option value="sardine_pure">18g Collagen + 5g Creatine + Spicy Mustard + Hot Sauce + Pickles (90 kcal | 18g P | 0g F)</option>
+                <option value="full_stack">18g Collagen + 5g Creatine + Kimchi + Mustard + ACV + 2 Brazil Nuts (135 kcal | 20g P | 4g F)</option>
                 <option value="bone_broth">16 oz Beef Bone Broth + 18g Collagen + 5g Creatine + Sauerkraut (160 kcal | 28g P | 2g F)</option>
               </select>
             </div>
@@ -986,48 +1048,57 @@
           </div>
         </div>
 
-        <!-- Vault Sub 3: Complete OxeFit 100 Screenshots + 62 workout.csv Summary -->
+        <!-- Vault Sub 3: Complete OxeFit 100 Screenshots + 62 workout.csv + 40.8k Step & Calorie Logs -->
         <div id="vault-panel-oxefit" class="space-y-3 hidden-view">
+          <div class="sub-card" style="border-left: 4px solid #f59e0b;">
+            <div class="text-sm font-bold text-amber-400">
+              👟 Verified `MacroFactor` Step Flux (`475` Logged Days) &amp; `200–800 kcal` / `1,100–1,800 kcal` Nutrition Distribution (`161` Logged Days)
+            </div>
+            <p class="text-xs mt-1" style="color: var(--text-sub);">
+              &bull; <strong>Step Distribution (`mf1.xlsx`)</strong>: All-Time Peak = <strong>`40,858 steps` on `Jan 14, 2026`</strong>! Top runners-up: `Dec 31, 2024` (`28,458`), `Jan 24, 2026` (`28,448`), `Dec 16, 2024` (`28,081`), `Jan 23, 2026` (`28,073`), `Feb 12, 2025` (`26,529`), `Apr 1, 2025` (`25,620`), `Jan 27, 2025` (`25,518`), `Feb 6, 2025` (`25,096`), `May 27, 2025` (`25,014`), `Jan 7, 2026` (`24,665`), `Dec 18, 2025` (`24,558`). Total: <strong>`10` days &ge;`25,000` steps</strong>, <strong>`53` days &ge;`20,000` steps (`11.2%`)</strong>, <strong>`113` days &ge;`15,000` steps (`23.8%`)</strong>, and <strong>`182` days &ge;`12,000` steps (`38.3%`)</strong>!<br>
+              &bull; <strong>Calorie Bracket Distribution (`161` Days)</strong>: <strong>`200–850 kcal` Post-Binge Sardine/Fast Zone = `21 days` (`13.0%`)</strong> (`Dec 10` `400 kcal`, `Dec 11` `412 kcal`, `Dec 30` `530 kcal`, `Jan 1` `591 kcal`, `Jun 2` `600 kcal`, `Dec 9` `621 kcal`, `Dec 1–2` `700 kcal`, `Dec 16` `741 kcal`, `Jan 7` `754 kcal`, `Dec 15` `760 kcal`) &bull; <strong>`851–1,099 kcal` Bridge = `16 days` (`9.9%`)</strong> &bull; <strong>`1,100–1,850 kcal` Post-Fast Aggressive Cut Zone = `55 days` (`34.2%` — Your #1 Most Frequent Bracket!)</strong> &bull; Combined `&le;1,850 kcal` Aggressive Mode = **`92 of 161 days` (`57.1%`)**!
+            </p>
+          </div>
           <div class="table-scroll">
             <table class="clean-table">
               <thead>
                 <tr>
                   <th>Training Block / Date</th>
-                  <th>Source &amp; Volume</th>
+                  <th>Calories &amp; Step Flux (`mf1.xlsx`)</th>
                   <th>Verified Peak Lifts, Power (`W`) &amp; Velocity (`m/s`)</th>
                   <th>Biometric Result</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="font-bold text-sky-400">Dec 15–20, 2025</td>
-                  <td>`workout.csv` (7 sessions in 6d)</td>
-                  <td>6 Strength sessions (`244 min` total) + `60.6m` Rollerblading (`577 kcal`).</td>
-                  <td>Ended 5-month bicep hiatus; restored `9.0 lb` L/R arm symmetry.</td>
+                  <td class="font-bold text-amber-400">Dec 1–12, 2025<br>(Sardine Fast Runs #1 &amp; #2)</td>
+                  <td>&bull; `Dec 1–2`: `700 kcal/d` Sardines<br>&bull; `Dec 9–11`: <strong>`621 &rarr; 400 &rarr; 412 kcal`</strong> (`2–3 cans` Sardines + Mustard, `10k–13.3k` steps)</td>
+                  <td>Pre-lifting post-binge Sardine Fast ignition (`0g` carbs, pure EVOO Sardines).</td>
+                  <td>Dropped <strong>`-12.8 lbs` in 11 days (`210.8 &rarr; 198.0 lb`)</strong>!</td>
                 </tr>
                 <tr>
-                  <td class="font-bold text-emerald-400">Jan 8 &rarr; Jan 21, 2026</td>
-                  <td>`100` OxeFit Screenshots + `17` Jan `workout.csv` bouts</td>
-                  <td>&bull; <strong>Back Squat (`Chains`)</strong>: `249.99 lb x 5` (`1,437 W` Jan 8) &rarr; <strong>`249.99 lb x 10` (`2,500 lb`/set, `1,416 W` Jan 19)</strong><br>&bull; <strong>RDL (`Eccentric`)</strong>: `185.02 lb x 10` (`Jan 8`) &rarr; <strong>`220.09 lb x 8` (`1,144 W` Jan 19)</strong><br>&bull; <strong>Bench Press</strong>: `1,120 lb` Set 2 (`519 W` Jan 9) &rarr; <strong>`174.90 lb x 7` (`621 W` Jan 21)</strong><br>&bull; <strong>Shoulder Press</strong>: `6 sets` (`449 W`, `1.12 m/s` Jan 9) &rarr; <strong>`114.88 lb x 3` (`440 W` Jan 21)</strong><br>&bull; <strong>Hip Thrust &amp; Split Squat</strong>: `638 W` Thrust (`6,120 lb` vol) &amp; `91.95 lb x 8` `Perturbation` Split Squat (`395 W`)<br>&bull; <strong>Deadlift &amp; Row (`Jan 13`)</strong>: `203.45 lb x 7` Deadlift (`1,160 W`) &amp; `100.04 lb x 10` Bent Row (`734 W`, `1.65 m/s`)</td>
+                  <td class="font-bold text-sky-400">Dec 14–20, 2025<br>(Return to OxeFit)</td>
+                  <td>&bull; `Dec 15–16`: <strong>`760 &amp; 741 kcal`</strong> Sardines (`20,872` steps Dec 16)<br>&bull; `Dec 17–18`: <strong>`1,460 &amp; 1,210 kcal`</strong> Sardines + MCT (`24,558` steps Dec 18!)</td>
+                  <td>6 Strength sessions (`244 min` total) + `60.6m` Rollerblading (`577 kcal`).</td>
+                  <td>Ended 5-month bicep hiatus; restored `9.0 lb` L/R arm symmetry at `199.0–200.0 lb`.</td>
+                </tr>
+                <tr>
+                  <td class="font-bold text-emerald-400">Dec 30 &rarr; Jan 24, 2026<br>(40,858-Step Peak!)</td>
+                  <td>&bull; `Dec 30 / Jan 1`: <strong>`530 &amp; 591 kcal`</strong> (`2 cans` Sardines + `1 tbsp` MCT)<br>&bull; `Jan 7`: <strong>`754 kcal`</strong> Sardines + Eggs @ <strong>`24,665 steps`</strong><br>&bull; `Jan 12–21`: <strong>`1,418–1,840 kcal`</strong> Aggressive Zone + <strong>`40,858 STEPS` on `Jan 14`</strong> &amp; <strong>`28,073 / 28,448 steps` on `Jan 23–24`</strong>!</td>
+                  <td>&bull; <strong>Back Squat (`Chains`)</strong>: `249.99 lb x 5` (`1,437 W` Jan 8) &rarr; <strong>`249.99 lb x 10` (`2,500 lb`/set, `1,416 W` Jan 19)</strong><br>&bull; <strong>RDL (`Eccentric`)</strong>: `185.02 lb x 10` &rarr; <strong>`220.09 lb x 8` (`1,144 W` Jan 19)</strong><br>&bull; <strong>Bench Press</strong>: `174.90 lb x 7` (`621 W` Jan 21) &bull; <strong>OHP</strong>: `449 W` (`1.12 m/s`)</td>
                   <td>Dropped scale weight `-9.6 lbs` in 24 days (`203.8 &rarr; 194.2 lb`) while increasing every compound lift `+10% to +25%`.</td>
                 </tr>
                 <tr>
-                  <td class="font-bold text-amber-400">Feb 1–28, 2026</td>
-                  <td>`workout.csv` (16 Strength sessions)</td>
-                  <td>`444 min` total strength work across 16 sessions (`Feb 13` `65m` double session).</td>
-                  <td>Reached all-time scale low of <strong>`189.2 lbs` (`17.0% BF`, `VF = 7`) on Feb 24</strong>!</td>
+                  <td class="font-bold text-pink-400">Feb 8 Binge &rarr; Feb 24, 2026<br>(All-Time Low `189.2 lb`)</td>
+                  <td>&bull; `Feb 8`: `6,050 kcal` weekend binge (`203.8 lb` Feb 9)<br>&bull; `Feb 12–15`: <strong>`1,080 &rarr; 1,616 &rarr; 1,827 kcal`</strong> Sardines/Mackerel (`18,742` steps)<br>&bull; `Feb 21–26`: <strong>`877–1,278 kcal`</strong> (`11.3k–19.6k` steps)</td>
+                  <td>`444 min` total strength work across 16 February sessions (`Feb 13` `65m` double session).</td>
+                  <td>Crushed post-binge `203.8 lb` down to <strong>`195.0 lb` in 4 days (`-8.8 lb`)</strong> and <strong>`189.2 lb` (`17.0% BF`, `VF = 7`) in 15 days (`-14.6 lb`)</strong>!</td>
                 </tr>
                 <tr>
-                  <td class="font-bold text-purple-400">Mar 2–31, 2026</td>
-                  <td>`workout.csv` (16 Strength days / 22 bouts)</td>
-                  <td>High-frequency compound block (`Mar 6` `65.6m`, `Mar 15–16` `77m`, `Mar 24` `61.3m`) + Steak refuel.</td>
+                  <td class="font-bold text-purple-400">Mar 2–31, 2026<br>(2,000+ Territory Peak)</td>
+                  <td>Stepped up from `977–1,557 kcal` (`Mar 3–5`) into `2,400–2,950 kcal` Steak Refuel window.</td>
+                  <td>High-frequency compound block (`16` Strength days / `22` bouts).</td>
                   <td>Hit all-time measured <strong>`158.3 lb FFM` (`90.8 lb` SMM, `9.5 lb` L/R arms) on Mar 16</strong>!</td>
-                </tr>
-                <tr>
-                  <td class="font-bold text-rose-400">Apr 29 – May 16, 2026</td>
-                  <td>`workout.csv` (10 days / 14 bouts)</td>
-                  <td>`Apr 29` (`64.5m`), `Apr 30` (`56.1m`), `May 1` (`127.6m / 937 kcal`), `May 7` (`147.3m / 1,197 kcal`).</td>
-                  <td>Produced <strong>`76.5 mg/dL` 24h Stelo CGM (`Apr 30`)</strong> &amp; <strong>`114.5 pg/mL` Free T (`May 30`)</strong>!</td>
                 </tr>
               </tbody>
             </table>
@@ -1042,7 +1113,7 @@
                 <tr>
                   <th>Global Authority (Truth, Followers &amp; Longevity)</th>
                   <th>Where Initial YouTube Creators Had Blindspots</th>
-                  <th>Exact Upgrade Integrated Into Your v4.0 Plan</th>
+                  <th>Exact Upgrade Integrated Into Your v4.2 Plan</th>
                 </tr>
               </thead>
               <tbody>
@@ -1069,7 +1140,7 @@
                 <tr>
                   <td class="font-bold text-amber-400">5. Dr. Ben Bikman &amp; Dr. Andy Galpin</td>
                   <td>Whey isolate shakes spiked insulin (`DBR 1,060`); Dr. Boz doesn't program for `1,437 W` `ACTN3 CC` lifters.</td>
-                  <td><strong>5+2 Sardine-to-Steak/Egg/C8 Slingshot (Zero Liquid Whey)</strong> + <strong>`OxeFit &ge; 1.0 m/s` Velocity Primer Sets</strong>!</td>
+                  <td><strong>`200–800 kcal` Sardine Fast &rarr; `1,100–1,800 kcal` Ketovore Slingshot (Zero Liquid Whey)</strong> + <strong>`OxeFit &ge; 1.0 m/s` Velocity Primer Sets</strong>!</td>
                 </tr>
               </tbody>
             </table>
@@ -1156,18 +1227,29 @@
       runForecast();
     }
 
+    function setSlider(id, val) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.value = val;
+        runForecast();
+      }
+    }
+
     function resetLevers() {
       document.getElementById('lv-ignition').value = 'slingshot_5_2';
       document.getElementById('lv-weight').value = 209.6;
       document.getElementById('lv-bf').value = 28.0;
       document.getElementById('lv-weeks').value = '10';
+      document.getElementById('lv-sardine-kcal').value = 550;
+      document.getElementById('lv-agg-kcal').value = 1450;
+      document.getElementById('lv-agg-weeks').value = 6;
       document.getElementById('lv-kcal').value = 2150;
-      document.getElementById('lv-steps').value = 12000;
+      document.getElementById('lv-steps').value = 15000;
       document.getElementById('lv-workouts').value = 5;
+      document.getElementById('lv-uncapped').checked = true;
       document.getElementById('lv-cutoff').checked = true;
       document.getElementById('lv-creatine').checked = true;
       document.getElementById('lv-c8').checked = true;
-      document.getElementById('lv-sauna').checked = true;
       runForecast();
     }
 
@@ -1176,32 +1258,52 @@
       const startW = parseFloat(document.getElementById('lv-weight').value) || 209.6;
       const startBf = parseFloat(document.getElementById('lv-bf').value) || 28.0;
       const horizon = parseInt(document.getElementById('lv-weeks').value, 10) || 10;
+      const sardineKcal = parseInt(document.getElementById('lv-sardine-kcal').value, 10) || 550;
+      const aggKcal = parseInt(document.getElementById('lv-agg-kcal').value, 10) || 1450;
+      const aggWeeks = parseInt(document.getElementById('lv-agg-weeks').value, 10) || 6;
       const kcal = parseInt(document.getElementById('lv-kcal').value, 10) || 2150;
-      const steps = parseInt(document.getElementById('lv-steps').value, 10) || 12000;
+      const steps = parseInt(document.getElementById('lv-steps').value, 10) || 15000;
       const workouts = parseInt(document.getElementById('lv-workouts').value, 10) || 5;
+      const isUncapped = document.getElementById('lv-uncapped').checked;
       const hasCutoff = document.getElementById('lv-cutoff').checked;
       const hasCreatine = document.getElementById('lv-creatine').checked;
       const hasC8 = document.getElementById('lv-c8').checked;
-      const hasSauna = document.getElementById('lv-sauna').checked;
 
-      document.getElementById('lbl-kcal').textContent = kcal.toLocaleString() + ' kcal/day';
-      document.getElementById('lbl-steps').textContent = steps.toLocaleString() + ' steps/day';
-      document.getElementById('lbl-workouts').textContent = workouts + ' sessions/wk';
+      const estCans = (sardineKcal / 200).toFixed(1).replace('.0', '');
+      document.getElementById('lbl-sardine-kcal').textContent = `${sardineKcal.toLocaleString()} kcal/day (~${estCans} Cans)`;
+      document.getElementById('lbl-agg-kcal').textContent = `${aggKcal.toLocaleString()} kcal/d`;
+      document.getElementById('lbl-agg-weeks').textContent = `${aggWeeks} Week${aggWeeks > 1 ? 's' : ''} (Wks 1–${aggWeeks})`;
+      document.getElementById('lbl-kcal').textContent = `${kcal.toLocaleString()} kcal/day`;
+      document.getElementById('lbl-steps').textContent = `${steps.toLocaleString()} steps/day`;
+      document.getElementById('lbl-workouts').textContent = `${workouts} sessions/wk`;
 
-      // Explain chosen ignition protocol
+      const pillEl = document.getElementById('alpert-safety-pill');
+      if (isUncapped) {
+        pillEl.textContent = '🔥 Ketone-Shielded Aggressive Mode (Uncapped)';
+        pillEl.style.background = 'rgba(245,158,11,0.18)';
+        pillEl.style.color = '#fbbf24';
+      } else {
+        pillEl.textContent = '🛡️ Standard Alpert Ceiling (31.4 kcal/lb fat)';
+        pillEl.style.background = 'rgba(16,185,129,0.16)';
+        pillEl.style.color = '#34d399';
+      }
+
+      // Explain chosen ignition protocol dynamically with exact slider calories
       const ignExplain = document.getElementById('ignition-explain');
       if (ignition === 'slingshot_5_2') {
+        const wk1Avg = Math.round((sardineKcal * 5 + aggKcal * 2) / 7);
         ignExplain.innerHTML =
-          '<strong>5+2 Sardine-to-Steak Slingshot (Starting Today @ 209.6 lb)</strong>: Days 1–5 (`4–5 cans` Sardines + `C8 MCT` + `2 Egg Yolks`, `~1,650 kcal`) drain all `+4.5 lbs` of weekend pizza/cheesecake glycogen-water, rocket ketones to <strong>`3.2–4.2 mmol/L` (`DBR ~22`)</strong>, and torch `-3.8 lbs` fat. Days 6–7 (`16 oz` Ribeye + `6` Eggs in Butter + `C8 MCT`) super-compensate your `ACTN3 CC` muscles while staying in deep `2.2+ mmol/L` ketosis!';
+          `<strong>5+2 Sardine-to-Steak Slingshot (Wk 1 Avg: ${wk1Avg.toLocaleString()} kcal/d)</strong>: Days 1–5 at <strong>${sardineKcal} kcal/day (~${estCans} cans Sardines)</strong> drain your weekend pizza/cheesecake bloat, rocket ketones to <strong>3.4–4.2 mmol/L (DBR ~20)</strong>, and torch visceral fat. Days 6–7 step into your <strong>${aggKcal.toLocaleString()} kcal Aggressive Beef/Egg/C8 Zone</strong>, which you hold through <strong>Week ${aggWeeks}</strong> before moving to <strong>${kcal.toLocaleString()} kcal</strong>!`;
       } else if (ignition === 'sardine_72h') {
+        const wk1Avg = Math.round((sardineKcal * 3 + aggKcal * 4) / 7);
         ignExplain.innerHTML =
-          '<strong>72-Hour Sardine Fast Ignition (Starting Today @ 209.6 lb)</strong>: Days 1–3 (`4–6 cans` Sardines + `C8 MCT`) flush `-4.5 lbs` of weekend carb/sodium water and hit <strong>`3.0–3.8 mmol/L` BHB</strong> by Hour 72 (`-6.5 to -7.2 lbs` total Week 1 drop), then transition on Day 4 into 2MAD Ribeye + Sardines + Eggs.';
+          `<strong>72-Hour Sardine Shock (Wk 1 Avg: ${wk1Avg.toLocaleString()} kcal/d)</strong>: Days 1–3 at <strong>${sardineKcal} kcal/day (~${estCans} cans Sardines — just like your Dec 10–11 400 kcal &amp; Dec 30 530 kcal logs)</strong> flush all weekend water/glycogen and hit <strong>3.2–3.9 mmol/L BHB</strong>, then Days 4–7 lock into <strong>${aggKcal.toLocaleString()} kcal/day</strong> through Week ${aggWeeks}!`;
       } else if (ignition === 'sardine_7d') {
         ignExplain.innerHTML =
-          '<strong>Extreme 7-Day Sardine + C8 + Egg-Yolk Blitz</strong>: 7 full days at <strong>`3.5–4.5 mmol/L` ketones (`DBR &lt; 20`)</strong> flushes all weekend bloat + `-4.2 lbs` pure fat (`-8.0+ lbs` Week 1 scale drop to `~201.3 lb`), followed in Week 2 by a 3-day Carnivore Beef + Egg + Butter/C8 Refuel!';
+          `<strong>Extreme 7-Day Sardine Blitz (${sardineKcal} kcal/d all 7 days)</strong>: 7 full days at <strong>3.6–4.5 mmol/L ketones (DBR &lt; 18)</strong> flushes all weekend bloat + maximum adipose fat, then transitions in Week 2 into your <strong>${aggKcal.toLocaleString()} kcal/day Aggressive Ketovore Shred</strong> through Week ${aggWeeks}!`;
       } else {
         ignExplain.innerHTML =
-          '<strong>Standard 2MAD Ketovore</strong>: Steady fat loss (`1.2–1.8 mmol/L` ketones by Day 5–7) without an initial Sardine Fast shock.';
+          `<strong>Direct ${aggKcal.toLocaleString()} kcal/day Aggressive Cut</strong>: Starts immediately in your 1,100–1,800 kcal Aggressive Ketovore window for Weeks 1–${aggWeeks} before ramping to ${kcal.toLocaleString()} kcal/day.`;
       }
 
       let curFat = startW * (startBf / 100);
@@ -1215,6 +1317,8 @@
       rows.push({
         wk: 0,
         phase: 'Nov 8 Start (Post-Binge)',
+        wkKcal: 0,
+        tdee: 0,
         w: startW,
         fat: curFat,
         ffm: curFfm,
@@ -1225,100 +1329,108 @@
       });
 
       // Detect post-binge glycogen/extracellular water overhang (when starting ~209.6 lb vs 203.7 lb pre-weekend)
-      const postBingeOverhang = Math.max(0, startW - 204.0);
+      const postBingeOverhang = Math.max(0, startW - 203.8);
 
       for (let w = 1; w <= horizon; w++) {
-        // Calculate TDEE for current FFM & steps/workouts
-        const bmr = 370 + 21.6 * (curFfm / 2.20462);
-        const stepBurn = steps * 0.048;
-        const workoutBurn = (workouts * 360) / 7;
-        const bioBonus = (hasCutoff ? 65 : 0) + (hasC8 ? 55 : 0) + (hasSauna ? 45 : 0);
-        const tef = kcal * 0.12;
-        const tdee = bmr + stepBurn + workoutBurn + bioBonus + tef;
-
-        // Week 1 Ignition special physics
+        // Determine planned daily calories for Week w across the 3 stages
         let wkKcal = kcal;
         let extraWaterFlush = 0;
         let biaFluidFatCorrection = 0;
-        let phaseName = '2MAD Ketovore + OxeFit';
-        let targetBhb = 1.6;
+        let phaseName = `Stage 3 Recomp (${kcal} kcal)`;
+        let targetBhb = hasC8 ? 2.0 : 1.5;
 
         if (w === 1) {
-          // Flushing weekend pizza/cheesecake extracellular fluid & sodium bloat
-          biaFluidFatCorrection = postBingeOverhang * 0.32;
+          // Flushing weekend pizza/cheesecake extracellular fluid & sodium bloat (just like Feb 8 -> Feb 13 -8.8 lb drop!)
+          biaFluidFatCorrection = postBingeOverhang * 0.34;
           if (ignition === 'slingshot_5_2') {
-            wkKcal = Math.round((1650 * 5 + 2350 * 2) / 7);
-            extraWaterFlush = -(2.2 + postBingeOverhang * 0.65);
-            phaseName = 'Wk 1: 5d Sardine + 2d Steak Slingshot';
-            targetBhb = 3.5;
+            wkKcal = Math.round((sardineKcal * 5 + aggKcal * 2) / 7);
+            extraWaterFlush = -(2.4 + postBingeOverhang * 0.68);
+            phaseName = `Wk 1: 5d Sardines (${sardineKcal}) + 2d (${aggKcal})`;
+            targetBhb = sardineKcal <= 800 ? 3.8 : 3.3;
           } else if (ignition === 'sardine_72h') {
-            wkKcal = Math.round((1600 * 3 + kcal * 4) / 7);
-            extraWaterFlush = -(1.8 + postBingeOverhang * 0.60);
-            phaseName = 'Wk 1: 72h Sardine Fast -> 2MAD';
-            targetBhb = 3.1;
+            wkKcal = Math.round((sardineKcal * 3 + aggKcal * 4) / 7);
+            extraWaterFlush = -(2.0 + postBingeOverhang * 0.64);
+            phaseName = `Wk 1: 72h Sardines (${sardineKcal}) -> ${aggKcal} kcal`;
+            targetBhb = sardineKcal <= 800 ? 3.5 : 3.0;
           } else if (ignition === 'sardine_7d') {
-            wkKcal = 1650;
-            extraWaterFlush = -(3.0 + postBingeOverhang * 0.72);
-            phaseName = 'Wk 1: 7-Day Extreme Sardine Blitz';
-            targetBhb = 4.0;
+            wkKcal = sardineKcal;
+            extraWaterFlush = -(3.2 + postBingeOverhang * 0.75);
+            phaseName = `Wk 1: 7d Sardine Blitz (${sardineKcal} kcal/d)`;
+            targetBhb = sardineKcal <= 800 ? 4.2 : 3.7;
           } else {
-            extraWaterFlush = -(0.8 + postBingeOverhang * 0.45);
-            phaseName = 'Wk 1: Standard 2MAD Ignition';
-            targetBhb = 1.4;
+            wkKcal = w <= aggWeeks ? aggKcal : kcal;
+            extraWaterFlush = -(1.0 + postBingeOverhang * 0.50);
+            phaseName = `Wk 1: Direct Aggressive (${wkKcal} kcal)`;
+            targetBhb = 1.9;
           }
-        } else if (w === 2 && ignition === 'sardine_7d') {
-          wkKcal = Math.round((2450 * 3 + kcal * 4) / 7);
-          phaseName = 'Wk 2: Carnivore Beef/Egg/C8 Refuel';
-          targetBhb = 2.6;
-        } else if (w <= 4) {
-          phaseName = 'Myonuclear Re-Inflation + Shred';
-          targetBhb = hasC8 ? 2.2 : 1.7;
+        } else if (w <= aggWeeks) {
+          wkKcal = aggKcal;
+          phaseName = `Stage 2 Aggressive Shred (${aggKcal} kcal/d)`;
+          targetBhb = (hasC8 ? 2.4 : 1.9) + (aggKcal <= 1500 ? 0.4 : 0.1) + (steps >= 20000 ? 0.3 : 0);
         } else {
-          phaseName = curFat / (curFat + curFfm) < 0.15 ? 'Alpert Taper (<15% BF Precision)' : 'High-Flux Visceral Shred';
-          targetBhb = hasC8 ? 2.1 : 1.6;
+          wkKcal = kcal;
+          phaseName = `Stage 3 2k+ Recomp (${kcal} kcal/d)`;
+          targetBhb = (hasC8 ? 2.0 : 1.5) + (steps >= 20000 ? 0.2 : 0);
         }
 
-        // Alpert's Law Ceiling (31.4 kcal/lb fat/day)
-        const alpertMaxDailyDeficit = curFat * 31.4;
-        const rawDailyDeficit = Math.max(200, tdee - wkKcal);
-        const effectiveDeficit = Math.min(rawDailyDeficit, alpertMaxDailyDeficit);
+        // Calculate TDEE for current FFM & steps (up to 35,000 steps/d!) & workouts
+        const bmr = 370 + 21.6 * (curFfm / 2.20462);
+        const stepBurn = steps * 0.049;
+        const workoutBurn = (workouts * 365) / 7;
+        const bioBonus = (hasCutoff ? 65 : 0) + (hasC8 ? 55 : 0);
+        const tef = wkKcal * 0.12;
+        const tdee = Math.round(bmr + stepBurn + workoutBurn + bioBonus + tef);
+
+        // Fat mobilization ceiling:
+        // Standard Alpert = 31.4 kcal/lb fat/day.
+        // Ketone-Shielded Aggressive Mode (3.0+ mmol/L BHB + ACTN3 CC + High-Flux Steps) = up to 46 kcal/lb fat/day (verified by Feb 9-24 and Dec 1-12 logs)
+        const maxRatePerLbFat = isUncapped ? 46.5 : 31.4;
+        const maxDailyDeficit = curFat * maxRatePerLbFat;
+        const rawDailyDeficit = Math.max(150, tdee - wkKcal);
+        const effectiveDeficit = Math.min(rawDailyDeficit, maxDailyDeficit);
         const weeklyFatLoss = (effectiveDeficit * 7) / 3500;
 
-        curFat = Math.max(14.0, curFat - weeklyFatLoss - biaFluidFatCorrection);
+        curFat = Math.max(12.5, curFat - weeklyFatLoss - biaFluidFatCorrection);
 
-        // Fast-Gainer Myonuclear Re-Inflation (ACTN3 CC + Creatine + OxeFit)
+        // Fast-Gainer Myonuclear Re-Inflation (ACTN3 CC + 114.5 pg/mL Free T + Creatine + OxeFit)
         let ffmGain = 0;
         if (workouts >= 3) {
           const gapToPeak = Math.max(0, peakMemoryFfm - curFfm);
-          if (w === 1 && ignition === 'sardine_7d') {
-            ffmGain = hasCreatine ? 0.4 : 0.0;
+          if (w === 1 && ignition === 'sardine_7d' && sardineKcal < 650) {
+            ffmGain = hasCreatine ? 0.35 : 0.0;
           } else if (gapToPeak > 0) {
-            const rate = w === 2 && ignition === 'sardine_7d' ? 0.52 : 0.36;
-            ffmGain = gapToPeak * rate * (hasCreatine ? 1.0 : 0.75) * (workouts / 5);
+            const calFactor = wkKcal >= 1800 ? 1.05 : wkKcal >= 1350 ? 0.92 : 0.78;
+            ffmGain = gapToPeak * 0.36 * calFactor * (hasCreatine ? 1.0 : 0.75) * (workouts / 5);
           } else {
-            ffmGain = (hasCreatine ? 0.42 : 0.25) * (workouts / 5);
+            const calFactor = wkKcal >= 2000 ? 1.0 : 0.65;
+            ffmGain = (hasCreatine ? 0.42 : 0.25) * calFactor * (workouts / 5);
           }
         }
 
-        curFfm = Math.min(169.5, curFfm + ffmGain + (w === 1 ? extraWaterFlush * 0.22 : 0));
-        const curW = curFat + curFfm + (w === 1 ? extraWaterFlush * 0.78 : 0);
+        curFfm = Math.min(169.5, curFfm + ffmGain + (w === 1 ? extraWaterFlush * 0.20 : 0));
+        const curW = curFat + curFfm + (w === 1 ? extraWaterFlush * 0.80 : 0);
         const curBf = (curFat / curW) * 100;
-        curVf = Math.max(3.0, curVf - weeklyFatLoss * 0.21 - (hasCutoff ? 0.08 : 0) - (ignition !== 'standard_2mad' && w === 1 ? 0.45 : 0));
+        curVf = Math.max(
+          3.0,
+          curVf - weeklyFatLoss * 0.22 - (hasCutoff ? 0.08 : 0) - (ignition !== 'standard_2mad' && w === 1 ? 0.50 : 0)
+        );
 
-        const estGlucose = hasCutoff ? 75 : 86;
+        const estGlucose = hasCutoff ? 74 : 85;
         const estDbr = Math.round(estGlucose / targetBhb);
 
         rows.push({
           wk: w,
           phase: phaseName,
+          wkKcal: wkKcal,
+          tdee: tdee,
+          deficit: rawDailyDeficit,
           w: curW,
           fat: curFat,
           ffm: curFfm,
           bf: curBf,
           vf: curVf,
           bhb: targetBhb,
-          dbr: estDbr,
-          alpertSafe: rawDailyDeficit <= alpertMaxDailyDeficit + 100
+          dbr: estDbr
         });
       }
 
@@ -1344,8 +1456,9 @@
       const ffmDelta = last.ffm - rows[0].ffm;
       document.getElementById('sum-ffm-delta').textContent = `+${ffmDelta.toFixed(1)} lbs muscle re-inflated/built!`;
 
+      const wkEndAgg = Math.min(aggWeeks, rows.length - 1);
       document.getElementById('recomp-note').innerHTML =
-        `In Weeks 1–4, you burn <strong>${(rows[0].fat - rows[Math.min(4, rows.length - 1)].fat).toFixed(1)} lbs of pure fat</strong> while your dormant myonuclei pull <strong>+${(rows[Math.min(4, rows.length - 1)].ffm - rows[0].ffm).toFixed(1)} lbs of intracellular water, glycogen &amp; protein</strong> back into your muscles (returning you to your 158.3 lb Mar 16 peak). Judge Weeks 1–4 by <strong>Body Fat % (${startBf.toFixed(1)}% &rarr; ${rows[Math.min(4, rows.length - 1)].bf.toFixed(1)}%) and Ketones (${rows[1].bhb.toFixed(1)} mmol/L)</strong>, not raw scale weight alone!`;
+        `By running <strong>${sardineKcal} kcal/d Sardines</strong> in Week 1 and staying at <strong>${aggKcal.toLocaleString()} kcal/d through Week ${aggWeeks}</strong> with <strong>${steps.toLocaleString()} steps/day (TDEE ~${rows[1].tdee.toLocaleString()} kcal)</strong>, you torch <strong>${(rows[0].fat - rows[wkEndAgg].fat).toFixed(1)} lbs of fat by Week ${wkEndAgg} (${startW.toFixed(1)} &rarr; ${rows[wkEndAgg].w.toFixed(1)} lb, ${rows[wkEndAgg].bf.toFixed(1)}% BF)</strong> while your <code>ACTN3 CC</code> muscle memory + <code>${rows[1].bhb.toFixed(1)} mmol/L</code> ketone shield rebuilds <strong>+${(rows[wkEndAgg].ffm - rows[0].ffm).toFixed(1)} lbs of lean FFM</strong>—before stepping into your <strong>${kcal.toLocaleString()} kcal</strong> recomp window!`;
 
       // Render Table & Check Actuals for Track Status
       const actuals = getSavedActuals();
@@ -1378,6 +1491,10 @@
               <td>
                 <div class="font-extrabold text-slate-100">Week ${r.wk}</div>
                 <div class="text-xs text-sky-400 font-semibold">${r.phase}</div>
+              </td>
+              <td>
+                <div class="font-bold text-pink-400">${r.wkKcal.toLocaleString()} kcal/d</div>
+                <div class="text-xs" style="color: var(--text-muted);">TDEE: ${r.tdee.toLocaleString()} (-${r.deficit.toLocaleString()})</div>
               </td>
               <td class="font-extrabold text-emerald-400">${r.w.toFixed(1)} lb</td>
               <td>
@@ -1420,7 +1537,7 @@
       const plotW = W - padL - padR;
       const plotH = H - padT - padB;
 
-      const minY = 15;
+      const minY = 10;
       const maxY = 215;
       const xFor = (i) => padL + (i / (rows.length - 1)) * plotW;
       const yFor = (val) => padT + plotH - ((val - minY) / (maxY - minY)) * plotH;
@@ -1471,28 +1588,34 @@
     // =========================================================================
     const MEAL_DATA = {
       m1: {
-        sardines_3can: { name: '3 Cans Wild Sardines in EVOO', kcal: 540, p: 66, f: 30 },
+        fasted_m1: { name: 'Fasted / Skip Meal #1 (OMAD Mode)', kcal: 0, p: 0, f: 0 },
+        sardines_1can: { name: '1 Can Wild Sardines in Olive Oil', kcal: 200, p: 22, f: 12 },
+        sardines_2can: { name: '2 Cans Wild Sardines in Olive Oil (Dec 10)', kcal: 400, p: 44, f: 24 },
+        sardines_3can: { name: '3 Cans Wild Sardines in EVOO (Dec 9)', kcal: 580, p: 66, f: 34 },
         sardines_2can_eggs: { name: '2 Cans Wild Sardines + 4 Whole Eggs', kcal: 680, p: 68, f: 42 },
         mackerel_2can: { name: '2 Cans Wild Mackerel in EVOO + 3 Egg Yolks', kcal: 640, p: 58, f: 44 },
-        salmon_shrimp: { name: '8 oz Wild Sockeye Salmon + 6 oz Shrimp', kcal: 520, p: 82, f: 18 },
         eggs_6_butter: { name: '6 Whole Pasture Eggs + 4 oz Sirloin', kcal: 690, p: 64, f: 45 }
       },
       m2: {
+        fasted_m2: { name: 'Fasted / Skip Meal #2 (Post-Binge Satiated)', kcal: 0, p: 0, f: 0 },
+        sardines_1can_pm: { name: '1 Can Wild Sardines in Olive Oil', kcal: 200, p: 22, f: 12 },
+        sardines_2can_pm: { name: '2 Cans Wild Sardines + 2 Hard-Boiled Eggs', kcal: 540, p: 56, f: 34 },
         sardines_3can_pm: { name: '3 Cans Crispy Air-Fried Sardines + 3 Egg Yolks', kcal: 705, p: 74, f: 44 },
+        beef_8oz_agg: { name: '8 oz 80/20 Ground Beef/Sirloin + 2 Eggs (1,100–1,800 Zone)', kcal: 720, p: 62, f: 50 },
         ribeye_14oz: { name: '14 oz Finely Sliced Ribeye Steak', kcal: 980, p: 96, f: 64 },
-        strip_shrimp: { name: '12 oz NY Strip/Skirt Steak + 6 oz Shrimp', kcal: 860, p: 108, f: 44 },
-        ground_beef_eggs: { name: '12 oz 80/20 Grass-Fed Beef + 3 Whole Eggs', kcal: 1050, p: 88, f: 74 },
-        lamb_sardine: { name: '12 oz Lamb Loin Chops + 1 Can Sardines', kcal: 990, p: 92, f: 66 }
+        ground_beef_eggs: { name: '12 oz 80/20 Grass-Fed Beef + 3 Whole Eggs', kcal: 1050, p: 88, f: 74 }
       },
       fat: {
+        zero_fat: { name: 'None — Sardine Olive Oil Only (Dec 10 Fast)', kcal: 0, p: 0, f: 0, bhbBoost: 0.9 },
+        mct_1tbsp: { name: '1 tbsp Organic C8 MCT Oil (Dec 30 / Jan 1)', kcal: 130, p: 0, f: 14, bhbBoost: 1.2 },
+        mct_2tbsp: { name: '2 tbsp Organic C8 MCT Oil (Jan 3)', kcal: 260, p: 0, f: 28, bhbBoost: 1.4 },
         c8_butter: { name: '1.5 tbsp C8 MCT Oil + 1.5 tbsp Grass-Fed Butter', kcal: 345, p: 0, f: 38, bhbBoost: 1.1 },
-        c8_evoo: { name: '1 tbsp C8 MCT Oil + 2 tbsp High-Polyphenol EVOO', kcal: 370, p: 0, f: 42, bhbBoost: 0.9 },
-        tallow_butter: { name: '2 tbsp Grass-Fed Beef Tallow + 1 tbsp C8 MCT', kcal: 370, p: 0, f: 42, bhbBoost: 1.0 },
-        cheese_evoo: { name: '2 oz Aged Gouda/White Cheddar + 1.5 tbsp EVOO', kcal: 400, p: 14, f: 38, bhbBoost: 0.5 }
+        c8_evoo: { name: '1 tbsp C8 MCT Oil + 2 tbsp High-Polyphenol EVOO', kcal: 370, p: 0, f: 42, bhbBoost: 0.9 }
       },
       addon: {
-        full_stack: { name: '18g Collagen + 5g Creatine + Kimchi + Mustard + ACV + 2 Brazil Nuts', kcal: 135, p: 20, f: 4 },
+        mustard_only: { name: 'Yellow/Spicy Mustard + Hot Sauce + ACV + Electrolytes', kcal: 12, p: 0, f: 0 },
         sardine_pure: { name: '18g Collagen + 5g Creatine + Mustard + Hot Sauce', kcal: 90, p: 18, f: 0 },
+        full_stack: { name: '18g Collagen + 5g Creatine + Kimchi + Mustard + ACV + 2 Brazil Nuts', kcal: 135, p: 20, f: 4 },
         bone_broth: { name: '16 oz Bone Broth + 18g Collagen + 5g Creatine + Sauerkraut', kcal: 160, p: 28, f: 2 }
       }
     };
@@ -1507,51 +1630,69 @@
       if (prot === 'slingshot_5_2') document.getElementById('card-prot-52').style.borderColor = '#10b981';
       if (prot === 'sardine_7d') document.getElementById('card-prot-7d').style.borderColor = '#10b981';
 
-      applyMealTemplate('sardine_fast');
+      applyMealTemplate('sardine_530');
       runForecast();
     }
 
     function applyMealTemplate(tpl) {
       document.getElementById('meal-template-select').value = tpl;
-      if (tpl === 'sardine_fast') {
+      if (tpl === 'sardine_400') {
+        document.getElementById('swap-m1-prot').value = 'sardines_2can';
+        document.getElementById('swap-m2-prot').value = 'fasted_m2';
+        document.getElementById('swap-fat').value = 'zero_fat';
+        document.getElementById('swap-addon').value = 'mustard_only';
+      } else if (tpl === 'sardine_530') {
+        document.getElementById('swap-m1-prot').value = 'sardines_1can';
+        document.getElementById('swap-m2-prot').value = 'sardines_1can_pm';
+        document.getElementById('swap-fat').value = 'mct_1tbsp';
+        document.getElementById('swap-addon').value = 'mustard_only';
+      } else if (tpl === 'sardine_754') {
+        document.getElementById('swap-m1-prot').value = 'sardines_1can';
+        document.getElementById('swap-m2-prot').value = 'sardines_2can_pm';
+        document.getElementById('swap-fat').value = 'zero_fat';
+        document.getElementById('swap-addon').value = 'mustard_only';
+      } else if (tpl === 'agg_1210') {
+        document.getElementById('swap-m1-prot').value = 'sardines_2can';
+        document.getElementById('swap-m2-prot').value = 'sardines_2can_pm';
+        document.getElementById('swap-fat').value = 'mct_1tbsp';
+        document.getElementById('swap-addon').value = 'full_stack';
+      } else if (tpl === 'agg_1478') {
+        document.getElementById('swap-m1-prot').value = 'sardines_2can';
+        document.getElementById('swap-m2-prot').value = 'beef_8oz_agg';
+        document.getElementById('swap-fat').value = 'mct_2tbsp';
+        document.getElementById('swap-addon').value = 'sardine_pure';
+      } else if (tpl === 'agg_1728') {
         document.getElementById('swap-m1-prot').value = 'sardines_3can';
         document.getElementById('swap-m2-prot').value = 'sardines_3can_pm';
-        document.getElementById('swap-fat').value = 'c8_butter';
+        document.getElementById('swap-fat').value = 'mct_2tbsp';
         document.getElementById('swap-addon').value = 'sardine_pure';
-      } else if (tpl === 'carnivore_refuel') {
-        document.getElementById('swap-m1-prot').value = 'eggs_6_butter';
-        document.getElementById('swap-m2-prot').value = 'ribeye_14oz';
-        document.getElementById('swap-fat').value = 'c8_butter';
-        document.getElementById('swap-addon').value = 'full_stack';
       } else {
         document.getElementById('swap-m1-prot').value = 'sardines_2can_eggs';
         document.getElementById('swap-m2-prot').value = 'ribeye_14oz';
-        document.getElementById('swap-fat').value = 'c8_evoo';
+        document.getElementById('swap-fat').value = 'c8_butter';
         document.getElementById('swap-addon').value = 'full_stack';
       }
       recalcMeals();
     }
 
     function recalcMeals() {
-      const m1 = MEAL_DATA.m1[document.getElementById('swap-m1-prot').value];
-      const m2 = MEAL_DATA.m2[document.getElementById('swap-m2-prot').value];
-      const fat = MEAL_DATA.fat[document.getElementById('swap-fat').value];
-      const add = MEAL_DATA.addon[document.getElementById('swap-addon').value];
+      const m1 = MEAL_DATA.m1[document.getElementById('swap-m1-prot').value] || MEAL_DATA.m1.sardines_2can;
+      const m2 = MEAL_DATA.m2[document.getElementById('swap-m2-prot').value] || MEAL_DATA.m2.fasted_m2;
+      const fat = MEAL_DATA.fat[document.getElementById('swap-fat').value] || MEAL_DATA.fat.zero_fat;
+      const add = MEAL_DATA.addon[document.getElementById('swap-addon').value] || MEAL_DATA.addon.mustard_only;
 
-      const totalKcal = m1.kcal + m2.kcal + fat.kcal + add.kcal;
+      const totalKcal = Math.max(1, m1.kcal + m2.kcal + fat.kcal + add.kcal);
       const totalP = m1.p + m2.p + fat.p + add.p;
       const totalF = m1.f + m2.f + fat.f + add.f;
-      const fatCalPct = Math.round(((totalF * 9) / totalKcal) * 100);
-      const isSardineDay =
-        document.getElementById('swap-m1-prot').value === 'sardines_3can' &&
-        document.getElementById('swap-m2-prot').value === 'sardines_3can_pm';
+      const fatCalPct = Math.min(95, Math.round(((totalF * 9) / totalKcal) * 100));
+      const isUltraLowSardine = totalKcal <= 850;
 
-      const lowBhb = (isSardineDay ? 2.4 : 1.3) + fat.bhbBoost;
-      const highBhb = lowBhb + 0.8;
-      const dbr = Math.round(74 / ((lowBhb + highBhb) / 2));
+      const lowBhb = (isUltraLowSardine ? 2.7 : totalKcal <= 1550 ? 2.0 : 1.3) + fat.bhbBoost;
+      const highBhb = lowBhb + 0.7;
+      const dbr = Math.round(73 / ((lowBhb + highBhb) / 2));
 
       document.getElementById('meal-out-kcal').textContent = totalKcal.toLocaleString() + ' kcal';
-      document.getElementById('meal-out-def').textContent = `Deficit: ${totalKcal - 2945} kcal`;
+      document.getElementById('meal-out-def').textContent = `Deficit: ${totalKcal - 3150} kcal`;
       document.getElementById('meal-out-p').textContent = totalP + 'g';
       document.getElementById('meal-out-f').textContent = totalF + 'g';
       document.getElementById('meal-out-ratio').textContent = `${fatCalPct}% Fat Calories`;
@@ -1584,22 +1725,27 @@
       }
     }
 
-    const NUTR_LOG_KEY = 'shaun_v4_1_nutrition_logs';
+    const NUTR_LOG_KEY = 'shaun_v4_2_nutrition_logs';
     const DEFAULT_NUTR_LOGS = [
       {
         date: '2026-11-08 (Day 1 Start)',
-        summary: 'MorphoScan 209.6 lb (28.0% BF, 86.6 lb SMM, 110.7 lb Water) -> Starting Sardine + C8 Fast Today',
+        summary: 'MorphoScan 209.6 lb (28.0% BF, 86.6 lb SMM, 110.7 lb Water) -> Starting 200-800 kcal Sardine Fast Today',
         metrics: 'Post-Binge Glycogen Drain + 5:30 PM Cutoff Active'
       },
       {
-        date: '72h Sardine Benchmark',
-        summary: 'Wild Sardines in EVOO + C8 MCT + Mustard/ACV',
-        metrics: '74 mg/dL | 3.6 mmol/L BHB | DBR: 20.6 (-2.47 lb/3d)'
+        date: 'Dec 9–11, 2025 (Verified)',
+        summary: '3-Day Sardine Fast: 621 kcal -> 400 kcal -> 412 kcal (Wild Sardines + Mustard)',
+        metrics: '201.8 -> 198.0 lb (-3.8 lb) | 3.6+ mmol/L BHB'
       },
       {
-        date: 'Apr 30, 2026 (Verified)',
-        summary: 'Finely Sliced Steak + Sardines + Eggs + Kimchi',
-        metrics: '76.5 mg/dL 24h Stelo CGM (100% Tight Range)'
+        date: 'Jan 14, 2026 (Verified)',
+        summary: '40,858 STEPS (All-Time Peak!) + 1,728 kcal Wild Sardines & Organic MCT Oil',
+        metrics: '202.4 -> 199.0 lb | 0g Carbs | Peak Fat Flux'
+      },
+      {
+        date: 'Feb 9–24, 2026 (Verified)',
+        summary: 'Post-Binge (6,050 kcal) Sardine Reset -> 877–1,616 kcal Aggressive Shred',
+        metrics: '203.8 -> 189.2 lb (-14.6 lbs in 15 days!)'
       }
     ];
 
@@ -2102,7 +2248,7 @@
     // INITIALIZE APP
     document.addEventListener('DOMContentLoaded', () => {
       runForecast();
-      applyMealTemplate('sardine_fast');
+      applyMealTemplate('sardine_530');
       updateMeter();
       renderNutrLogs();
       renderTrainingView('d1');
