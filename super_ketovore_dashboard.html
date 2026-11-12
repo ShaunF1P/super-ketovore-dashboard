@@ -336,9 +336,9 @@
           <div class="text-xs text-sky-300">SMM: 85.8 lb (42.5%!) | Both Arms HIGH (115.5% / 115.3%!)</div>
         </div>
         <div class="sub-card">
-          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Live MyMojo &amp; C8 Shield</div>
-          <div class="text-lg font-extrabold text-purple-400 mt-0.5" id="hdr-ketones">0.8–1.6+ mmol/L</div>
-          <div class="text-xs text-purple-300" id="hdr-dbr">🔥 2 tbsp C8 + 2 tbsp ACV + &lt;5:30 PM = -2.7 lb Fat/24h!</div>
+          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Live MyMojo (`10:33 AM`)</div>
+          <div class="text-lg font-extrabold text-purple-400 mt-0.5" id="hdr-ketones">0.9 mmol/L (BG: 69)</div>
+          <div class="text-xs text-purple-300" id="hdr-dbr">🔥 GKI: 4.2 (-1.0!) &bull; AM DBR: 76.7 (&lt;80 Cracked!)</div>
         </div>
         <div class="sub-card">
           <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Score, Age &amp; BMI</div>
@@ -347,18 +347,18 @@
         </div>
       </div>
 
-      <!-- TODAY'S NOV 12 (09:09 AM) 201.8 LB / SCORE 78 / VISCERAL FAT 9 BREAKTHROUGH BANNER -->
+      <!-- TODAY'S NOV 12 (09:09 AM SCAN + 10:33 AM MYMOJO) BREAKTHROUGH BANNER -->
       <div class="sub-card mt-3" style="border-left: 4px solid #10b981; background: linear-gradient(135deg, rgba(16, 185, 129, 0.16), rgba(14, 165, 233, 0.10));">
         <div class="flex flex-wrap items-center justify-between gap-2">
           <div class="text-xs sm:text-sm font-extrabold text-emerald-400">
-            🚀 NOV 12 BREAKTHROUGH (`09:09 AM`): `201.8 lb (-2.4 lb Overnight / -7.8 lb in 4 Days!)` | `52.0 lb Fat (-2.7 lb Overnight / -6.6 lb Total!)` | `VF 10 &rarr; 9 (NORMAL!)` | `Score 78!`
+            🚀 NOV 12 DOUBLE BREAKTHROUGH: `201.8 lb (-7.8 lb!)` | `BG 69 / Ketones 0.9 (GKI 4.2, AM DBR 76.7 &lt;80!)` | `52.0 lb Fat (-6.6 lb!)` | `VF 10 &rarr; 9` | `Score 78!`
           </div>
           <span class="pill-badge" style="background: rgba(16,185,129,0.22); color: #34d399;">
-            1.9 lb BELOW Pre-Binge Low (`203.7`) &amp; Just 1.9 lb From `199.9 lb`!
+            AM Dr. Boz Ratio &lt;80 Cracked (`76.7`) — 1.9 lb From `199.9 lb`!
           </span>
         </div>
         <p class="text-xs mt-1" style="color: var(--text-sub);">
-          <strong>Simultaneous Fat Destruction + Muscle Gain in 24 Hours:</strong> Yesterday's **`~1,160 kcal` formula** (`2 boxes` Chicken Links + `2 heaping tsp` Guac + **`2 tbsp C8 MCT Oil`** + **`2x` Slate `32g` Shakes** + `2 tbsp ACV` + `40` Dips / `40` Knee-to-Chest Raises / `20` Squats, 100% done **`&lt;5:30 PM`**) torched **`-2.7 lbs` of Body Fat overnight (`54.7 &rarr; 52.0 lb`, Trunk Fat `29.5 &rarr; 28.0 lb`, SubQ Fat `19.2% &rarr; 18.4%`)**, knocked **Visceral Fat Grade from `10` down into Healthy/Normal `9`**, AND simultaneously **gained `+0.3 lb` Skeletal Muscle (`85.5 &rarr; 85.8 lb`, `42.5%`), `+0.2 lb` FFM (`149.5 lb`), `+2 kcal` BMR (`1,836`), and flipped BOTH Arms into `HIGH` Muscle Balance (`115.5% L / 115.3% R`)**!
+          <strong>100% Blood + Scan Proof of Your `~1,160 kcal` Formula:</strong> Even with <strong>`2x` Slate `32g` Shakes + `2 boxes` Chicken Links + Guac</strong> yesterday, stacking **`2 tbsp C8 MCT Oil` + `2 tbsp ACV` + `100` immediate Rack/Squat reps + `&lt;5:30 PM` cutoff** made your `10:33 AM` morning blood metrics <strong>even deeper than yesterday</strong>: Glucose dropped `75 &rarr; 69 mg/dL`, Ketones rose `0.8 &rarr; 0.9 mmol/L`, `GKI` improved a full point (`5.2 &rarr; 4.2`), and **your Morning Dr. Boz Ratio officially cracked `&lt;80` (`93.8 &rarr; 76.7`)**—all while dropping `-2.7 lbs` fat overnight, knocking Visceral Fat to Healthy `9`, and **gaining `+0.3 lb` Skeletal Muscle (`85.8 lb`, Both Arms `HIGH`)**!
         </p>
       </div>
 
@@ -991,11 +991,11 @@
             <div class="grid-3">
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Glucose (`mg/dL`)</label>
-                <input type="number" id="kt-glucose" value="75" min="45" max="200" oninput="updateMeter()" />
+                <input type="number" id="kt-glucose" value="69" min="45" max="200" oninput="updateMeter()" />
               </div>
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Ketones (`mmol/L`)</label>
-                <input type="number" id="kt-bhb" value="0.8" min="0.1" max="7.0" step="0.1" oninput="updateMeter()" />
+                <input type="number" id="kt-bhb" value="0.9" min="0.1" max="7.0" step="0.1" oninput="updateMeter()" />
               </div>
               <div class="flex items-end">
                 <button onclick="saveMeterReading()" class="nav-pill active w-full justify-center">Save Reading</button>
@@ -2115,8 +2115,13 @@
       }
     }
 
-    const NUTR_LOG_KEY = 'shaun_v5_2_nutrition_logs';
+    const NUTR_LOG_KEY = 'shaun_v5_3_nutrition_logs';
     const DEFAULT_NUTR_LOGS = [
+      {
+        date: '2026-11-12 (10:33 AM MyMojoHealth 🔥)',
+        summary: 'Glucose: 69 mg/dL (-6!) | Ketones: 0.9 mmol/L (+0.1!) | GKI: 4.2 (-1.0!) | AM Dr. Boz Ratio: 76.7 (<80 CRACKED!)',
+        metrics: 'Deeper ketosis AFTER 2x Slate 32g Shakes + 2 Boxes Chicken Links + Guac + 2 tbsp C8 MCT + 2 tbsp ACV + 100 Reps (<5:30 PM)!'
+      },
       {
         date: '2026-11-12 (Day 5 Scan @ 09:09 AM 🚀)',
         summary: '201.8 lb (-2.4 lb Overnight / -7.8 lb in 4 Days!) | 25.8% BF (-2.2%) | 52.0 lb Fat (-2.7 lb Overnight / -6.6 lb Total!) | VF 10 -> 9 (NORMAL!)',
