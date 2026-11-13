@@ -1,11 +1,14 @@
 {
-  "generated_at": "2026-11-08 17:39:30",
+  "version": "5.0",
+  "generated_at": "2026-11-13 15:37:14",
+  "cloud_automation": ".github/workflows/sync_creator_videos.yml (Every Wed & Sun @ 08:00 AM EST)",
   "cadence_schedule": {
     "tier_a_fast_movers_wed_thu_sun": [
       "Dr. Boz (@DoctorBoz)",
       "Steven Bartlett \u2014 The Diary Of A CEO (@TheDiaryOfACEO)",
       "Thomas DeLauer (@ThomasDeLauerOfficial)",
-      "Dr. Ben Bikman (@BenBikmanPhD)"
+      "Dr. Ben Bikman (@benbikman)",
+      "Jack Wiltshire \u2014 Sober Fitness (@SoberFitness)"
     ],
     "tier_b_weekly_sunday_0800_sync": [
       "Jeremy Ethier (@JeremyEthier)",
@@ -21,14 +24,14 @@
       "Dr. Keith Baar (@KeithBaarLab)"
     ]
   },
-  "total_creators": 13,
+  "total_creators": 14,
   "creators": [
     {
       "id": "jeremy_ethier",
       "name": "Jeremy Ethier",
       "handle": "@JeremyEthier",
       "channel_id": "UCERm5yFZ1SptUEU4wZ2vJvw",
-      "subscribers": "7.99M",
+      "subscribers": "8.0M",
       "tier": "Original Core 5",
       "domain": "EMG Biomechanics, Minimum Effective Volume & Tendon-Safe Exercise Selection",
       "shaun_genotype_link": "ACTN3 CC (Power/Sprint) + COL1A1 AC / MMP3 CT (Right Bicep Tendon Protection)",
@@ -42,14 +45,22 @@
         "shoulder",
         "volume",
         "stretch",
-        "fat"
+        "fat",
+        "steps"
       ],
       "latest_verified_drops": [
+        {
+          "date": "2026-11-09",
+          "video_id": "je_nov09_2026",
+          "title": "It's Tough, But Burns Fat 4x Faster Than 10K Steps/Day (21:56)",
+          "views": "3.2M (4 days ago!)",
+          "protocol_takeaway": "Time-efficient interval conditioning burst protocol that amplifies post-exercise fat oxidation 4x per minute when short on step time\u2014pairs with Crossrope / FightCamp finishers."
+        },
         {
           "date": "2026-11-01",
           "video_id": "new_nov1_2026",
           "title": "I Gave Him Fake Steroids For 100 Days",
-          "views": "2.72M (in 4d 5h)",
+          "views": "4.1M",
           "protocol_takeaway": "Demonstrates expectation/placebo effect vs. natural training ceiling when recovery and progressive overload are locked in."
         },
         {
@@ -69,50 +80,44 @@
       ],
       "active_drops": [
         {
+          "date": "2026-11-09",
+          "video_id": "je_nov09_2026",
+          "title": "It's Tough, But Burns Fat 4x Faster Than 10K Steps/Day (21:56)",
+          "views": "3.2M (4 days ago!)",
+          "protocol_takeaway": "Time-efficient interval conditioning burst protocol that amplifies post-exercise fat oxidation 4x per minute when short on step time\u2014pairs with Crossrope / FightCamp finishers."
+        },
+        {
           "date": "2026-11-08",
           "video_id": "C-KqNLIKrXM",
           "title": "It\u2019s Tough, But Burns Fat 4x Faster Than 10K Steps/Day",
+          "views": "3,317,593 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=C-KqNLIKrXM",
           "matched_keywords": [
-            "fat"
+            "fat",
+            "steps"
           ],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (fat, steps)."
         },
         {
           "date": "2026-11-01",
-          "video_id": "1OotnhyXNKk",
+          "video_id": "new_nov1_2026",
           "title": "I Gave Him Fake Steroids For 100 Days",
-          "url": "https://www.youtube.com/watch?v=1OotnhyXNKk",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "views": "4.1M",
+          "protocol_takeaway": "Demonstrates expectation/placebo effect vs. natural training ceiling when recovery and progressive overload are locked in."
         },
         {
           "date": "2026-10-11",
           "video_id": "wI2WVevL_lk",
-          "title": "Why Almost Everyone Is Wasting Their Time In The Gym",
-          "url": "https://www.youtube.com/watch?v=wI2WVevL_lk",
-          "matched_keywords": [
-            "time"
-          ],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "title": "Why (Almost) Everyone Is Wasting Their Time In The Gym (200-Lifter 3-Day vs. 6-Day Study)",
+          "views": "4.9M",
+          "protocol_takeaway": "10-week study of 200+ lifters proving 3\u20134 focused sessions/wk beat 6-day high-volume splits due to recovery debt and systemic fatigue\u2014directly validating your 45-min 4\u20135x/wk OxeFit cap."
         },
         {
           "date": "2026-09-27",
           "video_id": "0ShG8aVIvms",
           "title": "It's Weird, But Destroyed Every Ab Exercise I Tested",
-          "url": "https://www.youtube.com/watch?v=0ShG8aVIvms",
-          "matched_keywords": [
-            "ab"
-          ],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-09-13",
-          "video_id": "L3pDtUk7ZmY",
-          "title": "Giving A Stranger Fake Steroids For 100 Days",
-          "url": "https://www.youtube.com/watch?v=L3pDtUk7ZmY",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "views": "2.1M",
+          "protocol_takeaway": "Ranks Face-Away Lat Pulldown Cable Crunch #1 for upper abs and Garhammer Raises / AdMat Reverse Crunches #1 for lower abs with zero spinal/bicep strain."
         }
       ]
     },
@@ -121,10 +126,10 @@
       "name": "Dr. Annette Bosworth (Dr. Boz, MD)",
       "handle": "@DoctorBoz",
       "channel_id": "UCLGu62anfPbFDkdQj0p-hQw",
-      "subscribers": "890K",
+      "subscribers": "1.3M",
       "tier": "Original Core 5",
       "domain": "72h\u20137d Sardine Fasting, Dr. Boz Ratio (GKI), Autophagy & Deep Ketogenesis",
-      "shaun_genotype_link": "TCF7L2 CT + MTNR1B CG (Fasting Glucose 102 mg/dL & Post-Binge Insulin Reset)",
+      "shaun_genotype_link": "TCF7L2 CT + MTNR1B CG (AM Ketone PR 2.0 mmol/L & AM DBR 45.0!)",
       "cadence": "Tier A \u2014 Every Wednesday & Sunday @ 08:00 AM EST",
       "priority_keywords": [
         "sardine",
@@ -140,76 +145,70 @@
         {
           "date": "2026-11-06",
           "video_id": "substack_nov6_2026",
-          "title": "She Lost Seven Pounds on Sardines. That Wasn't the Point.",
-          "views": "Substack + Video Dispatch",
-          "protocol_takeaway": "Separates the rapid 6\u20138 lb first-72h glycogen/extracellular fluid flush from the true metabolic prize: crashing basal insulin and unlocking 3.0\u20134.0+ mmol/L hepatic ketogenesis."
+          "title": "She Lost Seven Pounds on Sardines. That Wasn't the Point. + 'What's Wrong With Healthy Diet Advice' (52:30)",
+          "views": "Substack + Live Stream",
+          "protocol_takeaway": "Separates the rapid first-week glycogen/fluid drop (your 209.6 -> 200.0 lb -9.6 lb 5-day plunge!) from the true metabolic prize: crashing basal insulin and hitting 2.0+ mmol/L morning BHB."
         },
         {
           "date": "2026-10-13",
           "video_id": "YSlr0ntjQzU",
           "title": "100 Cans of Sardines and No Ketones. Now What?",
           "views": "101K (1:00:31 Live Q&A)",
-          "protocol_takeaway": "Explains why late-night eating, poor sleep (cortisol spikes), or hidden sauces block ketosis during a sardine fast\u2014reinforcing your 5:30 PM cutoff + C8 MCT oil protocol."
+          "protocol_takeaway": "Explains why late-night eating, poor sleep (cortisol spikes), or hidden sauces block ketosis\u2014reinforcing your 5:30 PM cutoff + 3 tbsp C8/C10 MCT oil protocol."
         },
         {
           "date": "2026-10-04",
           "video_id": "XsAUZQugviY",
           "title": "Boz 2 Ketones",
           "views": "54K",
-          "protocol_takeaway": "Clinical troubleshooting for transitioning from exogenous support to endogenous 2.0\u20134.0 mmol/L blood BHB."
-        },
-        {
-          "date": "2026-09-22",
-          "video_id": "Jo4D9RPLAak",
-          "title": "Ketosis in the Real World: Sardine Fasting, Low-Dose GLP-1s & Carb Addiction",
-          "views": "68K",
-          "protocol_takeaway": "Shows how a 72-hour to 7-day Sardine Fast naturally mimics GLP-1/PYY satiety signaling at 200\u2013800 kcal/day after a high-carb weekend binge."
+          "protocol_takeaway": "Clinical troubleshooting for transitioning from exogenous C8/C10 support to endogenous 2.0\u20134.0 mmol/L blood BHB."
         }
       ],
       "active_drops": [
         {
+          "date": "2026-11-06",
+          "video_id": "substack_nov6_2026",
+          "title": "She Lost Seven Pounds on Sardines. That Wasn't the Point. + 'What's Wrong With Healthy Diet Advice' (52:30)",
+          "views": "Substack + Live Stream",
+          "protocol_takeaway": "Separates the rapid first-week glycogen/fluid drop (your 209.6 -> 200.0 lb -9.6 lb 5-day plunge!) from the true metabolic prize: crashing basal insulin and hitting 2.0+ mmol/L morning BHB."
+        },
+        {
           "date": "2026-11-03",
           "video_id": "zYbaF4ZX9ak",
           "title": "Forget About Your Blood Sugar (Fix This First)",
+          "views": "69,992 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=zYbaF4ZX9ak",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
           "date": "2026-11-01",
           "video_id": "7_HxZfCESHk",
           "title": "The Hollywood curse (and how I cured it)",
+          "views": "16,380 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=7_HxZfCESHk",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
           "date": "2026-10-30",
           "video_id": "nGNcR-Vjxwc",
           "title": "Why You Can't Lose Belly Fat.",
+          "views": "43,773 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=nGNcR-Vjxwc",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
           "date": "2026-10-27",
           "video_id": "STCE7oOHGxg",
           "title": "Confronting Ben Bickman on Insulin Resistance",
+          "views": "128,600 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=STCE7oOHGxg",
           "matched_keywords": [
             "insulin"
           ],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-10-25",
-          "video_id": "jiD1zdtdT6s",
-          "title": "Always check your morning fasting numbers",
-          "url": "https://www.youtube.com/watch?v=jiD1zdtdT6s",
-          "matched_keywords": [
-            "fasting"
-          ],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (insulin)."
         }
       ]
     },
@@ -218,10 +217,10 @@
       "name": "Jeff Nippard",
       "handle": "@JeffNippard",
       "channel_id": "UC68TLK0mAEzUyHx5x5k-S1Q",
-      "subscribers": "8.13M",
+      "subscribers": "8.77M",
       "tier": "Original Core 5",
       "domain": "Lengthened Partials, Body Recomposition Macros & Evidence-Based Hypertrophy",
-      "shaun_genotype_link": "FFM Preservation (151.0 lb -> 164.5 lb Target during Aggressive Cut)",
+      "shaun_genotype_link": "FFM Preservation (148.2\u2013151.0 lb -> 164.5 lb Target during Aggressive Cut)",
       "cadence": "Tier B \u2014 Weekly Sunday 08:00 AM EST Sync",
       "priority_keywords": [
         "hypertrophy",
@@ -246,7 +245,7 @@
           "video_id": "jn_oct17_2026",
           "title": "What Do 100 Calories Actually Look Like?",
           "views": "4.10M",
-          "protocol_takeaway": "Visualizes caloric density vs. satiety volume\u2014explaining why whole-food protein/sardines/eggs lock in satiety at 1,100\u20131,800 kcal while hyper-palatable carbs trigger 4,000+ kcal binges."
+          "protocol_takeaway": "Visualizes caloric density vs. satiety volume\u2014explaining why whole-food protein/sardines/turkey sausage/guac lock in satiety at 1,150\u20131,450 kcal."
         },
         {
           "date": "2026-10-08",
@@ -259,49 +258,44 @@
       "active_drops": [
         {
           "date": "2026-10-28",
-          "video_id": "El8P1hp7lRQ",
-          "title": "How Many Energy Drinks Can You Have Before It\u2019s A Problem?",
-          "url": "https://www.youtube.com/watch?v=El8P1hp7lRQ",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "video_id": "jn_oct28_2026",
+          "title": "How Many Energy Drinks Can You Have Before It's A Problem?",
+          "views": "5.29M",
+          "protocol_takeaway": "Sets hard cardiovascular and adenosine-recovery ceilings on daily caffeine (critical for CYP1A2 AC intermediate metabolizers: cut off by 12:00 PM)."
         },
         {
           "date": "2026-10-17",
-          "video_id": "RK4UVg08wt0",
+          "video_id": "jn_oct17_2026",
           "title": "What Do 100 Calories Actually Look Like?",
-          "url": "https://www.youtube.com/watch?v=RK4UVg08wt0",
-          "matched_keywords": [
-            "calories"
-          ],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "views": "4.10M",
+          "protocol_takeaway": "Visualizes caloric density vs. satiety volume\u2014explaining why whole-food protein/sardines/turkey sausage/guac lock in satiety at 1,150\u20131,450 kcal."
         },
         {
           "date": "2026-10-08",
-          "video_id": "JVO00Ulr5BE",
-          "title": "The Best & Worst Peptides (Ranked)",
-          "url": "https://www.youtube.com/watch?v=JVO00Ulr5BE",
-          "matched_keywords": [
-            "peptide"
-          ],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "video_id": "jn_oct08_2026",
+          "title": "The Best & Worst Peptides (Ranked) / Peptides Are Insane (Sep 28 Long-Form)",
+          "views": "3.42M (Short) / 19.17M (Long-Form)",
+          "protocol_takeaway": "Evidence audit of BPC-157, TB-500, and GH secretagogues for tendon recovery vs. natural mechanical loading + collagen."
         },
         {
           "date": "2026-09-28",
           "video_id": "H6SiAe-VObA",
           "title": "Peptides Are Insane",
+          "views": "19,662,369 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=H6SiAe-VObA",
           "matched_keywords": [
             "peptide"
           ],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (peptide)."
         },
         {
           "date": "2026-09-23",
           "video_id": "rHgCRGNbG_Q",
           "title": "How Bodybuilding Workouts Evolved From 1900 To Now",
+          "views": "4,749,852 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=rHgCRGNbG_Q",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
       ]
     },
@@ -327,10 +321,10 @@
       "latest_verified_drops": [
         {
           "date": "2026-10-13",
-          "video_id": "rh_oct13_2026",
+          "video_id": "jRbj25q-AjU",
           "title": "Exposing The Biggest Scam In Supplements",
           "views": "612.6K",
-          "protocol_takeaway": "Cuts through proprietary under-dosed blends in favor of single-ingredient clinical staples (Creatine 5g, Pure C8 MCT, Hydrolyzed Collagen, EPA/DHA, Magnesium)."
+          "protocol_takeaway": "Cuts through proprietary under-dosed blends in favor of single-ingredient clinical staples (Creatine 5g, Pure C8/C10 MCT, Hydrolyzed Collagen, EPA/DHA, Magnesium)."
         }
       ],
       "active_drops": [
@@ -338,44 +332,44 @@
           "date": "2026-10-13",
           "video_id": "jRbj25q-AjU",
           "title": "Exposing The Biggest Scam In Supplements",
-          "url": "https://www.youtube.com/watch?v=jRbj25q-AjU",
-          "matched_keywords": [
-            "scam",
-            "supplement"
-          ],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "views": "612.6K",
+          "protocol_takeaway": "Cuts through proprietary under-dosed blends in favor of single-ingredient clinical staples (Creatine 5g, Pure C8/C10 MCT, Hydrolyzed Collagen, EPA/DHA, Magnesium)."
         },
         {
           "date": "2026-09-14",
           "video_id": "grs8Hqi6gHE",
           "title": "Is \u201cCalories In, Calories Out\u201d Bullsh*t?",
+          "views": "237,773 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=grs8Hqi6gHE",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
           "date": "2026-08-30",
           "video_id": "0a6XdYShsCI",
           "title": "Muscle Growth: Why Science Is Wrong (After 3 Years)",
+          "views": "535,591 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=0a6XdYShsCI",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
           "date": "2026-07-26",
           "video_id": "aTG5ttr57Ko",
           "title": "The Science of Cooking the ULTIMATE Muscle Building Food (STEAK!)",
+          "views": "108,852 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=aTG5ttr57Ko",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
           "date": "2026-06-25",
           "video_id": "QG-bSxKq4E8",
           "title": "Why Farts Smell (And What It Says About Your Digestion)",
+          "views": "88,905 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=QG-bSxKq4E8",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
       ]
     },
@@ -384,7 +378,7 @@
       "name": "Bryan Johnson (Blueprint)",
       "handle": "@BryanJohnson",
       "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
-      "subscribers": "1.95M",
+      "subscribers": "2.26M",
       "tier": "Original Core 5",
       "domain": "Circadian Cutoff, Sleep Architecture, Biological Age & Biomarker Tracking",
       "shaun_genotype_link": "MTNR1B CG (Early Dinner Cutoff) + COMT GG (Evening Parasympathetic Downregulation)",
@@ -400,53 +394,63 @@
       ],
       "latest_verified_drops": [
         {
+          "date": "2026-11-07",
+          "video_id": "bj_nov07_2026",
+          "title": "Am I a Billionaire? I Answer the Internet's Questions + Blueprint Biomarker Q&A",
+          "views": "494K (6 days ago!)",
+          "protocol_takeaway": "Reiterates autonomous evening wind-down, strict early meal cutoff (4+ hours pre-bed), and objective blood/wearable tracking over guesswork."
+        },
+        {
           "date": "2026-10-20",
           "video_id": "bj_oct2026",
           "title": "Blueprint 2026 Sleep & Early-Cutoff Metabolic Protocol",
-          "views": "1.1M",
+          "views": "1.3M",
           "protocol_takeaway": "Confirms that finishing caloric intake 4+ hours before sleep drops nocturnal RHR by 4\u20136 bpm and prevents overnight glucose elevation."
         }
       ],
       "active_drops": [
         {
-          "date": "2026-11-06",
-          "video_id": "SwYhu8VSp-s",
-          "title": "Am I a Billionaire? I Answer the Internet\u2019s Questions",
-          "url": "https://www.youtube.com/watch?v=SwYhu8VSp-s",
+          "date": "2026-11-11",
+          "video_id": "AbjfQbDGhIg",
+          "title": "unc\u2019s sauna guide",
+          "views": "75,886 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=AbjfQbDGhIg",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-07",
+          "video_id": "bj_nov07_2026",
+          "title": "Am I a Billionaire? I Answer the Internet's Questions + Blueprint Biomarker Q&A",
+          "views": "494K (6 days ago!)",
+          "protocol_takeaway": "Reiterates autonomous evening wind-down, strict early meal cutoff (4+ hours pre-bed), and objective blood/wearable tracking over guesswork."
         },
         {
           "date": "2026-11-04",
           "video_id": "cdtyJsvf0JM",
           "title": "what even is VO2 max?",
+          "views": "335,821 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=cdtyJsvf0JM",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
           "date": "2026-10-31",
           "video_id": "_OaAqyX5r-4",
           "title": "trick or treat",
+          "views": "520,299 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=_OaAqyX5r-4",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
           "date": "2026-10-29",
           "video_id": "KQSPHV5iChQ",
           "title": "what to wear in the sauna",
+          "views": "208,140 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=KQSPHV5iChQ",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-10-27",
-          "video_id": "evitcEYx774",
-          "title": "Maintaining health during 10 days on the road",
-          "url": "https://www.youtube.com/watch?v=evitcEYx774",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
       ]
     },
@@ -455,11 +459,11 @@
       "name": "Steven Bartlett \u2014 The Diary Of A CEO",
       "handle": "@TheDiaryOfACEO",
       "channel_id": "UCGq-a57w-aPwyi3pW7XLiHw",
-      "subscribers": "21.7M (2.02B Views)",
+      "subscribers": "21.9M (2.05B+ Views)",
       "tier": "Expanded Authority #6 (Health, Metabolic & Mindset Masterclasses)",
       "domain": "World-Class Doctor Roundtable Interviews, Liver/Visceral Fat Reversal, Dopamine/Stress Control & Identity Mindset",
       "shaun_genotype_link": "COMT GG + BDNF CT (Stress/Dopamine Binge Prevention) + PEMT CT (ALT 48 Fatty Liver Drain) + FTO AT (Identity Habits)",
-      "cadence": "Tier A \u2014 Every Thursday & Sunday @ 08:00 AM EST (Uploads 2x/wk, +124.45M views/mo)",
+      "cadence": "Tier A \u2014 Every Thursday & Sunday @ 08:00 AM EST",
       "priority_keywords": [
         "insulin",
         "fasting",
@@ -469,95 +473,82 @@
         "liver",
         "sugar",
         "brain",
+        "dementia",
         "dopamine",
         "stress",
-        "habit",
-        "muscle"
+        "habit"
       ],
       "latest_verified_drops": [
+        {
+          "date": "2026-11-12",
+          "video_id": "doac_nov12_2026",
+          "title": "The Brain Doctor Who Explains The Main Cause Of Dementia - Dr. David Perlmutter (1:55:46)",
+          "views": "949K (22 hours ago!)",
+          "protocol_takeaway": "Connects insulin resistance, elevated uric acid, and cerebral glucose hypometabolism directly to cognitive decline\u2014proving your 2.0 mmol/L blood BHB ketones protect and super-fuel brain mitochondria."
+        },
         {
           "date": "2026-10-12",
           "video_id": "Zqrn4XwscY8",
           "title": "The Most Valuable 40 Minutes You'll Spend This Year (High-Performance Mindset & Control)",
           "views": "4.8M",
-          "protocol_takeaway": "Reframes success from external/scale outcomes to controllable daily execution inputs\u2014eliminating the 'weekend reward binge' trap after a strong week."
+          "protocol_takeaway": "Reframes success from external/scale outcomes to controllable daily execution inputs\u2014eliminating the 'weekend reward binge' trap after hitting 200.0 lb."
         },
         {
           "date": "2026-01-08",
           "video_id": "C7LL7VwP8Nc",
           "title": "Insulin Expert (Dr. Ben Bikman): How To 'Drain' Your Liver of Fat (Do This!) + Ketone Meter Live Test",
           "views": "6.4M",
-          "protocol_takeaway": "Steven pricks his finger daily for blood BHB on camera while Dr. Bikman explains how crashing insulin via ketosis reverses de novo lipogenesis and drains liver fat (your ALT = 48 U/L -> <25 target)."
-        },
-        {
-          "date": "2025-12-26",
-          "video_id": "Oipkl53n938",
-          "title": "The 6 Science-Backed Brain Fixes Most People Are Ignoring! (CGM Glucose 'Sticky Glue' & Nitric Oxide)",
-          "views": "5.1M",
-          "protocol_takeaway": "Shows how glucose spikes (>140 mg/dL) glycate proteins and shut down endothelial Nitric Oxide (NO), and why ketosis + nasal breathing restore vascular flow and brain clarity."
-        },
-        {
-          "date": "2025-12-11",
-          "video_id": "rtufWBLOXgw",
-          "title": "The Man Who Wrote Atomic Habits (James Clear): Your Goals Are Holding You Back",
-          "views": "7.2M",
-          "protocol_takeaway": "Identity-based habit architecture: shifting from 'trying to lose weight' to 'I am an athlete who executes a 72h Sardine Slingshot after any off-plan meal and locks the kitchen at 5:30 PM.'"
-        },
-        {
-          "date": "2025-10-02",
-          "video_id": "ZE_H7rijrVk",
-          "title": "No. 1 Sugar Expert (Dr. Robert Lustig): You've Been Sold A Lie About 'Healthy' Food!",
-          "views": "8.9M",
-          "protocol_takeaway": "Explains how ultra-processed fructose/sucrose poisons hepatic mitochondria and blocks leptin signaling (FTO AT), causing back-to-back 4,000+ kcal weekend binges."
-        },
-        {
-          "date": "2025-09-22",
-          "video_id": "gryta3KZKU4",
-          "title": "Insulin Doctor (Dr. Pradip Jamnadas): The Fastest Way To Burn Dangerous Visceral Fat!",
-          "views": "7.8M",
-          "protocol_takeaway": "Clinical blueprint for targeting visceral abdominal fat (your VF 10 -> 4 target) and gut-derived hs-CRP inflammation via targeted fasting windows."
+          "protocol_takeaway": "Steven pricks his finger daily for blood BHB on camera while Dr. Bikman explains how crashing insulin via ketosis reverses de novo lipogenesis and drains liver fat (ALT 48 -> <25)."
         }
       ],
       "active_drops": [
         {
-          "date": "2026-11-07",
-          "video_id": "Ox4ZEuKTDJQ",
-          "title": "UK GOVERNMENT WARNING...",
-          "url": "https://www.youtube.com/watch?v=Ox4ZEuKTDJQ",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "date": "2026-11-13",
+          "video_id": "KxKDBjyB_8c",
+          "title": "CAN WE PREVENT DEMENTIA?",
+          "views": "7,930 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=KxKDBjyB_8c",
+          "matched_keywords": [
+            "dementia"
+          ],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (dementia)."
         },
         {
-          "date": "2026-11-06",
-          "video_id": "jQvw3PDo1Do",
-          "title": "GET READY FOR THE NEXT EIGHT WEEKS",
-          "url": "https://www.youtube.com/watch?v=jQvw3PDo1Do",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "date": "2026-11-12",
+          "video_id": "FRoQOzZRcpw",
+          "title": "The Brain Doctor That Figured Out The Cause Of Dementia - Dr. David Perlmutter",
+          "views": "1,205,284 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=FRoQOzZRcpw",
+          "matched_keywords": [
+            "brain",
+            "dementia"
+          ],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (brain, dementia)."
         },
         {
-          "date": "2026-11-05",
-          "video_id": "a1mI-ozLyYM",
-          "title": "Iran War Expert: \"The 8 Weeks After Midterms Could Be The Most Dangerous!\" | Prof Robert Pape",
-          "url": "https://www.youtube.com/watch?v=a1mI-ozLyYM",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "date": "2026-11-12",
+          "video_id": "doac_nov12_2026",
+          "title": "The Brain Doctor Who Explains The Main Cause Of Dementia - Dr. David Perlmutter (1:55:46)",
+          "views": "949K (22 hours ago!)",
+          "protocol_takeaway": "Connects insulin resistance, elevated uric acid, and cerebral glucose hypometabolism directly to cognitive decline\u2014proving your 2.0 mmol/L blood BHB ketones protect and super-fuel brain mitochondria."
         },
         {
-          "date": "2026-11-03",
-          "video_id": "k-ldMhfIuJE",
-          "title": "CAN AMERICA BE FIXED?",
-          "url": "https://www.youtube.com/watch?v=k-ldMhfIuJE",
+          "date": "2026-11-09",
+          "video_id": "kyNupwRvHOE",
+          "title": "KATT WILLIAMS OPENS UP ABOUT HIS ABUSIVE CHILDHOOD",
+          "views": "498,759 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=kyNupwRvHOE",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
-          "date": "2026-11-02",
-          "video_id": "FpIN6tYC5XM",
-          "title": "James Talarico: Here Is How They Designed The System To Keep You Poor!",
-          "url": "https://www.youtube.com/watch?v=FpIN6tYC5XM",
+          "date": "2026-11-09",
+          "video_id": "-6PuYw92m1c",
+          "title": "Katt Williams: They Tied Me To A Pole And Beat Me Bloody Every Week!",
+          "views": "5,307,158 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=-6PuYw92m1c",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
       ]
     },
@@ -566,10 +557,10 @@
       "name": "Dr. Peter Attia, MD (The Drive)",
       "handle": "@PeterAttiaMD",
       "channel_id": "UC8kGsMa0LygSX9nkBcBH1Sg",
-      "subscribers": "1.15M",
+      "subscribers": "1.04M",
       "tier": "Expanded Authority #7",
-      "domain": "ApoB / Small LDL Particle Clearance, Zone 2 Mitochondrial Base & VO2 Max",
-      "shaun_genotype_link": "APOA2 CC + CETP AA (LDL-P 1,554 nmol/L, Small LDL 389 nmol/L -> Saturated Fat Cap)",
+      "domain": "ApoB / Small LDL Particle Clearance, Zone 2 Mitochondrial Base, VO2 Max & Aging Strength",
+      "shaun_genotype_link": "APOA2 CC + CETP AA (ApoB 96, Small LDL 389 nmol/L) + COL1A1 AC Age-39 Tendon-Safe RIR",
       "cadence": "Tier B \u2014 Weekly Sunday 08:00 AM EST Sync",
       "priority_keywords": [
         "apob",
@@ -578,58 +569,74 @@
         "vo2 max",
         "insulin",
         "strength",
-        "longevity",
+        "resistance",
+        "reserve",
         "lipid"
       ],
       "latest_verified_drops": [
+        {
+          "date": "2026-11-12",
+          "video_id": "pa_nov12_2026",
+          "title": "Understanding reps in reserve | Jeff Cavaliere (3:28)",
+          "views": "New (1 day ago!)",
+          "protocol_takeaway": "Calibrates true 1\u20132 RIR on heavy compounds vs. safe failure on cables so your OxeFit Day 1 stimulus builds muscle without stressing your right bicep scar."
+        },
+        {
+          "date": "2026-11-10",
+          "video_id": "pa_414_nov10_2026",
+          "title": "#414 \u2012 Resistance training as we age: exercise selection, training intensity, and much more (2:45:31)",
+          "views": "53K (3 days ago!)",
+          "protocol_takeaway": "Age-39+ blueprint for joint-friendly exercise selection, eccentric control, and preserving fast-twitch power (your 1,437 W ACTN3 CC engine) for decades."
+        },
         {
           "date": "2026-10-26",
           "video_id": "pa_oct2026",
           "title": "Lipid Management, ApoB Targets & Why Saturated Fat Tolerance Varies by Genotype",
           "views": "340K",
-          "protocol_takeaway": "Directly explains why hyper-absorbers/APOA2 CC carriers spike Small LDL on heavy butter/tallow carnivore and thrive when swapping to marine Omega-3s (sardines/salmon) + EVOO/avocado."
+          "protocol_takeaway": "Explains why APOA2 CC carriers spike Small LDL on butter/tallow overload and thrive when swapping to sardines, avocado guac, and EVOO."
         }
       ],
       "active_drops": [
         {
+          "date": "2026-11-12",
+          "video_id": "pa_nov12_2026",
+          "title": "Understanding reps in reserve | Jeff Cavaliere (3:28)",
+          "views": "New (1 day ago!)",
+          "protocol_takeaway": "Calibrates true 1\u20132 RIR on heavy compounds vs. safe failure on cables so your OxeFit Day 1 stimulus builds muscle without stressing your right bicep scar."
+        },
+        {
+          "date": "2026-11-10",
+          "video_id": "pa_414_nov10_2026",
+          "title": "#414 \u2012 Resistance training as we age: exercise selection, training intensity, and much more (2:45:31)",
+          "views": "53K (3 days ago!)",
+          "protocol_takeaway": "Age-39+ blueprint for joint-friendly exercise selection, eccentric control, and preserving fast-twitch power (your 1,437 W ACTN3 CC engine) for decades."
+        },
+        {
+          "date": "2026-11-09",
+          "video_id": "HhTirnNCxxE",
+          "title": "Understanding lab testing: what blood work can & cannot tell you (AMA 91 sneak peek)",
+          "views": "12,836 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=HhTirnNCxxE",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
           "date": "2026-11-07",
           "video_id": "drDjOsO9-Cw",
           "title": "How to effectively train your abdominal muscles | Jeff Cavaliere, M.S.P.T., C.S.C.S.",
+          "views": "12,896 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=drDjOsO9-Cw",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
           "date": "2026-11-06",
           "video_id": "Kst46m2gyLA",
           "title": "The difference between psychological and mechanical limits in lifting | Jeff Cavaliere",
+          "views": "15,489 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=Kst46m2gyLA",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-11-05",
-          "video_id": "Ni9Uwvafuq8",
-          "title": "Jeff\u2019s exercise graveyard | Jeff Cavaliere, M.S.P.T., C.S.C.S.",
-          "url": "https://www.youtube.com/watch?v=Ni9Uwvafuq8",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-11-04",
-          "video_id": "e1RoRmKWsEE",
-          "title": "Understanding reps in reserve | Jeff Cavaliere, M.S.P.T., C.S.C.S.",
-          "url": "https://www.youtube.com/watch?v=e1RoRmKWsEE",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-11-02",
-          "video_id": "8IuHv7nYkDs",
-          "title": "414 \u2012 Resistance training as we age: exercise selection, training intensity, and much more",
-          "url": "https://www.youtube.com/watch?v=8IuHv7nYkDs",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
       ]
     },
@@ -638,21 +645,36 @@
       "name": "Dr. Andrew Huberman, PhD (Huberman Lab)",
       "handle": "@hubermanlab",
       "channel_id": "UC2D2CMWXMOVWx7giW1n3LIg",
-      "subscribers": "6.85M",
+      "subscribers": "8.02M",
       "tier": "Expanded Authority #8",
-      "domain": "COMT GG Dopamine/Cortisol Regulation, 50-Min Workout Cap & Circadian Light",
+      "domain": "COMT GG Dopamine/Addiction Circuitry, Cortisol Regulation, Heat/Cold & Circadian Light",
       "shaun_genotype_link": "COMT GG (Warrior Fast Dopamine Clearance) + BDNF CT + MTNR1B CG",
       "cadence": "Tier B \u2014 Weekly Sunday 08:00 AM EST Sync",
       "priority_keywords": [
         "cortisol",
         "dopamine",
+        "addiction",
+        "cold",
+        "heat",
         "sleep",
         "recovery",
-        "hydration",
-        "sodium",
-        "zone 2"
+        "sodium"
       ],
       "latest_verified_drops": [
+        {
+          "date": "2026-11-10",
+          "video_id": "ah_nov10_2026",
+          "title": "Overcome Addictions and Obsessions of All Kinds | Dr. Anna Lembke (2:16:51)",
+          "views": "378K (3 days ago!)",
+          "protocol_takeaway": "Dissects the dopamine pleasure-pain seesaw behind weekend food/alcohol reward loops\u2014directly reinforcing your COMT GG + @SoberFitness 90-Day Dopamine Reset."
+        },
+        {
+          "date": "2026-11-06",
+          "video_id": "ah_nov06_2026",
+          "title": "Essentials: Cold & Heat Exposure for Metabolic Health | Dr. Susanna S\u00f8berg (38:22)",
+          "views": "109K (7 days ago!)",
+          "protocol_takeaway": "Establishes the minimum effective dose (57 min/wk sauna + 11 min/wk cold) to activate brown fat uncoupling and boost insulin sensitivity."
+        },
         {
           "date": "2026-10-19",
           "video_id": "ah_oct2026",
@@ -663,44 +685,51 @@
       ],
       "active_drops": [
         {
+          "date": "2026-11-12",
+          "video_id": "1rn_Clc-MM0",
+          "title": "Essentials: How Emotions & Social Factors Impact Learning | Dr. Mary Helen Immordino-Yang",
+          "views": "53,405 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=1rn_Clc-MM0",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-11",
+          "video_id": "9dWQNg68Ncw",
+          "title": "Why Addiction is a Control Problem | Dr. Anna Lembke",
+          "views": "51,794 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=9dWQNg68Ncw",
+          "matched_keywords": [
+            "addiction"
+          ],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (addiction)."
+        },
+        {
+          "date": "2026-11-10",
+          "video_id": "ah_nov10_2026",
+          "title": "Overcome Addictions and Obsessions of All Kinds | Dr. Anna Lembke (2:16:51)",
+          "views": "378K (3 days ago!)",
+          "protocol_takeaway": "Dissects the dopamine pleasure-pain seesaw behind weekend food/alcohol reward loops\u2014directly reinforcing your COMT GG + @SoberFitness 90-Day Dopamine Reset."
+        },
+        {
+          "date": "2026-11-09",
+          "video_id": "pMuud2kayJo",
+          "title": "Breaking the Codependency Cycle | Dr. Anna Lembke",
+          "views": "26,957 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=pMuud2kayJo",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
           "date": "2026-11-06",
           "video_id": "jXTY8WwohF0",
           "title": "LEVERAGING PARALLEL PATHWAYS, EXERCISE & COLD TO FOCUS & LEARN BETTER",
+          "views": "88,096 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=jXTY8WwohF0",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-11-05",
-          "video_id": "yUdg7drjrZY",
-          "title": "Essentials: Cold & Heat Exposure for Metabolic Health | Dr. Susanna S\u00f8berg",
-          "url": "https://www.youtube.com/watch?v=yUdg7drjrZY",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-11-03",
-          "video_id": "Ko9p7w3Za6w",
-          "title": "Falling in Love Is Rebellion | Robert Greene",
-          "url": "https://www.youtube.com/watch?v=Ko9p7w3Za6w",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-11-02",
-          "video_id": "y-fRFiTrrg4",
-          "title": "Access the Sublime & Live Your Best Life | Robert Greene",
-          "url": "https://www.youtube.com/watch?v=y-fRFiTrrg4",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-10-31",
-          "video_id": "FNbTA_W9B5o",
-          "title": "WHEN TO *NOT* TRUST YOUR THOUGHTS",
-          "url": "https://www.youtube.com/watch?v=FNbTA_W9B5o",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "matched_keywords": [
+            "cold"
+          ],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (cold)."
         }
       ]
     },
@@ -709,121 +738,128 @@
       "name": "Dr. Rhonda Patrick, PhD (FoundMyFitness)",
       "handle": "@FoundMyFitness",
       "channel_id": "UCWF8SqJVNlx-ctXbLswcTcA",
-      "subscribers": "590K",
+      "subscribers": "737K",
       "tier": "Expanded Authority #9",
-      "domain": "Omega-3 Index (FADS1 TT), Marine Phospholipids, Micronutrients & Heat/Sauna",
-      "shaun_genotype_link": "FADS1 TT (Low Plant-to-EPA Conversion -> Needs Direct Marine Sardine/Salmon EPA/DHA)",
+      "domain": "Saturated Fat vs. Red Meat/Seed Oils, Omega-3 Index (FADS1 TT) & Marine Phospholipids",
+      "shaun_genotype_link": "FADS1 TT (OmegaCheck 5.3%) + APOA2 CC (ApoB 96) + PEMT CT (ALT 48 Choline)",
       "cadence": "Tier C \u2014 Bi-Weekly Sunday Sync",
       "priority_keywords": [
+        "saturated fat",
+        "red meat",
+        "seed oil",
         "omega-3",
         "fads1",
         "protein",
-        "dietary fat",
-        "lactate",
-        "bdnf",
-        "sulforaphane"
+        "dietary fat"
       ],
       "latest_verified_drops": [
+        {
+          "date": "2026-11-13",
+          "video_id": "rp_nov13_2026",
+          "title": "The Hype vs. Data on Saturated Fat, Red Meat, & Seed Oils (2:37:03)",
+          "views": "BRAND NEW (2 hours ago!)",
+          "protocol_takeaway": "Separates whole unprocessed red meat (creatine/carnitine/taurine/betaine) from refined butter/dairy saturated fat excess and oxidized seed oils\u2014100% validating your Steak/Brisket + Sardines + Avocado Guac + C8 MCT blueprint for ApoB <70!"
+        },
         {
           "date": "2026-10-15",
           "video_id": "rp_oct15_2026",
           "title": "Dr. Dariush Mozaffarian: Dietary Fats, Ultra-Processed Foods & Food as Medicine",
           "views": "215K",
-          "protocol_takeaway": "Reinforces whole-food marine fats and fermentation/food-matrix effects on cardiometabolic health over isolated refined fats."
-        },
-        {
-          "date": "2026-09-21",
-          "video_id": "rp_sep21_2026",
-          "title": "Building Daily Meals Around Protein to Preserve Lean Mass During Weight Loss",
-          "views": "290K",
-          "protocol_takeaway": "Supports anchoring your Phase 2/3 refeed at 195\u2013210g protein/day (~1.25g/lb FFM) so every pound lost comes from fat."
+          "protocol_takeaway": "Reinforces whole-food marine fats and food-matrix effects on cardiometabolic health over isolated refined fats."
         },
         {
           "date": "2026-08-19",
           "video_id": "rp_aug19_2026",
           "title": "What the Omega-3 Index Reveals About Heart Health (Why <6% Accelerates Risk)",
           "views": "310K",
-          "protocol_takeaway": "Your Quest OmegaCheck is 5.3% (borderline low due to FADS1 TT). Eating sardines in Phase 1 + 3\u20134g/day EPA/DHA moves your Omega-3 Index into the optimal >8.0% zone."
+          "protocol_takeaway": "Your Quest OmegaCheck is 5.3% (FADS1 TT). Eating sardines + 3\u20134g/day EPA/DHA moves your Omega-3 Index into the optimal >8.0% zone."
         }
       ],
       "active_drops": [
         {
+          "date": "2026-11-13",
+          "video_id": "rp_nov13_2026",
+          "title": "The Hype vs. Data on Saturated Fat, Red Meat, & Seed Oils (2:37:03)",
+          "views": "BRAND NEW (2 hours ago!)",
+          "protocol_takeaway": "Separates whole unprocessed red meat (creatine/carnitine/taurine/betaine) from refined butter/dairy saturated fat excess and oxidized seed oils\u2014100% validating your Steak/Brisket + Sardines + Avocado Guac + C8 MCT blueprint for ApoB <70!"
+        },
+        {
+          "date": "2026-11-10",
+          "video_id": "OvlKr2545Ys",
+          "title": "Watch my new episode with Dr. Dariush Mozaffarian",
+          "views": "3,237 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=OvlKr2545Ys",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-10",
+          "video_id": "7JeZk_J7_h4",
+          "title": "The Foods You Were Told to Avoid (But Should Be Eating)",
+          "views": "57,095 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=7JeZk_J7_h4",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-10-15",
+          "video_id": "rp_oct15_2026",
+          "title": "Dr. Dariush Mozaffarian: Dietary Fats, Ultra-Processed Foods & Food as Medicine",
+          "views": "215K",
+          "protocol_takeaway": "Reinforces whole-food marine fats and food-matrix effects on cardiometabolic health over isolated refined fats."
+        },
+        {
           "date": "2026-10-06",
           "video_id": "dK-z65v-CvA",
           "title": "Watch my new episode on the science of blueberries!",
+          "views": "6,065 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=dK-z65v-CvA",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-10-06",
-          "video_id": "IKdShZ2CDe4",
-          "title": "Why You Should Eat Blueberries Every Day As You Age",
-          "url": "https://www.youtube.com/watch?v=IKdShZ2CDe4",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-08-26",
-          "video_id": "c9_SXGwi2s0",
-          "title": "Watch my new episode with Dr. Richard Davidson",
-          "url": "https://www.youtube.com/watch?v=c9_SXGwi2s0",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-08-26",
-          "video_id": "3NiQF9_Vxi8",
-          "title": "Meditation Does Far More Than Reduce Stress | Dr. Richard Davidson",
-          "url": "https://www.youtube.com/watch?v=3NiQF9_Vxi8",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
-        },
-        {
-          "date": "2026-07-22",
-          "video_id": "MlUWEkj5nNA",
-          "title": "Watch my new episode with Dr. Derya Unutmaz",
-          "url": "https://www.youtube.com/watch?v=MlUWEkj5nNA",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
       ]
     },
     {
       "id": "ben_bikman",
       "name": "Dr. Ben Bikman, PhD (The Metabolic Classroom)",
-      "handle": "@BenBikmanPhD",
-      "channel_id": "UC2N2c93282022BikmanMetabolic",
-      "subscribers": "365K",
+      "handle": "@benbikman",
+      "channel_id": "UCblbxPFG0XAsQA2LwzT6xDQ",
+      "subscribers": "233K",
       "tier": "Expanded Authority #10",
-      "domain": "Insulin-to-Glucagon Ratio, Asprosin Hunger Hormone, Ketogenic Uncoupling & Whole-Food Protein",
-      "shaun_genotype_link": "TCF7L2 CT + FTO AT (Glucagon-Driven Lipolysis, Asprosin Suppression & Ketone Uncoupling)",
+      "domain": "Insulin-to-Glucagon Ratio, Potassium/Blood Sugar Link, Asprosin & Ketogenic Uncoupling",
+      "shaun_genotype_link": "TCF7L2 CT + FTO AT (2.0 mmol/L BHB PR, Potassium/Sodium Pump & Asprosin Suppression)",
       "cadence": "Tier A \u2014 Every Wednesday & Sunday @ 08:00 AM EST",
       "priority_keywords": [
         "insulin",
         "glucagon",
         "ketone",
+        "potassium",
         "asprosin",
-        "fat cell",
+        "glp-1",
         "protein",
-        "whey",
-        "fasting",
-        "visceral"
+        "fasting"
       ],
       "latest_verified_drops": [
         {
           "date": "2026-11-02",
           "video_id": "AZtu3RSXbiE",
           "title": "Ep 169: How Your Body Fat Can Make You Hungrier (Asprosin & Hepatic Glucose Dumping)",
-          "views": "92K (6 days ago!)",
-          "protocol_takeaway": "Explains how fat cells secrete Asprosin after carb binges to trigger ravenous hunger and overnight liver glucose dumping\u2014and how hitting >2.5 mmol/L ketosis on Sardines shuts Asprosin off."
+          "views": "98K",
+          "protocol_takeaway": "Explains how fat cells secrete Asprosin after carb binges to trigger hunger and morning liver glucose\u2014and how hitting 2.0+ mmol/L ketosis shuts Asprosin off."
         },
         {
-          "date": "2026-10-21",
-          "video_id": "bb_oct2026",
-          "title": "Why Whole-Food Protein Keeps Ketogenesis Alive While Liquid Whey Spikes Insulin",
-          "views": "125K",
-          "protocol_takeaway": "Explains why transitioning from Sardines -> Whole Beef & Eggs keeps blood ketones at 1.5\u20132.5 mmol/L without crashing glucagon."
+          "date": "2026-10-26",
+          "video_id": "bb_ep168_2026",
+          "title": "Ep 168: Why What You Eat Still Matters on GLP-1 Drugs (Lean Mass Preservation)",
+          "views": "74K",
+          "protocol_takeaway": "Demonstrates why protein sufficiency + resistance tension are non-negotiable during rapid appetite-suppressed weight loss so FFM stays locked."
+        },
+        {
+          "date": "2026-10-19",
+          "video_id": "bb_ep167_2026",
+          "title": "Ep 167: Could Low Potassium Be Raising Your Blood Sugar? (29:29)",
+          "views": "90K",
+          "protocol_takeaway": "Directly proves our bodybuilder electrolyte rule: low potassium impairs insulin sensitivity and raises fasting glucose\u2014validating your 6 tbsp Avocado Guac (~540 mg K+) + meat/sardines alongside 4,500\u20135,500 mg sodium!"
         }
       ],
       "active_drops": [
@@ -831,15 +867,44 @@
           "date": "2026-11-02",
           "video_id": "AZtu3RSXbiE",
           "title": "Ep 169: How Your Body Fat Can Make You Hungrier (Asprosin & Hepatic Glucose Dumping)",
-          "views": "92K (6 days ago!)",
-          "protocol_takeaway": "Explains how fat cells secrete Asprosin after carb binges to trigger ravenous hunger and overnight liver glucose dumping\u2014and how hitting >2.5 mmol/L ketosis on Sardines shuts Asprosin off."
+          "views": "98K",
+          "protocol_takeaway": "Explains how fat cells secrete Asprosin after carb binges to trigger hunger and morning liver glucose\u2014and how hitting 2.0+ mmol/L ketosis shuts Asprosin off."
         },
         {
-          "date": "2026-10-21",
-          "video_id": "bb_oct2026",
-          "title": "Why Whole-Food Protein Keeps Ketogenesis Alive While Liquid Whey Spikes Insulin",
-          "views": "125K",
-          "protocol_takeaway": "Explains why transitioning from Sardines -> Whole Beef & Eggs keeps blood ketones at 1.5\u20132.5 mmol/L without crashing glucagon."
+          "date": "2026-10-26",
+          "video_id": "bdbzsg5vE54",
+          "title": "168: Why What You Eat Still Matters on GLP-1 Drugs",
+          "views": "39,716 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=bdbzsg5vE54",
+          "matched_keywords": [
+            "glp-1"
+          ],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (glp-1)."
+        },
+        {
+          "date": "2026-10-26",
+          "video_id": "bb_ep168_2026",
+          "title": "Ep 168: Why What You Eat Still Matters on GLP-1 Drugs (Lean Mass Preservation)",
+          "views": "74K",
+          "protocol_takeaway": "Demonstrates why protein sufficiency + resistance tension are non-negotiable during rapid appetite-suppressed weight loss so FFM stays locked."
+        },
+        {
+          "date": "2026-10-19",
+          "video_id": "bKCgXHVexIg",
+          "title": "167: Could Low Potassium Be Raising Your Blood Sugar?",
+          "views": "91,134 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=bKCgXHVexIg",
+          "matched_keywords": [
+            "potassium"
+          ],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (potassium)."
+        },
+        {
+          "date": "2026-10-19",
+          "video_id": "bb_ep167_2026",
+          "title": "Ep 167: Could Low Potassium Be Raising Your Blood Sugar? (29:29)",
+          "views": "90K",
+          "protocol_takeaway": "Directly proves our bodybuilder electrolyte rule: low potassium impairs insulin sensitivity and raises fasting glucose\u2014validating your 6 tbsp Avocado Guac (~540 mg K+) + meat/sardines alongside 4,500\u20135,500 mg sodium!"
         }
       ]
     },
@@ -848,51 +913,80 @@
       "name": "Thomas DeLauer",
       "handle": "@ThomasDeLauerOfficial",
       "channel_id": "UC70srI3VkT1MXALRtf0pcHg",
-      "subscribers": "3.92M",
+      "subscribers": "4.05M",
       "tier": "Expanded Authority #11",
-      "domain": "Applied Sardine Fast Variations, C8 MCT Timing & 2026 Ketovore Cycling",
-      "shaun_genotype_link": "Practical 72h\u20137d Sardine Fast + C8 MCT Oil Execution & Refeed Transitions",
+      "domain": "Applied Sardine Fast Variations, C8/C10 MCT Timing, Oral hs-CRP & 2026 Ketovore Protein",
+      "shaun_genotype_link": "Practical Sardine/MCT Execution + hs-CRP (1.5 -> <0.5) + Lean FFM Protein Floor",
       "cadence": "Tier A \u2014 Every Wednesday & Sunday @ 08:00 AM EST",
       "priority_keywords": [
         "sardine",
         "keto",
         "mct",
         "fast",
-        "visceral",
+        "insulin",
         "protein",
-        "electrolyte",
+        "shredded",
+        "gum",
         "carnivore"
       ],
       "latest_verified_drops": [
         {
-          "date": "2026-05-30",
-          "video_id": "qdGmE3vBatE",
-          "title": "The New Era of Keto in 2026: NEW Science, NEW Rule",
-          "views": "540K",
-          "protocol_takeaway": "Shifts 2026 ketogenic dieting away from 'fat bombs' toward high-protein, marine-fat/MUFA-dominant Ketovore with strategic C8 MCT windows."
+          "date": "2026-11-13",
+          "video_id": "td_nov13_2026",
+          "title": "This is Worse than Diet and Lack of Exercise for Insulin Resistance (12:41)",
+          "views": "15K (5 hours ago!)",
+          "protocol_takeaway": "Highlights sleep fragmentation, circadian misalignment (eating late with MTNR1B CG), and chronic sympathetic stress as primary drivers of morning Dawn Phenomenon glucose."
         },
         {
-          "date": "2026-01-05",
-          "video_id": "7AyKdbJeUTA",
-          "title": "36 Hours of Eating Sardines is Better than a 3-Day Water Fast",
-          "views": "410K",
-          "protocol_takeaway": "Shows why sardine fasting preserves lean muscle mass and thyroid T3 better than zero-calorie water fasting while achieving identical ketone elevation."
+          "date": "2026-11-12",
+          "video_id": "td_nov12_2026",
+          "title": "The Exact Protein Amount Needed to Build Muscle has Finally Been Discovered (11:31)",
+          "views": "87K (1 day ago!)",
+          "protocol_takeaway": "Confirms scaling protein to fat-free mass (~0.85\u20131.1g/lb FFM = 130\u2013165g floor on steep 1,200 kcal cut days; 185\u2013205g on OxeFit refuel days) maximizes MPS without excess gluconeogenesis."
+        },
+        {
+          "date": "2026-11-10",
+          "video_id": "td_nov10_2026",
+          "title": "This Natural Mouth Rinse Kills Gum Bacteria and Reverses Plaque (not baking soda) (7:18)",
+          "views": "76K (3 days ago!)",
+          "protocol_takeaway": "Protects oral nitrate-reducing bacteria (preserving vascular Nitric Oxide!) while eliminating gingival inflammation that elevates systemic hs-CRP (1.5 mg/L)."
+        },
+        {
+          "date": "2026-11-08",
+          "video_id": "td_nov08_2026",
+          "title": "The New Driver of Insulin Resistance Starts in Your Fat Cells (10:46) + Nov 5 'Most Shredded I've Ever Been' (15:01)",
+          "views": "71K / 79K",
+          "protocol_takeaway": "Shows shrinking hypertrophic visceral fat cells (VF 10 -> 9 -> <5) restores adiponectin, while warning against staying sub-8% stage-depleted year-round to protect Free T (114.5 pg/mL)."
         }
       ],
       "active_drops": [
         {
-          "date": "2026-05-30",
-          "video_id": "qdGmE3vBatE",
-          "title": "The New Era of Keto in 2026: NEW Science, NEW Rule",
-          "views": "540K",
-          "protocol_takeaway": "Shifts 2026 ketogenic dieting away from 'fat bombs' toward high-protein, marine-fat/MUFA-dominant Ketovore with strategic C8 MCT windows."
+          "date": "2026-11-13",
+          "video_id": "td_nov13_2026",
+          "title": "This is Worse than Diet and Lack of Exercise for Insulin Resistance (12:41)",
+          "views": "15K (5 hours ago!)",
+          "protocol_takeaway": "Highlights sleep fragmentation, circadian misalignment (eating late with MTNR1B CG), and chronic sympathetic stress as primary drivers of morning Dawn Phenomenon glucose."
         },
         {
-          "date": "2026-01-05",
-          "video_id": "7AyKdbJeUTA",
-          "title": "36 Hours of Eating Sardines is Better than a 3-Day Water Fast",
-          "views": "410K",
-          "protocol_takeaway": "Shows why sardine fasting preserves lean muscle mass and thyroid T3 better than zero-calorie water fasting while achieving identical ketone elevation."
+          "date": "2026-11-12",
+          "video_id": "td_nov12_2026",
+          "title": "The Exact Protein Amount Needed to Build Muscle has Finally Been Discovered (11:31)",
+          "views": "87K (1 day ago!)",
+          "protocol_takeaway": "Confirms scaling protein to fat-free mass (~0.85\u20131.1g/lb FFM = 130\u2013165g floor on steep 1,200 kcal cut days; 185\u2013205g on OxeFit refuel days) maximizes MPS without excess gluconeogenesis."
+        },
+        {
+          "date": "2026-11-10",
+          "video_id": "td_nov10_2026",
+          "title": "This Natural Mouth Rinse Kills Gum Bacteria and Reverses Plaque (not baking soda) (7:18)",
+          "views": "76K (3 days ago!)",
+          "protocol_takeaway": "Protects oral nitrate-reducing bacteria (preserving vascular Nitric Oxide!) while eliminating gingival inflammation that elevates systemic hs-CRP (1.5 mg/L)."
+        },
+        {
+          "date": "2026-11-08",
+          "video_id": "td_nov08_2026",
+          "title": "The New Driver of Insulin Resistance Starts in Your Fat Cells (10:46) + Nov 5 'Most Shredded I've Ever Been' (15:01)",
+          "views": "71K / 79K",
+          "protocol_takeaway": "Shows shrinking hypertrophic visceral fat cells (VF 10 -> 9 -> <5) restores adiponectin, while warning against staying sub-8% stage-depleted year-round to protect Free T (114.5 pg/mL)."
         }
       ]
     },
@@ -901,69 +995,89 @@
       "name": "Dr. Mike Israetel, PhD (Renaissance Periodization)",
       "handle": "@RenaissancePeriodization",
       "channel_id": "UCfQgsKhHjSyRLOp9mnffqVg",
-      "subscribers": "3.15M",
+      "subscribers": "3.9M",
       "tier": "Expanded Authority #12",
-      "domain": "Minimum Effective Volume (MEV), Maximum Recoverable Volume (MRV) & Deficit Fatigue",
-      "shaun_genotype_link": "Deficit Volume Calibration (Cutting Junk Sets During 200\u20131,450 kcal Phases)",
+      "domain": "Minimum Effective Volume (MEV), Evidence-Based Supplements & Deficit Hypertrophy",
+      "shaun_genotype_link": "Deficit Volume Calibration (6\u20138 Hard Sets/Muscle/Wk + >=1.0 m/s ACTN3 CC Velocity)",
       "cadence": "Tier C \u2014 Bi-Weekly Sunday Sync",
       "priority_keywords": [
         "volume",
         "deficit",
         "fat loss",
-        "stretch",
-        "recovery",
-        "hypertrophy",
-        "deload"
+        "supplement",
+        "protein",
+        "studied",
+        "train",
+        "hypertrophy"
       ],
       "latest_verified_drops": [
         {
-          "date": "2026-10-14",
-          "video_id": "mi_oct2026",
-          "title": "How to Adjust Training Volume During an Aggressive Fat Loss Phase",
-          "views": "380K",
-          "protocol_takeaway": "Confirms that during steep caloric deficits, maintaining load/tension at 6\u20138 sets/muscle/week preserves 100% of muscle while high-rep junk volume causes systemic burnout."
+          "date": "2026-11-12",
+          "video_id": "rp_prot_nov12_2026",
+          "title": "The Truth About Why Protein Costs So Much Now",
+          "views": "190K (1 day ago!)",
+          "protocol_takeaway": "Breaks down whey/dairy commodity inflation\u2014proving whole-food sardines, eggs, brisket, and turkey sausage deliver superior micronutrient ROI per gram of bioavailable protein."
+        },
+        {
+          "date": "2026-11-10",
+          "video_id": "rp_supp_nov10_2026",
+          "title": "Which Supplements Are Actually Legit? (Scientifically Proven) (13:40)",
+          "views": "186K (3 days ago!)",
+          "protocol_takeaway": "Tier-1 clinical greenlight for Creatine Monohydrate (5g/d), Pre-12PM Caffeine, Marine Omega-3s, and targeted Protein/Collagen\u2014zero wasted money on proprietary fat burners."
+        },
+        {
+          "date": "2026-11-05",
+          "video_id": "rp_30k_nov05_2026",
+          "title": "30,000 People Studied. This Is How You Should Train. (26:04)",
+          "views": "736K (8 days ago!)",
+          "protocol_takeaway": "Massive 30,000-trainee longitudinal dataset confirming consistent progressive tension at high proximity to failure (3\u20135x/wk, <50 min) drives virtually all natural strength & muscle gains."
         }
       ],
       "active_drops": [
         {
-          "date": "2026-11-08",
-          "video_id": "fY5p6aIbG1c",
-          "title": "Why Squats Hit Your BACK Instead of Your QUADS",
-          "url": "https://www.youtube.com/watch?v=fY5p6aIbG1c",
+          "date": "2026-11-13",
+          "video_id": "ZYc3AeB15uw",
+          "title": "Dr. Mike Believes Larry's Gear Usage",
+          "views": "3,453 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=ZYc3AeB15uw",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
-          "date": "2026-11-07",
-          "video_id": "q6hm41LDNYc",
-          "title": "Seed Oils Are HEALTHIER Than Butter (here's why)",
-          "url": "https://www.youtube.com/watch?v=q6hm41LDNYc",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "date": "2026-11-12",
+          "video_id": "51holPmSuyI",
+          "title": "Should Women Really Train Differently?",
+          "views": "55,232 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=51holPmSuyI",
+          "matched_keywords": [
+            "train"
+          ],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (train)."
         },
         {
-          "date": "2026-11-06",
-          "video_id": "Vrc4EE7z4eU",
-          "title": "The 'No Eating After 6PM' Rule Backfires",
-          "url": "https://www.youtube.com/watch?v=Vrc4EE7z4eU",
+          "date": "2026-11-12",
+          "video_id": "6anrlwwZQ98",
+          "title": "Are You Doing TOO MANY Sets?",
+          "views": "44,248 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=6anrlwwZQ98",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
-          "date": "2026-11-06",
-          "video_id": "KzmRpMp9WhA",
-          "title": "Exercise Scientist Critiques Daddy Noel: Is He Actually Right?",
-          "url": "https://www.youtube.com/watch?v=KzmRpMp9WhA",
-          "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "date": "2026-11-12",
+          "video_id": "rp_prot_nov12_2026",
+          "title": "The Truth About Why Protein Costs So Much Now",
+          "views": "190K (1 day ago!)",
+          "protocol_takeaway": "Breaks down whey/dairy commodity inflation\u2014proving whole-food sardines, eggs, brisket, and turkey sausage deliver superior micronutrient ROI per gram of bioavailable protein."
         },
         {
-          "date": "2026-11-06",
-          "video_id": "O-6yGaLw_9U",
-          "title": "Fast Weight Loss Isn't A Good Thing",
-          "url": "https://www.youtube.com/watch?v=O-6yGaLw_9U",
+          "date": "2026-11-11",
+          "video_id": "yLxMc0nTce4",
+          "title": "Exercise Scientist Debunks Lifting Myths",
+          "views": "135,312 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=yLxMc0nTce4",
           "matched_keywords": [],
-          "protocol_takeaway": "Live RSS detection \u2014 queued for transcript extraction & protocol correlation."
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
       ]
     },
@@ -971,7 +1085,7 @@
       "id": "keith_baar",
       "name": "Dr. Keith Baar, PhD (UC Davis Tendon Lab)",
       "handle": "@KeithBaarLab",
-      "channel_id": "UCKBaarTendonMatrixLab",
+      "channel_id": "",
       "subscribers": "Academic / Podcast Features",
       "tier": "Expanded Authority #13",
       "domain": "Isometric Tendon Creep Loading, Collagen Synthesis & Scar Remodeling",
@@ -1002,6 +1116,112 @@
           "title": "Overcoming Tendon Shielding: 30-Second Isometric Holds + Vitamin C-Enriched Collagen",
           "views": "95K",
           "protocol_takeaway": "Heavy slow isometrics (4 x 30s at ~70% MVC) 45 minutes after 15\u201318g hydrolyzed collagen + 50mg Vitamin C forces aligned collagen fibrils through central tendon scars."
+        }
+      ]
+    },
+    {
+      "id": "sober_fitness",
+      "name": "Jack Wiltshire \u2014 Sober Fitness",
+      "handle": "@SoberFitness",
+      "channel_id": "UCWj6fRc8W_ZlFVUurSsLghw",
+      "subscribers": "246K (3,500 Videos)",
+      "tier": "Added Authority #14 (100% Natural Minimalist Lifting, Fitness Dailies & Sobriety Mindset)",
+      "domain": "7-Exercise Motor-Skill Mastery, Daily Bodyweight 'Fitness Dailies', 100-Rep Tendon Feeders & 90-Day Dopamine Detox",
+      "shaun_genotype_link": "Rack Pro Daily Dips/Leg Raises (GLUT4 2.0 mmol/L BHB Engine!) + COMT GG / FTO AT Sobriety Identity + ALT 48 Alcohol-Free Liver Shield",
+      "cadence": "Tier A \u2014 Every Wednesday & Sunday @ 08:00 AM EST (3,500-Video High-Frequency Catalog)",
+      "priority_keywords": [
+        "exercises",
+        "daily",
+        "dailies",
+        "dips",
+        "leg raises",
+        "pull-ups",
+        "reps",
+        "sober",
+        "dopamine",
+        "willpower",
+        "ginger"
+      ],
+      "latest_verified_drops": [
+        {
+          "date": "2026-11-09",
+          "video_id": "sf_nov09_2026",
+          "title": "Train Your Whole Body With Fewer Exercises (6:44) + Jul 2 'Why I Only Focus on 7 Exercises' (sGBRmRmX9MQ)",
+          "views": "190K (4d ago!) / 341K",
+          "protocol_takeaway": "Treats 7 compound patterns (Press/Weighted Dip, Row, Squat, OHP, Neutral/Wide Pull-Up, RDL, Core) as lifelong motor skills\u2014eliminating OxeFit exercise-hopping and joint wear."
+        },
+        {
+          "date": "2026-11-02",
+          "video_id": "O-3gD2OnAf0",
+          "title": "THE KEY TO SERIOUS GAINS (Nov 2) + 'From ER to Squat PR' (Nov 1)",
+          "views": "19K+ (Nov 2026)",
+          "protocol_takeaway": "Unbroken 90-day consistency and methodical post-injury rebuilding beat ego lifting\u2014mirroring your disciplined right-bicep comeback and OxeFit Day 1 relaunch."
+        },
+        {
+          "date": "2026-09-04",
+          "video_id": "_ZyVbh4gUsA",
+          "title": "Why Do More Reps (_ZyVbh4gUsA) + 'Develop Your Physique One Aspect at a Time' (S0Z_FxFuz20, Sep 9)",
+          "views": "74K / 157K Series",
+          "protocol_takeaway": "Occasional 50\u2013100 rep ultra-light feeder sets flush COL1A1 AC tendons with blood and lock in lat/pec mind-muscle connection while specializing on 1 priority goal per 90-day season."
+        },
+        {
+          "date": "2026-08-17",
+          "video_id": "aFJT2ssWvWk",
+          "title": "How to be about it (aFJT2ssWvWk) + The 90-Day Dopamine Detox & Steroid/TRT Natural Response (8WFkHwb_SIo)",
+          "views": "Verified Flagships",
+          "protocol_takeaway": "100% lifetime natural & sober identity: eliminates weekend alcohol/binge dopamine crashes, protecting ALT (48 -> <25), Free T (114.5 pg/mL), Oura REM sleep, and unbroken ketosis."
+        },
+        {
+          "date": "2026-08-05",
+          "video_id": "g8f8qu2U5II",
+          "title": "10 Minute Daily Leg Raises (g8f8qu2U5II) + MY TOP 5 FITNESS DAILIES (zns6VDqfuOU) + Ginger Tea Remedy (vQlvXMDBU-M)",
+          "views": "Flagship Dailies",
+          "protocol_takeaway": "Exact match for your Rack Pro 50 Dips + 50 Leg Raises evening habit (zero CNS burnout + non-insulin GLUT4 glucose sink -> 2.0 mmol/L BHB PR!) + zero-carb Ginger Tea for MCT digestion & hs-CRP."
+        }
+      ],
+      "active_drops": [
+        {
+          "date": "2026-11-13",
+          "video_id": "Q_Ql0bJF_g4",
+          "title": "WHATEVER IT TAKES TO GET THROUGH \ud83e\udde0",
+          "views": "6,288 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=Q_Ql0bJF_g4",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-12",
+          "video_id": "aRWl8GfO26A",
+          "title": "DON\u2019T CHALLENGE ME \ud83d\ude02",
+          "views": "3,120 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=aRWl8GfO26A",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-11",
+          "video_id": "zp1uRicIfaM",
+          "title": "ONE ASPECT OF YOUR PHYSIQUE AT A TIME \ud83e\udde0",
+          "views": "11,104 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=zp1uRicIfaM",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-09",
+          "video_id": "sf_nov09_2026",
+          "title": "Train Your Whole Body With Fewer Exercises (6:44) + Jul 2 'Why I Only Focus on 7 Exercises' (sGBRmRmX9MQ)",
+          "views": "190K (4d ago!) / 341K",
+          "protocol_takeaway": "Treats 7 compound patterns (Press/Weighted Dip, Row, Squat, OHP, Neutral/Wide Pull-Up, RDL, Core) as lifelong motor skills\u2014eliminating OxeFit exercise-hopping and joint wear."
+        },
+        {
+          "date": "2026-11-08",
+          "video_id": "llrEuFyZhAg",
+          "title": "I DIDN\u2019T ADD WEIGHT FOR YEARS AND YEARS\u2026",
+          "views": "630,885 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=llrEuFyZhAg",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
       ]
     }

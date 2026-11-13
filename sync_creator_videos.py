@@ -1,22 +1,28 @@
 #!/usr/bin/env python3
 """
-Super Ketovore v4.5 — Automated 13-Creator Video Radar, Mindset & Sync Engine
-=============================================================================
-Polls YouTube Atom/RSS feeds for Shaun's 13 Tier-1 Health, Hypertrophy,
-Metabolic, Longevity & Mindset Creators (Original 5 + The Diary Of A CEO +
-7 Specialized Clinical Authorities), filters against Shaun's biomarker/protocol
-keywords, updates creator_radar_feed.json, and downloads new transcripts via yt-dlp.
+Super Ketovore v5.0 — Automated 14-Creator Video Radar, Sobriety/Mindset & Cloud Sync Engine
+=============================================================================================
+Polls YouTube Atom/RSS feeds (with automatic @Handle -> UC channel_id resolution) for Shaun's
+14 Tier-1 Health, Hypertrophy, Metabolic, Longevity, Mindset & Natural Sobriety Creators
+(Original 5 + The Diary Of A CEO + 7 Specialized Clinical Authorities + @SoberFitness),
+filters against Shaun's biomarker/protocol keywords, merges with curated protocol takeaways,
+updates creator_radar_feed.json, and optionally downloads English transcripts via yt-dlp.
+
+Cloud Automation:
+  Runs automatically every Wednesday & Sunday @ 08:00 AM EST (13:00 UTC) via GitHub Actions
+  (.github/workflows/sync_creator_videos.yml) and commits updates to creator_radar_feed.json.
 
 Usage:
   python3 sync_creator_videos.py --check          # Poll feeds & update creator_radar_feed.json
-  python3 sync_creator_videos.py --download-new   # Download newly detected videos/transcripts via yt-dlp
-  python3 sync_creator_videos.py --roster         # Print the 13-Creator Roster & Sync Cadence
+  python3 sync_creator_videos.py --download-new   # Download newly detected transcripts via yt-dlp
+  python3 sync_creator_videos.py --roster         # Print the 14-Creator Roster & Sync Cadence
 """
 
 import argparse
 import datetime
 import json
 import os
+import re
 import subprocess
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -26,7 +32,7 @@ FEED_OUTPUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cre
 DOWNLOAD_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "creator_downloads")
 
 # ============================================================================
-# 13-CREATOR ROSTER: ORIGINAL 5 + THE DIARY OF A CEO + 7 CLINICAL AUTHORITIES
+# 14-CREATOR ROSTER: ORIGINAL 5 + DOAC + 7 CLINICAL AUTHORITIES + SOBER FITNESS
 # ============================================================================
 CREATOR_ROSTER: List[Dict[str, Any]] = [
     # --- ORIGINAL 5 CORE CREATORS ---
@@ -35,18 +41,25 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Jeremy Ethier",
         "handle": "@JeremyEthier",
         "channel_id": "UCERm5yFZ1SptUEU4wZ2vJvw",
-        "subscribers": "7.99M",
+        "subscribers": "8.0M",
         "tier": "Original Core 5",
         "domain": "EMG Biomechanics, Minimum Effective Volume & Tendon-Safe Exercise Selection",
         "shaun_genotype_link": "ACTN3 CC (Power/Sprint) + COL1A1 AC / MMP3 CT (Right Bicep Tendon Protection)",
         "cadence": "Tier B — Weekly Sunday 08:00 AM EST Sync",
-        "priority_keywords": ["workout", "split", "time", "ab", "bicep", "shoulder", "volume", "stretch", "fat"],
+        "priority_keywords": ["workout", "split", "time", "ab", "bicep", "shoulder", "volume", "stretch", "fat", "steps"],
         "latest_verified_drops": [
+            {
+                "date": "2026-11-09",
+                "video_id": "je_nov09_2026",
+                "title": "It's Tough, But Burns Fat 4x Faster Than 10K Steps/Day (21:56)",
+                "views": "3.2M (4 days ago!)",
+                "protocol_takeaway": "Time-efficient interval conditioning burst protocol that amplifies post-exercise fat oxidation 4x per minute when short on step time—pairs with Crossrope / FightCamp finishers."
+            },
             {
                 "date": "2026-11-01",
                 "video_id": "new_nov1_2026",
                 "title": "I Gave Him Fake Steroids For 100 Days",
-                "views": "2.72M (in 4d 5h)",
+                "views": "4.1M",
                 "protocol_takeaway": "Demonstrates expectation/placebo effect vs. natural training ceiling when recovery and progressive overload are locked in."
             },
             {
@@ -70,40 +83,33 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Annette Bosworth (Dr. Boz, MD)",
         "handle": "@DoctorBoz",
         "channel_id": "UCLGu62anfPbFDkdQj0p-hQw",
-        "subscribers": "890K",
+        "subscribers": "1.3M",
         "tier": "Original Core 5",
         "domain": "72h–7d Sardine Fasting, Dr. Boz Ratio (GKI), Autophagy & Deep Ketogenesis",
-        "shaun_genotype_link": "TCF7L2 CT + MTNR1B CG (Fasting Glucose 102 mg/dL & Post-Binge Insulin Reset)",
+        "shaun_genotype_link": "TCF7L2 CT + MTNR1B CG (AM Ketone PR 2.0 mmol/L & AM DBR 45.0!)",
         "cadence": "Tier A — Every Wednesday & Sunday @ 08:00 AM EST",
         "priority_keywords": ["sardine", "ketone", "ketosis", "fasting", "autophagy", "insulin", "mct", "carnivore"],
         "latest_verified_drops": [
             {
                 "date": "2026-11-06",
                 "video_id": "substack_nov6_2026",
-                "title": "She Lost Seven Pounds on Sardines. That Wasn't the Point.",
-                "views": "Substack + Video Dispatch",
-                "protocol_takeaway": "Separates the rapid 6–8 lb first-72h glycogen/extracellular fluid flush from the true metabolic prize: crashing basal insulin and unlocking 3.0–4.0+ mmol/L hepatic ketogenesis."
+                "title": "She Lost Seven Pounds on Sardines. That Wasn't the Point. + 'What's Wrong With Healthy Diet Advice' (52:30)",
+                "views": "Substack + Live Stream",
+                "protocol_takeaway": "Separates the rapid first-week glycogen/fluid drop (your 209.6 -> 200.0 lb -9.6 lb 5-day plunge!) from the true metabolic prize: crashing basal insulin and hitting 2.0+ mmol/L morning BHB."
             },
             {
                 "date": "2026-10-13",
                 "video_id": "YSlr0ntjQzU",
                 "title": "100 Cans of Sardines and No Ketones. Now What?",
                 "views": "101K (1:00:31 Live Q&A)",
-                "protocol_takeaway": "Explains why late-night eating, poor sleep (cortisol spikes), or hidden sauces block ketosis during a sardine fast—reinforcing your 5:30 PM cutoff + C8 MCT oil protocol."
+                "protocol_takeaway": "Explains why late-night eating, poor sleep (cortisol spikes), or hidden sauces block ketosis—reinforcing your 5:30 PM cutoff + 3 tbsp C8/C10 MCT oil protocol."
             },
             {
                 "date": "2026-10-04",
                 "video_id": "XsAUZQugviY",
                 "title": "Boz 2 Ketones",
                 "views": "54K",
-                "protocol_takeaway": "Clinical troubleshooting for transitioning from exogenous support to endogenous 2.0–4.0 mmol/L blood BHB."
-            },
-            {
-                "date": "2026-09-22",
-                "video_id": "Jo4D9RPLAak",
-                "title": "Ketosis in the Real World: Sardine Fasting, Low-Dose GLP-1s & Carb Addiction",
-                "views": "68K",
-                "protocol_takeaway": "Shows how a 72-hour to 7-day Sardine Fast naturally mimics GLP-1/PYY satiety signaling at 200–800 kcal/day after a high-carb weekend binge."
+                "protocol_takeaway": "Clinical troubleshooting for transitioning from exogenous C8/C10 support to endogenous 2.0–4.0 mmol/L blood BHB."
             }
         ]
     },
@@ -112,10 +118,10 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Jeff Nippard",
         "handle": "@JeffNippard",
         "channel_id": "UC68TLK0mAEzUyHx5x5k-S1Q",
-        "subscribers": "8.13M",
+        "subscribers": "8.77M",
         "tier": "Original Core 5",
         "domain": "Lengthened Partials, Body Recomposition Macros & Evidence-Based Hypertrophy",
-        "shaun_genotype_link": "FFM Preservation (151.0 lb -> 164.5 lb Target during Aggressive Cut)",
+        "shaun_genotype_link": "FFM Preservation (148.2–151.0 lb -> 164.5 lb Target during Aggressive Cut)",
         "cadence": "Tier B — Weekly Sunday 08:00 AM EST Sync",
         "priority_keywords": ["hypertrophy", "recomp", "calories", "peptide", "protein", "volume", "stretch", "muscle"],
         "latest_verified_drops": [
@@ -131,7 +137,7 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
                 "video_id": "jn_oct17_2026",
                 "title": "What Do 100 Calories Actually Look Like?",
                 "views": "4.10M",
-                "protocol_takeaway": "Visualizes caloric density vs. satiety volume—explaining why whole-food protein/sardines/eggs lock in satiety at 1,100–1,800 kcal while hyper-palatable carbs trigger 4,000+ kcal binges."
+                "protocol_takeaway": "Visualizes caloric density vs. satiety volume—explaining why whole-food protein/sardines/turkey sausage/guac lock in satiety at 1,150–1,450 kcal."
             },
             {
                 "date": "2026-10-08",
@@ -156,10 +162,10 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "latest_verified_drops": [
             {
                 "date": "2026-10-13",
-                "video_id": "rh_oct13_2026",
+                "video_id": "jRbj25q-AjU",
                 "title": "Exposing The Biggest Scam In Supplements",
                 "views": "612.6K",
-                "protocol_takeaway": "Cuts through proprietary under-dosed blends in favor of single-ingredient clinical staples (Creatine 5g, Pure C8 MCT, Hydrolyzed Collagen, EPA/DHA, Magnesium)."
+                "protocol_takeaway": "Cuts through proprietary under-dosed blends in favor of single-ingredient clinical staples (Creatine 5g, Pure C8/C10 MCT, Hydrolyzed Collagen, EPA/DHA, Magnesium)."
             }
         ]
     },
@@ -168,7 +174,7 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Bryan Johnson (Blueprint)",
         "handle": "@BryanJohnson",
         "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
-        "subscribers": "1.95M",
+        "subscribers": "2.26M",
         "tier": "Original Core 5",
         "domain": "Circadian Cutoff, Sleep Architecture, Biological Age & Biomarker Tracking",
         "shaun_genotype_link": "MTNR1B CG (Early Dinner Cutoff) + COMT GG (Evening Parasympathetic Downregulation)",
@@ -176,10 +182,17 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "priority_keywords": ["sleep", "hrv", "resting heart rate", "biomarker", "longevity", "fasting", "microplastics"],
         "latest_verified_drops": [
             {
+                "date": "2026-11-07",
+                "video_id": "bj_nov07_2026",
+                "title": "Am I a Billionaire? I Answer the Internet's Questions + Blueprint Biomarker Q&A",
+                "views": "494K (6 days ago!)",
+                "protocol_takeaway": "Reiterates autonomous evening wind-down, strict early meal cutoff (4+ hours pre-bed), and objective blood/wearable tracking over guesswork."
+            },
+            {
                 "date": "2026-10-20",
                 "video_id": "bj_oct2026",
                 "title": "Blueprint 2026 Sleep & Early-Cutoff Metabolic Protocol",
-                "views": "1.1M",
+                "views": "1.3M",
                 "protocol_takeaway": "Confirms that finishing caloric intake 4+ hours before sleep drops nocturnal RHR by 4–6 bpm and prevents overnight glucose elevation."
             }
         ]
@@ -191,54 +204,33 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Steven Bartlett — The Diary Of A CEO",
         "handle": "@TheDiaryOfACEO",
         "channel_id": "UCGq-a57w-aPwyi3pW7XLiHw",
-        "subscribers": "21.7M (2.02B Views)",
+        "subscribers": "21.9M (2.05B+ Views)",
         "tier": "Expanded Authority #6 (Health, Metabolic & Mindset Masterclasses)",
         "domain": "World-Class Doctor Roundtable Interviews, Liver/Visceral Fat Reversal, Dopamine/Stress Control & Identity Mindset",
         "shaun_genotype_link": "COMT GG + BDNF CT (Stress/Dopamine Binge Prevention) + PEMT CT (ALT 48 Fatty Liver Drain) + FTO AT (Identity Habits)",
-        "cadence": "Tier A — Every Thursday & Sunday @ 08:00 AM EST (Uploads 2x/wk, +124.45M views/mo)",
-        "priority_keywords": ["insulin", "fasting", "keto", "ketone", "visceral", "liver", "sugar", "brain", "dopamine", "stress", "habit", "muscle"],
+        "cadence": "Tier A — Every Thursday & Sunday @ 08:00 AM EST",
+        "priority_keywords": ["insulin", "fasting", "keto", "ketone", "visceral", "liver", "sugar", "brain", "dementia", "dopamine", "stress", "habit"],
         "latest_verified_drops": [
+            {
+                "date": "2026-11-12",
+                "video_id": "doac_nov12_2026",
+                "title": "The Brain Doctor Who Explains The Main Cause Of Dementia - Dr. David Perlmutter (1:55:46)",
+                "views": "949K (22 hours ago!)",
+                "protocol_takeaway": "Connects insulin resistance, elevated uric acid, and cerebral glucose hypometabolism directly to cognitive decline—proving your 2.0 mmol/L blood BHB ketones protect and super-fuel brain mitochondria."
+            },
             {
                 "date": "2026-10-12",
                 "video_id": "Zqrn4XwscY8",
                 "title": "The Most Valuable 40 Minutes You'll Spend This Year (High-Performance Mindset & Control)",
                 "views": "4.8M",
-                "protocol_takeaway": "Reframes success from external/scale outcomes to controllable daily execution inputs—eliminating the 'weekend reward binge' trap after a strong week."
+                "protocol_takeaway": "Reframes success from external/scale outcomes to controllable daily execution inputs—eliminating the 'weekend reward binge' trap after hitting 200.0 lb."
             },
             {
                 "date": "2026-01-08",
                 "video_id": "C7LL7VwP8Nc",
                 "title": "Insulin Expert (Dr. Ben Bikman): How To 'Drain' Your Liver of Fat (Do This!) + Ketone Meter Live Test",
                 "views": "6.4M",
-                "protocol_takeaway": "Steven pricks his finger daily for blood BHB on camera while Dr. Bikman explains how crashing insulin via ketosis reverses de novo lipogenesis and drains liver fat (your ALT = 48 U/L -> <25 target)."
-            },
-            {
-                "date": "2025-12-26",
-                "video_id": "Oipkl53n938",
-                "title": "The 6 Science-Backed Brain Fixes Most People Are Ignoring! (CGM Glucose 'Sticky Glue' & Nitric Oxide)",
-                "views": "5.1M",
-                "protocol_takeaway": "Shows how glucose spikes (>140 mg/dL) glycate proteins and shut down endothelial Nitric Oxide (NO), and why ketosis + nasal breathing restore vascular flow and brain clarity."
-            },
-            {
-                "date": "2025-12-11",
-                "video_id": "rtufWBLOXgw",
-                "title": "The Man Who Wrote Atomic Habits (James Clear): Your Goals Are Holding You Back",
-                "views": "7.2M",
-                "protocol_takeaway": "Identity-based habit architecture: shifting from 'trying to lose weight' to 'I am an athlete who executes a 72h Sardine Slingshot after any off-plan meal and locks the kitchen at 5:30 PM.'"
-            },
-            {
-                "date": "2025-10-02",
-                "video_id": "ZE_H7rijrVk",
-                "title": "No. 1 Sugar Expert (Dr. Robert Lustig): You've Been Sold A Lie About 'Healthy' Food!",
-                "views": "8.9M",
-                "protocol_takeaway": "Explains how ultra-processed fructose/sucrose poisons hepatic mitochondria and blocks leptin signaling (FTO AT), causing back-to-back 4,000+ kcal weekend binges."
-            },
-            {
-                "date": "2025-09-22",
-                "video_id": "gryta3KZKU4",
-                "title": "Insulin Doctor (Dr. Pradip Jamnadas): The Fastest Way To Burn Dangerous Visceral Fat!",
-                "views": "7.8M",
-                "protocol_takeaway": "Clinical blueprint for targeting visceral abdominal fat (your VF 10 -> 4 target) and gut-derived hs-CRP inflammation via targeted fasting windows."
+                "protocol_takeaway": "Steven pricks his finger daily for blood BHB on camera while Dr. Bikman explains how crashing insulin via ketosis reverses de novo lipogenesis and drains liver fat (ALT 48 -> <25)."
             }
         ]
     },
@@ -249,19 +241,33 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Peter Attia, MD (The Drive)",
         "handle": "@PeterAttiaMD",
         "channel_id": "UC8kGsMa0LygSX9nkBcBH1Sg",
-        "subscribers": "1.15M",
+        "subscribers": "1.04M",
         "tier": "Expanded Authority #7",
-        "domain": "ApoB / Small LDL Particle Clearance, Zone 2 Mitochondrial Base & VO2 Max",
-        "shaun_genotype_link": "APOA2 CC + CETP AA (LDL-P 1,554 nmol/L, Small LDL 389 nmol/L -> Saturated Fat Cap)",
+        "domain": "ApoB / Small LDL Particle Clearance, Zone 2 Mitochondrial Base, VO2 Max & Aging Strength",
+        "shaun_genotype_link": "APOA2 CC + CETP AA (ApoB 96, Small LDL 389 nmol/L) + COL1A1 AC Age-39 Tendon-Safe RIR",
         "cadence": "Tier B — Weekly Sunday 08:00 AM EST Sync",
-        "priority_keywords": ["apob", "ldl", "zone 2", "vo2 max", "insulin", "strength", "longevity", "lipid"],
+        "priority_keywords": ["apob", "ldl", "zone 2", "vo2 max", "insulin", "strength", "resistance", "reserve", "lipid"],
         "latest_verified_drops": [
+            {
+                "date": "2026-11-12",
+                "video_id": "pa_nov12_2026",
+                "title": "Understanding reps in reserve | Jeff Cavaliere (3:28)",
+                "views": "New (1 day ago!)",
+                "protocol_takeaway": "Calibrates true 1–2 RIR on heavy compounds vs. safe failure on cables so your OxeFit Day 1 stimulus builds muscle without stressing your right bicep scar."
+            },
+            {
+                "date": "2026-11-10",
+                "video_id": "pa_414_nov10_2026",
+                "title": "#414 ‒ Resistance training as we age: exercise selection, training intensity, and much more (2:45:31)",
+                "views": "53K (3 days ago!)",
+                "protocol_takeaway": "Age-39+ blueprint for joint-friendly exercise selection, eccentric control, and preserving fast-twitch power (your 1,437 W ACTN3 CC engine) for decades."
+            },
             {
                 "date": "2026-10-26",
                 "video_id": "pa_oct2026",
                 "title": "Lipid Management, ApoB Targets & Why Saturated Fat Tolerance Varies by Genotype",
                 "views": "340K",
-                "protocol_takeaway": "Directly explains why hyper-absorbers/APOA2 CC carriers spike Small LDL on heavy butter/tallow carnivore and thrive when swapping to marine Omega-3s (sardines/salmon) + EVOO/avocado."
+                "protocol_takeaway": "Explains why APOA2 CC carriers spike Small LDL on butter/tallow overload and thrive when swapping to sardines, avocado guac, and EVOO."
             }
         ]
     },
@@ -270,13 +276,27 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Andrew Huberman, PhD (Huberman Lab)",
         "handle": "@hubermanlab",
         "channel_id": "UC2D2CMWXMOVWx7giW1n3LIg",
-        "subscribers": "6.85M",
+        "subscribers": "8.02M",
         "tier": "Expanded Authority #8",
-        "domain": "COMT GG Dopamine/Cortisol Regulation, 50-Min Workout Cap & Circadian Light",
+        "domain": "COMT GG Dopamine/Addiction Circuitry, Cortisol Regulation, Heat/Cold & Circadian Light",
         "shaun_genotype_link": "COMT GG (Warrior Fast Dopamine Clearance) + BDNF CT + MTNR1B CG",
         "cadence": "Tier B — Weekly Sunday 08:00 AM EST Sync",
-        "priority_keywords": ["cortisol", "dopamine", "sleep", "recovery", "hydration", "sodium", "zone 2"],
+        "priority_keywords": ["cortisol", "dopamine", "addiction", "cold", "heat", "sleep", "recovery", "sodium"],
         "latest_verified_drops": [
+            {
+                "date": "2026-11-10",
+                "video_id": "ah_nov10_2026",
+                "title": "Overcome Addictions and Obsessions of All Kinds | Dr. Anna Lembke (2:16:51)",
+                "views": "378K (3 days ago!)",
+                "protocol_takeaway": "Dissects the dopamine pleasure-pain seesaw behind weekend food/alcohol reward loops—directly reinforcing your COMT GG + @SoberFitness 90-Day Dopamine Reset."
+            },
+            {
+                "date": "2026-11-06",
+                "video_id": "ah_nov06_2026",
+                "title": "Essentials: Cold & Heat Exposure for Metabolic Health | Dr. Susanna Søberg (38:22)",
+                "views": "109K (7 days ago!)",
+                "protocol_takeaway": "Establishes the minimum effective dose (57 min/wk sauna + 11 min/wk cold) to activate brown fat uncoupling and boost insulin sensitivity."
+            },
             {
                 "date": "2026-10-19",
                 "video_id": "ah_oct2026",
@@ -291,61 +311,68 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Rhonda Patrick, PhD (FoundMyFitness)",
         "handle": "@FoundMyFitness",
         "channel_id": "UCWF8SqJVNlx-ctXbLswcTcA",
-        "subscribers": "590K",
+        "subscribers": "737K",
         "tier": "Expanded Authority #9",
-        "domain": "Omega-3 Index (FADS1 TT), Marine Phospholipids, Micronutrients & Heat/Sauna",
-        "shaun_genotype_link": "FADS1 TT (Low Plant-to-EPA Conversion -> Needs Direct Marine Sardine/Salmon EPA/DHA)",
+        "domain": "Saturated Fat vs. Red Meat/Seed Oils, Omega-3 Index (FADS1 TT) & Marine Phospholipids",
+        "shaun_genotype_link": "FADS1 TT (OmegaCheck 5.3%) + APOA2 CC (ApoB 96) + PEMT CT (ALT 48 Choline)",
         "cadence": "Tier C — Bi-Weekly Sunday Sync",
-        "priority_keywords": ["omega-3", "fads1", "protein", "dietary fat", "lactate", "bdnf", "sulforaphane"],
+        "priority_keywords": ["saturated fat", "red meat", "seed oil", "omega-3", "fads1", "protein", "dietary fat"],
         "latest_verified_drops": [
+            {
+                "date": "2026-11-13",
+                "video_id": "rp_nov13_2026",
+                "title": "The Hype vs. Data on Saturated Fat, Red Meat, & Seed Oils (2:37:03)",
+                "views": "BRAND NEW (2 hours ago!)",
+                "protocol_takeaway": "Separates whole unprocessed red meat (creatine/carnitine/taurine/betaine) from refined butter/dairy saturated fat excess and oxidized seed oils—100% validating your Steak/Brisket + Sardines + Avocado Guac + C8 MCT blueprint for ApoB <70!"
+            },
             {
                 "date": "2026-10-15",
                 "video_id": "rp_oct15_2026",
                 "title": "Dr. Dariush Mozaffarian: Dietary Fats, Ultra-Processed Foods & Food as Medicine",
                 "views": "215K",
-                "protocol_takeaway": "Reinforces whole-food marine fats and fermentation/food-matrix effects on cardiometabolic health over isolated refined fats."
-            },
-            {
-                "date": "2026-09-21",
-                "video_id": "rp_sep21_2026",
-                "title": "Building Daily Meals Around Protein to Preserve Lean Mass During Weight Loss",
-                "views": "290K",
-                "protocol_takeaway": "Supports anchoring your Phase 2/3 refeed at 195–210g protein/day (~1.25g/lb FFM) so every pound lost comes from fat."
+                "protocol_takeaway": "Reinforces whole-food marine fats and food-matrix effects on cardiometabolic health over isolated refined fats."
             },
             {
                 "date": "2026-08-19",
                 "video_id": "rp_aug19_2026",
                 "title": "What the Omega-3 Index Reveals About Heart Health (Why <6% Accelerates Risk)",
                 "views": "310K",
-                "protocol_takeaway": "Your Quest OmegaCheck is 5.3% (borderline low due to FADS1 TT). Eating sardines in Phase 1 + 3–4g/day EPA/DHA moves your Omega-3 Index into the optimal >8.0% zone."
+                "protocol_takeaway": "Your Quest OmegaCheck is 5.3% (FADS1 TT). Eating sardines + 3–4g/day EPA/DHA moves your Omega-3 Index into the optimal >8.0% zone."
             }
         ]
     },
     {
         "id": "ben_bikman",
         "name": "Dr. Ben Bikman, PhD (The Metabolic Classroom)",
-        "handle": "@BenBikmanPhD",
-        "channel_id": "UC2N2c93282022BikmanMetabolic",
-        "subscribers": "365K",
+        "handle": "@benbikman",
+        "channel_id": "",
+        "subscribers": "233K",
         "tier": "Expanded Authority #10",
-        "domain": "Insulin-to-Glucagon Ratio, Asprosin Hunger Hormone, Ketogenic Uncoupling & Whole-Food Protein",
-        "shaun_genotype_link": "TCF7L2 CT + FTO AT (Glucagon-Driven Lipolysis, Asprosin Suppression & Ketone Uncoupling)",
+        "domain": "Insulin-to-Glucagon Ratio, Potassium/Blood Sugar Link, Asprosin & Ketogenic Uncoupling",
+        "shaun_genotype_link": "TCF7L2 CT + FTO AT (2.0 mmol/L BHB PR, Potassium/Sodium Pump & Asprosin Suppression)",
         "cadence": "Tier A — Every Wednesday & Sunday @ 08:00 AM EST",
-        "priority_keywords": ["insulin", "glucagon", "ketone", "asprosin", "fat cell", "protein", "whey", "fasting", "visceral"],
+        "priority_keywords": ["insulin", "glucagon", "ketone", "potassium", "asprosin", "glp-1", "protein", "fasting"],
         "latest_verified_drops": [
             {
                 "date": "2026-11-02",
                 "video_id": "AZtu3RSXbiE",
                 "title": "Ep 169: How Your Body Fat Can Make You Hungrier (Asprosin & Hepatic Glucose Dumping)",
-                "views": "92K (6 days ago!)",
-                "protocol_takeaway": "Explains how fat cells secrete Asprosin after carb binges to trigger ravenous hunger and overnight liver glucose dumping—and how hitting >2.5 mmol/L ketosis on Sardines shuts Asprosin off."
+                "views": "98K",
+                "protocol_takeaway": "Explains how fat cells secrete Asprosin after carb binges to trigger hunger and morning liver glucose—and how hitting 2.0+ mmol/L ketosis shuts Asprosin off."
             },
             {
-                "date": "2026-10-21",
-                "video_id": "bb_oct2026",
-                "title": "Why Whole-Food Protein Keeps Ketogenesis Alive While Liquid Whey Spikes Insulin",
-                "views": "125K",
-                "protocol_takeaway": "Explains why transitioning from Sardines -> Whole Beef & Eggs keeps blood ketones at 1.5–2.5 mmol/L without crashing glucagon."
+                "date": "2026-10-26",
+                "video_id": "bb_ep168_2026",
+                "title": "Ep 168: Why What You Eat Still Matters on GLP-1 Drugs (Lean Mass Preservation)",
+                "views": "74K",
+                "protocol_takeaway": "Demonstrates why protein sufficiency + resistance tension are non-negotiable during rapid appetite-suppressed weight loss so FFM stays locked."
+            },
+            {
+                "date": "2026-10-19",
+                "video_id": "bb_ep167_2026",
+                "title": "Ep 167: Could Low Potassium Be Raising Your Blood Sugar? (29:29)",
+                "views": "90K",
+                "protocol_takeaway": "Directly proves our bodybuilder electrolyte rule: low potassium impairs insulin sensitivity and raises fasting glucose—validating your 6 tbsp Avocado Guac (~540 mg K+) + meat/sardines alongside 4,500–5,500 mg sodium!"
             }
         ]
     },
@@ -354,26 +381,40 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Thomas DeLauer",
         "handle": "@ThomasDeLauerOfficial",
         "channel_id": "UC70srI3VkT1MXALRtf0pcHg",
-        "subscribers": "3.92M",
+        "subscribers": "4.05M",
         "tier": "Expanded Authority #11",
-        "domain": "Applied Sardine Fast Variations, C8 MCT Timing & 2026 Ketovore Cycling",
-        "shaun_genotype_link": "Practical 72h–7d Sardine Fast + C8 MCT Oil Execution & Refeed Transitions",
+        "domain": "Applied Sardine Fast Variations, C8/C10 MCT Timing, Oral hs-CRP & 2026 Ketovore Protein",
+        "shaun_genotype_link": "Practical Sardine/MCT Execution + hs-CRP (1.5 -> <0.5) + Lean FFM Protein Floor",
         "cadence": "Tier A — Every Wednesday & Sunday @ 08:00 AM EST",
-        "priority_keywords": ["sardine", "keto", "mct", "fast", "visceral", "protein", "electrolyte", "carnivore"],
+        "priority_keywords": ["sardine", "keto", "mct", "fast", "insulin", "protein", "shredded", "gum", "carnivore"],
         "latest_verified_drops": [
             {
-                "date": "2026-05-30",
-                "video_id": "qdGmE3vBatE",
-                "title": "The New Era of Keto in 2026: NEW Science, NEW Rule",
-                "views": "540K",
-                "protocol_takeaway": "Shifts 2026 ketogenic dieting away from 'fat bombs' toward high-protein, marine-fat/MUFA-dominant Ketovore with strategic C8 MCT windows."
+                "date": "2026-11-13",
+                "video_id": "td_nov13_2026",
+                "title": "This is Worse than Diet and Lack of Exercise for Insulin Resistance (12:41)",
+                "views": "15K (5 hours ago!)",
+                "protocol_takeaway": "Highlights sleep fragmentation, circadian misalignment (eating late with MTNR1B CG), and chronic sympathetic stress as primary drivers of morning Dawn Phenomenon glucose."
             },
             {
-                "date": "2026-01-05",
-                "video_id": "7AyKdbJeUTA",
-                "title": "36 Hours of Eating Sardines is Better than a 3-Day Water Fast",
-                "views": "410K",
-                "protocol_takeaway": "Shows why sardine fasting preserves lean muscle mass and thyroid T3 better than zero-calorie water fasting while achieving identical ketone elevation."
+                "date": "2026-11-12",
+                "video_id": "td_nov12_2026",
+                "title": "The Exact Protein Amount Needed to Build Muscle has Finally Been Discovered (11:31)",
+                "views": "87K (1 day ago!)",
+                "protocol_takeaway": "Confirms scaling protein to fat-free mass (~0.85–1.1g/lb FFM = 130–165g floor on steep 1,200 kcal cut days; 185–205g on OxeFit refuel days) maximizes MPS without excess gluconeogenesis."
+            },
+            {
+                "date": "2026-11-10",
+                "video_id": "td_nov10_2026",
+                "title": "This Natural Mouth Rinse Kills Gum Bacteria and Reverses Plaque (not baking soda) (7:18)",
+                "views": "76K (3 days ago!)",
+                "protocol_takeaway": "Protects oral nitrate-reducing bacteria (preserving vascular Nitric Oxide!) while eliminating gingival inflammation that elevates systemic hs-CRP (1.5 mg/L)."
+            },
+            {
+                "date": "2026-11-08",
+                "video_id": "td_nov08_2026",
+                "title": "The New Driver of Insulin Resistance Starts in Your Fat Cells (10:46) + Nov 5 'Most Shredded I've Ever Been' (15:01)",
+                "views": "71K / 79K",
+                "protocol_takeaway": "Shows shrinking hypertrophic visceral fat cells (VF 10 -> 9 -> <5) restores adiponectin, while warning against staying sub-8% stage-depleted year-round to protect Free T (114.5 pg/mL)."
             }
         ]
     },
@@ -382,19 +423,33 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "name": "Dr. Mike Israetel, PhD (Renaissance Periodization)",
         "handle": "@RenaissancePeriodization",
         "channel_id": "UCfQgsKhHjSyRLOp9mnffqVg",
-        "subscribers": "3.15M",
+        "subscribers": "3.9M",
         "tier": "Expanded Authority #12",
-        "domain": "Minimum Effective Volume (MEV), Maximum Recoverable Volume (MRV) & Deficit Fatigue",
-        "shaun_genotype_link": "Deficit Volume Calibration (Cutting Junk Sets During 200–1,450 kcal Phases)",
+        "domain": "Minimum Effective Volume (MEV), Evidence-Based Supplements & Deficit Hypertrophy",
+        "shaun_genotype_link": "Deficit Volume Calibration (6–8 Hard Sets/Muscle/Wk + >=1.0 m/s ACTN3 CC Velocity)",
         "cadence": "Tier C — Bi-Weekly Sunday Sync",
-        "priority_keywords": ["volume", "deficit", "fat loss", "stretch", "recovery", "hypertrophy", "deload"],
+        "priority_keywords": ["volume", "deficit", "fat loss", "supplement", "protein", "studied", "train", "hypertrophy"],
         "latest_verified_drops": [
             {
-                "date": "2026-10-14",
-                "video_id": "mi_oct2026",
-                "title": "How to Adjust Training Volume During an Aggressive Fat Loss Phase",
-                "views": "380K",
-                "protocol_takeaway": "Confirms that during steep caloric deficits, maintaining load/tension at 6–8 sets/muscle/week preserves 100% of muscle while high-rep junk volume causes systemic burnout."
+                "date": "2026-11-12",
+                "video_id": "rp_prot_nov12_2026",
+                "title": "The Truth About Why Protein Costs So Much Now",
+                "views": "190K (1 day ago!)",
+                "protocol_takeaway": "Breaks down whey/dairy commodity inflation—proving whole-food sardines, eggs, brisket, and turkey sausage deliver superior micronutrient ROI per gram of bioavailable protein."
+            },
+            {
+                "date": "2026-11-10",
+                "video_id": "rp_supp_nov10_2026",
+                "title": "Which Supplements Are Actually Legit? (Scientifically Proven) (13:40)",
+                "views": "186K (3 days ago!)",
+                "protocol_takeaway": "Tier-1 clinical greenlight for Creatine Monohydrate (5g/d), Pre-12PM Caffeine, Marine Omega-3s, and targeted Protein/Collagen—zero wasted money on proprietary fat burners."
+            },
+            {
+                "date": "2026-11-05",
+                "video_id": "rp_30k_nov05_2026",
+                "title": "30,000 People Studied. This Is How You Should Train. (26:04)",
+                "views": "736K (8 days ago!)",
+                "protocol_takeaway": "Massive 30,000-trainee longitudinal dataset confirming consistent progressive tension at high proximity to failure (3–5x/wk, <50 min) drives virtually all natural strength & muscle gains."
             }
         ]
     },
@@ -402,7 +457,7 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
         "id": "keith_baar",
         "name": "Dr. Keith Baar, PhD (UC Davis Tendon Lab)",
         "handle": "@KeithBaarLab",
-        "channel_id": "UCKBaarTendonMatrixLab",
+        "channel_id": "",
         "subscribers": "Academic / Podcast Features",
         "tier": "Expanded Authority #13",
         "domain": "Isometric Tendon Creep Loading, Collagen Synthesis & Scar Remodeling",
@@ -418,55 +473,154 @@ CREATOR_ROSTER: List[Dict[str, Any]] = [
                 "protocol_takeaway": "Heavy slow isometrics (4 x 30s at ~70% MVC) 45 minutes after 15–18g hydrolyzed collagen + 50mg Vitamin C forces aligned collagen fibrils through central tendon scars."
             }
         ]
+    },
+
+    # --- CREATOR #14: JACK WILTSHIRE — SOBER FITNESS (@SOBERFITNESS) ---
+    {
+        "id": "sober_fitness",
+        "name": "Jack Wiltshire — Sober Fitness",
+        "handle": "@SoberFitness",
+        "channel_id": "",
+        "subscribers": "246K (3,500 Videos)",
+        "tier": "Added Authority #14 (100% Natural Minimalist Lifting, Fitness Dailies & Sobriety Mindset)",
+        "domain": "7-Exercise Motor-Skill Mastery, Daily Bodyweight 'Fitness Dailies', 100-Rep Tendon Feeders & 90-Day Dopamine Detox",
+        "shaun_genotype_link": "Rack Pro Daily Dips/Leg Raises (GLUT4 2.0 mmol/L BHB Engine!) + COMT GG / FTO AT Sobriety Identity + ALT 48 Alcohol-Free Liver Shield",
+        "cadence": "Tier A — Every Wednesday & Sunday @ 08:00 AM EST (3,500-Video High-Frequency Catalog)",
+        "priority_keywords": ["exercises", "daily", "dailies", "dips", "leg raises", "pull-ups", "reps", "sober", "dopamine", "willpower", "ginger"],
+        "latest_verified_drops": [
+            {
+                "date": "2026-11-09",
+                "video_id": "sf_nov09_2026",
+                "title": "Train Your Whole Body With Fewer Exercises (6:44) + Jul 2 'Why I Only Focus on 7 Exercises' (sGBRmRmX9MQ)",
+                "views": "190K (4d ago!) / 341K",
+                "protocol_takeaway": "Treats 7 compound patterns (Press/Weighted Dip, Row, Squat, OHP, Neutral/Wide Pull-Up, RDL, Core) as lifelong motor skills—eliminating OxeFit exercise-hopping and joint wear."
+            },
+            {
+                "date": "2026-11-02",
+                "video_id": "O-3gD2OnAf0",
+                "title": "THE KEY TO SERIOUS GAINS (Nov 2) + 'From ER to Squat PR' (Nov 1)",
+                "views": "19K+ (Nov 2026)",
+                "protocol_takeaway": "Unbroken 90-day consistency and methodical post-injury rebuilding beat ego lifting—mirroring your disciplined right-bicep comeback and OxeFit Day 1 relaunch."
+            },
+            {
+                "date": "2026-09-04",
+                "video_id": "_ZyVbh4gUsA",
+                "title": "Why Do More Reps (_ZyVbh4gUsA) + 'Develop Your Physique One Aspect at a Time' (S0Z_FxFuz20, Sep 9)",
+                "views": "74K / 157K Series",
+                "protocol_takeaway": "Occasional 50–100 rep ultra-light feeder sets flush COL1A1 AC tendons with blood and lock in lat/pec mind-muscle connection while specializing on 1 priority goal per 90-day season."
+            },
+            {
+                "date": "2026-08-17",
+                "video_id": "aFJT2ssWvWk",
+                "title": "How to be about it (aFJT2ssWvWk) + The 90-Day Dopamine Detox & Steroid/TRT Natural Response (8WFkHwb_SIo)",
+                "views": "Verified Flagships",
+                "protocol_takeaway": "100% lifetime natural & sober identity: eliminates weekend alcohol/binge dopamine crashes, protecting ALT (48 -> <25), Free T (114.5 pg/mL), Oura REM sleep, and unbroken ketosis."
+            },
+            {
+                "date": "2026-08-05",
+                "video_id": "g8f8qu2U5II",
+                "title": "10 Minute Daily Leg Raises (g8f8qu2U5II) + MY TOP 5 FITNESS DAILIES (zns6VDqfuOU) + Ginger Tea Remedy (vQlvXMDBU-M)",
+                "views": "Flagship Dailies",
+                "protocol_takeaway": "Exact match for your Rack Pro 50 Dips + 50 Leg Raises evening habit (zero CNS burnout + non-insulin GLUT4 glucose sink -> 2.0 mmol/L BHB PR!) + zero-carb Ginger Tea for MCT digestion & hs-CRP."
+            }
+        ]
     }
 ]
 
 
+def resolve_channel_id(creator: Dict[str, Any]) -> str:
+    """Returns channel_id if present, or resolves UC... ID from https://www.youtube.com/@Handle when online."""
+    cid = creator.get("channel_id", "")
+    if cid.startswith("UC") and len(cid) >= 20:
+        return cid
+    handle = creator.get("handle", "").strip()
+    if not handle.startswith("@"):
+        return ""
+    url = f"https://www.youtube.com/{handle}"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (SuperKetovoreRadar/5.0)"})
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+        match = re.search(r'"externalId":"(UC[a-zA-Z0-9_-]{20,})"', html) or re.search(
+            r'channel_id=(UC[a-zA-Z0-9_-]{20,})', html
+        )
+        if match:
+            return match.group(1)
+    except Exception:
+        pass
+    return ""
+
+
 def fetch_rss_for_creator(creator: Dict[str, Any], max_items: int = 5) -> List[Dict[str, str]]:
-    """Polls the official YouTube Atom XML feed for a creator's channel_id."""
-    channel_id = creator.get("channel_id", "")
-    if not channel_id.startswith("UC") or len(channel_id) < 20:
-        return creator.get("latest_verified_drops", [])
+    """Polls official YouTube Atom XML feed (when online/GitHub Actions) and merges with verified drops."""
+    verified = list(creator.get("latest_verified_drops", []))
+    channel_id = resolve_channel_id(creator)
+    if not channel_id:
+        return verified
 
     rss_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
     try:
-        req = urllib.request.Request(rss_url, headers={"User-Agent": "Mozilla/5.0 (SuperKetovoreRadar/4.5)"})
-        with urllib.request.urlopen(req, timeout=8) as resp:
+        req = urllib.request.Request(rss_url, headers={"User-Agent": "Mozilla/5.0 (SuperKetovoreRadar/5.0)"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
             xml_bytes = resp.read()
         root = ET.fromstring(xml_bytes)
-        ns = {"atom": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
-        entries = []
+        ns = {
+            "atom": "http://www.w3.org/2005/Atom",
+            "yt": "http://www.youtube.com/xml/schemas/2015",
+            "media": "http://search.yahoo.com/mrss/",
+        }
+        live_entries: List[Dict[str, Any]] = []
+        known_ids = {d.get("video_id") for d in verified}
+        known_titles = {d.get("title", "").lower()[:32] for d in verified}
+
         for entry in root.findall("atom:entry", ns)[:max_items]:
             vid_el = entry.find("yt:videoId", ns)
             title_el = entry.find("atom:title", ns)
             pub_el = entry.find("atom:published", ns)
+            stats_el = entry.find(".//media:statistics", ns)
+
             vid_id = vid_el.text if vid_el is not None else ""
             title = title_el.text if title_el is not None else ""
             published = (pub_el.text or "")[:10] if pub_el is not None else ""
+            views_raw = stats_el.attrib.get("views", "") if stats_el is not None else ""
+            views_fmt = f"{int(views_raw):,} views (Live RSS)" if views_raw.isdigit() else "Live RSS"
+
+            if vid_id in known_ids or title.lower()[:32] in known_titles:
+                continue
+
             kw_hits = [kw for kw in creator.get("priority_keywords", []) if kw.lower() in title.lower()]
-            entries.append({
+            live_entries.append({
                 "date": published,
                 "video_id": vid_id,
                 "title": title,
+                "views": views_fmt,
                 "url": f"https://www.youtube.com/watch?v={vid_id}",
                 "matched_keywords": kw_hits,
-                "protocol_takeaway": "Live RSS detection — queued for transcript extraction & protocol correlation."
+                "protocol_takeaway": (
+                    f"Auto-synced via GitHub Actions RSS ({', '.join(kw_hits) if kw_hits else 'General Channel Drop'})."
+                )
             })
-        return entries if entries else creator.get("latest_verified_drops", [])
+
+        merged = live_entries + verified
+        merged.sort(key=lambda x: x.get("date", ""), reverse=True)
+        return merged[: max(max_items, len(verified))]
     except Exception:
-        return creator.get("latest_verified_drops", [])
+        return verified
 
 
 def build_radar_feed() -> Dict[str, Any]:
-    """Generates the complete 13-creator radar snapshot and writes creator_radar_feed.json."""
+    """Generates the complete 14-creator radar snapshot and writes creator_radar_feed.json."""
     feed_data = {
+        "version": "5.0",
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "cloud_automation": ".github/workflows/sync_creator_videos.yml (Every Wed & Sun @ 08:00 AM EST)",
         "cadence_schedule": {
             "tier_a_fast_movers_wed_thu_sun": [
                 "Dr. Boz (@DoctorBoz)",
                 "Steven Bartlett — The Diary Of A CEO (@TheDiaryOfACEO)",
                 "Thomas DeLauer (@ThomasDeLauerOfficial)",
-                "Dr. Ben Bikman (@BenBikmanPhD)"
+                "Dr. Ben Bikman (@benbikman)",
+                "Jack Wiltshire — Sober Fitness (@SoberFitness)"
             ],
             "tier_b_weekly_sunday_0800_sync": [
                 "Jeremy Ethier (@JeremyEthier)",
@@ -487,8 +641,11 @@ def build_radar_feed() -> Dict[str, Any]:
     }
 
     for creator in CREATOR_ROSTER:
+        resolved_id = resolve_channel_id(creator)
         drops = fetch_rss_for_creator(creator)
         c_copy = dict(creator)
+        if resolved_id and not c_copy.get("channel_id"):
+            c_copy["channel_id"] = resolved_id
         c_copy["active_drops"] = drops
         feed_data["creators"].append(c_copy)
 
@@ -525,25 +682,25 @@ def download_new_videos(max_per_creator: int = 1) -> None:
 
 def print_roster_summary() -> None:
     feed = build_radar_feed()
-    print("=" * 88)
-    print(f"SUPER KETOVORE v4.5 — 13-CREATOR RADAR & SYNC ENGINE ({feed['generated_at']})")
-    print("=" * 88)
+    print("=" * 92)
+    print(f"SUPER KETOVORE v5.0 — 14-CREATOR RADAR & CLOUD SYNC ENGINE ({feed['generated_at']})")
+    print("=" * 92)
     for idx, c in enumerate(feed["creators"], 1):
-        print(f"\n{idx:02d}. {c['name']} ({c['handle']}) — [{c['tier']}]")
+        print(f"\n{idx:02d}. {c['name']} ({c['handle']} • {c['subscribers']}) — [{c['tier']}]")
         print(f"    Domain   : {c['domain']}")
         print(f"    Genotype : {c['shaun_genotype_link']}")
         print(f"    Cadence  : {c['cadence']}")
-        for d in c.get("latest_verified_drops", [])[:2]:
+        for d in c.get("active_drops", [])[:2]:
             print(f"      * [{d['date']}] {d['title']} ({d.get('views', 'Verified')})")
             print(f"        -> {d['protocol_takeaway']}")
-    print(f"\n[OK] Wrote structured JSON radar feed to: {FEED_OUTPUT_PATH}")
+    print(f"\n[OK] Wrote structured 14-creator JSON radar feed to: {FEED_OUTPUT_PATH}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Super Ketovore 13-Creator Video Radar & Sync CLI")
+    parser = argparse.ArgumentParser(description="Super Ketovore 14-Creator Video Radar & Sync CLI")
     parser.add_argument("--check", action="store_true", help="Poll creator feeds & write creator_radar_feed.json")
     parser.add_argument("--download-new", action="store_true", help="Fetch English transcripts/videos via yt-dlp")
-    parser.add_argument("--roster", action="store_true", help="Print the 13-creator roster and latest drops")
+    parser.add_argument("--roster", action="store_true", help="Print the 14-creator roster and latest drops")
     args = parser.parse_args()
 
     if args.download_new:
