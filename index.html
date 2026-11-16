@@ -337,8 +337,8 @@
         </div>
         <div class="sub-card">
           <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Metabolic Engine (`BMR Up!`)</div>
-          <div class="text-lg font-extrabold text-purple-400 mt-0.5" id="hdr-ketones">BMR: 1,830 kcal (+19!)</div>
-          <div class="text-xs text-purple-300" id="hdr-dbr">🔥 Sun AM: BG ~86 / BHB ~0.9 (`GKI 5.3`) &bull; PR: 2.0 / DBR 45</div>
+          <div class="text-lg font-extrabold text-purple-400 mt-0.5" id="hdr-ketones">Mon 7:14a: BG 88 / BHB 0.8</div>
+          <div class="text-xs text-purple-300" id="hdr-dbr">🔥 GKI 6.1 (`<12h` post-270g P!) &bull; Sun 9:18a: 89 / 0.9 (`GKI 5.4`)</div>
         </div>
         <div class="sub-card">
           <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Today's Clean-Sweep Target</div>
@@ -2238,17 +2238,22 @@
       }
     }
 
-    const NUTR_LOG_KEY = 'shaun_v5_15_nutrition_logs';
+    const NUTR_LOG_KEY = 'shaun_v5_16_nutrition_logs';
     const DEFAULT_NUTR_LOGS = [
+      {
+        date: '2026-11-16 (Mon 07:14 AM MyMojoHealth Verified 🔬)',
+        summary: 'Glucose: 88 mg/dL (2nd Straight Day in the 80s! <12h after 7:30p 16oz Filet/Salmon!) | Ketones: 0.8 mmol/L | GKI: 6.1 | AM DBR: 110.0',
+        metrics: '13,799 Steps + 525mg Mg/L-Theanine kept AM BG at 88 despite ~265g Sun Protein! Fast to 1:30p + 3p OxeFit + 5:30p Cutoff pops Tue BHB back to 1.4–2.0!'
+      },
       {
         date: '2026-11-15 (Sun Complete Day — 13,799 Steps + Zero-Cheese Surf & Turf + 525mg Mg ✅)',
         summary: '~3,280 kcal vs ~3,180 kcal 13,799-Step/40-Squat/TEF Burn (Dead-Even Maintenance!): 1:20p 8oz Honey Smoked Salmon + 8 Shrimp + 4 Eggs + 4tbsp Guac + 3tbsp MCT + 2tbsp Butter + 2x Slate (2,010) | 7:30p 8oz Filet Mignon + 8oz Salmon + 3tbsp GarlicButter + 2tbsp Guac + Slate (1,270)',
         metrics: '13,799 Steps (Switch Zone!) + 40 Air Squats | 9p: 1.5 Scoops (525mg Ionic Mg Citrate + 75mg L-Theanine, 0 MetaMucil / 0 Creatine) -> Fast Until 1:30p Mon & Lock 5:30p Mon–Fri!'
       },
       {
-        date: '2026-11-15 (Day 8 Scan @ 07:35 AM + MyMojoHealth: BG ~86 / BHB ~0.9 🔬)',
-        summary: '204.0 lb (+4.0 lb = ~2.2 lb 48h Unpassed Cheese/Meat Stool + ~1.8 lb 7,785mg Na Water! 0.0 lb Real Fat!) | FFM +2.0 lb (149.0 lb!) | SMM +1.1 lb (85.3 lb!) | BG ~86 mg/dL (-6 vs Sat!) / Ketones ~0.9 mmol/L (GKI 5.3 / DBR 95.6)',
-        metrics: 'Both Legs Dropped -16 Ω (284.5->268.4 / 294.4->278.8 Ω) & BMR +19 kcal (1,830)! BG 86 & BHB 0.9 prove 100% Ketosis held after Sat night football game!'
+        date: '2026-11-15 (Day 8 Scan @ 07:35 AM + 09:18 AM MyMojoHealth Verified 🔬)',
+        summary: '204.0 lb (+4.0 lb = ~2.2 lb 48h Unpassed Cheese/Meat Stool + ~1.8 lb 7,785mg Na Water! 0.0 lb Real Fat!) | FFM +2.0 lb (149.0 lb!) | SMM +1.1 lb (85.3 lb!) | 9:18a BG: 89 mg/dL / Ketones: 0.9 mmol/L (GKI 5.4 / DBR 98.9)',
+        metrics: 'Both Legs Dropped -16 Ω (284.5->268.4 / 294.4->278.8 Ω) & BMR +19 kcal (1,830)! Verified 9:18a BG 89 & BHB 0.9 (GKI 5.4) prove 100% Ketosis held after Sat football game!'
       },
       {
         date: '2026-11-14 (Sat Complete Day — Clean Game-Night Win + Oysters + 11–12k Steps ✅)',
