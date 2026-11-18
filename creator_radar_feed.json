@@ -1,6 +1,6 @@
 {
   "version": "5.0",
-  "generated_at": "2026-11-15 19:16:28",
+  "generated_at": "2026-11-18 21:07:51",
   "cloud_automation": ".github/workflows/sync_creator_videos.yml (Every Wed & Sun @ 08:00 AM EST)",
   "cadence_schedule": {
     "tier_a_fast_movers_wed_thu_sun": [
@@ -82,8 +82,8 @@
         {
           "date": "2026-11-15",
           "video_id": "72GH0Y1YxkM",
-          "title": "What Happens If You Train a Muscle EVERY DAY?",
-          "views": "11,624 views (Live RSS)",
+          "title": "What \"No Rest Days\" Does To Your Muscles",
+          "views": "874,015 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=72GH0Y1YxkM",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -99,7 +99,7 @@
           "date": "2026-11-08",
           "video_id": "C-KqNLIKrXM",
           "title": "It\u2019s Tough, But Burns Fat 4x Faster Than 10K Steps/Day",
-          "views": "3,726,013 views (Live RSS)",
+          "views": "4,183,286 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=C-KqNLIKrXM",
           "matched_keywords": [
             "fat",
@@ -171,7 +171,7 @@
           "date": "2026-11-13",
           "video_id": "M0PpBjhUE3s",
           "title": "Insulin Resistance: Why Fasting Fails at Night",
-          "views": "20,333 views (Live RSS)",
+          "views": "25,409 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=M0PpBjhUE3s",
           "matched_keywords": [
             "fasting",
@@ -190,7 +190,7 @@
           "date": "2026-11-03",
           "video_id": "zYbaF4ZX9ak",
           "title": "Forget About Your Blood Sugar (Fix This First)",
-          "views": "72,407 views (Live RSS)",
+          "views": "75,645 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=zYbaF4ZX9ak",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -199,7 +199,7 @@
           "date": "2026-11-01",
           "video_id": "7_HxZfCESHk",
           "title": "The Hollywood curse (and how I cured it)",
-          "views": "16,642 views (Live RSS)",
+          "views": "17,577 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=7_HxZfCESHk",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -208,7 +208,7 @@
           "date": "2026-10-30",
           "video_id": "nGNcR-Vjxwc",
           "title": "Why You Can't Lose Belly Fat.",
-          "views": "44,602 views (Live RSS)",
+          "views": "45,181 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=nGNcR-Vjxwc",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -263,7 +263,7 @@
           "date": "2026-11-13",
           "video_id": "XKU_GZc6H8Y",
           "title": "How Much Do Fitness Influencers Actually Know? (Ft. Lean Beef Patty)",
-          "views": "3,280,865 views (Live RSS)",
+          "views": "5,895,886 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=XKU_GZc6H8Y",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -293,7 +293,7 @@
           "date": "2026-09-28",
           "video_id": "H6SiAe-VObA",
           "title": "Peptides Are Insane",
-          "views": "19,729,564 views (Live RSS)",
+          "views": "19,828,736 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=H6SiAe-VObA",
           "matched_keywords": [
             "peptide"
@@ -342,7 +342,7 @@
           "date": "2026-09-14",
           "video_id": "grs8Hqi6gHE",
           "title": "Is \u201cCalories In, Calories Out\u201d Bullsh*t?",
-          "views": "238,564 views (Live RSS)",
+          "views": "239,712 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=grs8Hqi6gHE",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -351,7 +351,7 @@
           "date": "2026-08-30",
           "video_id": "0a6XdYShsCI",
           "title": "Muscle Growth: Why Science Is Wrong (After 3 Years)",
-          "views": "537,003 views (Live RSS)",
+          "views": "538,981 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=0a6XdYShsCI",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -360,7 +360,7 @@
           "date": "2026-07-26",
           "video_id": "aTG5ttr57Ko",
           "title": "The Science of Cooking the ULTIMATE Muscle Building Food (STEAK!)",
-          "views": "109,079 views (Live RSS)",
+          "views": "109,412 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=aTG5ttr57Ko",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -369,7 +369,7 @@
           "date": "2026-06-25",
           "video_id": "QG-bSxKq4E8",
           "title": "Why Farts Smell (And What It Says About Your Digestion)",
-          "views": "89,002 views (Live RSS)",
+          "views": "89,162 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=QG-bSxKq4E8",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -413,10 +413,28 @@
       ],
       "active_drops": [
         {
+          "date": "2026-11-18",
+          "video_id": "pOwPipF7534",
+          "title": "how to live forever in GTA 6",
+          "views": "5,203 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=pOwPipF7534",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-17",
+          "video_id": "coU8aHzTvpk",
+          "title": "Your Phone Screen Is Making You Blind",
+          "views": "412,504 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=coU8aHzTvpk",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
           "date": "2026-11-11",
           "video_id": "AbjfQbDGhIg",
           "title": "unc\u2019s sauna guide",
-          "views": "90,370 views (Live RSS)",
+          "views": "108,920 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=AbjfQbDGhIg",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -432,26 +450,8 @@
           "date": "2026-11-04",
           "video_id": "cdtyJsvf0JM",
           "title": "what even is VO2 max?",
-          "views": "344,295 views (Live RSS)",
+          "views": "352,903 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=cdtyJsvf0JM",
-          "matched_keywords": [],
-          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
-        },
-        {
-          "date": "2026-10-31",
-          "video_id": "_OaAqyX5r-4",
-          "title": "trick or treat",
-          "views": "524,335 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=_OaAqyX5r-4",
-          "matched_keywords": [],
-          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
-        },
-        {
-          "date": "2026-10-29",
-          "video_id": "KQSPHV5iChQ",
-          "title": "what to wear in the sauna",
-          "views": "211,859 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=KQSPHV5iChQ",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
@@ -506,54 +506,51 @@
       ],
       "active_drops": [
         {
+          "date": "2026-11-18",
+          "video_id": "M-FACdo_bfY",
+          "title": "HOW SPIES ARE TRAINED TO HONEYTRAP",
+          "views": "3,934 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=M-FACdo_bfY",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-17",
+          "video_id": "Cz-sbWva2fA",
+          "title": "$5 BILLION NVIDIA SPY OPERATION",
+          "views": "197,542 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=Cz-sbWva2fA",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-16",
+          "video_id": "49gIAR6Pzj8",
+          "title": "HOW DID A SPY GET INTO NVIDIA?",
+          "views": "223,175 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=49gIAR6Pzj8",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
+          "date": "2026-11-16",
+          "video_id": "1mDHHi398ig",
+          "title": "Russian Sex Spy: I Was Trained To Control A Man's Mind With Sex! | John Kiriakou & Aliia Roza",
+          "views": "4,874,002 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=1mDHHi398ig",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
           "date": "2026-11-15",
           "video_id": "HAXzFdJ9U-0",
           "title": "ORANGE JUICE HAS MORE SUGAR THAN YOU THINK!",
-          "views": "4,595 views (Live RSS)",
+          "views": "202,489 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=HAXzFdJ9U-0",
           "matched_keywords": [
             "sugar"
           ],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (sugar)."
-        },
-        {
-          "date": "2026-11-14",
-          "video_id": "Aop2MN2s-7w",
-          "title": "WHAT ALZHEIMER'S IS REALLY LIKE \ud83d\udc94",
-          "views": "55,529 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=Aop2MN2s-7w",
-          "matched_keywords": [],
-          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
-        },
-        {
-          "date": "2026-11-13",
-          "video_id": "KxKDBjyB_8c",
-          "title": "CAN WE PREVENT DEMENTIA?",
-          "views": "239,041 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=KxKDBjyB_8c",
-          "matched_keywords": [
-            "dementia"
-          ],
-          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (dementia)."
-        },
-        {
-          "date": "2026-11-12",
-          "video_id": "FRoQOzZRcpw",
-          "title": "The Brain Doctor That Figured Out The Cause Of Dementia - Dr. David Perlmutter",
-          "views": "2,402,571 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=FRoQOzZRcpw",
-          "matched_keywords": [
-            "brain",
-            "dementia"
-          ],
-          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (brain, dementia)."
-        },
-        {
-          "date": "2026-11-12",
-          "video_id": "doac_nov12_2026",
-          "title": "The Brain Doctor Who Explains The Main Cause Of Dementia - Dr. David Perlmutter (1:55:46)",
-          "views": "949K (22 hours ago!)",
-          "protocol_takeaway": "Connects insulin resistance, elevated uric acid, and cerebral glucose hypometabolism directly to cognitive decline\u2014proving your 2.0 mmol/L blood BHB ketones protect and super-fuel brain mitochondria."
         }
       ]
     },
@@ -603,6 +600,15 @@
       ],
       "active_drops": [
         {
+          "date": "2026-11-16",
+          "video_id": "nYrLMyUP4S0",
+          "title": "416 \u2012 The science of mitochondria: their role in health, aging, disease, and much more",
+          "views": "36,323 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=nYrLMyUP4S0",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
           "date": "2026-11-12",
           "video_id": "pa_nov12_2026",
           "title": "Understanding reps in reserve | Jeff Cavaliere (3:28)",
@@ -620,7 +626,7 @@
           "date": "2026-11-09",
           "video_id": "HhTirnNCxxE",
           "title": "Understanding lab testing: what blood work can & cannot tell you (AMA 91 sneak peek)",
-          "views": "14,283 views (Live RSS)",
+          "views": "15,603 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=HhTirnNCxxE",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -629,17 +635,8 @@
           "date": "2026-11-07",
           "video_id": "drDjOsO9-Cw",
           "title": "How to effectively train your abdominal muscles | Jeff Cavaliere, M.S.P.T., C.S.C.S.",
-          "views": "13,260 views (Live RSS)",
+          "views": "13,696 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=drDjOsO9-Cw",
-          "matched_keywords": [],
-          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
-        },
-        {
-          "date": "2026-11-06",
-          "video_id": "Kst46m2gyLA",
-          "title": "The difference between psychological and mechanical limits in lifting | Jeff Cavaliere",
-          "views": "15,839 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=Kst46m2gyLA",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
@@ -690,10 +687,19 @@
       ],
       "active_drops": [
         {
+          "date": "2026-11-16",
+          "video_id": "7mEK5wZHpto",
+          "title": "Mushrooms for the Mind & Immune System | Paul Stamets",
+          "views": "258,364 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=7mEK5wZHpto",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
           "date": "2026-11-12",
           "video_id": "1rn_Clc-MM0",
           "title": "Essentials: How Emotions & Social Factors Impact Learning | Dr. Mary Helen Immordino-Yang",
-          "views": "85,521 views (Live RSS)",
+          "views": "117,523 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=1rn_Clc-MM0",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -702,7 +708,7 @@
           "date": "2026-11-11",
           "video_id": "9dWQNg68Ncw",
           "title": "Why Addiction is a Control Problem | Dr. Anna Lembke",
-          "views": "61,412 views (Live RSS)",
+          "views": "72,173 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=9dWQNg68Ncw",
           "matched_keywords": [
             "addiction"
@@ -720,21 +726,10 @@
           "date": "2026-11-09",
           "video_id": "pMuud2kayJo",
           "title": "Breaking the Codependency Cycle | Dr. Anna Lembke",
-          "views": "29,295 views (Live RSS)",
+          "views": "31,538 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=pMuud2kayJo",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
-        },
-        {
-          "date": "2026-11-06",
-          "video_id": "jXTY8WwohF0",
-          "title": "LEVERAGING PARALLEL PATHWAYS, EXERCISE & COLD TO FOCUS & LEARN BETTER",
-          "views": "91,143 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=jXTY8WwohF0",
-          "matched_keywords": [
-            "cold"
-          ],
-          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (cold)."
         }
       ]
     },
@@ -792,7 +787,7 @@
           "date": "2026-11-10",
           "video_id": "OvlKr2545Ys",
           "title": "Watch my new episode with Dr. Dariush Mozaffarian",
-          "views": "3,619 views (Live RSS)",
+          "views": "3,998 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=OvlKr2545Ys",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -801,7 +796,7 @@
           "date": "2026-11-10",
           "video_id": "7JeZk_J7_h4",
           "title": "The Foods You Were Told to Avoid (But Should Be Eating)",
-          "views": "79,087 views (Live RSS)",
+          "views": "103,935 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=7JeZk_J7_h4",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -817,7 +812,7 @@
           "date": "2026-10-06",
           "video_id": "dK-z65v-CvA",
           "title": "Watch my new episode on the science of blueberries!",
-          "views": "6,124 views (Live RSS)",
+          "views": "6,224 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=dK-z65v-CvA",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -869,6 +864,17 @@
       ],
       "active_drops": [
         {
+          "date": "2026-11-17",
+          "video_id": "vUYxrQou8os",
+          "title": "170: Nighttime Bathroom Trips? The Insulin Connection",
+          "views": "18,858 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=vUYxrQou8os",
+          "matched_keywords": [
+            "insulin"
+          ],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (insulin)."
+        },
+        {
           "date": "2026-11-02",
           "video_id": "AZtu3RSXbiE",
           "title": "Ep 169: How Your Body Fat Can Make You Hungrier (Asprosin & Hepatic Glucose Dumping)",
@@ -879,7 +885,7 @@
           "date": "2026-10-26",
           "video_id": "bdbzsg5vE54",
           "title": "168: Why What You Eat Still Matters on GLP-1 Drugs",
-          "views": "40,154 views (Live RSS)",
+          "views": "40,757 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=bdbzsg5vE54",
           "matched_keywords": [
             "glp-1"
@@ -897,19 +903,12 @@
           "date": "2026-10-19",
           "video_id": "bKCgXHVexIg",
           "title": "167: Could Low Potassium Be Raising Your Blood Sugar?",
-          "views": "91,441 views (Live RSS)",
+          "views": "92,027 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=bKCgXHVexIg",
           "matched_keywords": [
             "potassium"
           ],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (potassium)."
-        },
-        {
-          "date": "2026-10-19",
-          "video_id": "bb_ep167_2026",
-          "title": "Ep 167: Could Low Potassium Be Raising Your Blood Sugar? (29:29)",
-          "views": "90K",
-          "protocol_takeaway": "Directly proves our bodybuilder electrolyte rule: low potassium impairs insulin sensitivity and raises fasting glucose\u2014validating your 6 tbsp Avocado Guac (~540 mg K+) + meat/sardines alongside 4,500\u20135,500 mg sodium!"
         }
       ]
     },
@@ -1040,47 +1039,47 @@
       ],
       "active_drops": [
         {
-          "date": "2026-11-15",
-          "video_id": "v6UMFQ8cr0o",
-          "title": "Why Some People Jump Higher Than You",
-          "views": "8,214 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=v6UMFQ8cr0o",
+          "date": "2026-11-18",
+          "video_id": "iP90BBjHfn0",
+          "title": "How White VS Brown Rice Misses the Point",
+          "views": "4,144 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=iP90BBjHfn0",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
-          "date": "2026-11-14",
-          "video_id": "JzGnXzVGYOE",
-          "title": "Can 2 Gym Days a Week Change Your Body?",
-          "views": "61,066 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=JzGnXzVGYOE",
+          "date": "2026-11-18",
+          "video_id": "BaP79XMRlb8",
+          "title": "Aldi vs. Whole Foods: Is Expensive Food Worth It?",
+          "views": "33,059 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=BaP79XMRlb8",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
-          "date": "2026-11-14",
-          "video_id": "ZnmETYkxayM",
-          "title": "Dr Mike's Surgery Put Him on the Bench",
-          "views": "23,943 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=ZnmETYkxayM",
+          "date": "2026-11-18",
+          "video_id": "Kq3W9vhnz18",
+          "title": "Bathroom Pullup Hack - Worth Doing?",
+          "views": "20,204 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=Kq3W9vhnz18",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
-          "date": "2026-11-13",
-          "video_id": "DyBh-rUSu3U",
-          "title": "You Don't Need FAST Carbs Post-Workout",
-          "views": "59,021 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=DyBh-rUSu3U",
+          "date": "2026-11-17",
+          "video_id": "gLExL8z5xpQ",
+          "title": "Beginners Can Build Muscle Without Bulking",
+          "views": "30,029 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=gLExL8z5xpQ",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         },
         {
-          "date": "2026-11-13",
-          "video_id": "mKD7pPfj-5Q",
-          "title": "Exercise Scientist Examines Gen Z\u2019s Steroid Epidemic: How Bad Is It?",
-          "views": "279,190 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=mKD7pPfj-5Q",
+          "date": "2026-11-17",
+          "video_id": "aS5X-xZ82-I",
+          "title": "Jumping High And Far Are The Same Skill",
+          "views": "20,957 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=aS5X-xZ82-I",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
@@ -1186,10 +1185,19 @@
       ],
       "active_drops": [
         {
+          "date": "2026-11-17",
+          "video_id": "64MLP96nctw",
+          "title": "VERY LOW-STRESS PROGRAM :) \u2b07\ufe0f",
+          "views": "8,274 views (Live RSS)",
+          "url": "https://www.youtube.com/watch?v=64MLP96nctw",
+          "matched_keywords": [],
+          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
+        },
+        {
           "date": "2026-11-14",
           "video_id": "K895oJP5jDM",
           "title": "2 YEAR COMPLETE TRANSFORMATION\u203c\ufe0f",
-          "views": "6,991 views (Live RSS)",
+          "views": "12,844 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=K895oJP5jDM",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -1198,7 +1206,7 @@
           "date": "2026-11-14",
           "video_id": "IxX5C5bcne4",
           "title": "Complete 2 Year Transformation",
-          "views": "32,483 views (Live RSS)",
+          "views": "47,699 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=IxX5C5bcne4",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -1207,7 +1215,7 @@
           "date": "2026-11-13",
           "video_id": "Q0v8O37mG3A",
           "title": "CORRECT BAR PATH (BENCH PRESS)",
-          "views": "13,101 views (Live RSS)",
+          "views": "32,111 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=Q0v8O37mG3A",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
@@ -1216,17 +1224,8 @@
           "date": "2026-11-13",
           "video_id": "Q_Ql0bJF_g4",
           "title": "WHATEVER IT TAKES TO GET THROUGH \ud83e\udde0",
-          "views": "13,543 views (Live RSS)",
+          "views": "21,043 views (Live RSS)",
           "url": "https://www.youtube.com/watch?v=Q_Ql0bJF_g4",
-          "matched_keywords": [],
-          "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
-        },
-        {
-          "date": "2026-11-12",
-          "video_id": "aRWl8GfO26A",
-          "title": "DON\u2019T CHALLENGE ME \ud83d\ude02",
-          "views": "3,905 views (Live RSS)",
-          "url": "https://www.youtube.com/watch?v=aRWl8GfO26A",
           "matched_keywords": [],
           "protocol_takeaway": "Auto-synced via GitHub Actions RSS (General Channel Drop)."
         }
