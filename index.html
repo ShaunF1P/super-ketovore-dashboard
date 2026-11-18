@@ -698,6 +698,45 @@
         </div>
       </div>
 
+      <!-- LIVE FITBIT AIR + ANDROID HEALTH CONNECT AUTO-SYNCED TELEMETRY -->
+      <div class="panel-card" style="border-top: 3px solid #10b981;">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="pill-badge" style="background: rgba(16,185,129,0.18); color: #34d399;" id="hc-device-pill">
+                FITBIT AIR (76% BATTERY) &bull; GOOGLE HEALTH API v4 LIVE
+              </span>
+              <span class="pill-badge" style="background: rgba(14,165,233,0.16); color: #38bdf8;">
+                MACRO SOURCE OF TRUTH: SUPER KETOVORE TRACKER (FITBIT FOOD LOG IGNORED)
+              </span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold text-emerald-400 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <span>Live `Fitbit Air` + `Health Connect` Auto-Ingested Telemetry (`health_connect_live_sync.json`)</span>
+            </h3>
+            <p class="text-xs" style="color: var(--text-muted);" id="hc-sync-subtitle">
+              Pulled automatically via `npm run sync:health` (`ghealth` v4): Sleep Stages, Non-REM HR, Deep-Sleep RMSSD HRV, SpO2, Steps, Total Burned `kcal`, and `MyMojoHealth` Capillary Glucose.
+            </p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="clean-table" style="min-width: 720px;">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Steps (`Rollup`)</th>
+                <th>`Fitbit Air` Burn (`TDEE`)</th>
+                <th>Sleep (`Efficiency` &bull; `REM` / `Deep`)</th>
+                <th>HRV (`Deep RMSSD`) &amp; Non-REM HR</th>
+                <th>Overnight `SpO2` / Resp</th>
+                <th>`Health Connect` Glucose / Scale</th>
+              </tr>
+            </thead>
+            <tbody id="hc-live-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
       <!-- EMPIRICAL STEP x CALORIE x TDEE CORRELATION MATRIX (577 DATES / 475 STEP DAYS) -->
       <div class="panel-card" style="border-top: 3px solid #0ea5e9;">
         <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
@@ -1124,6 +1163,107 @@
               <button onclick="clearNutritionLogs()" class="text-xs text-rose-400 font-bold">Clear History</button>
             </div>
             <div id="nutrition-log-list" class="space-y-2 max-h-52 overflow-y-auto pr-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AUTHORITATIVE KETOVORE MACRO TRACKER & 1-TAP EXPORT CARD FOR FITBIT HEALTH APP -->
+      <div class="panel-card space-y-3.5" style="border-top: 3px solid #10b981;">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="pill-badge" style="background: rgba(16,185,129,0.20); color: #34d399;">
+                AUTHORITATIVE MACRO SOURCE OF TRUTH
+              </span>
+              <span class="pill-badge" style="background: rgba(14,165,233,0.16); color: #38bdf8;">
+                SCREENSHOT OR 1-TAP COPY INTO FITBIT HEALTH COACH
+              </span>
+            </div>
+            <h2 class="text-lg font-bold text-emerald-400 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Ketovore Precision Macro Card (Screenshot or Copy Straight Into Google Health / Fitbit App)</span>
+            </h2>
+            <p class="text-xs" style="color: var(--text-muted);">
+              Auto-syncs from the Meal Swapper above—or edit any field directly below—to generate a clean, zero-clutter macro card ready to screenshot or copy into the Fitbit Health app.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="syncExportFromSwapper()" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 border border-slate-700">
+              Pull From Swapper Above
+            </button>
+            <button onclick="copyHealthAppSummary()" id="btn-copy-health" class="nav-pill active" style="min-height: 36px; padding: 0.35rem 0.85rem;">
+              Copy Text for Health App
+            </button>
+            <button onclick="saveCustomMacroCard()" class="nav-pill" style="min-height: 36px; padding: 0.35rem 0.85rem;">
+              + Save to Nutrition Log
+            </button>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="space-y-2.5">
+            <div>
+              <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Date &amp; Meal Summary</label>
+              <input type="text" id="exp-foods" value="Wed Nov 18 Ketovore Surge: 20 Jones Chicken Links + 2x Slate (Mocha <=1p, Vanilla 4:45p) + 2 tbsp C8 MCT + 2 tsp Hatch Guac" oninput="updateHealthExportCard()" />
+            </div>
+            <div class="grid-3">
+              <div>
+                <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Calories (`kcal`)</label>
+                <input type="number" id="exp-kcal" value="1160" min="0" max="5000" step="10" oninput="updateHealthExportCard()" />
+              </div>
+              <div>
+                <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Protein (`g`)</label>
+                <input type="number" id="exp-p" value="105" min="0" max="400" step="1" oninput="updateHealthExportCard()" />
+              </div>
+              <div>
+                <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Fat (`g`)</label>
+                <input type="number" id="exp-f" value="76" min="0" max="400" step="1" oninput="updateHealthExportCard()" />
+              </div>
+            </div>
+            <div class="grid-3">
+              <div>
+                <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Net Carbs (`g`)</label>
+                <input type="number" id="exp-c" value="5" min="0" max="200" step="1" oninput="updateHealthExportCard()" />
+              </div>
+              <div>
+                <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Fiber (`g`)</label>
+                <input type="number" id="exp-fib" value="6" min="0" max="80" step="1" oninput="updateHealthExportCard()" />
+              </div>
+              <div>
+                <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Kitchen Lockout</label>
+                <input type="text" id="exp-cutoff" value="5:30 PM SHARP" oninput="updateHealthExportCard()" />
+              </div>
+            </div>
+          </div>
+
+          <!-- High-Contrast Clean Screenshot Card for Fitbit Health Coach -->
+          <div class="sub-card flex flex-col justify-between" id="health-screenshot-card" style="border: 1.5px solid rgba(16,185,129,0.45); background: rgba(15, 23, 42, 0.92); padding: 1rem;">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-700 pb-2 mb-2.5">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-400">DAILY NUTRITION LOG (VERIFIED KETOVORE)</span>
+                <span class="text-xs font-bold text-sky-300" id="card-cutoff-lbl">Cutoff: 5:30 PM SHARP</span>
+              </div>
+              <div class="text-xs sm:text-sm font-semibold text-slate-100 mb-3" id="card-foods-lbl"></div>
+              <div class="grid-4">
+                <div class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-center">
+                  <div class="text-xs text-slate-400 font-bold">CALORIES</div>
+                  <div class="text-base sm:text-lg font-extrabold text-emerald-400" id="card-kcal-lbl">1,160</div>
+                </div>
+                <div class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-center">
+                  <div class="text-xs text-slate-400 font-bold">PROTEIN</div>
+                  <div class="text-base sm:text-lg font-extrabold text-sky-400" id="card-p-lbl">105g</div>
+                </div>
+                <div class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-center">
+                  <div class="text-xs text-slate-400 font-bold">FAT</div>
+                  <div class="text-base sm:text-lg font-extrabold text-amber-400" id="card-f-lbl">76g</div>
+                </div>
+                <div class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-center">
+                  <div class="text-xs text-slate-400 font-bold">CARBS (NET)</div>
+                  <div class="text-base sm:text-lg font-extrabold text-purple-400" id="card-c-lbl">5g (6g Fib)</div>
+                </div>
+              </div>
+            </div>
+            <div class="text-xs font-bold text-slate-300 mt-3 pt-2 border-t border-slate-800 flex flex-wrap justify-between gap-2" id="card-split-lbl"></div>
           </div>
         </div>
       </div>
@@ -2940,10 +3080,179 @@
       });
     }
 
+    const FALLBACK_HEALTH_SYNC = {
+      generated_at: '2026-11-18T15:28:05Z',
+      paired_devices: [{ name: 'Fitbit Air', battery_pct: 76, last_sync_utc: '2026-11-18T15:18:15Z' }],
+      daily_records: [
+        { date: '2026-11-18', steps: 326, total_calories_burned_kcal: 873, resting_hr_bpm: 65, hrv: { avg_rmssd_ms: 31.0, deep_sleep_rmssd_ms: 40.5, non_rem_hr_bpm: 59 }, spo2: { avg_pct: 97.6, min_pct: 95.4 }, respiratory_rate_brpm: 13.8, sleep: { asleep_hm: '6h 54m', efficiency_pct: 98, rem_minutes: 97, deep_minutes: 72 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 91.8 }], weights: [{ weight_lb: 199.2, source: 'MorphoScan' }] },
+        { date: '2026-11-17', steps: 3931, total_calories_burned_kcal: 2627, resting_hr_bpm: 64, naps: [{ asleep_minutes: 38 }], blood_glucose_readings: [{ glucose_mg_dl_raw: 97.2 }], weights: [{ weight_lb: 201.2, source: 'MorphoScan' }] },
+        { date: '2026-11-16', steps: 8758, total_calories_burned_kcal: 2950, resting_hr_bpm: 64, hrv: { avg_rmssd_ms: 30.7, deep_sleep_rmssd_ms: 36.4, non_rem_hr_bpm: 59 }, spo2: { avg_pct: 96.7, min_pct: 91.1 }, respiratory_rate_brpm: 13.2, sleep: { asleep_hm: '7h 15m', efficiency_pct: 92, rem_minutes: 79, deep_minutes: 94 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 88.2 }], weights: [{ weight_lb: 203.4, source: 'MorphoScan' }] },
+        { date: '2026-11-15', steps: 13685, total_calories_burned_kcal: 3185, resting_hr_bpm: 64, hrv: { avg_rmssd_ms: 40.9, deep_sleep_rmssd_ms: 56.7, non_rem_hr_bpm: 64 }, spo2: { avg_pct: 96.1, min_pct: 93.7 }, respiratory_rate_brpm: 14.4, sleep: { asleep_hm: '6h 00m', efficiency_pct: 99, rem_minutes: 74, deep_minutes: 73 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 88.2 }], weights: [{ weight_lb: 204.0, source: 'MorphoScan' }] },
+        { date: '2026-11-14', steps: 11564, total_calories_burned_kcal: 3344, resting_hr_bpm: 62, hrv: { avg_rmssd_ms: 38.0, deep_sleep_rmssd_ms: 66.8, non_rem_hr_bpm: 63 }, spo2: { avg_pct: 96.8, min_pct: 92.9 }, respiratory_rate_brpm: 14.4, sleep: { asleep_hm: '8h 00m', efficiency_pct: 96, rem_minutes: 102, deep_minutes: 99 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 91.8 }], weights: [{ weight_lb: 200.0, source: 'FITBIT' }] },
+        { date: '2026-11-13', steps: 13604, total_calories_burned_kcal: 3324, resting_hr_bpm: 60, hrv: { avg_rmssd_ms: 44.1, deep_sleep_rmssd_ms: 52.6, non_rem_hr_bpm: 56 }, spo2: { avg_pct: 96.9, min_pct: 94.4 }, respiratory_rate_brpm: 12.8, sleep: { asleep_hm: '7h 22m', efficiency_pct: 95, rem_minutes: 102, deep_minutes: 92 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 90.0 }], weights: [{ weight_lb: 200.0, source: 'FITBIT' }] },
+        { date: '2026-11-12', steps: 16391, total_calories_burned_kcal: 3580, resting_hr_bpm: 59, hrv: { avg_rmssd_ms: 43.1, deep_sleep_rmssd_ms: 55.9, non_rem_hr_bpm: 53 }, spo2: { avg_pct: 97.8, min_pct: 94.3 }, respiratory_rate_brpm: 13.2, sleep: { asleep_hm: '7h 31m', efficiency_pct: 92, rem_minutes: 112, deep_minutes: 89 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 69.0 }], weights: [{ weight_lb: 201.8, source: 'FITBIT' }] }
+      ]
+    };
+
+    function renderLiveHealthData(payload) {
+      const tbody = document.getElementById('hc-live-tbody');
+      if (!tbody || !payload || !payload.daily_records) return;
+      const dev = (payload.paired_devices || []).find((d) => d.battery_pct != null);
+      if (dev) {
+        const pill = document.getElementById('hc-device-pill');
+        if (pill) {
+          pill.textContent = `${dev.name.toUpperCase()} (${dev.battery_pct}% BATTERY) • HEALTH CONNECT LIVE`;
+        }
+      }
+      tbody.innerHTML = payload.daily_records.slice(0, 7).map((r) => {
+        const steps = r.steps != null ? r.steps.toLocaleString() : '--';
+        const burn = r.total_calories_burned_kcal != null ? `${r.total_calories_burned_kcal.toLocaleString()} kcal` : '--';
+        let sleepHtml = '<span class="text-slate-400">--</span>';
+        if (r.sleep) {
+          sleepHtml = `<span class="font-bold text-emerald-400">${r.sleep.asleep_hm}</span> <span class="text-xs text-slate-300">(${r.sleep.efficiency_pct}% • R:${r.sleep.rem_minutes}m / D:${r.sleep.deep_minutes}m)</span>`;
+        } else if (r.naps && r.naps.length) {
+          const nm = r.naps.reduce((a, b) => a + b.asleep_minutes, 0);
+          sleepHtml = `<span class="text-amber-400 font-semibold">${nm}m Nap (&lt;3h fragmented)</span>`;
+        }
+        const hrvHtml = r.hrv
+          ? `<span class="font-bold text-sky-400">${r.hrv.avg_rmssd_ms} ms</span> <span class="text-xs text-slate-300">(Deep ${r.hrv.deep_sleep_rmssd_ms} ms • ${r.hrv.non_rem_hr_bpm || r.resting_hr_bpm || '--'} bpm)</span>`
+          : `<span class="text-slate-400">RHR ${r.resting_hr_bpm || '--'} bpm</span>`;
+        const spo2Html = r.spo2
+          ? `<span class="font-bold text-purple-300">${r.spo2.avg_pct}%</span> <span class="text-xs text-slate-400">(${r.respiratory_rate_brpm || '--'} brpm)</span>`
+          : '--';
+        const bgPart = r.blood_glucose_readings && r.blood_glucose_readings.length
+          ? `<span class="font-bold text-amber-300">BG ${r.blood_glucose_readings[0].glucose_mg_dl_raw}</span>`
+          : '';
+        const wtPart = r.weights && r.weights.length
+          ? `<span class="font-bold text-emerald-300">${r.weights[0].weight_lb} lb</span>`
+          : '';
+        const combo = [bgPart, wtPart].filter(Boolean).join(' &bull; ') || '--';
+        return `<tr>
+          <td class="font-bold text-slate-200">${r.date}</td>
+          <td class="font-semibold">${steps}</td>
+          <td class="font-semibold text-pink-300">${burn}</td>
+          <td>${sleepHtml}</td>
+          <td>${hrvHtml}</td>
+          <td>${spo2Html}</td>
+          <td>${combo}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    async function loadLiveHealthTelemetry() {
+      renderLiveHealthData(FALLBACK_HEALTH_SYNC);
+      try {
+        const res = await fetch('./health_connect_live_sync.json?t=' + Date.now());
+        if (res.ok) {
+          const data = await res.json();
+          if (data && Array.isArray(data.daily_records) && data.daily_records.length > 0) {
+            // Preserve manually verified MorphoScan weights when MorphoScan app lacks Health Connect
+            const manualMap = { '2026-11-18': 199.2, '2026-11-17': 201.2, '2026-11-16': 203.4, '2026-11-15': 204.0 };
+            data.daily_records.forEach((r) => {
+              if ((!r.weights || !r.weights.length) && manualMap[r.date]) {
+                r.weights = [{ weight_lb: manualMap[r.date], source: 'MorphoScan' }];
+              }
+            });
+            renderLiveHealthData(data);
+          }
+        }
+      } catch (e) {}
+    }
+
+    function updateHealthExportCard() {
+      const foods = (document.getElementById('exp-foods')?.value || '').trim();
+      const kcal = parseInt(document.getElementById('exp-kcal')?.value, 10) || 0;
+      const p = parseInt(document.getElementById('exp-p')?.value, 10) || 0;
+      const f = parseInt(document.getElementById('exp-f')?.value, 10) || 0;
+      const c = parseInt(document.getElementById('exp-c')?.value, 10) || 0;
+      const fib = parseInt(document.getElementById('exp-fib')?.value, 10) || 0;
+      const cutoff = (document.getElementById('exp-cutoff')?.value || '5:30 PM SHARP').trim();
+
+      const denom = Math.max(1, p * 4 + f * 9 + c * 4);
+      const fatPct = Math.round(((f * 9) / denom) * 100);
+      const protPct = Math.round(((p * 4) / denom) * 100);
+      const carbPct = Math.max(0, 100 - fatPct - protPct);
+
+      const cf = document.getElementById('card-foods-lbl');
+      if (cf) cf.textContent = foods;
+      const ck = document.getElementById('card-kcal-lbl');
+      if (ck) ck.textContent = kcal.toLocaleString();
+      const cp = document.getElementById('card-p-lbl');
+      if (cp) cp.textContent = `${p}g`;
+      const cfat = document.getElementById('card-f-lbl');
+      if (cfat) cfat.textContent = `${f}g`;
+      const cc = document.getElementById('card-c-lbl');
+      if (cc) cc.textContent = `${c}g (${fib}g Fib)`;
+      const ccut = document.getElementById('card-cutoff-lbl');
+      if (ccut) ccut.textContent = `Cutoff: ${cutoff}`;
+      const csplit = document.getElementById('card-split-lbl');
+      if (csplit) {
+        csplit.innerHTML = `<span>Macro Energy Split: ${fatPct}% Fat | ${protPct}% Protein | ${carbPct}% Net Carb</span><span class="text-emerald-400">Total Carbs: ${c + fib}g (${fib}g Fiber)</span>`;
+      }
+    }
+
+    function syncExportFromSwapper() {
+      const m1Sel = document.getElementById('swap-m1-prot');
+      const m2Sel = document.getElementById('swap-m2-prot');
+      const fatSel = document.getElementById('swap-fat');
+      const kcalTxt = (document.getElementById('meal-out-kcal')?.textContent || '1200').replace(/[^0-9]/g, '');
+      const pTxt = (document.getElementById('meal-out-p')?.textContent || '120').replace(/[^0-9]/g, '');
+      const fTxt = (document.getElementById('meal-out-f')?.textContent || '85').replace(/[^0-9]/g, '');
+      const todayIso = new Date().toISOString().slice(0, 10);
+      const label = `${todayIso} Ketovore Plan: ${m1Sel?.options[m1Sel.selectedIndex]?.text.split('(')[0].trim()} + ${m2Sel?.options[m2Sel.selectedIndex]?.text.split('(')[0].trim()} + ${fatSel?.options[fatSel.selectedIndex]?.text.split('(')[0].trim()}`;
+      document.getElementById('exp-foods').value = label;
+      document.getElementById('exp-kcal').value = parseInt(kcalTxt, 10) || 1200;
+      document.getElementById('exp-p').value = parseInt(pTxt, 10) || 120;
+      document.getElementById('exp-f').value = parseInt(fTxt, 10) || 85;
+      updateHealthExportCard();
+    }
+
+    async function copyHealthAppSummary() {
+      const foods = (document.getElementById('exp-foods')?.value || '').trim();
+      const kcal = parseInt(document.getElementById('exp-kcal')?.value, 10) || 0;
+      const p = parseInt(document.getElementById('exp-p')?.value, 10) || 0;
+      const f = parseInt(document.getElementById('exp-f')?.value, 10) || 0;
+      const c = parseInt(document.getElementById('exp-c')?.value, 10) || 0;
+      const fib = parseInt(document.getElementById('exp-fib')?.value, 10) || 0;
+      const cutoff = (document.getElementById('exp-cutoff')?.value || '5:30 PM').trim();
+      const text = `Ketovore Daily Nutrition (${cutoff} Cutoff): ${foods} — ${kcal} kcal | Protein: ${p}g | Fat: ${f}g | Total Carbs: ${c + fib}g (Net Carbs: ${c}g, Dietary Fiber: ${fib}g)`;
+      try {
+        await navigator.clipboard.writeText(text);
+        const btn = document.getElementById('btn-copy-health');
+        if (btn) {
+          const orig = btn.textContent;
+          btn.textContent = 'Copied for Health App!';
+          setTimeout(() => { btn.textContent = orig; }, 2000);
+        }
+      } catch (e) {}
+    }
+
+    function saveCustomMacroCard() {
+      const foods = (document.getElementById('exp-foods')?.value || '').trim();
+      const kcal = parseInt(document.getElementById('exp-kcal')?.value, 10) || 0;
+      const p = parseInt(document.getElementById('exp-p')?.value, 10) || 0;
+      const f = parseInt(document.getElementById('exp-f')?.value, 10) || 0;
+      const c = parseInt(document.getElementById('exp-c')?.value, 10) || 0;
+      const fib = parseInt(document.getElementById('exp-fib')?.value, 10) || 0;
+      const cutoff = (document.getElementById('exp-cutoff')?.value || '5:30 PM').trim();
+      const logs = getNutrLogs();
+      logs.unshift({
+        date: `${new Date().toISOString().slice(0, 10)} (Ketovore Macro Card — Cutoff ${cutoff})`,
+        summary: `${kcal.toLocaleString()} kcal: ${foods}`,
+        metrics: `${p}g P | ${f}g F | ${c}g Net Carbs (${fib}g Fiber) | Authoritative Ketovore Log`
+      });
+      try {
+        localStorage.setItem(NUTR_LOG_KEY, JSON.stringify(logs));
+      } catch (e) {}
+      renderNutrLogs();
+    }
+
     // INITIALIZE APP
     document.addEventListener('DOMContentLoaded', () => {
       runForecast();
+      loadLiveHealthTelemetry();
       applyMealTemplate('sardine_530');
+      updateHealthExportCard();
       updateMeter();
       renderNutrLogs();
       renderTrainingView('d1');

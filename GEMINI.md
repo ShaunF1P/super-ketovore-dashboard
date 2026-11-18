@@ -17,7 +17,9 @@
 - **Wearable Hardware**: `Fitbit Air` (`deviceType: TRACKER`, `FITNESS_BAND`) — provides live Sleep stages (`DEEP`, `REM`, `LIGHT`, `AWAKE`), RHR, HRV (`average` + `deepSleepRMSSD` + `nonRemHR`), SpO2, Respiratory Rate, Skin Temp, Steps (`daily-rollup`), Total Burned Calories (`daily-rollup`), and Exercise sessions.
 - **Health Connect Bridged Apps (`platform: HEALTH_CONNECT` -> Fitbit Cloud -> `ghealth`)**:
   - `com.mymojohealth.app` (`Keto-Mojo`): Capillary `blood-glucose` (`mg/dL`) syncs automatically (`blood_ketones` is not in the Health Connect schema; prompt user only for ketone `mmol/L` if needed).
-  - `MorphoScan` (`Fitdays` 8-electrode scale): Syncs `weight` and `body-fat` when `MorphoScan -> Health Connect / Fitbit` write and `Fitbit -> Health Connect` read permissions are active (raw `20kHz/100kHz` segmental `Z(Ohms)` and `Visceral Fat Grade` require the `MorphoScan` report image).
+  - `MorphoScan` (`Renpho MorphoScan` 8-electrode scale): Standalone `MorphoScan` Android APK does NOT declare Android `Health, fitness and wellness` (Health Connect) OS permissions (`Camera`, `Nearby devices`, `Photos and videos` only). Rely on the `MorphoScan` report image for `Weight`, `Body Fat %`, `FFM`, `SMM`, `Visceral Fat Grade`, and `20kHz/100kHz` segmental `Z(Ohms)` (unless bridged via `Renpho Health` or internal cloud sync).
+- **Authoritative Macro & Nutrition Source of Truth**:
+  - **NEVER** use Fitbit / Google Health App `nutrition-log` as macro ground truth—its macro tracker is inaccurate, and Shaun copies/screenshots our verified Ketovore macros INTO the Health app. Always treat `index.html` (`Ketovore Precision Macro Card` + `DEFAULT_NUTR_LOGS`) and `LOCAL_HANDOFF_STATE.md` as the 100% authoritative nutrition record.
 
 ## 4. Non-Negotiable Coaching & Injury Guardrails
 - **Right Bicep Tendon (`Jul 10, 2025` unrepaired)**: Zero supinated/underhand heavy pulling or curling. Strictly Neutral Parallel Grip on rows/pulldowns/curls/thrusters and Double-Overhand Pronated + Lifting Straps on deadlifts/RDLs. Include Keith Baar `4 x 30s` `90-degree` neutral isometric cable holds + `18g` Collagen + `500mg` Vitamin C `45m` pre-lift.
