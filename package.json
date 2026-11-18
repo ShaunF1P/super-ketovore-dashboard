@@ -7,6 +7,7 @@
     "build": "echo 'Static build complete'",
     "start": "npx serve .",
     "sync:health": "node sync_health_daily.mjs",
-    "push:health": "node push_to_fitbit_health.mjs"
+    "push:health": "node push_to_fitbit_health.mjs",
+    "sync:2026": "node sync_2026_full_year.mjs --execute"
   }
 }

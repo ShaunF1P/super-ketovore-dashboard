@@ -377,6 +377,10 @@
         <button onclick="switchView('vault')" id="nav-vault" class="nav-pill">
           <span>🧬 4. DNA, Labs &amp; Injury Rules Vault</span>
         </button>
+        <button onclick="switchView('history2026')" id="nav-history2026" class="nav-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:-2px;margin-right:4px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>5. 2026 Full-Year History (`Jan–Nov`)</span>
+        </button>
       </nav>
     </header>
 
@@ -1806,9 +1810,132 @@
         </div>
       </div>
     </section>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 5: 2026 FULL-YEAR BIOMETRIC, STEP, SLEEP & NUTRITION VAULT       -->
+    <!-- ===================================================================== -->
+    <section id="view-history2026" class="space-y-4 hidden-view">
+      <div class="panel-card" style="border-top: 3px solid #10b981;">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="pill-badge" style="background: rgba(16,185,129,0.20); color: #34d399;">
+                COMPLETE 2026 YEAR-TO-DATE (`JAN 1 – NOV 18, 2026`)
+              </span>
+              <span class="pill-badge" style="background: rgba(14,165,233,0.16); color: #38bdf8;">
+                SYNCED TWO-WAY WITH FITBIT / GOOGLE HEALTH API v4 + MACROFACTOR + MORPHOSCAN
+              </span>
+            </div>
+            <h2 class="text-lg sm:text-xl font-bold text-emerald-400 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              <span>2026 Full-Year Biometric, Activity, Sleep &amp; Nutrition Ledger</span>
+            </h2>
+            <p class="text-xs" style="color: var(--text-muted);">
+              Every 2026 day unified across `Fitbit Air` / Google Health API v4, `MacroFactor` exports, `MorphoScan / Fitdays` 8-electrode scans, and `MyMojoHealth` glucose/ketones. Click any month row below to filter the daily ledger.
+            </p>
+          </div>
+          <button onclick="export2026Csv()" class="nav-pill active" style="min-height: 36px; padding: 0.35rem 0.9rem;">
+            Export Full 2026 CSV
+          </button>
+        </div>
+
+        <!-- 4 Full-Year Summary Tiles -->
+        <div class="grid-4 mb-4">
+          <div class="sub-card">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">2026 Days Tracked</div>
+            <div class="text-xl font-extrabold text-emerald-400 mt-0.5" id="y26-days">322 Days</div>
+            <div class="text-xs text-slate-300" id="y26-sync-counts">99 Weights &bull; 96 BF% &bull; 87 Nutrition Days</div>
+          </div>
+          <div class="sub-card">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">2026 Weight &amp; FFM Range</div>
+            <div class="text-xl font-extrabold text-sky-400 mt-0.5" id="y26-wt-range">189.2 &ndash; 209.6 lb</div>
+            <div class="text-xs text-sky-300" id="y26-ffm-peak">Current: 199.2 lb &bull; Peak FFM: 158.3 lb (Mar 16)</div>
+          </div>
+          <div class="sub-card">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">2026 Cumulative Steps</div>
+            <div class="text-xl font-extrabold text-amber-400 mt-0.5" id="y26-total-steps">--</div>
+            <div class="text-xs text-amber-300" id="y26-peak-steps">Peak Day: 40,858 steps</div>
+          </div>
+          <div class="sub-card">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">2026 Avg Burn (`TDEE`) &amp; Sleep</div>
+            <div class="text-xl font-extrabold text-purple-400 mt-0.5" id="y26-avg-burn">-- kcal/d</div>
+            <div class="text-xs text-purple-300" id="y26-avg-sleep">Avg Sleep &amp; Workouts Synced</div>
+          </div>
+        </div>
+
+        <!-- Full-Year 2026 SVG Weight & Step Trajectory Chart -->
+        <div class="sub-card mb-4">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class="text-xs font-extrabold uppercase text-sky-400">2026 Full-Year Weight (`lb`, Emerald) &amp; Daily Step Flux (`Amber Bars`)</span>
+            <span class="text-xs" style="color: var(--text-muted);">Jan 1, 2026 &rarr; Nov 18, 2026</span>
+          </div>
+          <svg id="y26-svg" viewBox="0 0 820 210" class="w-full h-auto" style="max-height: 230px;"></svg>
+        </div>
+
+        <!-- 11-Month Rollup Table -->
+        <h3 class="text-sm font-extrabold text-emerald-400 mb-2">Month-by-Month 2026 Executive Summary (Click Any Month to Filter Daily Ledger)</h3>
+        <div class="table-scroll mb-4">
+          <table class="clean-table" style="min-width: 780px;">
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Days</th>
+                <th>Weight (`Start &rarr; End` / `Low`)</th>
+                <th>Avg `BF%`</th>
+                <th>Avg Steps (`Peak`)</th>
+                <th>Avg Burn (`TDEE`)</th>
+                <th>Logged Nutrition (`Avg kcal / P`)</th>
+                <th>Avg Sleep &amp; `HRV`</th>
+                <th>Workouts</th>
+              </tr>
+            </thead>
+            <tbody id="y26-monthly-tbody"></tbody>
+          </table>
+        </div>
+
+        <!-- Filterable 322-Day Daily Ledger -->
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+          <div class="flex flex-wrap items-center gap-2">
+            <h3 class="text-sm font-extrabold text-sky-400">2026 Day-by-Day Master Ledger</h3>
+            <select id="y26-month-filter" onchange="render2026DailyTable()" style="width: auto; min-width: 155px; padding: 0.25rem 0.6rem; font-size: 0.78rem;">
+              <option value="ALL">All 2026 Months</option>
+              <option value="2026-11" selected>2026-11 (Nov)</option>
+              <option value="2026-10">2026-10 (Oct)</option>
+              <option value="2026-09">2026-09 (Sep)</option>
+              <option value="2026-08">2026-08 (Aug)</option>
+              <option value="2026-07">2026-07 (Jul)</option>
+              <option value="2026-06">2026-06 (Jun)</option>
+              <option value="2026-05">2026-05 (May)</option>
+              <option value="2026-04">2026-04 (Apr)</option>
+              <option value="2026-03">2026-03 (Mar)</option>
+              <option value="2026-02">2026-02 (Feb)</option>
+              <option value="2026-01">2026-01 (Jan)</option>
+            </select>
+          </div>
+          <span class="text-xs font-semibold" style="color: var(--text-muted);" id="y26-row-count">Showing records...</span>
+        </div>
+        <div class="table-scroll" style="max-height: 460px; overflow-y: auto;">
+          <table class="clean-table" style="min-width: 780px;">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Weight / `BF%` / `FFM`</th>
+                <th>Steps</th>
+                <th>`Fitbit` Burn (`TDEE`)</th>
+                <th>Intake (`kcal` &bull; `P / F / C`)</th>
+                <th>Net Balance</th>
+                <th>Sleep (`Eff`) &amp; `HRV`</th>
+                <th>`BG` / `Ketones` (`GKI`)</th>
+              </tr>
+            </thead>
+            <tbody id="y26-daily-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <!-- MOBILE 4-TAB BOTTOM DOCK -->
+  <!-- MOBILE 5-TAB BOTTOM DOCK -->
   <nav class="bottom-dock" aria-label="Mobile Navigation">
     <button onclick="switchView('forecast')" id="dock-forecast" class="dock-item active">
       <span>📈</span><span>Forecast</span>
@@ -1822,13 +1949,17 @@
     <button onclick="switchView('vault')" id="dock-vault" class="dock-item">
       <span>🧬</span><span>Vault</span>
     </button>
+    <button onclick="switchView('history2026')" id="dock-history2026" class="dock-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+      <span>2026 Log</span>
+    </button>
   </nav>
 
   <script>
     // =========================================================================
     // VIEW & THEME NAVIGATION
     // =========================================================================
-    const VIEWS = ['forecast', 'nutrition', 'training', 'vault'];
+    const VIEWS = ['forecast', 'nutrition', 'training', 'vault', 'history2026'];
     function switchView(viewId) {
       VIEWS.forEach((v) => {
         const panel = document.getElementById('view-' + v);
@@ -3252,10 +3383,240 @@
       renderNutrLogs();
     }
 
+    // =========================================================================
+    // VIEW 5: 2026 FULL-YEAR BIOMETRIC, STEP, SLEEP & NUTRITION VAULT
+    // =========================================================================
+    let Y26_DATA = null;
+
+    function getTrueTdee(r) {
+      if (r.burn_kcal && r.burn_kcal >= 1400) return r.burn_kcal;
+      if (r.mf_expenditure_kcal && r.mf_expenditure_kcal >= 1400) return r.mf_expenditure_kcal;
+      return r.burn_kcal || null;
+    }
+
+    function render2026Svg(daily) {
+      const svg = document.getElementById('y26-svg');
+      if (!svg || !daily || !daily.length) return;
+      const W = 820, H = 210, padL = 44, padR = 24, padT = 16, padB = 26;
+      const plotW = W - padL - padR, plotH = H - padT - padB;
+      const N = daily.length;
+
+      const xAt = (idx) => padL + (idx / Math.max(1, N - 1)) * plotW;
+      const yWt = (w) => padT + ((215 - w) / (215 - 185)) * plotH;
+      const yStep = (st) => padT + plotH - Math.min(1, st / 42000) * (plotH * 0.72);
+
+      let grid = '';
+      [185, 195, 200, 205, 215].forEach((wv) => {
+        const y = yWt(wv).toFixed(1);
+        const col = wv === 200 ? 'rgba(16,185,129,0.45)' : 'rgba(148,163,184,0.14)';
+        grid += `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="${col}" stroke-dasharray="${wv === 200 ? '4,3' : 'none'}" stroke-width="1"/>`;
+        grid += `<text x="${padL - 6}" y="${Number(y) + 3.5}" text-anchor="end" fill="#94a3b8" font-size="10">${wv}</text>`;
+      });
+
+      const barW = Math.max(1.2, (plotW / N) * 0.72);
+      let bars = '';
+      daily.forEach((r, i) => {
+        if (r.steps) {
+          const x = (xAt(i) - barW / 2).toFixed(1);
+          const y = yStep(r.steps).toFixed(1);
+          const h = Math.max(1, padT + plotH - Number(y)).toFixed(1);
+          bars += `<rect x="${x}" y="${y}" width="${barW.toFixed(1)}" height="${h}" fill="rgba(245,158,11,0.22)"/>`;
+        }
+      });
+
+      const wtPts = [];
+      daily.forEach((r, i) => {
+        const w = r.weight_lb || r.trend_weight_lb;
+        if (w) wtPts.push(`${xAt(i).toFixed(1)},${yWt(w).toFixed(1)}`);
+      });
+      const poly = wtPts.length ? `<polyline fill="none" stroke="#10b981" stroke-width="2.2" points="${wtPts.join(' ')}"/>` : '';
+
+      let monthLabels = '';
+      const seenM = new Set();
+      daily.forEach((r, i) => {
+        const ym = r.date.slice(0, 7);
+        if (!seenM.has(ym)) {
+          seenM.add(ym);
+          monthLabels += `<text x="${xAt(i).toFixed(1)}" y="${H - 6}" fill="#94a3b8" font-size="10">${ym.slice(5)}/${ym.slice(2, 4)}</text>`;
+        }
+      });
+
+      svg.innerHTML = grid + bars + poly + monthLabels;
+    }
+
+    function select2026Month(ym) {
+      const sel = document.getElementById('y26-month-filter');
+      if (sel) {
+        sel.value = ym;
+        render2026DailyTable();
+      }
+    }
+
+    function render2026MonthlyTable( payload ) {
+      const tbody = document.getElementById('y26-monthly-tbody');
+      if (!tbody || !payload) return;
+      const daily = payload.daily_records || [];
+
+      // Recompute true TDEE per month combining Oura/MF (Jan-May) + Fitbit Air (Jun-Nov)
+      const byM = {};
+      daily.forEach((r) => {
+        const ym = r.date.slice(0, 7);
+        byM[ym] = byM[ym] || [];
+        byM[ym].push(r);
+      });
+
+      tbody.innerHTML = (payload.monthly_summaries || []).slice().reverse().map((m) => {
+        const mRows = byM[m.month] || [];
+        const tdees = mRows.map(getTrueTdee).filter((v) => v && v >= 1400);
+        const avgTdee = tdees.length ? `${Math.round(tdees.reduce((a, b) => a + b, 0) / tdees.length).toLocaleString()} kcal` : '--';
+        const wtStr = m.start_weight_lb
+          ? `<span class="font-bold text-slate-100">${m.start_weight_lb} &rarr; ${m.end_weight_lb} lb</span> <span class="text-xs text-emerald-400">(Low ${m.min_weight_lb})</span>`
+          : '<span class="text-slate-500">--</span>';
+        const bfStr = m.avg_bf_pct ? `<span class="font-bold text-amber-300">${m.avg_bf_pct}%</span>` : '--';
+        const stepStr = m.avg_steps ? `<span class="font-semibold">${m.avg_steps.toLocaleString()}</span> <span class="text-xs text-slate-400">(${(m.peak_steps || 0).toLocaleString()} max)</span>` : '--';
+        const nutStr = m.logged_nutrition_days
+          ? `<span class="font-semibold text-emerald-300">${m.avg_intake_kcal.toLocaleString()} kcal</span> <span class="text-xs text-sky-300">(${m.avg_protein_g}g P &bull; ${m.logged_nutrition_days}d)</span>`
+          : '<span class="text-slate-500">0d logged</span>';
+        const slStr = `${m.avg_sleep_hm || '--'} <span class="text-xs text-purple-300">(${m.avg_hrv_ms ? m.avg_hrv_ms + ' ms' : '--'})</span>`;
+        return `<tr class="cursor-pointer hover:bg-slate-800/50" onclick="select2026Month('${m.month}')">
+          <td class="font-extrabold text-sky-400">${m.month}</td>
+          <td>${m.days_tracked}d</td>
+          <td>${wtStr}</td>
+          <td>${bfStr}</td>
+          <td>${stepStr}</td>
+          <td class="font-semibold text-pink-300">${avgTdee}</td>
+          <td>${nutStr}</td>
+          <td>${slStr}</td>
+          <td class="font-bold">${m.total_workouts}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    function render2026DailyTable() {
+      const tbody = document.getElementById('y26-daily-tbody');
+      if (!tbody || !Y26_DATA) return;
+      const filterVal = document.getElementById('y26-month-filter')?.value || '2026-11';
+      const rows = (Y26_DATA.daily_records || [])
+        .filter((r) => filterVal === 'ALL' || r.date.startsWith(filterVal))
+        .slice()
+        .reverse();
+
+      const lbl = document.getElementById('y26-row-count');
+      if (lbl) lbl.textContent = `Showing ${rows.length} days (${filterVal})`;
+
+      tbody.innerHTML = rows.map((r) => {
+        const w = r.weight_lb ? `<span class="font-extrabold text-emerald-400">${r.weight_lb} lb</span>` : r.trend_weight_lb ? `<span class="text-slate-400">~${r.trend_weight_lb} tr</span>` : '--';
+        const bf = r.bf_pct ? ` &bull; <span class="text-amber-300 font-semibold">${r.bf_pct}%</span>` : '';
+        const ffm = r.ffm_lb ? ` <span class="text-xs text-sky-300">(${r.ffm_lb} FFM${r.vf_grade ? ', VF ' + r.vf_grade : ''})</span>` : '';
+        const steps = r.steps != null ? r.steps.toLocaleString() : '--';
+        const tdee = getTrueTdee(r);
+        const tdeeStr = tdee ? `${tdee.toLocaleString()} kcal` : '--';
+
+        let inStr = '<span class="text-slate-500">--</span>';
+        let netStr = '<span class="text-slate-500">--</span>';
+        if (r.nutrition) {
+          inStr = `<span class="font-bold text-slate-100">${r.nutrition.kcal.toLocaleString()} kcal</span> <span class="text-xs text-sky-300">(${r.nutrition.protein_g}P/${r.nutrition.fat_g}F/${r.nutrition.carbs_g}C)</span>`;
+          if (tdee && tdee >= 1400) {
+            const diff = r.nutrition.kcal - tdee;
+            netStr = `<span class="font-bold ${diff <= 0 ? 'text-emerald-400' : 'text-rose-400'}">${diff > 0 ? '+' : ''}${diff.toLocaleString()} kcal</span>`;
+          }
+        }
+        const slHm = r.sleep_min ? `${Math.floor(r.sleep_min / 60)}h ${String(r.sleep_min % 60).padStart(2, '0')}m` : '--';
+        const slStr = r.sleep_min ? `${slHm} <span class="text-xs text-slate-400">(${r.sleep_eff || '--'}%${r.hrv_ms ? ' • ' + r.hrv_ms + 'ms' : ''})</span>` : '--';
+        const bgStr = r.bg_mg_dl ? `BG ${r.bg_mg_dl}` : '';
+        const bhbStr = r.bhb_mmol ? `<span class="text-purple-300 font-bold">BHB ${r.bhb_mmol}</span> (GKI ${r.gki})` : '';
+        const metCombo = [bgStr, bhbStr].filter(Boolean).join(' &bull; ') || '--';
+
+        return `<tr>
+          <td class="font-bold text-slate-200">${r.date}</td>
+          <td>${w}${bf}${ffm}</td>
+          <td class="font-semibold">${steps}</td>
+          <td class="text-pink-300 font-semibold">${tdeeStr}</td>
+          <td>${inStr}</td>
+          <td>${netStr}</td>
+          <td>${slStr}</td>
+          <td>${metCombo}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    async function load2026FullHistory() {
+      try {
+        const res = await fetch('./history_2026_full.json?t=' + Date.now());
+        if (!res.ok) return;
+        const data = await res.json();
+        Y26_DATA = data;
+        const daily = data.daily_records || [];
+        const totalSteps = daily.reduce((s, r) => s + (r.steps || 0), 0);
+        const peakStepRec = daily.reduce((best, r) => ((r.steps || 0) > (best.steps || 0) ? r : best), { steps: 0, date: '' });
+        const wts = daily.filter((r) => r.weight_lb).map((r) => r.weight_lb);
+        const bfs = daily.filter((r) => r.bf_pct).length;
+        const nuts = daily.filter((r) => r.nutrition).length;
+        const tdees = daily.map(getTrueTdee).filter((v) => v && v >= 1400);
+        const sleeps = daily.filter((r) => r.sleep_min).map((r) => r.sleep_min);
+        const totalWorkouts = daily.reduce((s, r) => s + (r.workouts || 0), 0);
+
+        document.getElementById('y26-days').textContent = `${daily.length} Days`;
+        document.getElementById('y26-sync-counts').textContent = `${wts.length} Weights • ${bfs} BF% • ${nuts} Nutrition Days`;
+        if (wts.length) {
+          document.getElementById('y26-wt-range').textContent = `${Math.min(...wts).toFixed(1)} – ${Math.max(...wts).toFixed(1)} lb`;
+        }
+        document.getElementById('y26-total-steps').textContent = `${totalSteps.toLocaleString()} steps`;
+        document.getElementById('y26-peak-steps').textContent = `Peak: ${peakStepRec.steps.toLocaleString()} (${peakStepRec.date}) • Avg ${Math.round(totalSteps / Math.max(1, daily.length)).toLocaleString()}/d`;
+        if (tdees.length) {
+          document.getElementById('y26-avg-burn').textContent = `${Math.round(tdees.reduce((a, b) => a + b, 0) / tdees.length).toLocaleString()} kcal/d`;
+        }
+        if (sleeps.length) {
+          const avgSl = sleeps.reduce((a, b) => a + b, 0) / sleeps.length;
+          document.getElementById('y26-avg-sleep').textContent = `Avg Sleep: ${Math.floor(avgSl / 60)}h ${String(Math.round(avgSl % 60)).padStart(2, '0')}m • ${totalWorkouts} Workouts`;
+        }
+
+        render2026Svg(daily);
+        render2026MonthlyTable(data);
+        render2026DailyTable();
+      } catch (e) {}
+    }
+
+    function export2026Csv() {
+      if (!Y26_DATA || !Y26_DATA.daily_records) return;
+      const hdr = ['Date', 'Weight_lb', 'BodyFat_pct', 'FFM_lb', 'VF_Grade', 'Steps', 'TDEE_kcal', 'Intake_kcal', 'Protein_g', 'Fat_g', 'Carbs_g', 'Fiber_g', 'Sleep_min', 'Sleep_Eff_pct', 'HRV_ms', 'RHR_bpm', 'Glucose_mg_dL', 'Ketones_mmol_L', 'GKI', 'Workouts'];
+      const lines = [hdr.join(',')];
+      Y26_DATA.daily_records.forEach((r) => {
+        lines.push([
+          r.date,
+          r.weight_lb ?? '',
+          r.bf_pct ?? '',
+          r.ffm_lb ?? '',
+          r.vf_grade ?? '',
+          r.steps ?? '',
+          getTrueTdee(r) ?? '',
+          r.nutrition?.kcal ?? '',
+          r.nutrition?.protein_g ?? '',
+          r.nutrition?.fat_g ?? '',
+          r.nutrition?.carbs_g ?? '',
+          r.nutrition?.fiber_g ?? '',
+          r.sleep_min ?? '',
+          r.sleep_eff ?? '',
+          r.hrv_ms ?? '',
+          r.rhr ?? '',
+          r.bg_mg_dl ?? '',
+          r.bhb_mmol ?? '',
+          r.gki ?? '',
+          r.workouts ?? 0
+        ].join(','));
+      });
+      const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'shaun_2026_full_year_biometrics.csv';
+      a.click();
+    }
+
     // INITIALIZE APP
     document.addEventListener('DOMContentLoaded', () => {
       runForecast();
       loadLiveHealthTelemetry();
+      load2026FullHistory();
       applyMealTemplate('sardine_530');
       updateHealthExportCard();
       updateMeter();
