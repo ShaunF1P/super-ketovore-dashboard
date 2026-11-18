@@ -6,6 +6,7 @@
   "scripts": {
     "build": "echo 'Static build complete'",
     "start": "npx serve .",
-    "sync:health": "node sync_health_daily.mjs"
+    "sync:health": "node sync_health_daily.mjs",
+    "push:health": "node push_to_fitbit_health.mjs"
   }
 }

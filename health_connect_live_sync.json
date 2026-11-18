@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-18T20:32:04.936Z",
+  "generated_at": "2026-11-18T23:19:28.811Z",
   "window_start": "2026-11-11",
   "window_end": "2026-11-18",
   "paired_devices": [
     {
       "name": "Fitbit Air",
       "type": "TRACKER",
-      "battery_pct": 71,
-      "last_sync_utc": "2026-11-18T20:22:02Z"
+      "battery_pct": 68,
+      "last_sync_utc": "2026-11-18T23:09:06Z"
     },
     {
       "name": "MobileTrack",
@@ -20,8 +20,8 @@
   "daily_records": [
     {
       "date": "2026-11-18",
-      "steps": 2419,
-      "total_calories_burned_kcal": 1632,
+      "steps": 2815,
+      "total_calories_burned_kcal": 1967,
       "resting_hr_bpm": 65,
       "hrv": {
         "avg_rmssd_ms": 31,
@@ -49,6 +49,20 @@
         "is_nap": false,
         "source": "Fitbit Air"
       },
+      "weights": [
+        {
+          "time": "2026-11-18T08:10:00-05:00",
+          "weight_lb": 199.2,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
+      "body_fat_readings": [
+        {
+          "time": "2026-11-18T08:10:00-05:00",
+          "body_fat_pct": 25.5,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
       "blood_glucose_readings": [
         {
           "time": "2026-11-18T08:31:00-05:00",
@@ -78,6 +92,20 @@
           "light_minutes": 34,
           "is_nap": true,
           "source": "Fitbit Air"
+        }
+      ],
+      "weights": [
+        {
+          "time": "2026-11-17T05:20:00-05:00",
+          "weight_lb": 201.2,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
+      "body_fat_readings": [
+        {
+          "time": "2026-11-17T05:20:00-05:00",
+          "body_fat_pct": 25.8,
+          "source": "GOOGLE_WEB_API"
         }
       ],
       "blood_glucose_readings": [
@@ -121,6 +149,20 @@
         "is_nap": false,
         "source": "Fitbit Air"
       },
+      "weights": [
+        {
+          "time": "2026-11-16T07:38:00-05:00",
+          "weight_lb": 203.4,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
+      "body_fat_readings": [
+        {
+          "time": "2026-11-16T07:38:00-05:00",
+          "body_fat_pct": 27.2,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
       "blood_glucose_readings": [
         {
           "time": "2026-11-16T07:14:00-05:00",
@@ -175,6 +217,20 @@
         "is_nap": false,
         "source": "Fitbit Air"
       },
+      "weights": [
+        {
+          "time": "2026-11-15T07:35:00-05:00",
+          "weight_lb": 204,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
+      "body_fat_readings": [
+        {
+          "time": "2026-11-15T07:35:00-05:00",
+          "body_fat_pct": 27,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
       "blood_glucose_readings": [
         {
           "time": "2026-11-15T09:18:00-05:00",
