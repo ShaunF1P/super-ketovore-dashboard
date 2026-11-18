@@ -1,0 +1,508 @@
+{
+  "generated_at": "2026-11-18T15:28:05.375Z",
+  "window_start": "2026-11-11",
+  "window_end": "2026-11-18",
+  "paired_devices": [
+    {
+      "name": "Fitbit Air",
+      "type": "TRACKER",
+      "battery_pct": 76,
+      "last_sync_utc": "2026-11-18T15:18:15Z"
+    },
+    {
+      "name": "MobileTrack",
+      "type": "TRACKER",
+      "battery_pct": null,
+      "last_sync_utc": "2026-11-13T23:27:16Z"
+    }
+  ],
+  "gdrive_health_connect_exports": [],
+  "daily_records": [
+    {
+      "date": "2026-11-18",
+      "steps": 326,
+      "total_calories_burned_kcal": 873,
+      "resting_hr_bpm": 65,
+      "hrv": {
+        "avg_rmssd_ms": 31,
+        "deep_sleep_rmssd_ms": 40.5,
+        "non_rem_hr_bpm": 59
+      },
+      "spo2": {
+        "avg_pct": 97.6,
+        "min_pct": 95.4,
+        "max_pct": 99.2
+      },
+      "respiratory_rate_brpm": 13.8,
+      "sleep_skin_temp_delta_f": 1.95,
+      "sleep": {
+        "start": "2026-11-18T00:18:00-05:00",
+        "end": "2026-11-18T07:19:00-05:00",
+        "asleep_minutes": 414,
+        "asleep_hm": "6h 54m",
+        "awake_minutes": 7,
+        "total_minutes": 421,
+        "efficiency_pct": 98,
+        "deep_minutes": 72,
+        "rem_minutes": 97,
+        "light_minutes": 245,
+        "is_nap": false,
+        "source": "Fitbit Air"
+      },
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-18T08:31:00-05:00",
+          "glucose_mg_dl_raw": 91.8,
+          "glucose_mg_dl_meter": 91,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "steps": 3931,
+      "total_calories_burned_kcal": 2627,
+      "resting_hr_bpm": 64,
+      "naps": [
+        {
+          "start": "2026-11-17T04:07:00-05:00",
+          "end": "2026-11-17T04:56:00-05:00",
+          "asleep_minutes": 38,
+          "asleep_hm": "0h 38m",
+          "awake_minutes": 11,
+          "total_minutes": 49,
+          "efficiency_pct": 78,
+          "deep_minutes": 4,
+          "rem_minutes": 0,
+          "light_minutes": 34,
+          "is_nap": true,
+          "source": "Fitbit Air"
+        }
+      ],
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-17T05:44:00.01-05:00",
+          "glucose_mg_dl_raw": 97.2,
+          "glucose_mg_dl_meter": 97,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "steps": 8758,
+      "total_calories_burned_kcal": 2950,
+      "resting_hr_bpm": 64,
+      "hrv": {
+        "avg_rmssd_ms": 30.7,
+        "deep_sleep_rmssd_ms": 36.4,
+        "non_rem_hr_bpm": 59
+      },
+      "spo2": {
+        "avg_pct": 96.7,
+        "min_pct": 91.1,
+        "max_pct": 100
+      },
+      "respiratory_rate_brpm": 13.2,
+      "sleep_skin_temp_delta_f": -0.6,
+      "sleep": {
+        "start": "2026-11-15T22:54:00-05:00",
+        "end": "2026-11-16T06:45:00-05:00",
+        "asleep_minutes": 435,
+        "asleep_hm": "7h 15m",
+        "awake_minutes": 36,
+        "total_minutes": 471,
+        "efficiency_pct": 92,
+        "deep_minutes": 94,
+        "rem_minutes": 79,
+        "light_minutes": 262,
+        "is_nap": false,
+        "source": "Fitbit Air"
+      },
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-16T07:14:00-05:00",
+          "glucose_mg_dl_raw": 88.2,
+          "glucose_mg_dl_meter": 88,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ],
+      "exercises": [
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-16T07:54:35.2-05:00",
+          "end": "2026-11-16T08:24:10.2-05:00",
+          "active_seconds": 1775,
+          "calories_kcal": 170,
+          "avg_hr_bpm": 81,
+          "steps": 1608,
+          "source": "Fitbit Air"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "steps": 13685,
+      "total_calories_burned_kcal": 3185,
+      "resting_hr_bpm": 64,
+      "hrv": {
+        "avg_rmssd_ms": 40.9,
+        "deep_sleep_rmssd_ms": 56.7,
+        "non_rem_hr_bpm": 64
+      },
+      "spo2": {
+        "avg_pct": 96.1,
+        "min_pct": 93.7,
+        "max_pct": 99.5
+      },
+      "respiratory_rate_brpm": 14.4,
+      "sleep_skin_temp_delta_f": 1.64,
+      "sleep": {
+        "start": "2026-11-15T00:37:00-05:00",
+        "end": "2026-11-15T06:41:00-05:00",
+        "asleep_minutes": 360,
+        "asleep_hm": "6h 00m",
+        "awake_minutes": 4,
+        "total_minutes": 364,
+        "efficiency_pct": 99,
+        "deep_minutes": 73,
+        "rem_minutes": 74,
+        "light_minutes": 213,
+        "is_nap": false,
+        "source": "Fitbit Air"
+      },
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-15T09:18:00-05:00",
+          "glucose_mg_dl_raw": 88.2,
+          "glucose_mg_dl_meter": 88,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ],
+      "exercises": [
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-15T20:09:20.4-05:00",
+          "end": "2026-11-15T21:31:35.4-05:00",
+          "active_seconds": 4935,
+          "calories_kcal": 601,
+          "avg_hr_bpm": 89,
+          "steps": 6961,
+          "source": "Fitbit Air"
+        },
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-15T15:24:22.8-05:00",
+          "end": "2026-11-15T15:47:35.8-05:00",
+          "active_seconds": 1393,
+          "calories_kcal": 120,
+          "avg_hr_bpm": 79,
+          "steps": 1049,
+          "source": "Fitbit Air"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "steps": 11564,
+      "total_calories_burned_kcal": 3344,
+      "resting_hr_bpm": 62,
+      "hrv": {
+        "avg_rmssd_ms": 38,
+        "deep_sleep_rmssd_ms": 66.8,
+        "non_rem_hr_bpm": 63
+      },
+      "spo2": {
+        "avg_pct": 96.8,
+        "min_pct": 92.9,
+        "max_pct": 100
+      },
+      "respiratory_rate_brpm": 14.4,
+      "sleep_skin_temp_delta_f": -0.88,
+      "sleep": {
+        "start": "2026-11-13T23:00:00-05:00",
+        "end": "2026-11-14T07:22:00-05:00",
+        "asleep_minutes": 480,
+        "asleep_hm": "8h 00m",
+        "awake_minutes": 22,
+        "total_minutes": 502,
+        "efficiency_pct": 96,
+        "deep_minutes": 99,
+        "rem_minutes": 102,
+        "light_minutes": 279,
+        "is_nap": false,
+        "source": "Fitbit Air"
+      },
+      "weights": [
+        {
+          "time": "2026-11-14T09:56:00-05:00",
+          "weight_lb": 200,
+          "source": "FITBIT"
+        }
+      ],
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-14T10:09:00-05:00",
+          "glucose_mg_dl_raw": 91.8,
+          "glucose_mg_dl_meter": 91,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ],
+      "exercises": [
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-14T14:31:36-05:00",
+          "end": "2026-11-14T14:53:55-05:00",
+          "active_seconds": 1339,
+          "calories_kcal": 131,
+          "avg_hr_bpm": 96,
+          "steps": 1171,
+          "source": "Fitbit Air"
+        },
+        {
+          "name": "Strength training",
+          "type": "STRENGTH_TRAINING",
+          "start": "2026-11-14T10:32:09-05:00",
+          "end": "2026-11-14T11:01:54-05:00",
+          "active_seconds": 1785,
+          "calories_kcal": 146,
+          "avg_hr_bpm": 105,
+          "steps": null,
+          "source": "Fitbit Air"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "steps": 13604,
+      "total_calories_burned_kcal": 3324,
+      "resting_hr_bpm": 60,
+      "hrv": {
+        "avg_rmssd_ms": 44,
+        "deep_sleep_rmssd_ms": 52.5,
+        "non_rem_hr_bpm": 56
+      },
+      "spo2": {
+        "avg_pct": 96.9,
+        "min_pct": 94.4,
+        "max_pct": 98.9
+      },
+      "respiratory_rate_brpm": 12.8,
+      "sleep_skin_temp_delta_f": 0.38,
+      "sleep": {
+        "start": "2026-11-12T23:15:00-05:00",
+        "end": "2026-11-13T07:02:00-05:00",
+        "asleep_minutes": 442,
+        "asleep_hm": "7h 22m",
+        "awake_minutes": 25,
+        "total_minutes": 467,
+        "efficiency_pct": 95,
+        "deep_minutes": 92,
+        "rem_minutes": 102,
+        "light_minutes": 248,
+        "is_nap": false,
+        "source": "Fitbit Air"
+      },
+      "weights": [
+        {
+          "time": "2026-11-13T07:47:00-05:00",
+          "weight_lb": 200,
+          "source": "FITBIT"
+        }
+      ],
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-13T08:07:00.01-05:00",
+          "glucose_mg_dl_raw": 90,
+          "glucose_mg_dl_meter": 90,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ],
+      "exercises": [
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-13T19:05:34.8-05:00",
+          "end": "2026-11-13T19:23:29.8-05:00",
+          "active_seconds": 1075,
+          "calories_kcal": 123,
+          "avg_hr_bpm": 85,
+          "steps": 996,
+          "source": "Fitbit Air"
+        },
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-13T08:10:31.2-05:00",
+          "end": "2026-11-13T08:52:26.2-05:00",
+          "active_seconds": 2515,
+          "calories_kcal": 351,
+          "avg_hr_bpm": 95,
+          "steps": 4126,
+          "source": "Fitbit Air"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "steps": 16391,
+      "total_calories_burned_kcal": 3580,
+      "resting_hr_bpm": 59,
+      "hrv": {
+        "avg_rmssd_ms": 43.1,
+        "deep_sleep_rmssd_ms": 55.9,
+        "non_rem_hr_bpm": 53
+      },
+      "spo2": {
+        "avg_pct": 97.8,
+        "min_pct": 94.3,
+        "max_pct": 100
+      },
+      "respiratory_rate_brpm": 13.2,
+      "sleep_skin_temp_delta_f": -1.55,
+      "sleep": {
+        "start": "2026-11-11T22:22:00-05:00",
+        "end": "2026-11-12T06:30:00-05:00",
+        "asleep_minutes": 451,
+        "asleep_hm": "7h 31m",
+        "awake_minutes": 37,
+        "total_minutes": 488,
+        "efficiency_pct": 92,
+        "deep_minutes": 89,
+        "rem_minutes": 112,
+        "light_minutes": 250,
+        "is_nap": false,
+        "source": "Fitbit Air"
+      },
+      "weights": [
+        {
+          "time": "2026-11-12T09:09:00-05:00",
+          "weight_lb": 201.8,
+          "source": "FITBIT"
+        }
+      ],
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-12T10:38:13-05:00",
+          "glucose_mg_dl_raw": 69,
+          "glucose_mg_dl_meter": 69,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        },
+        {
+          "time": "2026-11-12T10:33:00-05:00",
+          "glucose_mg_dl_raw": 69,
+          "glucose_mg_dl_meter": 69,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ],
+      "exercises": [
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-12T18:38:28.8-05:00",
+          "end": "2026-11-12T19:52:08.8-05:00",
+          "active_seconds": 4420,
+          "calories_kcal": 608,
+          "avg_hr_bpm": 92,
+          "steps": 7018,
+          "source": "Fitbit Air"
+        },
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-12T08:05:18-05:00",
+          "end": "2026-11-12T08:59:18-05:00",
+          "active_seconds": 3240,
+          "calories_kcal": 452,
+          "avg_hr_bpm": 99,
+          "steps": 4916,
+          "source": "Fitbit Air"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "steps": 12865,
+      "total_calories_burned_kcal": 3294,
+      "resting_hr_bpm": 60,
+      "hrv": {
+        "avg_rmssd_ms": 51,
+        "deep_sleep_rmssd_ms": 57.3,
+        "non_rem_hr_bpm": 55
+      },
+      "spo2": {
+        "avg_pct": 95.9,
+        "min_pct": 91,
+        "max_pct": 99.5
+      },
+      "respiratory_rate_brpm": 13.2,
+      "sleep_skin_temp_delta_f": 0.51,
+      "sleep": {
+        "start": "2026-11-10T22:49:00-05:00",
+        "end": "2026-11-11T05:57:00-05:00",
+        "asleep_minutes": 418,
+        "asleep_hm": "6h 58m",
+        "awake_minutes": 10,
+        "total_minutes": 428,
+        "efficiency_pct": 98,
+        "deep_minutes": 77,
+        "rem_minutes": 109,
+        "light_minutes": 232,
+        "is_nap": false,
+        "source": "Fitbit Air"
+      },
+      "weights": [
+        {
+          "time": "2026-11-11T09:28:00-05:00",
+          "weight_lb": 204.2,
+          "source": "FITBIT"
+        }
+      ],
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-11T10:04:00-05:00",
+          "glucose_mg_dl_raw": 75.6,
+          "glucose_mg_dl_meter": 75,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ],
+      "exercises": [
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-11T18:24:43.8-05:00",
+          "end": "2026-11-11T19:01:54.8-05:00",
+          "active_seconds": 2231,
+          "calories_kcal": 293,
+          "avg_hr_bpm": 90,
+          "steps": 3533,
+          "source": "Fitbit Air"
+        },
+        {
+          "name": "Workout",
+          "type": "WORKOUT",
+          "start": "2026-11-11T15:26:07.6-05:00",
+          "end": "2026-11-11T15:54:17.6-05:00",
+          "active_seconds": 1690,
+          "calories_kcal": 154,
+          "avg_hr_bpm": 108,
+          "steps": null,
+          "source": "Fitbit Air"
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@
   "description": "Shaun's Super Ketovore & OxeFit Command Center v3.0 — Universal Multi-OS & Multi-Aspect-Ratio Interactive Dashboard",
   "scripts": {
     "build": "echo 'Static build complete'",
-    "start": "npx serve ."
+    "start": "npx serve .",
+    "sync:health": "node sync_health_daily.mjs"
   }
 }
