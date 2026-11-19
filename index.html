@@ -719,10 +719,40 @@
               <span>Live `Fitbit Air` + `Health Connect` Auto-Ingested Telemetry (`health_connect_live_sync.json`)</span>
             </h3>
             <p class="text-xs" style="color: var(--text-muted);" id="hc-sync-subtitle">
-              Pulled automatically via `npm run sync:health` (`ghealth` v4): Sleep Stages, Non-REM HR, Deep-Sleep RMSSD HRV, SpO2, Steps, Total Burned `kcal`, and `MyMojoHealth` Capillary Glucose.
+              Pulled automatically via `npm run sync:health` (`ghealth` v4): 1-Second Overnight HR Nadir, Post-Workout HRR, Sleep Stages, Deep-Sleep RMSSD HRV, SpO2, Steps, Total Burned `kcal`, and `MyMojoHealth` Capillary Glucose.
             </p>
           </div>
         </div>
+
+        <!-- 5 PROPRIETARY FITBIT AIR BIO-STATES COMMAND STRIP -->
+        <div class="grid-5 mb-3.5" id="hc-biostates-grid">
+          <div class="sub-card" style="border-left: 3px solid #10b981;">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">1. OxeFit CNS &amp; Tendon State</div>
+            <div class="text-lg font-extrabold text-emerald-400 mt-0.5" id="bs-cns-val">GREEN (87/100)</div>
+            <div class="text-xs text-slate-300" id="bs-cns-sub">Deep RMSSD 40.5 ms &bull; Non-REM 59 bpm</div>
+          </div>
+          <div class="sub-card" style="border-left: 3px solid #38bdf8;">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">2. `Fitbit Air` HR-Nadir Clock</div>
+            <div class="text-lg font-extrabold text-sky-400 mt-0.5" id="bs-nadir-val">54 bpm @ 02:42 AM</div>
+            <div class="text-xs text-sky-300" id="bs-nadir-sub">34% Into Sleep (1st-Third Optimal!)</div>
+          </div>
+          <div class="sub-card" style="border-left: 3px solid #f59e0b;">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">3. True Fat vs. Water/GI Split</div>
+            <div class="text-lg font-extrabold text-amber-400 mt-0.5" id="bs-fat-val">-0.31 lb Pure Fat</div>
+            <div class="text-xs text-amber-300" id="bs-fat-sub">-1,082 kcal Net &bull; -1.69 lb GI/Fluid Flush</div>
+          </div>
+          <div class="sub-card" style="border-left: 3px solid #a855f7;">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">4. Visceral Melt Velocity (`VMVI`)</div>
+            <div class="text-lg font-extrabold text-purple-400 mt-0.5" id="bs-vmvi-val">82 / 100</div>
+            <div class="text-xs text-purple-300" id="bs-vmvi-sub">AM DBR 70.0 (`GKI 3.9`) &bull; Sub-5 On Pace</div>
+          </div>
+          <div class="sub-card" style="border-left: 3px solid #ec4899;">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">5. Post-Workout Vagal `HRR`</div>
+            <div class="text-lg font-extrabold text-pink-400 mt-0.5" id="bs-hrr-val">-22 bpm (180s)</div>
+            <div class="text-xs text-pink-300" id="bs-hrr-sub">OxeFit Nov 14 Peak: 127 &rarr; 86 bpm (-41!)</div>
+          </div>
+        </div>
+
         <div class="table-scroll">
           <table class="clean-table" style="min-width: 720px;">
             <thead>
@@ -3238,6 +3268,47 @@
         const pill = document.getElementById('hc-device-pill');
         if (pill) {
           pill.textContent = `${dev.name.toUpperCase()} (${dev.battery_pct}% BATTERY) • HEALTH CONNECT LIVE`;
+        }
+      }
+      if (payload.custom_bio_states) {
+        const bs = payload.custom_bio_states;
+        if (bs.cns_readiness) {
+          const el = document.getElementById('bs-cns-val');
+          if (el) {
+            el.textContent = `${bs.cns_readiness.tier} (${bs.cns_readiness.score}/100)`;
+            el.className = `text-lg font-extrabold mt-0.5 ${bs.cns_readiness.tier === 'GREEN' ? 'text-emerald-400' : bs.cns_readiness.tier === 'AMBER' ? 'text-amber-400' : 'text-rose-400'}`;
+          }
+          const sub = document.getElementById('bs-cns-sub');
+          if (sub) sub.textContent = `Deep RMSSD ${bs.cns_readiness.deep_rmssd_ms} ms • Non-REM ${bs.cns_readiness.non_rem_hr_bpm} bpm`;
+        }
+        if (bs.circadian_nadir) {
+          const el = document.getElementById('bs-nadir-val');
+          if (el) el.textContent = `${bs.circadian_nadir.nadir_bpm} bpm @ ${bs.circadian_nadir.nadir_clock}`;
+          const sub = document.getElementById('bs-nadir-sub');
+          if (sub && bs.circadian_nadir.pct_through_sleep != null) {
+            sub.textContent = `${bs.circadian_nadir.pct_through_sleep}% Into Sleep (${bs.circadian_nadir.pct_through_sleep <= 50 ? '1st-Half Optimal!' : 'Shift Bedtime Earlier'})`;
+          }
+        }
+        if (bs.true_fat_split) {
+          const el = document.getElementById('bs-fat-val');
+          if (el) el.textContent = `${bs.true_fat_split.true_fat_delta_lb} lb Pure Fat`;
+          const sub = document.getElementById('bs-fat-sub');
+          if (sub) {
+            const wStr = bs.true_fat_split.water_gi_delta_lb != null ? ` • ${bs.true_fat_split.water_gi_delta_lb > 0 ? '+' : ''}${bs.true_fat_split.water_gi_delta_lb} lb GI/Water` : '';
+            sub.textContent = `${bs.true_fat_split.net_kcal.toLocaleString()} kcal Net${wStr}`;
+          }
+        }
+        if (bs.visceral_melt_velocity) {
+          const el = document.getElementById('bs-vmvi-val');
+          if (el) el.textContent = `${bs.visceral_melt_velocity.score} / 100`;
+          const sub = document.getElementById('bs-vmvi-sub');
+          if (sub) sub.textContent = `AM DBR ${bs.visceral_melt_velocity.am_dbr} (GKI ${bs.visceral_melt_velocity.am_gki}) • Sub-5 Pace`;
+        }
+        if (bs.vagal_hrr && bs.vagal_hrr.hrr_180_drop_bpm != null) {
+          const el = document.getElementById('bs-hrr-val');
+          if (el) el.textContent = `-${bs.vagal_hrr.hrr_180_drop_bpm} bpm (180s)`;
+          const sub = document.getElementById('bs-hrr-sub');
+          if (sub) sub.textContent = `${bs.vagal_hrr.workout_name} (${bs.vagal_hrr.workout_date}): ${bs.vagal_hrr.peak_end_bpm} -> ${bs.vagal_hrr.hr_at_180s_bpm} bpm`;
         }
       }
       tbody.innerHTML = payload.daily_records.slice(0, 7).map((r) => {

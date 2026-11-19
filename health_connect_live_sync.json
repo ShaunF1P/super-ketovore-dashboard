@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-19T00:57:57.673Z",
+  "generated_at": "2026-11-19T02:22:02.424Z",
   "window_start": "2026-11-11",
   "window_end": "2026-11-18",
   "paired_devices": [
     {
       "name": "Fitbit Air",
       "type": "TRACKER",
-      "battery_pct": 65,
-      "last_sync_utc": "2026-11-19T00:55:21Z"
+      "battery_pct": 64,
+      "last_sync_utc": "2026-11-19T02:11:40Z"
     },
     {
       "name": "MobileTrack",
@@ -16,12 +16,54 @@
       "last_sync_utc": "2026-11-13T23:27:16Z"
     }
   ],
+  "custom_bio_states": {
+    "cns_readiness": {
+      "score": 87,
+      "tier": "GREEN",
+      "deep_rmssd_ms": 40.5,
+      "non_rem_hr_bpm": 59,
+      "prescription": "Push OxeFit Chains Overload + Keith Baar 4x30s Isometric Holds (50m Cap)"
+    },
+    "circadian_nadir": {
+      "score": 87,
+      "nadir_bpm": 54,
+      "nadir_clock": "02:42",
+      "pct_through_sleep": 34,
+      "samples_analyzed": 10000,
+      "bedtime_iso": "2026-11-18T00:18:00-05:00"
+    },
+    "true_fat_split": {
+      "yesterday_date": "2026-11-17",
+      "yesterday_burn_kcal": 2627,
+      "yesterday_intake_kcal": 1545,
+      "net_kcal": -1082,
+      "true_fat_delta_lb": -0.31,
+      "scale_delta_lb": -2,
+      "water_gi_delta_lb": -1.69
+    },
+    "visceral_melt_velocity": {
+      "score": 82,
+      "am_dbr": 70,
+      "am_gki": 3.9,
+      "active_step_flux": 3931
+    },
+    "vagal_hrr": {
+      "workout_date": "2026-11-16",
+      "workout_name": "Walk",
+      "peak_end_bpm": 93,
+      "hr_at_60s_bpm": 84,
+      "hrr_60_drop_bpm": 9,
+      "hr_at_180s_bpm": 71,
+      "hrr_180_drop_bpm": 22
+    }
+  },
   "gdrive_health_connect_exports": [],
   "daily_records": [
     {
       "date": "2026-11-18",
-      "steps": 3227,
-      "total_calories_burned_kcal": 2185,
+      "steps": 3874,
+      "total_calories_burned_kcal": 2433,
+      "intake_kcal": 1380,
       "resting_hr_bpm": 65,
       "hrv": {
         "avg_rmssd_ms": 31,
@@ -77,6 +119,7 @@
       "date": "2026-11-17",
       "steps": 3931,
       "total_calories_burned_kcal": 2627,
+      "intake_kcal": 1545,
       "resting_hr_bpm": 64,
       "naps": [
         {
@@ -122,6 +165,7 @@
       "date": "2026-11-16",
       "steps": 8758,
       "total_calories_burned_kcal": 2950,
+      "intake_kcal": 1710,
       "resting_hr_bpm": 64,
       "hrv": {
         "avg_rmssd_ms": 30.7,
@@ -190,6 +234,7 @@
       "date": "2026-11-15",
       "steps": 13685,
       "total_calories_burned_kcal": 3185,
+      "intake_kcal": 3280,
       "resting_hr_bpm": 64,
       "hrv": {
         "avg_rmssd_ms": 40.9,
@@ -269,6 +314,7 @@
       "date": "2026-11-14",
       "steps": 11564,
       "total_calories_burned_kcal": 3344,
+      "intake_kcal": 2850,
       "resting_hr_bpm": 62,
       "hrv": {
         "avg_rmssd_ms": 38,
@@ -348,6 +394,7 @@
       "date": "2026-11-13",
       "steps": 13604,
       "total_calories_burned_kcal": 3324,
+      "intake_kcal": 1350,
       "resting_hr_bpm": 60,
       "hrv": {
         "avg_rmssd_ms": 44,
@@ -427,6 +474,7 @@
       "date": "2026-11-12",
       "steps": 16391,
       "total_calories_burned_kcal": 3580,
+      "intake_kcal": 1178,
       "resting_hr_bpm": 59,
       "hrv": {
         "avg_rmssd_ms": 43.1,
@@ -513,6 +561,7 @@
       "date": "2026-11-11",
       "steps": 12865,
       "total_calories_burned_kcal": 3294,
+      "intake_kcal": 1145,
       "resting_hr_bpm": 60,
       "hrv": {
         "avg_rmssd_ms": 51,

@@ -289,9 +289,22 @@ async function main() {
 
   if (weightLb) {
     const grams = Math.round(Number(weightLb) * 453.59237);
+    let notes = getArg('--notes');
+    if (!notes) {
+      const liveSyncPath = path.join(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), 'health_connect_live_sync.json');
+      if (fs.existsSync(liveSyncPath)) {
+        try {
+          const bs = JSON.parse(fs.readFileSync(liveSyncPath, 'utf8')).custom_bio_states;
+          if (bs) {
+            notes = `CNS:${bs.cns_readiness.tier}(${bs.cns_readiness.score}) | Nadir:${bs.circadian_nadir.nadir_bpm}bpm@${bs.circadian_nadir.nadir_clock} | TrueFat:${bs.true_fat_split.true_fat_delta_lb}lb | VMVI:${bs.visceral_melt_velocity.score}/100`;
+          }
+        } catch {}
+      }
+    }
     const payload = {
       weight: {
         weightGrams: grams,
+        ...(notes ? { notes } : {}),
         sampleTime: {
           physicalTime: ts.startPhysical,
           utcOffset: ts.utcOffset,
@@ -300,7 +313,7 @@ async function main() {
       },
     };
     const result = await postHealthDataPoint(token, 'weight', payload);
-    console.log(`Pushed weight: ${weightLb} lb (${grams}g) ->`, JSON.stringify(result));
+    console.log(`Pushed weight: ${weightLb} lb (${grams}g)${notes ? ` [Notes: ${notes}]` : ''} ->`, JSON.stringify(result));
   }
 
   if (bodyFatPct) {
