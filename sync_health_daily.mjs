@@ -82,19 +82,25 @@ function checkGdriveHealthConnectExports() {
 async function computeSleepHrNadir(bin, sleepRec) {
   if (!sleepRec?.start || !sleepRec?.end) return null;
   try {
-    const startUtc = new Date(sleepRec.start).toISOString().replace(/\.\d{3}Z$/, 'Z');
-    const endUtc = new Date(sleepRec.end).toISOString().replace(/\.\d{3}Z$/, 'Z');
-    const filter = `heart_rate.sample_time.physical_time >= "${startUtc}" AND heart_rate.sample_time.physical_time < "${endUtc}"`;
-    const res = await runGhealth(bin, ['data', 'heart-rate', 'list', '--filter', filter, '--limit', '10000']);
-    const pts = res.dataPoints || [];
+    const startMs = new Date(sleepRec.start).getTime();
+    const endMs = new Date(sleepRec.end).getTime();
+    const chunkMs = 3 * 3600 * 1000; // 3-hour slices so 8-10h sleeps never hit 10k sample cap
+    const slices = [];
+    for (let cur = startMs; cur < endMs; cur += chunkMs) {
+      const next = Math.min(endMs, cur + chunkMs);
+      const sUtc = new Date(cur).toISOString().replace(/\.\d{3}Z$/, 'Z');
+      const eUtc = new Date(next).toISOString().replace(/\.\d{3}Z$/, 'Z');
+      const filter = `heart_rate.sample_time.physical_time >= "${sUtc}" AND heart_rate.sample_time.physical_time < "${eUtc}"`;
+      slices.push(runGhealth(bin, ['data', 'heart-rate', 'list', '--filter', filter, '--limit', '10000']));
+    }
+    const results = await Promise.all(slices);
+    const pts = results.flatMap((r) => r.dataPoints || []);
     if (!pts.length) return null;
     let minPt = null;
     for (const p of pts) {
       const bpm = Number(p.beatsPerMinute);
       if (!minPt || bpm < Number(minPt.beatsPerMinute)) minPt = p;
     }
-    const startMs = new Date(sleepRec.start).getTime();
-    const endMs = new Date(sleepRec.end).getTime();
     const nadirMs = new Date(minPt.time).getTime();
     const pctThroughSleep = Math.round(((nadirMs - startMs) / Math.max(1, endMs - startMs)) * 100);
     const localClock = minPt.time.slice(11, 16);
