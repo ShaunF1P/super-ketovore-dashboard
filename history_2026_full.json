@@ -198,9 +198,9 @@
       "avg_steps": 8319,
       "peak_steps": 16391,
       "avg_burn_kcal": 2813,
-      "logged_nutrition_days": 11,
-      "avg_intake_kcal": 1568,
-      "avg_protein_g": 131,
+      "logged_nutrition_days": 12,
+      "avg_intake_kcal": 1541,
+      "avg_protein_g": 130,
       "avg_sleep_hm": "7h 22m",
       "avg_hrv_ms": 33.3,
       "avg_rhr_bpm": 64,
@@ -4600,7 +4600,15 @@
       "glucose_mg_dl": 86,
       "ketones_mmol_l": 0.9,
       "gki": 5.3,
-      "dbr": 95.6
+      "dbr": 95.6,
+      "nutrition": {
+        "kcal": 1235,
+        "protein_g": 116,
+        "fat_g": 83.5,
+        "carbs_g": 4,
+        "fiber_g": 2,
+        "source": "Google Health v4 + Ketovore Verified"
+      }
     }
   ]
 }

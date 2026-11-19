@@ -341,9 +341,9 @@
           <div class="text-xs text-purple-300" id="hdr-dbr">GKI `5.3` (`DBR 95.6`) &bull; `8h 50m` Sleep (`89m` Deep / `113m` REM)</div>
         </div>
         <div class="sub-card">
-          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Thu `Day 4: TILT FIX` (`AMBER 70`)</div>
-          <div class="text-lg font-extrabold text-emerald-400 mt-0.5" id="hdr-status">1,000mg Na + 2 RIR Cap</div>
-          <div class="text-xs text-emerald-300" id="hdr-eta">Left-Leg-First Split Squat + Baar 4x30s Holds (50m Cap)</div>
+          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Thu Running (`1:43 PM` Synced)</div>
+          <div class="text-lg font-extrabold text-emerald-400 mt-0.5" id="hdr-status">1,235 kcal | 116g P</div>
+          <div class="text-xs text-emerald-300" id="hdr-eta">1lb Grass-Fed Beef + Slate/MCT &bull; Add 1,000mg Na Now!</div>
         </div>
       </div>
 
@@ -1270,26 +1270,26 @@
           <div class="space-y-2.5">
             <div>
               <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Date &amp; Meal Summary</label>
-              <input type="text" id="exp-foods" value="Wed Nov 18 (AM: 6oz 80/20 Burger w/ White American + Cafe Mocha Slate Max + 1.5 tbsp MCT | 3:30 PM: 3x 7oz Turkey Burgers + 1 tbsp MCT)" oninput="updateHealthExportCard()" />
+              <input type="text" id="exp-foods" value="Thu Nov 19 Running (AM: Coffee + 1 tbsp MCT + Cafe Mocha Slate | 1:30 PM: 16oz Simply Nature 100% Grass-Fed Ground Beef)" oninput="updateHealthExportCard()" />
             </div>
             <div class="grid-3">
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Calories (`kcal`)</label>
-                <input type="number" id="exp-kcal" value="1880" min="0" max="5000" step="10" oninput="updateHealthExportCard()" />
+                <input type="number" id="exp-kcal" value="1235" min="0" max="5000" step="10" oninput="updateHealthExportCard()" />
               </div>
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Protein (`g`)</label>
-                <input type="number" id="exp-p" value="176" min="0" max="400" step="1" oninput="updateHealthExportCard()" />
+                <input type="number" id="exp-p" value="116" min="0" max="400" step="1" oninput="updateHealthExportCard()" />
               </div>
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Fat (`g`)</label>
-                <input type="number" id="exp-f" value="125" min="0" max="400" step="1" oninput="updateHealthExportCard()" />
+                <input type="number" id="exp-f" value="84" min="0" max="400" step="1" oninput="updateHealthExportCard()" />
               </div>
             </div>
             <div class="grid-3">
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Net Carbs (`g`)</label>
-                <input type="number" id="exp-c" value="11" min="0" max="200" step="1" oninput="updateHealthExportCard()" />
+                <input type="number" id="exp-c" value="2" min="0" max="200" step="1" oninput="updateHealthExportCard()" />
               </div>
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Fiber (`g`)</label>
@@ -1297,7 +1297,7 @@
               </div>
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Kitchen Lockout</label>
-                <input type="text" id="exp-cutoff" value="3:45 PM SHARP" oninput="updateHealthExportCard()" />
+                <input type="text" id="exp-cutoff" value="Target <= 5:00 PM" oninput="updateHealthExportCard()" />
               </div>
             </div>
           </div>
@@ -2594,8 +2594,13 @@
       }
     }
 
-    const NUTR_LOG_KEY = 'shaun_v5_34_nutrition_logs';
+    const NUTR_LOG_KEY = 'shaun_v5_35_nutrition_logs';
     const DEFAULT_NUTR_LOGS = [
+      {
+        date: '2026-11-19 (Thu Running Intake @ 1:43 PM — 1,235 kcal | 116g P Pushed Live to Fitbit!)',
+        summary: '1,235 kcal Running Total: AM Coffee + 1 tbsp MCT Oil (135 kcal / 14g F) + 1x Cafe Mocha Slate Max (140 kcal / 32g P / 2g Net C) | 1:30p 16oz (1 lb) Aldi Simply Nature 100% Grass-Fed Organic Ground Beef (960 kcal / 84g P / 68g F / 0g C / 1,320mg K)',
+        metrics: '116g P | 83.5g F | 2g Net Carbs | ~1L Water + Complete Osmotic GI Cleanout (700mg Mg Citrate + AM Coffee/MCT) -> Add 1,000–1,500mg Sodium NOW, 0 More MCT Today, Optional 40–55g Lean Protein + 4–6g Soluble Fiber <=5:00p -> Primed for 197.x lb (BMI <30.0) Fri AM!'
+      },
       {
         date: '2026-11-19 (Day 12 Scan @ 07:58 AM + 08:06 AM MyMojo + 8h 50m Sleep — 198.4 LB & BG 86!)',
         summary: '198.4 lb (-0.8 lb Overnight / -2.8 lb in 48h / -11.2 lb in 11d — Hit Fri Nov 20 Target 24h Early; Lowest Since Jun 4!) | 8:06a MyMojoHealth: BG 86 mg/dL (-5 Overnight / -11 in 48h — Lowest Dawn BG Since Nov 12!) + Ketones 0.9 mmol/L (GKI 5.3, AM DBR 95.6) | True Fat Split: -0.22 lb Pure Fat (-773 kcal Wed Net on 1,880 kcal -> ~50.48 lb True Fat) + -0.58 lb GI/Water | FFM: 147.3 lb (24.0 / 24.0 lb Leg Symmetry!) | VF 9 | BMI 30.1',
