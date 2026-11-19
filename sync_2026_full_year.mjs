@@ -72,7 +72,7 @@ const VERIFIED_KETOVORE_MEALS_NOV = [
   { date: '2026-11-15', hour: 17, minute: 0, meal: 'Zero-Cheese Surf & Turf: Smoked Salmon, Filet Mignon, 8 Shrimp, 4 Eggs, Guac, MCT, Slate', kcal: 3280, protein: 235, fat: 248, carbs: 14, fiber: 4 },
   { date: '2026-11-16', hour: 18, minute: 0, meal: 'OMAD: 20oz 80/20 Ground Beef + Cafe Mocha Slate Max + 3 tbsp MCT + 3oz Red-Bag Kimchi', kcal: 1710, protein: 143, fat: 122, carbs: 6, fiber: 2 },
   { date: '2026-11-17', hour: 16, minute: 0, meal: 'Roadtrip Saltgrass: Cafe Mocha Slate + MCT + 6oz Sirloin + 6oz Steak/Shrimp + 2x Broccoli', kcal: 1545, protein: 146, fat: 93, carbs: 21, fiber: 8 },
-  { date: '2026-11-18', hour: 15, minute: 45, meal: 'Ketovore Surge: Cafe Mocha Slate Max + 2.5 tbsp MCT + 3x 7oz Gourmet Turkey Burgers', kcal: 1380, protein: 143, fat: 84.5, carbs: 11.5, fiber: 2 },
+  { date: '2026-11-18', hour: 15, minute: 45, meal: 'Ketovore Surge: 6oz 80/20 Burger w/ White American + Cafe Mocha Slate + 2.5 tbsp MCT + 3x 7oz Turkey Burgers', kcal: 1880, protein: 176, fat: 124.5, carbs: 12.5, fiber: 2 },
 ];
 
 const VERIFIED_KETONES_2026 = {

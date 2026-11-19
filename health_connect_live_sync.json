@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-19T13:10:15.553Z",
+  "generated_at": "2026-11-19T13:50:03.775Z",
   "window_start": "2026-11-12",
   "window_end": "2026-11-19",
   "paired_devices": [
     {
       "name": "Fitbit Air",
       "type": "TRACKER",
-      "battery_pct": 55,
-      "last_sync_utc": "2026-11-19T13:08:32Z"
+      "battery_pct": 54,
+      "last_sync_utc": "2026-11-19T13:38:54Z"
     },
     {
       "name": "MobileTrack",
@@ -35,14 +35,14 @@
     "true_fat_split": {
       "yesterday_date": "2026-11-18",
       "yesterday_burn_kcal": 2653,
-      "yesterday_intake_kcal": 1380,
-      "net_kcal": -1273,
-      "true_fat_delta_lb": -0.36,
+      "yesterday_intake_kcal": 1880,
+      "net_kcal": -773,
+      "true_fat_delta_lb": -0.22,
       "scale_delta_lb": -0.8,
-      "water_gi_delta_lb": -0.44
+      "water_gi_delta_lb": -0.58
     },
     "visceral_melt_velocity": {
-      "score": 74,
+      "score": 68,
       "am_dbr": 95.6,
       "am_gki": 5.3,
       "active_step_flux": 3927
@@ -61,8 +61,8 @@
   "daily_records": [
     {
       "date": "2026-11-19",
-      "steps": 136,
-      "total_calories_burned_kcal": 642,
+      "steps": 158,
+      "total_calories_burned_kcal": 706,
       "resting_hr_bpm": 67,
       "hrv": {
         "avg_rmssd_ms": 25.8,
@@ -104,26 +104,26 @@
           "source": "GOOGLE_WEB_API"
         }
       ],
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-19T08:06:00-05:00",
+          "glucose_mg_dl_raw": 86.4,
+          "glucose_mg_dl_meter": 86,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ],
       "ketones": {
         "bhb_mmol_l": 0.9,
         "gki": 5.3,
         "am_dbr": 95.6
-      },
-      "blood_glucose_readings": [
-        {
-          "time": "2026-11-19T08:06:00-05:00",
-          "glucose_mg_dl_raw": 86,
-          "glucose_mg_dl_meter": 86,
-          "source": "com.mymojohealth.app (Verified)",
-          "specimen": "CAPILLARY_BLOOD"
-        }
-      ]
+      }
     },
     {
       "date": "2026-11-18",
       "steps": 3927,
       "total_calories_burned_kcal": 2653,
-      "intake_kcal": 1380,
+      "intake_kcal": 1880,
       "resting_hr_bpm": 65,
       "hrv": {
         "avg_rmssd_ms": 31,
