@@ -39,6 +39,8 @@ const OURA_WORKOUT_PATH = 'G:\\My Drive\\Download\\App Data\\workout.csv';
 // Verified 2026 MorphoScan / Fitdays 8-Electrode Scans & Ketovore Logs
 const VERIFIED_SCANS_2026 = [
   { date: '2026-02-24', hour: 10, minute: 5, w: 189.2, bf: 20.6, fm: 39.0, ffm: 150.4, smm: 86.0, vf: 6 },
+  { date: '2026-03-13', hour: 10, minute: 26, w: 199.6, bf: 21.9, fm: 43.7, ffm: 155.9, smm: 89.5, vf: 7 },
+  { date: '2026-03-15', hour: 6, minute: 47, w: 203.8, bf: 22.8, fm: 46.5, ffm: 157.4, smm: 90.4, vf: 7 },
   { date: '2026-03-16', hour: 8, minute: 48, w: 207.0, bf: 23.5, fm: 48.7, ffm: 158.3, smm: 90.8, vf: 8 },
   { date: '2026-03-28', hour: 11, minute: 36, w: 191.4, bf: 20.8, fm: 39.9, ffm: 151.5, smm: 86.9, vf: 6 },
   { date: '2026-05-27', hour: 9, minute: 31, w: 203.0, bf: 24.5, fm: 49.8, ffm: 153.4, smm: 88.0, vf: 8 },

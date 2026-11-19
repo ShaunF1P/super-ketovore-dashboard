@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-18T23:19:28.811Z",
+  "generated_at": "2026-11-19T00:57:57.673Z",
   "window_start": "2026-11-11",
   "window_end": "2026-11-18",
   "paired_devices": [
     {
       "name": "Fitbit Air",
       "type": "TRACKER",
-      "battery_pct": 68,
-      "last_sync_utc": "2026-11-18T23:09:06Z"
+      "battery_pct": 65,
+      "last_sync_utc": "2026-11-19T00:55:21Z"
     },
     {
       "name": "MobileTrack",
@@ -20,8 +20,8 @@
   "daily_records": [
     {
       "date": "2026-11-18",
-      "steps": 2815,
-      "total_calories_burned_kcal": 1967,
+      "steps": 3227,
+      "total_calories_burned_kcal": 2185,
       "resting_hr_bpm": 65,
       "hrv": {
         "avg_rmssd_ms": 31,
@@ -303,6 +303,13 @@
           "source": "FITBIT"
         }
       ],
+      "body_fat_readings": [
+        {
+          "time": "2026-11-14T09:56:00-05:00",
+          "body_fat_pct": 26.4,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
       "blood_glucose_readings": [
         {
           "time": "2026-11-14T10:09:00-05:00",
@@ -375,6 +382,13 @@
           "source": "FITBIT"
         }
       ],
+      "body_fat_readings": [
+        {
+          "time": "2026-11-13T07:47:00-05:00",
+          "body_fat_pct": 25.9,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
       "blood_glucose_readings": [
         {
           "time": "2026-11-13T08:07:00.01-05:00",
@@ -445,6 +459,13 @@
           "time": "2026-11-12T09:09:00-05:00",
           "weight_lb": 201.8,
           "source": "FITBIT"
+        }
+      ],
+      "body_fat_readings": [
+        {
+          "time": "2026-11-12T09:09:00-05:00",
+          "body_fat_pct": 25.8,
+          "source": "GOOGLE_WEB_API"
         }
       ],
       "blood_glucose_readings": [
@@ -524,6 +545,13 @@
           "time": "2026-11-11T09:28:00-05:00",
           "weight_lb": 204.2,
           "source": "FITBIT"
+        }
+      ],
+      "body_fat_readings": [
+        {
+          "time": "2026-11-11T08:47:00-05:00",
+          "body_fat_pct": 26.8,
+          "source": "GOOGLE_WEB_API"
         }
       ],
       "blood_glucose_readings": [
