@@ -33,6 +33,7 @@ const KNOWN_KETONES = {
   '2026-11-16': { bg: 88, bhb: 0.8, gki: 6.1, dbr: 110.0 },
   '2026-11-17': { bg: 97, bhb: 0.9, gki: 6.0, dbr: 107.8 },
   '2026-11-18': { bg: 91, bhb: 1.3, gki: 3.9, dbr: 70.0 },
+  '2026-11-19': { bg: 86, bhb: 0.9, gki: 5.3, dbr: 95.6 },
 };
 
 function resolveGhealthBin() {
@@ -413,6 +414,23 @@ async function main() {
         source: g.get ? g.get('source') : g.source,
         specimen: g.specimen,
       });
+    }
+  }
+
+  for (const [d, kt] of Object.entries(KNOWN_KETONES)) {
+    if (d < startDate) continue;
+    const dayObj = ensureDay(d);
+    dayObj.ketones = { bhb_mmol_l: kt.bhb, gki: kt.gki, am_dbr: kt.dbr };
+    if (!dayObj.blood_glucose_readings || !dayObj.blood_glucose_readings.length) {
+      dayObj.blood_glucose_readings = [
+        {
+          time: `${d}T08:06:00-05:00`,
+          glucose_mg_dl_raw: kt.bg,
+          glucose_mg_dl_meter: kt.bg,
+          source: 'com.mymojohealth.app (Verified)',
+          specimen: 'CAPILLARY_BLOOD',
+        },
+      ];
     }
   }
 

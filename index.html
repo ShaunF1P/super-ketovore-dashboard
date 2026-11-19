@@ -336,9 +336,9 @@
           <div class="text-xs text-sky-300">SMM: `84.2 lb` (`42.5%`) | Dead-Even `111.7%` L/R Leg Balance!</div>
         </div>
         <div class="sub-card">
-          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Monster Sleep (`9:35p &rarr; 6:55a`)</div>
-          <div class="text-lg font-extrabold text-purple-400 mt-0.5" id="hdr-ketones">8h 50m Asleep (95% Eff!)</div>
-          <div class="text-xs text-purple-300" id="hdr-dbr">Deep `1h 29m` (`+24%`) &bull; REM `1h 53m` (`+16%`) &bull; SpO2 `98.4%`</div>
+          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Dawn Glucose Drop + `8h 50m` Sleep</div>
+          <div class="text-lg font-extrabold text-purple-400 mt-0.5" id="hdr-ketones">Thu 8:06a: BG 86 / BHB 0.9</div>
+          <div class="text-xs text-purple-300" id="hdr-dbr">GKI `5.3` (`DBR 95.6`) &bull; `8h 50m` Sleep (`89m` Deep / `113m` REM)</div>
         </div>
         <div class="sub-card">
           <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Thu `Day 4: TILT FIX` (`AMBER 70`)</div>
@@ -352,7 +352,7 @@
         <div class="flex flex-wrap items-center justify-between gap-2">
           <div class="text-xs sm:text-sm font-extrabold text-emerald-400 flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
-            <span>THU NOV 19 (`07:58 AM` AUTOPSY): `198.4 lb` HIT 1 DAY EARLY (`-0.8 lb` Overnight / `-2.8 lb` in 48h / `-11.2 lb` in 11d) | `8h 50m` Sleep (`89m` Deep, `113m` REM, `98.4%` SpO2) | `24.0 / 24.0 lb` Leg Symmetry!</span>
+            <span>THU NOV 19 (`07:58 AM` + `08:06 AM` MYMOJO): `198.4 lb` HIT 1D EARLY (`-11.2 lb` in 11d) | `BG 86` (`-5` Overnight / `-11` in 48h) &amp; `BHB 0.9` (`GKI 5.3`) | `8h 50m` Sleep!</span>
           </div>
           <span class="pill-badge" style="background: rgba(16,185,129,0.22); color: #34d399;">
             Fri Nov 20 Target (`198.4 lb`) Hit 24h Early &bull; 1.3 lb to Exit Obese BMI (`&lt;30.0`) &bull; Weight Control `&lt;-30 lb` (`-29.3 lb`)!
@@ -2270,8 +2270,8 @@
       document.getElementById('hdr-bf').textContent = `~50.34 lb True Fat -> ${last.bf.toFixed(1)}% BF`;
       document.getElementById('hdr-vf').textContent = `BIA: 25.8% (51.1 lb @ 108.0 H2O) • -1,273 kcal Net!`;
       document.getElementById('hdr-ffm').textContent = `147.3 lb Now (24.0/24.0 Leg!) -> ${last.ffm.toFixed(1)} lb`;
-      document.getElementById('hdr-ketones').textContent = `8h 50m Asleep (95% Eff!)`;
-      document.getElementById('hdr-dbr').textContent = `Deep 1h 29m (+24%) • REM 1h 53m (+16%) • SpO2 98.4%`;
+      document.getElementById('hdr-ketones').textContent = `Thu 8:06a: BG 86 / BHB 0.9`;
+      document.getElementById('hdr-dbr').textContent = `GKI 5.3 (DBR 95.6) • 8h 50m Sleep (89m Deep / 113m REM)`;
 
       document.getElementById('sum-wk-title').textContent = `Week ${horizon} Projected Weight`;
       document.getElementById('sum-weight').textContent = `${last.w.toFixed(1)} lbs`;
@@ -2570,12 +2570,12 @@
       }
     }
 
-    const NUTR_LOG_KEY = 'shaun_v5_31_nutrition_logs';
+    const NUTR_LOG_KEY = 'shaun_v5_32_nutrition_logs';
     const DEFAULT_NUTR_LOGS = [
       {
-        date: '2026-11-19 (Day 12 Scan @ 07:58 AM + 8h 50m Fitbit Air Sleep — 198.4 LB HIT 1D EARLY!)',
-        summary: '198.4 lb (-0.8 lb Overnight / -2.8 lb in 48h / -11.2 lb in 11d — Hit Fri Nov 20 Target 24h Early; Lowest Since Jun 4!) | True Fat Split: -0.36 lb Pure Fat (-1,273 kcal Wed Deficit: 1,380 in vs 2,653 burned -> ~50.34 lb True Fat) + -0.44 lb GI/Water (BIA 51.1 lb / 25.8% BF from Body Water 108.7 -> 108.0 lb raising Leg 100kHz +6.9/+7.4 Ω) | FFM: 147.3 lb (84.2 SMM, Dead-Even 24.0 / 24.0 lb Leg Symmetry!) | VF 9 | BMI 30.1 (1.3 lb to <30.0!)',
-        metrics: 'Fitbit Air Sleep (9:35p–6:55a): 8h 50m Asleep (Longest of Nov!), 95% Eff, 1h 29m Deep (+24%), 1h 53m REM (+16%), SpO2 98.4%, Skin Temp -0.01 F | CNS: AMBER (70/100, Deep RMSSD 26.9 ms, Nadir 56 bpm @ 05:38a) -> Pre-load 1,000mg Na + 18g Collagen + Vit C 45m pre-lift & run Day 4 TILT FIX @ 2 RIR (50m Cap)!'
+        date: '2026-11-19 (Day 12 Scan @ 07:58 AM + 08:06 AM MyMojo + 8h 50m Sleep — 198.4 LB & BG 86!)',
+        summary: '198.4 lb (-0.8 lb Overnight / -2.8 lb in 48h / -11.2 lb in 11d — Hit Fri Nov 20 Target 24h Early; Lowest Since Jun 4!) | 8:06a MyMojoHealth: BG 86 mg/dL (-5 Overnight / -11 in 48h — Lowest Dawn BG Since Nov 12 & -19.5 Below Stelo!) + Ketones 0.9 mmol/L (GKI 5.3 Moderate Ketosis, AM DBR 95.6) | True Fat Split: -0.36 lb Pure Fat (~50.34 lb True Fat) + -0.44 lb GI/Water | FFM: 147.3 lb (24.0 / 24.0 lb Leg Symmetry!) | VF 9 | BMI 30.1',
+        metrics: 'Fitbit Air Sleep (9:35p–6:55a): 8h 50m Asleep (Longest of Nov!), 95% Eff, 1h 29m Deep (+24%), 1h 53m REM (+16%), SpO2 98.4% | Why BHB 0.9 w/ BG 86: 113m REM brain BHB uptake + lean 111g P / 48g F turkey dinner -> 1 tbsp AM MCT pops BHB back to 1.4–1.8 mmol/L pre-OxeFit!'
       },
       {
         date: '2026-11-18 (Wed Complete Ketovore Surge — Locked @ 3:45 PM SHARP! ~1,380 kcal | 143g P)',
@@ -3263,7 +3263,7 @@
       generated_at: '2026-11-19T13:01:34Z',
       paired_devices: [{ name: 'Fitbit Air', battery_pct: 55, last_sync_utc: '2026-11-19T12:53:21Z' }],
       daily_records: [
-        { date: '2026-11-19', steps: 18, total_calories_burned_kcal: 616, resting_hr_bpm: 67, hrv: { avg_rmssd_ms: 25.8, deep_sleep_rmssd_ms: 26.9, non_rem_hr_bpm: 67 }, spo2: { avg_pct: 98.4, min_pct: 96.0 }, respiratory_rate_brpm: 14.2, sleep: { asleep_hm: '8h 50m', efficiency_pct: 95, rem_minutes: 113, deep_minutes: 89 }, weights: [{ weight_lb: 198.4, source: 'MorphoScan' }] },
+        { date: '2026-11-19', steps: 18, total_calories_burned_kcal: 616, resting_hr_bpm: 67, hrv: { avg_rmssd_ms: 25.8, deep_sleep_rmssd_ms: 26.9, non_rem_hr_bpm: 67 }, spo2: { avg_pct: 98.4, min_pct: 96.0 }, respiratory_rate_brpm: 14.2, sleep: { asleep_hm: '8h 50m', efficiency_pct: 95, rem_minutes: 113, deep_minutes: 89 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 86.0 }], ketones: { bhb_mmol_l: 0.9, gki: 5.3 }, weights: [{ weight_lb: 198.4, source: 'MorphoScan' }] },
         { date: '2026-11-18', steps: 3927, total_calories_burned_kcal: 2653, resting_hr_bpm: 65, hrv: { avg_rmssd_ms: 31.0, deep_sleep_rmssd_ms: 40.5, non_rem_hr_bpm: 59 }, spo2: { avg_pct: 97.6, min_pct: 95.4 }, respiratory_rate_brpm: 13.8, sleep: { asleep_hm: '6h 54m', efficiency_pct: 98, rem_minutes: 97, deep_minutes: 72 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 91.8 }], weights: [{ weight_lb: 199.2, source: 'MorphoScan' }] },
         { date: '2026-11-17', steps: 3931, total_calories_burned_kcal: 2627, resting_hr_bpm: 64, naps: [{ asleep_minutes: 38 }], blood_glucose_readings: [{ glucose_mg_dl_raw: 97.2 }], weights: [{ weight_lb: 201.2, source: 'MorphoScan' }] },
         { date: '2026-11-16', steps: 8758, total_calories_burned_kcal: 2950, resting_hr_bpm: 64, hrv: { avg_rmssd_ms: 30.7, deep_sleep_rmssd_ms: 36.4, non_rem_hr_bpm: 59 }, spo2: { avg_pct: 96.7, min_pct: 91.1 }, respiratory_rate_brpm: 13.2, sleep: { asleep_hm: '7h 15m', efficiency_pct: 92, rem_minutes: 79, deep_minutes: 94 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 88.2 }], weights: [{ weight_lb: 203.4, source: 'MorphoScan' }] },
@@ -3344,10 +3344,13 @@
         const bgPart = r.blood_glucose_readings && r.blood_glucose_readings.length
           ? `<span class="font-bold text-amber-300">BG ${r.blood_glucose_readings[0].glucose_mg_dl_raw}</span>`
           : '';
+        const bhbPart = r.ketones && r.ketones.bhb_mmol_l != null
+          ? `<span class="font-bold text-purple-300">BHB ${r.ketones.bhb_mmol_l}</span>`
+          : '';
         const wtPart = r.weights && r.weights.length
           ? `<span class="font-bold text-emerald-300">${r.weights[0].weight_lb} lb</span>`
           : '';
-        const combo = [bgPart, wtPart].filter(Boolean).join(' &bull; ') || '--';
+        const combo = [bgPart, bhbPart, wtPart].filter(Boolean).join(' &bull; ') || '--';
         return `<tr>
           <td class="font-bold text-slate-200">${r.date}</td>
           <td class="font-semibold">${steps}</td>

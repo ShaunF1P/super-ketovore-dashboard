@@ -4595,7 +4595,11 @@
       "bf_pct": 25.8,
       "ffm_lb": 147.3,
       "vf_grade": 9,
-      "smm_lb": 84.2
+      "smm_lb": 84.2,
+      "glucose_mg_dl": 86,
+      "ketones_mmol_l": 0.9,
+      "gki": 5.3,
+      "dbr": 95.6
     }
   ]
 }
