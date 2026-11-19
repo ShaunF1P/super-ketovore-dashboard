@@ -4602,10 +4602,10 @@
       "gki": 5.3,
       "dbr": 95.6,
       "nutrition": {
-        "kcal": 1240,
+        "kcal": 1245,
         "protein_g": 116,
         "fat_g": 83.5,
-        "carbs_g": 4.5,
+        "carbs_g": 5,
         "fiber_g": 2,
         "source": "Google Health v4 + Ketovore Verified"
       }

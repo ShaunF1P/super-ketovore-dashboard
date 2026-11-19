@@ -341,9 +341,9 @@
           <div class="text-xs text-purple-300" id="hdr-dbr">GKI `5.3` (`DBR 95.6`) &bull; `8h 50m` Sleep (`89m` Deep / `113m` REM)</div>
         </div>
         <div class="sub-card">
-          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Thu Running (`3:33 PM` Synced)</div>
-          <div class="text-lg font-extrabold text-emerald-400 mt-0.5" id="hdr-status">1,240 kcal | 116g P</div>
-          <div class="text-xs text-emerald-300" id="hdr-eta">1lb Grass-Fed Beef + Slate/MCT + LMNT Sparkling (`500mg` Na)</div>
+          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Thu Running (`3:58 PM` Synced)</div>
+          <div class="text-lg font-extrabold text-emerald-400 mt-0.5" id="hdr-status">1,245 kcal | 116g P</div>
+          <div class="text-xs text-emerald-300" id="hdr-eta">1lb Grass-Fed Beef + Slate/MCT + 2x LMNT (`1,000mg` Na!)</div>
         </div>
       </div>
 
@@ -1270,12 +1270,12 @@
           <div class="space-y-2.5">
             <div>
               <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Date &amp; Meal Summary</label>
-              <input type="text" id="exp-foods" value="Thu Nov 19 Running (AM: Coffee + 1 tbsp MCT + Cafe Mocha Slate | 1:30 PM: 16oz Grass-Fed Beef | 3:33 PM: 12oz LMNT Sparkling Pineapple)" oninput="updateHealthExportCard()" />
+              <input type="text" id="exp-foods" value="Thu Nov 19 Running (AM: Coffee + 1 tbsp MCT + Cafe Mocha Slate | 1:30 PM: 16oz Grass-Fed Beef | 3:33–3:58 PM: 2x 12oz LMNT Sparkling)" oninput="updateHealthExportCard()" />
             </div>
             <div class="grid-3">
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Calories (`kcal`)</label>
-                <input type="number" id="exp-kcal" value="1240" min="0" max="5000" step="10" oninput="updateHealthExportCard()" />
+                <input type="number" id="exp-kcal" value="1245" min="0" max="5000" step="10" oninput="updateHealthExportCard()" />
               </div>
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Protein (`g`)</label>
@@ -1289,7 +1289,7 @@
             <div class="grid-3">
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Net Carbs (`g`)</label>
-                <input type="number" id="exp-c" value="2" min="0" max="200" step="1" oninput="updateHealthExportCard()" />
+                <input type="number" id="exp-c" value="3" min="0" max="200" step="1" oninput="updateHealthExportCard()" />
               </div>
               <div>
                 <label class="text-xs font-bold block mb-1" style="color: var(--text-muted);">Fiber (`g`)</label>
@@ -2594,12 +2594,12 @@
       }
     }
 
-    const NUTR_LOG_KEY = 'shaun_v5_36_nutrition_logs';
+    const NUTR_LOG_KEY = 'shaun_v5_37_nutrition_logs';
     const DEFAULT_NUTR_LOGS = [
       {
-        date: '2026-11-19 (Thu Running Intake @ 3:33 PM — 1,240 kcal | 116g P + LMNT Sparkling Synced!)',
-        summary: '1,240 kcal Running Total: AM Coffee + 1 tbsp MCT Oil (135 kcal / 14g F) + 1x Cafe Mocha Slate Max (140 kcal / 32g P / 2g Net C) | 1:30p 16oz (1 lb) Aldi Simply Nature 100% Grass-Fed Organic Ground Beef (960 kcal / 84g P / 68g F / 1,320mg K) | 3:33p 12oz LMNT Sparkling Pineapple (5 kcal / 500mg Na / 100mg K / 30mg Mg Malate)',
-        metrics: '116g P | 83.5g F | 2.5g Net Carbs | Clean Mg Malate + 500mg Na Rehydration Active -> Optional 40–55g Salted Lean Protein <=5:00p, Fluid Taper @ 7:00p, 0–0.5 Scoop Mg Citrate Tonight -> Primed for 197.x lb (BMI <30.0) Fri AM!'
+        date: '2026-11-19 (Thu Running Intake @ 3:58 PM — 1,245 kcal | 116g P + Full 1,000mg LMNT Na Locked!)',
+        summary: '1,245 kcal Running Total: AM Coffee + 1 tbsp MCT Oil (135 kcal / 14g F) + 1x Cafe Mocha Slate Max (140 kcal / 32g P / 2g Net C) | 1:30p 16oz (1 lb) Aldi Simply Nature 100% Grass-Fed Organic Ground Beef (960 kcal / 84g P / 68g F / 1,320mg K) | 3:33–3:58p 2x 12oz LMNT Sparkling Cans (10 kcal / 1,000mg Na / 200mg K / 60mg Mg Malate)',
+        metrics: '116g P | 83.5g F | 3.0g Net Carbs | Full 1,000mg Na + 1,520mg K + 60mg Mg Malate Locked 3h Before 7:00p Fluid Taper -> Optional 40–55g Lean Protein <=5:30p & Skip Mg Citrate Tonight -> Primed for 197.x lb (BMI <30.0) & HRV >40 ms Fri AM!'
       },
       {
         date: '2026-11-19 (Day 12 Scan @ 07:58 AM + 08:06 AM MyMojo + 8h 50m Sleep — 198.4 LB & BG 86!)',
