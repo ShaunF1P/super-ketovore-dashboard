@@ -48,5 +48,6 @@
 - **`Nov 19` Running Nutrition (`As of 3:58 PM — Pushed Live to Fitbit / Google Health App`)**:
   - `AM`: `1 cup` Coffee + `1 tbsp` MCT Oil (`135 kcal / 14g F`) + `1x` Cafe Mocha Slate Max (`140 kcal / 32g P / 1.5g F / 2g Net C`) = `275 kcal`.
   - `1:30 PM`: `16 oz` (`1 lb`, `4 x 4 oz` servings) Aldi Simply Nature `100%` Grass-Fed Organic Ground Beef (`960 kcal / 84g P / 68g F / 0g C / 1,320mg K / 300mg Na`).
+  - `3:25 PM`: `3x` Omega-3 Fish Oil + `Colostrum` + `Vitamin D3/K2` + `Ashwagandha` (`50 kcal / 2g P / 4g Marine Omega-3 Fat`).
   - `3:33–3:58 PM`: `2x` `12 oz` LMNT Sparkling Cans (`10 kcal / 1,000mg Na / 200mg K / 60mg Magnesium Malate / 1.0g Net C / 0mg Caffeine` — full `1,000mg` Na replacement complete!).
-  - **Running Total @ `3:58 PM`**: **`1,245 kcal | 116g P | 83.5g F | 3.0g Net C`** *(Full `1,000mg` Na + `1,520mg` K + `60mg` Mg Malate locked in `3h` before `7:00 PM` fluid taper; optional `40–55g` lean protein closer `<= 5:00–5:30 PM`, skip Ionic Mg Citrate tonight!)*.
+  - **Running Total @ `6:30 PM`**: **`1,295 kcal | 118g P | 87.5g F | 3.0g Net C`** *(Ordering DoorDash dinner now ahead of tomorrow's 10-hour Charlotte drive)*.
