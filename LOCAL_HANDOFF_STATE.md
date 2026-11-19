@@ -14,7 +14,11 @@
 ## 2. North-Star Targets & Non-Negotiable Injury Armor
 - **Profile**: Shaun Muhammad (`Age 39`, `5'8"`, Eastern Time, `ACTN3 CC` power sprinter, `MTNR1B CG` `5:30 PM` cutoff gene, `FADS1 TT` marine omega-3 need, `PEMT CT` choline need, `COMT GG` 50-min workout cap).
 - **Immediate Milestone**: **`198.4 lb` HIT ON THU NOV 19 AT `07:58:23 AM` (`-0.8 lb` overnight / `-2.8 lb` in 48h / `-11.2 lb` in 11d — Hit Fri Nov 20's `198.4 lb` Target 1 Full Day Early; Lowest Since Jun 4!)** -> Next immediate targets: **`BMI < 30.0` (`<= 197.1 lb`, `1.3 lb` away from `BMI 30.1`!)** & **`< 50.0 lb` Fat Mass** (`~50.34 lb` true thermodynamic fat mass; `51.1 lb` raw BIA at `108.0 lb` water).
-- **Medium/Long-Term Targets**: **`Sub-5 Visceral Fat` (`VF Grade 4` @ `<= 31.8 lb` Fat Mass — ETA `Jan 5–15, 2027`)** -> **`Sub-12% BF` @ `185–190+ lb` (`163–168 lb` FFM — ETA `Mar 2027`)**.
+- **Medium/Long-Term Targets & 7/15/30/60-Day Checkpoint Pace (`Locked to Nov 13 Baseline: 200.0 lb / 51.8 lb FM / 148.2 lb FFM`)**:
+  - **`7-Day` (`Fri Nov 20`)**: `197.6 lb` | `49.8 lb` FM (`<50 lb` Cracked) | `147.8–149.0 lb` FFM | `25.1% BF` | `VF 9` | `BMI 29.9` (`Exits Obese!`) — *Note: Original `198.4 lb` 7-Day scale target already hit 24h early on Thu Nov 19!*
+  - **`15-Day` (`Sat Nov 28` Post-TG)**: `196.0 lb` | `46.8 lb` FM | `149.2 lb` FFM | `23.9% BF` | **`VF 8`** | `BMI 29.7`
+  - **`30-Day` (`Sun Dec 13`)**: `192.5 lb` | `41.0 lb` FM | `151.5 lb` FFM | `21.3% BF` | **`VF 7`** | `BMI 29.2`
+  - **`60-Day` (`Tue Jan 12, 2027` w/ `3–4x/wk OxeFit` + `12k–15k` Step Ramp-Up)**: **`186.5 lb` | `31.7 lb` FM (`-20.1 lb` vs Nov 13 / `-26.9 lb` vs Nov 8) | `154.8 lb` FFM (`+6.6 lb` muscle re-inflation) | `17.0% BF` | `VF Grade 4` (`SUB-5 VISCERAL UNLOCKED ON SCHEDULE!`)** *(vs. `~188.0 lb / 37.8 lb FM / VF 5–6` if work kept `OxeFit` minimal — proving the `OxeFit` ramp-up closes the `~6.0 lb` visceral gap on time)* -> **`Sub-12% BF` @ `185–190+ lb` (`163–168 lb` FFM — ETA `Mar 2027`)**.
 - **Injury Armor**:
   1. **`Jul 10, 2025` Unrepaired Right Bicep Tendon**: ZERO supinated/underhand heavy pulling or curling. Strictly **Neutral Parallel Grip** on rows/pulldowns/thrusters and **Overhand Pronated + Straps** on RDLs/deadlifts; Keith Baar `4 x 30s` neutral isometric cable holds + `18g` Collagen + `500mg` Vit C `45m` pre-lift.
   2. **`Mar 13, 2025` Right Acromion**: `OxeFit Chains` mode on presses; rack overhead sets if velocity drops `< 0.50 m/s`.
