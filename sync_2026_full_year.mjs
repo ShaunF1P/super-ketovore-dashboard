@@ -75,6 +75,7 @@ const VERIFIED_KETOVORE_MEALS_NOV = [
   { date: '2026-11-17', hour: 16, minute: 0, meal: 'Roadtrip Saltgrass: Cafe Mocha Slate + MCT + 6oz Sirloin + 6oz Steak/Shrimp + 2x Broccoli', kcal: 1545, protein: 146, fat: 93, carbs: 21, fiber: 8 },
   { date: '2026-11-18', hour: 15, minute: 45, meal: 'Ketovore Surge: 6oz 80/20 Burger w/ White American + Cafe Mocha Slate + 2.5 tbsp MCT + 3x 7oz Turkey Burgers', kcal: 1880, protein: 176, fat: 124.5, carbs: 12.5, fiber: 2 },
   { date: '2026-11-19', hour: 20, minute: 0, meal: 'Dual-OxeFit PR Day: Coffee+MCT+Slate + 16oz Grass-Fed Beef + 3x LMNT + Supps + 13x BWW Tallow Wings', kcal: 2105, protein: 209, fat: 132.1, carbs: 10.3, fiber: 2.8 },
+  { date: '2026-11-20', hour: 15, minute: 30, meal: 'Roadtrip Meal: 3x Palm-Sized Chicken Thighs + 3x Chicken Wings + Cafe Mocha Slate Max', kcal: 1010, protein: 125, fat: 55.0, carbs: 4.5, fiber: 2.0 },
 ];
 
 const VERIFIED_KETONES_2026 = {
