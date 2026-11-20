@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:45:03.688Z",
+  "generated_at": "2026-11-20T16:03:36.865Z",
   "window_start": "2026-11-13",
   "window_end": "2026-11-20",
   "paired_devices": [
@@ -7,7 +7,7 @@
       "name": "Fitbit Air",
       "type": "TRACKER",
       "battery_pct": 90,
-      "last_sync_utc": "2026-11-20T15:43:56Z"
+      "last_sync_utc": "2026-11-20T15:59:07Z"
     },
     {
       "name": "MobileTrack",
@@ -42,9 +42,9 @@
       "water_gi_delta_lb": 1.37
     },
     "visceral_melt_velocity": {
-      "score": 68,
-      "am_dbr": 95.6,
-      "am_gki": 5.3,
+      "score": 60,
+      "am_dbr": 169.2,
+      "am_gki": 9.4,
       "active_step_flux": 4260
     },
     "vagal_hrr": {
@@ -61,8 +61,8 @@
   "daily_records": [
     {
       "date": "2026-11-20",
-      "steps": 643,
-      "total_calories_burned_kcal": 962,
+      "steps": 651,
+      "total_calories_burned_kcal": 995,
       "resting_hr_bpm": 68,
       "hrv": {
         "avg_rmssd_ms": 46.2,
@@ -112,7 +112,12 @@
           "source": "com.mymojohealth.app",
           "specimen": "CAPILLARY_BLOOD"
         }
-      ]
+      ],
+      "ketones": {
+        "bhb_mmol_l": 0.5,
+        "gki": 9.4,
+        "am_dbr": 169.2
+      }
     },
     {
       "date": "2026-11-19",

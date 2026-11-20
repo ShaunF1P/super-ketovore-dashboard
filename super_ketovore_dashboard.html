@@ -336,8 +336,8 @@
           <div class="text-xs text-sky-300">FFM `145.7 lb` (`83.3` SMM) | All 4 Limbs Hydrated (`-0.5` to `-3.8&Omega;`)!</div>
         </div>
         <div class="sub-card">
-          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Fri `8:10a` BG + `HRV +125%!`</div>
-          <div class="text-lg font-extrabold text-purple-400 mt-0.5" id="hdr-ketones">Fri 8:10a: BG 84.6 mg/dL!</div>
+          <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Fri `8:10a` MyMojo + `HRV +125%!`</div>
+          <div class="text-lg font-extrabold text-purple-400 mt-0.5" id="hdr-ketones">BG 84.6 | BHB 0.5 (GKI 9.4)</div>
           <div class="text-xs text-purple-300" id="hdr-dbr">Deep HRV `60.6 ms` (`GREEN 82`) &bull; `98%` Sleep (`95m` Deep / `7m` Awake!)</div>
         </div>
         <div class="sub-card">
@@ -2445,7 +2445,7 @@
       document.getElementById('hdr-bf').textContent = `~50.31 lb True Fat -> ${last.bf.toFixed(1)}% BF`;
       document.getElementById('hdr-vf').textContent = `BIA 26.8% (Trunk Z +0.6 Ohm 8:20p Chyme; Limbs -0.5/-3.8 Ohm!)`;
       document.getElementById('hdr-ffm').textContent = `8.6/8.6 Arm & 24.0/24.0 Leg -> ${last.ffm.toFixed(1)} lb`;
-      document.getElementById('hdr-ketones').textContent = `Fri 8:10a: BG 84.6 mg/dL!`;
+      document.getElementById('hdr-ketones').textContent = `BG 84.6 | BHB 0.5 (GKI 9.4)`;
       document.getElementById('hdr-dbr').textContent = `Deep HRV 60.6 ms (GREEN 82) • 98% Sleep (95m Deep / 7m Awake!)`;
 
       document.getElementById('sum-wk-title').textContent = `Week ${horizon} Projected Weight`;
@@ -2745,12 +2745,12 @@
       }
     }
 
-    const NUTR_LOG_KEY = 'shaun_v5_40_nutrition_logs';
+    const NUTR_LOG_KEY = 'shaun_v5_41_nutrition_logs';
     const DEFAULT_NUTR_LOGS = [
       {
-        date: '2026-11-20 (Day 13 Scan @ 08:41 AM + 08:10 AM BG 84.6 + 60.6 ms HRV — 3d Holding One-derland!)',
+        date: '2026-11-20 (Day 13 Scan @ 08:41 AM + 08:10 AM BG 84.6 / BHB 0.5 + 60.6 ms HRV — 3d One-derland!)',
         summary: '199.6 lb (3rd Straight Day Under 200 lb — 12h Post-8:20 PM 13 Wings + 3rd LMNT!) | True Fat Split: -0.17 lb Pure Fat (~50.31 lb True Fat on -578 kcal Net) vs +1.37 lb 8:20p GI Chyme/Sodium | 4-Limb 0.0 lb Symmetry: 8.6/8.6 lb Arms & 24.0/24.0 lb Legs! | 100kHz Z: All 4 Limbs Hydrated (-0.5 to -3.8 Ohm), Only Trunk Rose (+0.4 Ohm) -> Exposes Fake 53.6 lb BIA Fat!',
-        metrics: '8:10a BG: 84.6 mg/dL (4th Straight Daily Drop!) | Fitbit Air Sleep (11:58p–6:55a): 6h 50m, 98% Eff, 7m Awake (-77%), 95m Deep, 88m REM, Deep HRV +125% (26.9 -> 60.6 ms, CNS GREEN 82/100!) | Charlotte 10h Drive Today: Pit-Stop 20 Squats + 30 Calf Raises + <=5:30p Clean Steak -> 197.x lb Flush!'
+        metrics: '8:10a BG: 84.6 mg/dL (4th Straight Drop!) / BHB: 0.5 mmol/L (GKI 9.4 — Expected 12h Post-91g 8:20p Wing Protein) | Fitbit Air Sleep (11:58p–6:55a): 6h 50m, 98% Eff, 7m Awake (-77%), 95m Deep, Deep HRV +125% (60.6 ms, CNS GREEN 82/100!) | Charlotte 10h Drive: Elevated Hip Reset + <=5:30p Clean Steak -> 197.x lb Flush!'
       },
       {
         date: '2026-11-19 (Thu Complete — 12,478 lb Dual-OxeFit PRs + 2,105 kcal | 209g P + Cramps Gone!)',
@@ -3466,7 +3466,7 @@
       generated_at: '2026-11-20T13:53:20Z',
       paired_devices: [{ name: 'Fitbit Air', battery_pct: 92, last_sync_utc: '2026-11-20T13:42:29Z' }],
       daily_records: [
-        { date: '2026-11-20', steps: 587, total_calories_burned_kcal: 755, resting_hr_bpm: 68, hrv: { avg_rmssd_ms: 46.2, deep_sleep_rmssd_ms: 60.6, non_rem_hr_bpm: 65 }, spo2: { avg_pct: 97.0, min_pct: 91.9 }, respiratory_rate_brpm: 12.6, sleep: { asleep_hm: '6h 50m', efficiency_pct: 98, rem_minutes: 88, deep_minutes: 95 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 84.6 }], weights: [{ weight_lb: 199.6, source: 'MorphoScan' }] },
+        { date: '2026-11-20', steps: 587, total_calories_burned_kcal: 755, resting_hr_bpm: 68, hrv: { avg_rmssd_ms: 46.2, deep_sleep_rmssd_ms: 60.6, non_rem_hr_bpm: 65 }, spo2: { avg_pct: 97.0, min_pct: 91.9 }, respiratory_rate_brpm: 12.6, sleep: { asleep_hm: '6h 50m', efficiency_pct: 98, rem_minutes: 88, deep_minutes: 95 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 84.6 }], ketones: { bhb_mmol_l: 0.5, gki: 9.4 }, weights: [{ weight_lb: 199.6, source: 'MorphoScan' }] },
         { date: '2026-11-19', steps: 4260, total_calories_burned_kcal: 2683, resting_hr_bpm: 67, hrv: { avg_rmssd_ms: 25.8, deep_sleep_rmssd_ms: 26.9, non_rem_hr_bpm: 67 }, spo2: { avg_pct: 98.4, min_pct: 96.0 }, respiratory_rate_brpm: 14.2, sleep: { asleep_hm: '8h 50m', efficiency_pct: 95, rem_minutes: 113, deep_minutes: 89 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 86.4 }], ketones: { bhb_mmol_l: 0.9, gki: 5.3 }, weights: [{ weight_lb: 198.4, source: 'MorphoScan' }] },
         { date: '2026-11-18', steps: 3927, total_calories_burned_kcal: 2653, resting_hr_bpm: 65, hrv: { avg_rmssd_ms: 31.0, deep_sleep_rmssd_ms: 40.5, non_rem_hr_bpm: 59 }, spo2: { avg_pct: 97.6, min_pct: 95.4 }, respiratory_rate_brpm: 13.8, sleep: { asleep_hm: '6h 54m', efficiency_pct: 98, rem_minutes: 97, deep_minutes: 72 }, blood_glucose_readings: [{ glucose_mg_dl_raw: 91.8 }], weights: [{ weight_lb: 199.2, source: 'MorphoScan' }] },
         { date: '2026-11-17', steps: 3931, total_calories_burned_kcal: 2627, resting_hr_bpm: 64, naps: [{ asleep_minutes: 38 }], blood_glucose_readings: [{ glucose_mg_dl_raw: 97.2 }], weights: [{ weight_lb: 201.2, source: 'MorphoScan' }] },
