@@ -62,6 +62,7 @@ const VERIFIED_SCANS_2026 = [
   { date: '2026-11-17', hour: 5, minute: 20, w: 201.2, bf: 25.8, fm: 52.0, ffm: 149.5, smm: 85.5, vf: 9 },
   { date: '2026-11-18', hour: 8, minute: 10, w: 199.2, bf: 25.5, fm: 50.7, ffm: 148.4, smm: 84.9, vf: 9 },
   { date: '2026-11-19', hour: 7, minute: 58, w: 198.4, bf: 25.8, fm: 51.1, ffm: 147.3, smm: 84.2, vf: 9 },
+  { date: '2026-11-20', hour: 8, minute: 41, w: 199.6, bf: 26.8, fm: 53.6, ffm: 145.7, smm: 83.3, vf: 9 },
 ];
 
 const VERIFIED_KETOVORE_MEALS_NOV = [
@@ -73,6 +74,7 @@ const VERIFIED_KETOVORE_MEALS_NOV = [
   { date: '2026-11-16', hour: 18, minute: 0, meal: 'OMAD: 20oz 80/20 Ground Beef + Cafe Mocha Slate Max + 3 tbsp MCT + 3oz Red-Bag Kimchi', kcal: 1710, protein: 143, fat: 122, carbs: 6, fiber: 2 },
   { date: '2026-11-17', hour: 16, minute: 0, meal: 'Roadtrip Saltgrass: Cafe Mocha Slate + MCT + 6oz Sirloin + 6oz Steak/Shrimp + 2x Broccoli', kcal: 1545, protein: 146, fat: 93, carbs: 21, fiber: 8 },
   { date: '2026-11-18', hour: 15, minute: 45, meal: 'Ketovore Surge: 6oz 80/20 Burger w/ White American + Cafe Mocha Slate + 2.5 tbsp MCT + 3x 7oz Turkey Burgers', kcal: 1880, protein: 176, fat: 124.5, carbs: 12.5, fiber: 2 },
+  { date: '2026-11-19', hour: 20, minute: 0, meal: 'Dual-OxeFit PR Day: Coffee+MCT+Slate + 16oz Grass-Fed Beef + 3x LMNT + Supps + 13x BWW Tallow Wings', kcal: 2105, protein: 209, fat: 132.1, carbs: 10.3, fiber: 2.8 },
 ];
 
 const VERIFIED_KETONES_2026 = {

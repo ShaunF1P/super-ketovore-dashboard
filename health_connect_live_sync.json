@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-20T13:53:20.784Z",
+  "generated_at": "2026-11-20T15:45:03.688Z",
   "window_start": "2026-11-13",
   "window_end": "2026-11-20",
   "paired_devices": [
     {
       "name": "Fitbit Air",
       "type": "TRACKER",
-      "battery_pct": 92,
-      "last_sync_utc": "2026-11-20T13:42:29Z"
+      "battery_pct": 90,
+      "last_sync_utc": "2026-11-20T15:43:56Z"
     },
     {
       "name": "MobileTrack",
@@ -38,8 +38,8 @@
       "yesterday_intake_kcal": 2105,
       "net_kcal": -578,
       "true_fat_delta_lb": -0.17,
-      "scale_delta_lb": null,
-      "water_gi_delta_lb": null
+      "scale_delta_lb": 1.2,
+      "water_gi_delta_lb": 1.37
     },
     "visceral_melt_velocity": {
       "score": 68,
@@ -61,8 +61,8 @@
   "daily_records": [
     {
       "date": "2026-11-20",
-      "steps": 587,
-      "total_calories_burned_kcal": 755,
+      "steps": 643,
+      "total_calories_burned_kcal": 962,
       "resting_hr_bpm": 68,
       "hrv": {
         "avg_rmssd_ms": 46.2,
@@ -90,6 +90,20 @@
         "is_nap": false,
         "source": "Fitbit Air"
       },
+      "weights": [
+        {
+          "time": "2026-11-20T08:41:00-05:00",
+          "weight_lb": 199.6,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
+      "body_fat_readings": [
+        {
+          "time": "2026-11-20T08:41:00-05:00",
+          "body_fat_pct": 26.8,
+          "source": "GOOGLE_WEB_API"
+        }
+      ],
       "blood_glucose_readings": [
         {
           "time": "2026-11-20T08:10:00.01-05:00",

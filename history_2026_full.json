@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T13:04:07.427Z",
+  "generated_at": "2026-11-20T15:52:50.398Z",
   "year": 2026,
-  "total_days": 323,
+  "total_days": 324,
   "backfill_summary": {
     "pushed_nutrition_days": 0,
     "pushed_weight_days": 0,
@@ -190,21 +190,21 @@
     },
     {
       "month": "2026-11",
-      "days_tracked": 19,
+      "days_tracked": 20,
       "start_weight_lb": 209.6,
-      "end_weight_lb": 198.4,
+      "end_weight_lb": 199.6,
       "min_weight_lb": 198.4,
       "avg_bf_pct": 26.6,
-      "avg_steps": 8319,
+      "avg_steps": 8147,
       "peak_steps": 16391,
-      "avg_burn_kcal": 2813,
+      "avg_burn_kcal": 2824,
       "logged_nutrition_days": 12,
       "avg_intake_kcal": 1613,
       "avg_protein_g": 138,
-      "avg_sleep_hm": "7h 22m",
-      "avg_hrv_ms": 33.3,
+      "avg_sleep_hm": "7h 21m",
+      "avg_hrv_ms": 33.9,
       "avg_rhr_bpm": 64,
-      "total_workouts": 28
+      "total_workouts": 30
     }
   ],
   "daily_records": [
@@ -4563,10 +4563,9 @@
       "nutrition": {
         "kcal": 1880,
         "protein_g": 176,
-        "fat_g": 124.5,
+        "fat_g": 125,
         "carbs_g": 12.5,
-        "fiber_g": 2,
-        "source": "Google Health v4 + Ketovore Verified"
+        "fiber_g": 2
       },
       "sleep_min": 414,
       "sleep_eff": 98,
@@ -4585,8 +4584,15 @@
     },
     {
       "date": "2026-11-19",
-      "steps": 18,
-      "burn_kcal": 620,
+      "steps": 4260,
+      "burn_kcal": 2683,
+      "nutrition": {
+        "kcal": 2105,
+        "protein_g": 209,
+        "fat_g": 132,
+        "carbs_g": 10.3,
+        "fiber_g": 2.8
+      },
       "sleep_min": 530,
       "sleep_eff": 95,
       "rhr": 67,
@@ -4597,19 +4603,27 @@
       "ffm_lb": 147.3,
       "vf_grade": 9,
       "smm_lb": 84.2,
-      "glucose_mg_dl": 86,
-      "ketones_mmol_l": 0.9,
+      "bhb_mmol": 0.9,
       "gki": 5.3,
       "dbr": 95.6,
-      "nutrition": {
-        "kcal": 2105,
-        "protein_g": 209,
-        "fat_g": 132.1,
-        "carbs_g": 10.3,
-        "fiber_g": 2.8,
-        "source": "Google Health v4 + Ketovore Verified"
-      },
+      "bg_mg_dl": 86.4,
       "workouts": 2
+    },
+    {
+      "date": "2026-11-20",
+      "steps": 643,
+      "burn_kcal": 971,
+      "sleep_min": 410,
+      "sleep_eff": 98,
+      "rhr": 68,
+      "hrv_ms": 46.2,
+      "spo2_pct": 97,
+      "weight_lb": 199.6,
+      "bf_pct": 26.8,
+      "ffm_lb": 145.7,
+      "vf_grade": 9,
+      "smm_lb": 83.3,
+      "bg_mg_dl": 84.6
     }
   ]
 }
