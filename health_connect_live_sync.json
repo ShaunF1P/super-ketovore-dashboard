@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-20T01:26:50.197Z",
-  "window_start": "2026-11-12",
-  "window_end": "2026-11-19",
+  "generated_at": "2026-11-20T13:53:20.784Z",
+  "window_start": "2026-11-13",
+  "window_end": "2026-11-20",
   "paired_devices": [
     {
       "name": "Fitbit Air",
       "type": "TRACKER",
-      "battery_pct": 44,
-      "last_sync_utc": "2026-11-20T01:19:05Z"
+      "battery_pct": 92,
+      "last_sync_utc": "2026-11-20T13:42:29Z"
     },
     {
       "name": "MobileTrack",
@@ -18,34 +18,34 @@
   ],
   "custom_bio_states": {
     "cns_readiness": {
-      "score": 70,
-      "tier": "AMBER",
-      "deep_rmssd_ms": 26.9,
-      "non_rem_hr_bpm": 67,
-      "prescription": "Train @ 2 RIR Velocity Cap (>0.50 m/s) + Full Tendon Pre-Load"
+      "score": 82,
+      "tier": "GREEN",
+      "deep_rmssd_ms": 60.6,
+      "non_rem_hr_bpm": 65,
+      "prescription": "Push OxeFit Chains Overload + Keith Baar 4x30s Isometric Holds (50m Cap)"
     },
     "circadian_nadir": {
-      "score": 85,
-      "nadir_bpm": 56,
-      "nadir_clock": "05:38",
+      "score": 77,
+      "nadir_bpm": 55,
+      "nadir_clock": "05:54",
       "pct_through_sleep": 86,
-      "samples_analyzed": 14065,
-      "bedtime_iso": "2026-11-18T21:35:00-05:00"
+      "samples_analyzed": 10884,
+      "bedtime_iso": "2026-11-19T23:58:00-05:00"
     },
     "true_fat_split": {
-      "yesterday_date": "2026-11-18",
-      "yesterday_burn_kcal": 2653,
-      "yesterday_intake_kcal": 1880,
-      "net_kcal": -773,
-      "true_fat_delta_lb": -0.22,
-      "scale_delta_lb": -0.8,
-      "water_gi_delta_lb": -0.58
+      "yesterday_date": "2026-11-19",
+      "yesterday_burn_kcal": 2683,
+      "yesterday_intake_kcal": 2105,
+      "net_kcal": -578,
+      "true_fat_delta_lb": -0.17,
+      "scale_delta_lb": null,
+      "water_gi_delta_lb": null
     },
     "visceral_melt_velocity": {
       "score": 68,
       "am_dbr": 95.6,
       "am_gki": 5.3,
-      "active_step_flux": 4073
+      "active_step_flux": 4260
     },
     "vagal_hrr": {
       "workout_date": "2026-11-16",
@@ -60,9 +60,50 @@
   "gdrive_health_connect_exports": [],
   "daily_records": [
     {
+      "date": "2026-11-20",
+      "steps": 587,
+      "total_calories_burned_kcal": 755,
+      "resting_hr_bpm": 68,
+      "hrv": {
+        "avg_rmssd_ms": 46.2,
+        "deep_sleep_rmssd_ms": 60.6,
+        "non_rem_hr_bpm": 65
+      },
+      "spo2": {
+        "avg_pct": 97,
+        "min_pct": 91.9,
+        "max_pct": 99.7
+      },
+      "respiratory_rate_brpm": 12.6,
+      "sleep_skin_temp_delta_f": -0.83,
+      "sleep": {
+        "start": "2026-11-19T23:58:00-05:00",
+        "end": "2026-11-20T06:55:00-05:00",
+        "asleep_minutes": 410,
+        "asleep_hm": "6h 50m",
+        "awake_minutes": 7,
+        "total_minutes": 417,
+        "efficiency_pct": 98,
+        "deep_minutes": 95,
+        "rem_minutes": 88,
+        "light_minutes": 227,
+        "is_nap": false,
+        "source": "Fitbit Air"
+      },
+      "blood_glucose_readings": [
+        {
+          "time": "2026-11-20T08:10:00.01-05:00",
+          "glucose_mg_dl_raw": 84.6,
+          "glucose_mg_dl_meter": 84,
+          "source": "com.mymojohealth.app",
+          "specimen": "CAPILLARY_BLOOD"
+        }
+      ]
+    },
+    {
       "date": "2026-11-19",
-      "steps": 4073,
-      "total_calories_burned_kcal": 2335,
+      "steps": 4260,
+      "total_calories_burned_kcal": 2683,
       "intake_kcal": 2105,
       "resting_hr_bpm": 67,
       "hrv": {
@@ -581,98 +622,6 @@
           "calories_kcal": 351,
           "avg_hr_bpm": 95,
           "steps": 4126,
-          "source": "Fitbit Air"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-12",
-      "steps": 16391,
-      "total_calories_burned_kcal": 3580,
-      "intake_kcal": 1178,
-      "resting_hr_bpm": 59,
-      "hrv": {
-        "avg_rmssd_ms": 43.1,
-        "deep_sleep_rmssd_ms": 55.9,
-        "non_rem_hr_bpm": 53
-      },
-      "spo2": {
-        "avg_pct": 97.8,
-        "min_pct": 94.3,
-        "max_pct": 100
-      },
-      "respiratory_rate_brpm": 13.2,
-      "sleep_skin_temp_delta_f": -1.55,
-      "sleep": {
-        "start": "2026-11-11T22:22:00-05:00",
-        "end": "2026-11-12T06:30:00-05:00",
-        "asleep_minutes": 451,
-        "asleep_hm": "7h 31m",
-        "awake_minutes": 37,
-        "total_minutes": 488,
-        "efficiency_pct": 92,
-        "deep_minutes": 89,
-        "rem_minutes": 112,
-        "light_minutes": 250,
-        "is_nap": false,
-        "source": "Fitbit Air"
-      },
-      "weights": [
-        {
-          "time": "2026-11-12T09:09:00-05:00",
-          "weight_lb": 201.8,
-          "source": "FITBIT"
-        }
-      ],
-      "body_fat_readings": [
-        {
-          "time": "2026-11-12T09:09:00-05:00",
-          "body_fat_pct": 25.8,
-          "source": "GOOGLE_WEB_API"
-        }
-      ],
-      "blood_glucose_readings": [
-        {
-          "time": "2026-11-12T10:38:13-05:00",
-          "glucose_mg_dl_raw": 69,
-          "glucose_mg_dl_meter": 69,
-          "source": "com.mymojohealth.app",
-          "specimen": "CAPILLARY_BLOOD"
-        },
-        {
-          "time": "2026-11-12T10:33:00-05:00",
-          "glucose_mg_dl_raw": 69,
-          "glucose_mg_dl_meter": 69,
-          "source": "com.mymojohealth.app",
-          "specimen": "CAPILLARY_BLOOD"
-        }
-      ],
-      "ketones": {
-        "bhb_mmol_l": 0.9,
-        "gki": 4.2,
-        "am_dbr": 76.7
-      },
-      "exercises": [
-        {
-          "name": "Walk",
-          "type": "WALKING",
-          "start": "2026-11-12T18:38:28.8-05:00",
-          "end": "2026-11-12T19:52:08.8-05:00",
-          "active_seconds": 4420,
-          "calories_kcal": 608,
-          "avg_hr_bpm": 92,
-          "steps": 7018,
-          "source": "Fitbit Air"
-        },
-        {
-          "name": "Walk",
-          "type": "WALKING",
-          "start": "2026-11-12T08:05:18-05:00",
-          "end": "2026-11-12T08:59:18-05:00",
-          "active_seconds": 3240,
-          "calories_kcal": 452,
-          "avg_hr_bpm": 99,
-          "steps": 4916,
           "source": "Fitbit Air"
         }
       ]
