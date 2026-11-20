@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-20T20:38:26.506Z",
+  "generated_at": "2026-11-20T22:30:33.511Z",
   "window_start": "2026-11-13",
   "window_end": "2026-11-20",
   "paired_devices": [
     {
       "name": "Fitbit Air",
       "type": "TRACKER",
-      "battery_pct": 86,
-      "last_sync_utc": "2026-11-20T20:32:35Z"
+      "battery_pct": 85,
+      "last_sync_utc": "2026-11-20T22:19:02Z"
     },
     {
       "name": "MobileTrack",
@@ -42,28 +42,28 @@
       "water_gi_delta_lb": 1.37
     },
     "visceral_melt_velocity": {
-      "score": 60,
+      "score": 62,
       "am_dbr": 170,
       "am_gki": 9.4,
-      "active_step_flux": 4260
+      "active_step_flux": 5149
     },
     "vagal_hrr": {
       "workout_date": "2026-11-20",
-      "workout_name": "Strength training",
-      "peak_end_bpm": 130,
-      "hr_at_60s_bpm": 118,
-      "hrr_60_drop_bpm": 12,
-      "hr_at_180s_bpm": 90,
-      "hrr_180_drop_bpm": 40
+      "workout_name": "Walk",
+      "peak_end_bpm": 127,
+      "hr_at_60s_bpm": 113,
+      "hrr_60_drop_bpm": 14,
+      "hr_at_180s_bpm": 109,
+      "hrr_180_drop_bpm": 18
     }
   },
   "gdrive_health_connect_exports": [],
   "daily_records": [
     {
       "date": "2026-11-20",
-      "steps": 3942,
-      "total_calories_burned_kcal": 1747,
-      "intake_kcal": 1010,
+      "steps": 5149,
+      "total_calories_burned_kcal": 2103,
+      "intake_kcal": 1375,
       "resting_hr_bpm": 68,
       "hrv": {
         "avg_rmssd_ms": 46.2,
@@ -120,6 +120,17 @@
         "am_dbr": 170
       },
       "exercises": [
+        {
+          "name": "Walk",
+          "type": "WALKING",
+          "start": "2026-11-20T15:28:20.4-05:00",
+          "end": "2026-11-20T15:51:01.4-05:00",
+          "active_seconds": 1361,
+          "calories_kcal": 116,
+          "avg_hr_bpm": 117,
+          "steps": 877,
+          "source": "Fitbit Air"
+        },
         {
           "name": "Strength training",
           "type": "STRENGTH_TRAINING",
