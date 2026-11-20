@@ -1343,20 +1343,171 @@
       <div class="panel-card" style="border-left: 4px solid #0ea5e9;">
         <div class="flex flex-wrap items-center justify-between gap-2">
           <div>
-            <h2 class="text-lg font-bold text-sky-400">
-              🏋️ Interactive 7-Day Workout Swapper &amp; Live Set Logger (`50-Min Hard Cap`)
+            <h2 class="text-lg font-bold text-sky-400 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5 17.5 17.5"/><path d="M21 21l-1-1"/><path d="M3 3l1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></svg>
+              <span>Interactive 7-Day Workout Swapper, Live Set Logger &amp; All-Time `OxeFit` Cloud Vault (`50-Min Cap`)</span>
             </h2>
             <p class="text-xs" style="color: var(--text-sub);">
               Protected for your <strong>Jul 10, 2025 Right Bicep Tear</strong> (`Zero Supinated Pulls + Keith Baar 4x30s Isometric Holds + Brachialis Hammer Bypass`) &amp; <strong>Mar 13, 2025 Healed Right Acromion</strong> (`OxeFit Chains + Rotating Perfect Pushups`).
             </p>
           </div>
-          <button onclick="exportWorkoutCSV()" class="nav-pill" style="min-height: 38px; padding: 0.35rem 0.85rem;">
-            📥 Export Logged Workouts CSV
-          </button>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="exportAllTimeOxefitCsv()" class="nav-pill active" style="min-height: 38px; padding: 0.35rem 0.85rem;">
+              Export All 123 OxeFit Sessions CSV
+            </button>
+            <button onclick="exportWorkoutCSV()" class="nav-pill" style="min-height: 38px; padding: 0.35rem 0.85rem;">
+              Export Custom Set Log CSV
+            </button>
+          </div>
         </div>
 
         <!-- Day Pills -->
         <div class="nav-bar mt-3" id="training-day-bar"></div>
+      </div>
+
+      <!-- ALL-TIME OXEFIT XS1 CLOUD VAULT (DAY 1 DEC 19, 2024 -> NOV 19, 2026) & PEAK-ERA FORENSIC SYNOPSIS -->
+      <div class="panel-card space-y-3.5" style="border-top: 3px solid #10b981;">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="pill-badge" style="background: rgba(16,185,129,0.20); color: #34d399;">
+                SYNCED DIRECTLY FROM APP.OXEFIT.COM (`DEC 19, 2024 – NOV 19, 2026`)
+              </span>
+              <span class="pill-badge" style="background: rgba(14,165,233,0.16); color: #38bdf8;">
+                NEW PR UNCOVERED: `187 LB` BENCH (`NOV 16`) + `125 LB` SEATED OHP e1RM (`NOV 19`)
+              </span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold text-emerald-400">
+              All-Time `OxeFit XS1` Forensic Vault (`123` Sessions &bull; `1,084,914 lb` Volume) &amp; Peak-Era Comparison
+            </h3>
+            <p class="text-xs" style="color: var(--text-muted);">
+              Cross-correlating every `OxeFit` rep since Day 1 (`Dec 19, 2024`) against your `MorphoScan`, `Fitbit Air / Oura`, and `MacroFactor` peaks (`Feb 24: 189.2 lb / VF 6` &amp; `Mar 16: 158.3 lb FFM`).
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Lifetime Vault KPI Tiles -->
+        <div class="grid-4">
+          <div class="sub-card">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">All-Time `OxeFit` Volume</div>
+            <div class="text-xl font-extrabold text-emerald-400 mt-0.5" id="oxe-tot-vol">1,084,914 lb</div>
+            <div class="text-xs text-slate-300" id="oxe-tot-sess">123 Sessions &bull; 1,359 Sets &bull; 16,069 Reps</div>
+          </div>
+          <div class="sub-card">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Today (`Nov 19`) Upper PRs</div>
+            <div class="text-xl font-extrabold text-sky-400 mt-0.5">9,800 lb (9 Sets)</div>
+            <div class="text-xs text-sky-300">Bench `184x36` (`750W`) + Seated OHP `110x5` (`125 e1RM` PR!)</div>
+          </div>
+          <div class="sub-card">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Peak Shred Era (`Jan–Feb 26`)</div>
+            <div class="text-xl font-extrabold text-amber-400 mt-0.5">33,516 lb / wk</div>
+            <div class="text-xs text-amber-300">`3.44x/wk` (`39.8 sets`) + `15.3k` Steps &rarr; `189.2 lb` (`VF 6`)</div>
+          </div>
+          <div class="sub-card">
+            <div class="text-xs font-bold uppercase" style="color: var(--text-muted);">Current Surge (`Nov 8–19`)</div>
+            <div class="text-xl font-extrabold text-purple-400 mt-0.5">17,901 lb / wk</div>
+            <div class="text-xs text-purple-300">`2.33x/wk` (`14.6 sets`) &bull; `0` Pull / `0` Chains Sets &rarr; Fix Below!</div>
+          </div>
+        </div>
+
+        <!-- Era-by-Era Comparison Table -->
+        <div class="table-scroll">
+          <table class="clean-table" style="min-width: 780px;">
+            <thead>
+              <tr>
+                <th>Historical Epoch</th>
+                <th>`OxeFit` Freq &amp; Sets/Wk</th>
+                <th>Weekly Volume (`Avg/Sess`)</th>
+                <th>`Chains` + `Ecc` Sets</th>
+                <th>Steps &amp; Nutrition</th>
+                <th>Measured Body-Comp Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background: rgba(16,185,129,0.10);">
+                <td class="font-bold text-emerald-400">ERA 3: Peak Shred (`Jan 1 – Feb 24, 2026`)</td>
+                <td class="font-bold">3.44 / wk (`39.8` sets)</td>
+                <td class="font-bold text-emerald-300">33,516 lb/wk (`9,753`/sess)</td>
+                <td class="text-sky-300 font-bold">26 sets (`+Dec 43`)</td>
+                <td>`15,306` steps &bull; `1,820 kcal` (`168g P`)</td>
+                <td class="text-xs text-emerald-300"><strong>`205.6 &rarr; 189.2 lb` (`-16.4 lb`), `20.6% BF`, `VF 6`, `1,549W` Squat!</strong></td>
+              </tr>
+              <tr style="background: rgba(14,165,233,0.09);">
+                <td class="font-bold text-sky-400">ERA 4: Muscle Peak (`Feb 25 – Mar 16, 2026`)</td>
+                <td class="font-bold">2.10 / wk (`47.9` sets)</td>
+                <td class="font-bold text-sky-300">34,665 lb/wk (`16,507`/sess)</td>
+                <td>0 sets</td>
+                <td>`9,919` steps &bull; `2,104 kcal` (`189g P`)</td>
+                <td class="text-xs text-sky-300"><strong>All-Time Muscle Peak: `158.3 lb FFM` / `90.8 lb SMM` (`1,920` BMR)!</strong></td>
+              </tr>
+              <tr>
+                <td class="font-bold text-rose-400">ERA 5: Crash Cut (`Mar 17 – Mar 28, 2026`)</td>
+                <td>0.00 / wk (`0` sets)</td>
+                <td class="text-rose-300">0 lb/wk</td>
+                <td>0 sets</td>
+                <td>`8,851` steps &bull; `550 kcal` (`108g P`)</td>
+                <td class="text-xs text-rose-300"><strong>Warning:</strong> Lost `-6.8 lb FFM` (`158.3 &rarr; 151.5 lb`) lifting `0x`!</td>
+              </tr>
+              <tr>
+                <td class="font-bold text-slate-400">ERA 7: Work Drift (`Jun 5 – Nov 7, 2026`)</td>
+                <td>0.49 / wk (`4.9` sets)</td>
+                <td>5,869 lb/wk (`11,890`/sess)</td>
+                <td>0 sets</td>
+                <td>`9,069` steps &bull; `6h 40m` sleep</td>
+                <td class="text-xs text-slate-300">Drifted to `209.6 lb` (`VF 10`) on `&lt;2` lifts/mo &amp; `&lt;9.1k` steps.</td>
+              </tr>
+              <tr style="background: rgba(168,85,247,0.10);">
+                <td class="font-bold text-purple-400">ERA 8: Current Surge (`Nov 8 – Nov 19`)</td>
+                <td class="font-bold">2.33 / wk (`14.6` sets)</td>
+                <td class="font-bold text-purple-300">17,901 lb/wk (`Today: 9,800`!)</td>
+                <td class="text-amber-300 font-bold">0 sets (Turn On!)</td>
+                <td>`9,178` steps &bull; `1,546 kcal` &bull; `7h 29m` sleep</td>
+                <td class="text-xs text-emerald-300"><strong>`-11.2 lb` (`198.4 lb`), `187 lb` Bench PR &amp; `125` OHP PR (`99%` Peak)!</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 3 High-Impact Prescription Cards Derived Directly From Day-1 Vault -->
+        <div class="grid-3">
+          <div class="sub-card" style="border-left: 3px solid #10b981;">
+            <div class="text-xs font-extrabold text-emerald-400">1. Re-Activate `Chains` + `Eccentric` (`69` Sets &rarr; `0`)</div>
+            <p class="text-xs mt-1" style="color: var(--text-sub);">
+              `Dec–Feb` used `69` `Chains`/`Eccentric` sets; `Mar–Nov` had `0`. Today's Bench Set 3–4 slowed to `0.36 &rarr; 0.33 m/s` at the chest and OHP `110 lb` hit `0.40 m/s` — turn on <strong>`Chains (+20–25 lb)`</strong> on presses (acromion armor) &amp; <strong>`Eccentric (+15–20 lb)`</strong> on final Squat/RDL/Pulldown sets!
+            </p>
+          </div>
+          <div class="sub-card" style="border-left: 3px solid #38bdf8;">
+            <div class="text-xs font-extrabold text-sky-400">2. Add `1:1` Neutral Pulling (`0` Pull Sets in Nov!)</div>
+            <p class="text-xs mt-1" style="color: var(--text-sub);">
+              All `4` Nov sessions were Push/Squat/Hinge (`0` back sets). In `ERA 3` (`189.2 lb`), `Lat Pulldown` (`1,154W`), `Seated Row` (`747W`), &amp; `Face Pull` (`668W`) anchored posture. Add `12–14` <strong>Neutral-Grip</strong> Pull/Row/Face-Pull sets/wk (keep `Reverse Grip Pulldown` retired!).
+            </p>
+          </div>
+          <div class="sub-card" style="border-left: 3px solid #f59e0b;">
+            <div class="text-xs font-extrabold text-amber-400">3. Hit `33.5k lb/wk` + `14k+` Steps + `180g` Protein</div>
+            <p class="text-xs mt-1" style="color: var(--text-sub);">
+              Today's `9,800 lb` session already matches `ERA 3`'s `9,753 lb/sess`! Hitting `3.5–4x/wk` (`&le;45m` cap) + ramping post-Charlotte steps `9.2k &rarr; 14k+` + holding `175–190g P` combines `ERA 3` fat melt (`VF 4` by `Jan 12`) with `ERA 4` muscle (`155+ lb FFM`).
+            </p>
+          </div>
+        </div>
+
+        <!-- Live Recent OxeFit Cloud Sessions Table -->
+        <div>
+          <div class="text-xs font-extrabold uppercase text-sky-400 mb-1.5">Recent Synced `app.oxefit.com` Sessions (Live from `oxefit_all_time_vault.json`)</div>
+          <div class="table-scroll" style="max-height: 240px; overflow-y: auto;">
+            <table class="clean-table" style="min-width: 720px;">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Sets &amp; TUT</th>
+                  <th>Total Volume</th>
+                  <th>HR Max</th>
+                  <th>Verified Exercise Breakdown (`Load`, `e1RM`, `Peak Power`)</th>
+                </tr>
+              </thead>
+              <tbody id="oxefit-vault-tbody"></tbody>
+            </table>
+          </div>
+        </div>
       </div>
 
       <div class="grid-2">
@@ -3093,10 +3244,22 @@
         .join('');
     }
 
-    const WORKOUT_LOG_KEY = 'shaun_v5_10_workout_logs';
+    const WORKOUT_LOG_KEY = 'shaun_v5_11_workout_logs';
     const DEFAULT_WORKOUT_LOGS = [
       {
-        date: '2026-11-15 (Day 8 Active Flush + Post-Meal GLUT4 Sink ✅)',
+        date: '2026-11-19 (Synced Live from app.oxefit.com — 9,800 LB + SEATED OHP ALL-TIME PR!)',
+        day: 'OxeFit XS1 Upper Push Power (9 Sets • 76 Reps • 03:01 Active TUT)',
+        ex: '1) Bench Press: 6,620 lb (184 lb x 10, 10, 10, 6 = 36 reps, 248 lb e1RM, 750 W!) | 2) Seated Shoulder Press: 3,180 lb (68x10, 75x10, 110x5 [125 lb ALL-TIME e1RM PR!], 80x5, 80x10 [380 W ALL-TIME Power PR!])',
+        metrics: '9,800 lb Vol @ 198.4 lb BW (Matches Jan–Feb 9,753 lb/sess Shred Benchmark!) | Switch Bench & OHP from Standard to Chains (+20–25 lb) next session!'
+      },
+      {
+        date: '2026-11-16 (Uncovered via app.oxefit.com — ALL-TIME 187 LB BENCH WORKING-LOAD PR!)',
+        day: 'OxeFit XS1 Express Heavy Bench (3 Sets • 30 Reps • 01:15 Active TUT)',
+        ex: 'Bench Press: 5,240 lb (3 x 10 @ 187 lb Working-Load PR, 252 lb e1RM, 750 W Peak Power)',
+        metrics: '99.2% of All-Time 254 lb Bench e1RM Achieved Mid-Cut (-7 lb Down) — Zero Contractile Strength Loss!'
+      },
+      {
+        date: '2026-11-15 (Day 8 Active Flush + Post-Meal GLUT4 Sink)',
         day: 'Sunday Zone 2 Steps + Post-Meal Mechanical Peristalsis',
         ex: '40 Air Squats (20 immediately post-1:20p meal + 20 post-7:30p meal) + ~11,000 Steps',
         metrics: 'Quad/Glute GLUT4 Amino/Glucose Sink + Intra-Abdominal Colon Compression for GI Motility!'
@@ -3729,11 +3892,70 @@
       a.click();
     }
 
+    let OXEFIT_VAULT_DATA = null;
+    const FALLBACK_OXEFIT_SESSIONS = [
+      { date: '2026-11-19', set_count: 9, tut_sec: 181, total_volume_lb: 9800, hr_max: 121, exercises: [{ name: 'Bench Press', sets: 4, reps: 36, base_lb: 184, pred_1rm_lb: 248, power_max_w: 750 }, { name: 'Seated Shoulder Press', sets: 5, reps: 40, base_lb: 80, pred_1rm_lb: 125, power_max_w: 380 }] },
+      { date: '2026-11-16', set_count: 3, tut_sec: 75, total_volume_lb: 5240, hr_max: 106, exercises: [{ name: 'Bench Press', sets: 3, reps: 30, base_lb: 187, pred_1rm_lb: 252, power_max_w: 750 }] },
+      { date: '2026-11-14', set_count: 7, tut_sec: 201, total_volume_lb: 7518, hr_max: 128, exercises: [{ name: 'Full Thruster', sets: 4, reps: 26, base_lb: 73, pred_1rm_lb: 135, power_max_w: 704 }, { name: 'Romanian Deadlift', sets: 3, reps: 30, base_lb: 175, pred_1rm_lb: 235, power_max_w: 1009 }] },
+      { date: '2026-11-09', set_count: 6, tut_sec: 205, total_volume_lb: 8129, hr_max: 113, exercises: [{ name: 'Back Squat', sets: 3, reps: 30, base_lb: 215, pred_1rm_lb: 289, power_max_w: 1044 }, { name: 'Shoulder Press', sets: 3, reps: 25, base_lb: 70, pred_1rm_lb: 137, power_max_w: 403 }] }
+    ];
+
+    function renderOxefitVaultTable(sessions) {
+      const tbody = document.getElementById('oxefit-vault-tbody');
+      if (!tbody || !Array.isArray(sessions)) return;
+      tbody.innerHTML = sessions.slice(0, 25).map((s) => {
+        const exSummary = (s.exercises || [])
+          .filter((e) => (e.sets || 0) > 0 || (e.volume_lb || 0) > 0)
+          .map((e) => `<strong>${e.name}</strong>: ${e.sets}x (${e.reps}r @ ${e.base_lb || '--'}lb, e1RM ${e.pred_1rm_lb || '--'}, ${e.power_max_w || 0}W)`)
+          .join(' &bull; ') || s.title;
+        return `<tr>
+          <td class="font-bold text-slate-200">${s.date}</td>
+          <td>${s.set_count || 0} sets (${s.tut_sec || 0}s TUT)</td>
+          <td class="font-extrabold text-emerald-300">${(s.total_volume_lb || 0).toLocaleString()} lb</td>
+          <td>${s.hr_max ? s.hr_max + ' bpm' : '--'}</td>
+          <td class="text-xs text-slate-300">${exSummary}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    async function loadOxefitVault() {
+      renderOxefitVaultTable(FALLBACK_OXEFIT_SESSIONS);
+      try {
+        const res = await fetch('./oxefit_all_time_vault.json?t=' + Date.now());
+        if (res.ok) {
+          const data = await res.json();
+          OXEFIT_VAULT_DATA = data;
+          if (data && Array.isArray(data.sessions) && data.sessions.length) {
+            renderOxefitVaultTable(data.sessions);
+          }
+        }
+      } catch (e) {}
+    }
+
+    function exportAllTimeOxefitCsv() {
+      const sessions = OXEFIT_VAULT_DATA?.sessions || FALLBACK_OXEFIT_SESSIONS;
+      const hdr = ['Date', 'Sets', 'TUT_sec', 'Total_Volume_lb', 'HR_Max', 'Exercises'];
+      const lines = [hdr.join(',')];
+      sessions.forEach((s) => {
+        const exStr = (s.exercises || [])
+          .map((e) => `${e.name} (${e.sets}x/${e.reps}r @ ${e.base_lb || 0}lb e1RM:${e.pred_1rm_lb || 0} ${e.power_max_w || 0}W)`)
+          .join(' | ')
+          .replace(/"/g, '""');
+        lines.push([s.date, s.set_count || 0, s.tut_sec || 0, s.total_volume_lb || 0, s.hr_max || '', `"${exStr}"`].join(','));
+      });
+      const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'shaun_oxefit_all_time_123_sessions.csv';
+      a.click();
+    }
+
     // INITIALIZE APP
     document.addEventListener('DOMContentLoaded', () => {
       runForecast();
       loadLiveHealthTelemetry();
       load2026FullHistory();
+      loadOxefitVault();
       applyMealTemplate('sardine_530');
       updateHealthExportCard();
       updateMeter();

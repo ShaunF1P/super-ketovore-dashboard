@@ -5,6 +5,7 @@
 - **Daily Execution & Master Clock**: `SHAUN_SUB5_VISCERAL_EXECUTION_PLAN.md`
 - **Biometric Laws & Playbook**: `SHAUN_PERSONAL_KETOVORE_PLAYBOOK.md`
 - **Master Multi-Creator Blueprint & Catalog**: `SUPER_KETOVORE_LIFESTYLE_AND_WORKOUT_PROGRAM.md`, `CREATOR_VIDEO_LIBRARY_CATALOG.md`, `PROJECT.md`
+- **All-Time `OxeFit XS1` Cloud Vault & Peak-Era Synopsis**: `OXEFIT_ALL_TIME_FORENSIC_SYNOPSIS.md`, `oxefit_all_time_vault.json`, `analyze_oxefit_all_time.mjs` (`123` sessions from `2024-12-19` Day 1 -> present via `https://app.oxefit.com`, `userId: 0e9e073a-bc9c-448c-8d5c-b8d349fac3fa`; re-pull anytime via `chrome-devtools-mcp` once Chrome remote debugging is active).
 
 ## 2. Dashboard Sync & Deployment Rules
 - **Live URL**: `https://shaunf1p.github.io/super-ketovore-dashboard/`
