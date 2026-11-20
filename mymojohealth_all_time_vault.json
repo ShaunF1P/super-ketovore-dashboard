@@ -1,0 +1,7209 @@
+{
+  "extracted_at": "2026-11-20T17:25:59.003Z",
+  "source": "https://app.mymojohealth.com/my/readings",
+  "meter_device": "GK+E64F",
+  "total_rows": 603,
+  "unique_days": 176,
+  "ketone_days": 144,
+  "blood_glucose_days": 132,
+  "earliest_ts": "2024-09-14T18:34:00-04:00",
+  "latest_ts": "2026-11-20T08:10:00-05:00",
+  "daily_summaries": [
+    {
+      "date": "2026-11-20",
+      "bg_mg_dl": 85,
+      "bhb_mmol_l": 0.5,
+      "gki": 9.4,
+      "dbr": 170,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-19",
+      "bg_mg_dl": 86,
+      "bhb_mmol_l": 0.9,
+      "gki": 5.3,
+      "dbr": 95.6,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-18",
+      "bg_mg_dl": 91,
+      "bhb_mmol_l": 1.3,
+      "gki": 3.9,
+      "dbr": 70,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-17",
+      "bg_mg_dl": 97,
+      "bhb_mmol_l": 0.9,
+      "gki": 6,
+      "dbr": 107.8,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-16",
+      "bg_mg_dl": 88,
+      "bhb_mmol_l": 0.8,
+      "gki": 6.1,
+      "dbr": 110,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-15",
+      "bg_mg_dl": 89,
+      "bhb_mmol_l": 0.9,
+      "gki": 5.5,
+      "dbr": 98.9,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-14",
+      "bg_mg_dl": 92,
+      "bhb_mmol_l": 1,
+      "gki": 5.1,
+      "dbr": 92,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-13",
+      "bg_mg_dl": 90,
+      "bhb_mmol_l": 2,
+      "gki": 2.5,
+      "dbr": 45,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-12",
+      "bg_mg_dl": 69,
+      "bhb_mmol_l": 0.9,
+      "gki": 4.3,
+      "dbr": 76.7,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-11",
+      "bg_mg_dl": 75,
+      "bhb_mmol_l": 0.8,
+      "gki": 5.2,
+      "dbr": 93.8,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-11-10",
+      "bg_mg_dl": 60,
+      "bhb_mmol_l": 1.6,
+      "gki": 2.1,
+      "dbr": 37.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-10-30",
+      "bg_mg_dl": 79,
+      "bhb_mmol_l": 0.3,
+      "gki": 14.6,
+      "dbr": 263.3,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-10-29",
+      "bg_mg_dl": 82,
+      "bhb_mmol_l": 0.6,
+      "gki": 7.6,
+      "dbr": 136.7,
+      "bg_count": 2,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-10-28",
+      "bg_mg_dl": 84,
+      "bhb_mmol_l": 0.7,
+      "gki": 6.7,
+      "dbr": 120,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-10-27",
+      "bg_mg_dl": 98,
+      "bhb_mmol_l": 0.4,
+      "gki": 13.6,
+      "dbr": 245,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-10-26",
+      "bg_mg_dl": 106,
+      "bhb_mmol_l": 0.4,
+      "gki": 14.7,
+      "dbr": 265,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-10-25",
+      "bg_mg_dl": 94,
+      "bhb_mmol_l": 0.5,
+      "gki": 10.4,
+      "dbr": 188,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-10-24",
+      "bg_mg_dl": 90,
+      "bhb_mmol_l": 0.6,
+      "gki": 8.3,
+      "dbr": 150,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-10-23",
+      "bg_mg_dl": 89,
+      "bhb_mmol_l": 0.8,
+      "gki": 6.2,
+      "dbr": 111.3,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-10-22",
+      "bg_mg_dl": 100,
+      "bhb_mmol_l": 0.4,
+      "gki": 13.9,
+      "dbr": 250,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-06-11",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-06-10",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-06-09",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-06-07",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-06-06",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-06-05",
+      "bg_mg_dl": 88,
+      "bhb_mmol_l": 0.5,
+      "gki": 9.8,
+      "dbr": 176,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-06-04",
+      "bg_mg_dl": 88,
+      "bhb_mmol_l": 1.5,
+      "gki": 3.3,
+      "dbr": 58.7,
+      "bg_count": 2,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-06-03",
+      "bg_mg_dl": 99,
+      "bhb_mmol_l": 0.4,
+      "gki": 13.8,
+      "dbr": 247.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-06-02",
+      "bg_mg_dl": 99,
+      "bhb_mmol_l": 0.5,
+      "gki": 11.8,
+      "dbr": 198,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-06-01",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-05-31",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-05-30",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-05-29",
+      "bg_mg_dl": 95,
+      "bhb_mmol_l": 0.5,
+      "gki": 10.6,
+      "dbr": 190,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-05-28",
+      "bg_mg_dl": 93,
+      "bhb_mmol_l": 0.5,
+      "gki": 10.3,
+      "dbr": 186,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-05-27",
+      "bg_mg_dl": 94,
+      "bhb_mmol_l": 0.5,
+      "gki": 10.1,
+      "dbr": 188,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-05-26",
+      "bg_mg_dl": 81,
+      "bhb_mmol_l": 0.4,
+      "gki": 11.3,
+      "dbr": 202.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-05-08",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-05-07",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-05-06",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-05-04",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-05-02",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-05-01",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-04-30",
+      "bg_mg_dl": 70,
+      "bhb_mmol_l": 1.7,
+      "gki": 2.3,
+      "dbr": 41.2,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-04-29",
+      "bg_mg_dl": 76,
+      "bhb_mmol_l": 0.7,
+      "gki": 6,
+      "dbr": 108.6,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-04-02",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-04-01",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-31",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-03-28",
+      "bg_mg_dl": 88,
+      "bhb_mmol_l": 0.3,
+      "gki": 16.3,
+      "dbr": 293.3,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-03-27",
+      "bg_mg_dl": 106,
+      "bhb_mmol_l": 0.1,
+      "gki": 58.9,
+      "dbr": 1060,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-26",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-25",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-24",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-23",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-22",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-21",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-03-20",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-15",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-14",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-13",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-12",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-11",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-03-06",
+      "bg_mg_dl": 100,
+      "bhb_mmol_l": 0.4,
+      "gki": 13.9,
+      "dbr": 250,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-05",
+      "bg_mg_dl": 92,
+      "bhb_mmol_l": 0.8,
+      "gki": 6.4,
+      "dbr": 115,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-04",
+      "bg_mg_dl": 95,
+      "bhb_mmol_l": 0.8,
+      "gki": 6.6,
+      "dbr": 118.8,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-03",
+      "bg_mg_dl": 78,
+      "bhb_mmol_l": 0.5,
+      "gki": 8.7,
+      "dbr": 156,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-02",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-03-01",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 0.1,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-28",
+      "bg_mg_dl": 113,
+      "bhb_mmol_l": 0.1,
+      "gki": 62.8,
+      "dbr": 1130,
+      "bg_count": 1,
+      "bhb_count": 2,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-27",
+      "bg_mg_dl": 86,
+      "bhb_mmol_l": 0.9,
+      "gki": 5.3,
+      "dbr": 95.6,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-26",
+      "bg_mg_dl": 87,
+      "bhb_mmol_l": 0.7,
+      "gki": 6.9,
+      "dbr": 124.3,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-25",
+      "bg_mg_dl": 84,
+      "bhb_mmol_l": 0.8,
+      "gki": 5.8,
+      "dbr": 105,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-02-24",
+      "bg_mg_dl": 91,
+      "bhb_mmol_l": 1.1,
+      "gki": 4.6,
+      "dbr": 82.7,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-02-23",
+      "bg_mg_dl": 109,
+      "bhb_mmol_l": 0.7,
+      "gki": 8.7,
+      "dbr": 155.7,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-22",
+      "bg_mg_dl": 102,
+      "bhb_mmol_l": 0.5,
+      "gki": 11.3,
+      "dbr": 204,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-21",
+      "bg_mg_dl": 85,
+      "bhb_mmol_l": 2,
+      "gki": 2.4,
+      "dbr": 42.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-20",
+      "bg_mg_dl": 105,
+      "bhb_mmol_l": 1.1,
+      "gki": 5.3,
+      "dbr": 95.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-19",
+      "bg_mg_dl": 84,
+      "bhb_mmol_l": 3.1,
+      "gki": 1.5,
+      "dbr": 27.1,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-18",
+      "bg_mg_dl": 91,
+      "bhb_mmol_l": 1.5,
+      "gki": 3.4,
+      "dbr": 60.7,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-17",
+      "bg_mg_dl": 76,
+      "bhb_mmol_l": 3.6,
+      "gki": 1.2,
+      "dbr": 21.1,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-16",
+      "bg_mg_dl": 85,
+      "bhb_mmol_l": 1,
+      "gki": 4.7,
+      "dbr": 85,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-15",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 0.9,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-14",
+      "bg_mg_dl": 87,
+      "bhb_mmol_l": 1,
+      "gki": 4.8,
+      "dbr": 87,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-13",
+      "bg_mg_dl": 90,
+      "bhb_mmol_l": 0.8,
+      "gki": 6.3,
+      "dbr": 112.5,
+      "bg_count": 3,
+      "bhb_count": 2,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-12",
+      "bg_mg_dl": 66,
+      "bhb_mmol_l": 2.1,
+      "gki": 1.7,
+      "dbr": 31.4,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-11",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 1,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-10",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 0.5,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-09",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-08",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": null,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 0,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-07",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 0.4,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-06",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 0.5,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-05",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 0.7,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-04",
+      "bg_mg_dl": 93,
+      "bhb_mmol_l": 0.4,
+      "gki": 12.9,
+      "dbr": 232.5,
+      "bg_count": 1,
+      "bhb_count": 2,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-02-03",
+      "bg_mg_dl": 79,
+      "bhb_mmol_l": 0.7,
+      "gki": 6.3,
+      "dbr": 112.9,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-02",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 0.6,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-02-01",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 0.6,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-31",
+      "bg_mg_dl": 98,
+      "bhb_mmol_l": 0.4,
+      "gki": 13.6,
+      "dbr": 245,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-30",
+      "bg_mg_dl": 102,
+      "bhb_mmol_l": 0.4,
+      "gki": 14.2,
+      "dbr": 255,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 2
+    },
+    {
+      "date": "2026-01-29",
+      "bg_mg_dl": 86,
+      "bhb_mmol_l": 1.1,
+      "gki": 4.3,
+      "dbr": 78.2,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-28",
+      "bg_mg_dl": 86,
+      "bhb_mmol_l": 0.8,
+      "gki": 6,
+      "dbr": 107.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-27",
+      "bg_mg_dl": 108,
+      "bhb_mmol_l": 0.5,
+      "gki": 12,
+      "dbr": 216,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-26",
+      "bg_mg_dl": 89,
+      "bhb_mmol_l": 1.3,
+      "gki": 3.8,
+      "dbr": 68.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-25",
+      "bg_mg_dl": 80,
+      "bhb_mmol_l": 0.6,
+      "gki": 7.4,
+      "dbr": 133.3,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-24",
+      "bg_mg_dl": 95,
+      "bhb_mmol_l": 1.3,
+      "gki": 4.1,
+      "dbr": 73.1,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-23",
+      "bg_mg_dl": 89,
+      "bhb_mmol_l": 0.9,
+      "gki": 5.5,
+      "dbr": 98.9,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-22",
+      "bg_mg_dl": 92,
+      "bhb_mmol_l": 1.2,
+      "gki": 4.3,
+      "dbr": 76.7,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-21",
+      "bg_mg_dl": 98,
+      "bhb_mmol_l": 1.1,
+      "gki": 4.9,
+      "dbr": 89.1,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-20",
+      "bg_mg_dl": 104,
+      "bhb_mmol_l": 1.1,
+      "gki": 5.3,
+      "dbr": 94.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-19",
+      "bg_mg_dl": 105,
+      "bhb_mmol_l": 1.2,
+      "gki": 4.9,
+      "dbr": 87.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 1
+    },
+    {
+      "date": "2026-01-18",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 1.6,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-17",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 1.4,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-16",
+      "bg_mg_dl": 89,
+      "bhb_mmol_l": 1.1,
+      "gki": 4.5,
+      "dbr": 80.9,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-15",
+      "bg_mg_dl": 88,
+      "bhb_mmol_l": 0.9,
+      "gki": 5.4,
+      "dbr": 97.8,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-14",
+      "bg_mg_dl": 80,
+      "bhb_mmol_l": 0.8,
+      "gki": 5.6,
+      "dbr": 100,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-13",
+      "bg_mg_dl": 94,
+      "bhb_mmol_l": 1,
+      "gki": 5.2,
+      "dbr": 94,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-12",
+      "bg_mg_dl": 102,
+      "bhb_mmol_l": 0.9,
+      "gki": 6.3,
+      "dbr": 113.3,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-11",
+      "bg_mg_dl": 100,
+      "bhb_mmol_l": 1.3,
+      "gki": 4.3,
+      "dbr": 76.9,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-10",
+      "bg_mg_dl": 82,
+      "bhb_mmol_l": 1,
+      "gki": 4.6,
+      "dbr": 82,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-09",
+      "bg_mg_dl": 78,
+      "bhb_mmol_l": 1.4,
+      "gki": 3.1,
+      "dbr": 55.7,
+      "bg_count": 2,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-08",
+      "bg_mg_dl": 86,
+      "bhb_mmol_l": 0.7,
+      "gki": 6.8,
+      "dbr": 122.9,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-07",
+      "bg_mg_dl": 86,
+      "bhb_mmol_l": 1,
+      "gki": 4.8,
+      "dbr": 86,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-06",
+      "bg_mg_dl": 83,
+      "bhb_mmol_l": 1.1,
+      "gki": 4.2,
+      "dbr": 75.5,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-05",
+      "bg_mg_dl": 86,
+      "bhb_mmol_l": 0.9,
+      "gki": 5.3,
+      "dbr": 95.6,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-04",
+      "bg_mg_dl": 87,
+      "bhb_mmol_l": 1.1,
+      "gki": 4.4,
+      "dbr": 79.1,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-03",
+      "bg_mg_dl": 101,
+      "bhb_mmol_l": 1.2,
+      "gki": 4.1,
+      "dbr": 84.2,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-02",
+      "bg_mg_dl": 85,
+      "bhb_mmol_l": 1.1,
+      "gki": 4.3,
+      "dbr": 77.3,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2026-01-01",
+      "bg_mg_dl": 96,
+      "bhb_mmol_l": 0.6,
+      "gki": 7.6,
+      "dbr": 160,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-31",
+      "bg_mg_dl": 99,
+      "bhb_mmol_l": 0.4,
+      "gki": 13.8,
+      "dbr": 247.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-29",
+      "bg_mg_dl": 100,
+      "bhb_mmol_l": 0.2,
+      "gki": 27.8,
+      "dbr": 500,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-23",
+      "bg_mg_dl": 103,
+      "bhb_mmol_l": 0.4,
+      "gki": 14.3,
+      "dbr": 257.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-22",
+      "bg_mg_dl": 111,
+      "bhb_mmol_l": 0.2,
+      "gki": 30.8,
+      "dbr": 555,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-21",
+      "bg_mg_dl": 107,
+      "bhb_mmol_l": 0.4,
+      "gki": 14.9,
+      "dbr": 267.5,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-20",
+      "bg_mg_dl": 89,
+      "bhb_mmol_l": 1.8,
+      "gki": 2.7,
+      "dbr": 49.4,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-19",
+      "bg_mg_dl": 87,
+      "bhb_mmol_l": 1.4,
+      "gki": 3.5,
+      "dbr": 62.1,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-18",
+      "bg_mg_dl": 98,
+      "bhb_mmol_l": 1.3,
+      "gki": 4.2,
+      "dbr": 75.4,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-17",
+      "bg_mg_dl": 73,
+      "bhb_mmol_l": 2.6,
+      "gki": 1.6,
+      "dbr": 28.1,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-16",
+      "bg_mg_dl": 83,
+      "bhb_mmol_l": 1.7,
+      "gki": 2.7,
+      "dbr": 48.8,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-15",
+      "bg_mg_dl": 99,
+      "bhb_mmol_l": 1,
+      "gki": 5.5,
+      "dbr": 99,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-14",
+      "bg_mg_dl": 124,
+      "bhb_mmol_l": 1,
+      "gki": 6.9,
+      "dbr": 124,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-13",
+      "bg_mg_dl": 104,
+      "bhb_mmol_l": 1.7,
+      "gki": 3.4,
+      "dbr": 61.2,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-12",
+      "bg_mg_dl": 73,
+      "bhb_mmol_l": 4.2,
+      "gki": 1,
+      "dbr": 17.4,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-11",
+      "bg_mg_dl": 94,
+      "bhb_mmol_l": 2.8,
+      "gki": 1.7,
+      "dbr": 33.6,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-10",
+      "bg_mg_dl": 88,
+      "bhb_mmol_l": 1.8,
+      "gki": 2.8,
+      "dbr": 48.9,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-09",
+      "bg_mg_dl": 95,
+      "bhb_mmol_l": 1.2,
+      "gki": 4.4,
+      "dbr": 79.2,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-08",
+      "bg_mg_dl": 106,
+      "bhb_mmol_l": 0.9,
+      "gki": 6.8,
+      "dbr": 117.8,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-07",
+      "bg_mg_dl": 96,
+      "bhb_mmol_l": 1.6,
+      "gki": 3,
+      "dbr": 60,
+      "bg_count": 3,
+      "bhb_count": 3,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-06",
+      "bg_mg_dl": 99,
+      "bhb_mmol_l": 0.7,
+      "gki": 7.3,
+      "dbr": 141.4,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-05",
+      "bg_mg_dl": 94,
+      "bhb_mmol_l": 2.7,
+      "gki": 1.6,
+      "dbr": 34.8,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-04",
+      "bg_mg_dl": 84,
+      "bhb_mmol_l": 1.6,
+      "gki": 2.7,
+      "dbr": 52.5,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-03",
+      "bg_mg_dl": 90,
+      "bhb_mmol_l": 2.1,
+      "gki": 1.9,
+      "dbr": 42.9,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-02",
+      "bg_mg_dl": 105,
+      "bhb_mmol_l": 0.5,
+      "gki": 11.7,
+      "dbr": 210,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-12-01",
+      "bg_mg_dl": 113,
+      "bhb_mmol_l": 0.3,
+      "gki": 17.6,
+      "dbr": 376.7,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-11-30",
+      "bg_mg_dl": 95,
+      "bhb_mmol_l": 0.5,
+      "gki": 10.6,
+      "dbr": 190,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-11-25",
+      "bg_mg_dl": 84,
+      "bhb_mmol_l": 0.6,
+      "gki": 7.8,
+      "dbr": 140,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-11-04",
+      "bg_mg_dl": 98,
+      "bhb_mmol_l": 0.5,
+      "gki": 10.9,
+      "dbr": 196,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-10-10",
+      "bg_mg_dl": 123,
+      "bhb_mmol_l": 0.3,
+      "gki": 22.8,
+      "dbr": 410,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-10-09",
+      "bg_mg_dl": 96,
+      "bhb_mmol_l": 0.4,
+      "gki": 13.3,
+      "dbr": 240,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-10-08",
+      "bg_mg_dl": 109,
+      "bhb_mmol_l": 0.3,
+      "gki": 20.2,
+      "dbr": 363.3,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-09-27",
+      "bg_mg_dl": 96,
+      "bhb_mmol_l": 0.3,
+      "gki": 17.8,
+      "dbr": 320,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-09-26",
+      "bg_mg_dl": 109,
+      "bhb_mmol_l": 0.4,
+      "gki": 15.1,
+      "dbr": 272.5,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-09-25",
+      "bg_mg_dl": 91,
+      "bhb_mmol_l": 1.4,
+      "gki": 3.6,
+      "dbr": 65,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-09-24",
+      "bg_mg_dl": 91,
+      "bhb_mmol_l": 0.7,
+      "gki": 6.2,
+      "dbr": 130,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-09-22",
+      "bg_mg_dl": 108,
+      "bhb_mmol_l": 0.1,
+      "gki": 60,
+      "dbr": 1080,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-04-18",
+      "bg_mg_dl": 102,
+      "bhb_mmol_l": 0.5,
+      "gki": 11.3,
+      "dbr": 204,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-03-27",
+      "bg_mg_dl": 84,
+      "bhb_mmol_l": 0.3,
+      "gki": 15.6,
+      "dbr": 280,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-23",
+      "bg_mg_dl": 90,
+      "bhb_mmol_l": 0.2,
+      "gki": 25,
+      "dbr": 450,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-22",
+      "bg_mg_dl": 79,
+      "bhb_mmol_l": 2.1,
+      "gki": 2.1,
+      "dbr": 37.6,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-21",
+      "bg_mg_dl": 80,
+      "bhb_mmol_l": 1.1,
+      "gki": 4,
+      "dbr": 72.7,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-19",
+      "bg_mg_dl": 90,
+      "bhb_mmol_l": 0.5,
+      "gki": 10,
+      "dbr": 180,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-18",
+      "bg_mg_dl": 95,
+      "bhb_mmol_l": 0.6,
+      "gki": 8.8,
+      "dbr": 158.3,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-17",
+      "bg_mg_dl": 117,
+      "bhb_mmol_l": 1.5,
+      "gki": 4.3,
+      "dbr": 78,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-16",
+      "bg_mg_dl": 103,
+      "bhb_mmol_l": 0.8,
+      "gki": 6.6,
+      "dbr": 128.8,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-15",
+      "bg_mg_dl": 88,
+      "bhb_mmol_l": 1.2,
+      "gki": 4.4,
+      "dbr": 73.3,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-14",
+      "bg_mg_dl": 88,
+      "bhb_mmol_l": 1.8,
+      "gki": 2.7,
+      "dbr": 48.9,
+      "bg_count": 2,
+      "bhb_count": 2,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-13",
+      "bg_mg_dl": 72,
+      "bhb_mmol_l": 1.1,
+      "gki": 4.2,
+      "dbr": 65.5,
+      "bg_count": 4,
+      "bhb_count": 4,
+      "cgm_count": 0
+    },
+    {
+      "date": "2025-02-12",
+      "bg_mg_dl": 75,
+      "bhb_mmol_l": 1.7,
+      "gki": 2.5,
+      "dbr": 44.1,
+      "bg_count": 3,
+      "bhb_count": 4,
+      "cgm_count": 0
+    },
+    {
+      "date": "2024-09-14",
+      "bg_mg_dl": null,
+      "bhb_mmol_l": 0.7,
+      "gki": null,
+      "dbr": null,
+      "bg_count": 0,
+      "bhb_count": 1,
+      "cgm_count": 0
+    }
+  ],
+  "readings": [
+    {
+      "ts": "2026-11-20T08:10:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 9.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-20T08:10:00-05:00",
+      "glucose": 85,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-20T08:10:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-19T08:06:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-19T08:06:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-19T08:06:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-18T08:31:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-18T08:31:00-05:00",
+      "glucose": 91,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-18T08:31:00-05:00",
+      "glucose": null,
+      "ketone": 1.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-17T05:44:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-17T05:44:00-05:00",
+      "glucose": 97,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-17T05:44:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-16T07:14:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-16T07:14:00-05:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-16T07:14:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-15T09:18:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-15T09:18:00-05:00",
+      "glucose": 89,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-15T09:18:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-14T10:09:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-14T10:09:00-05:00",
+      "glucose": 92,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-14T10:09:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-13T08:07:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-13T08:07:00-05:00",
+      "glucose": 90,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-13T08:07:00-05:00",
+      "glucose": null,
+      "ketone": 2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-12T10:33:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "Calculated"
+    },
+    {
+      "ts": "2026-11-12T10:33:00-05:00",
+      "glucose": 69,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "Manual"
+    },
+    {
+      "ts": "2026-11-12T10:33:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-11T10:05:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-11T10:05:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-11T10:04:00-05:00",
+      "glucose": 75,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-10T16:54:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-10T16:54:00-05:00",
+      "glucose": 60,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-10T16:53:00-05:00",
+      "glucose": null,
+      "ketone": 1.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-30T11:55:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 14.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-30T11:55:00-04:00",
+      "glucose": 79,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-30T11:54:00-04:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-29T18:14:00-04:00",
+      "glucose": 82,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-10-29T09:12:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 7.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-29T09:12:00-04:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-29T09:11:00-04:00",
+      "glucose": 82,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-28T09:48:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-28T09:48:00-04:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-28T09:47:00-04:00",
+      "glucose": 84,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-27T08:50:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 13.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-27T08:50:00-04:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-27T08:49:00-04:00",
+      "glucose": 98,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-26T09:16:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 14.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-26T09:16:00-04:00",
+      "glucose": 106,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-26T09:16:00-04:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-25T08:12:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 10.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-25T08:12:00-04:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-25T08:12:00-04:00",
+      "glucose": 94,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-24T08:52:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 8.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-24T08:52:00-04:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-24T08:51:00-04:00",
+      "glucose": 90,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-23T13:31:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-23T13:31:00-04:00",
+      "glucose": 89,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-23T13:31:00-04:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-22T14:30:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 13.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-22T14:30:00-04:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-10-22T14:29:00-04:00",
+      "glucose": 100,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-11T20:00:00-04:00",
+      "glucose": 141.4,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-06-10T20:00:00-04:00",
+      "glucose": 140.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-06-09T20:00:00-04:00",
+      "glucose": 135.2,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-06-09T01:05:00-04:00",
+      "glucose": 122.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-06-07T20:00:00-04:00",
+      "glucose": 140.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-06-06T20:00:00-04:00",
+      "glucose": 138.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-06-05T20:04:00-04:00",
+      "glucose": 137.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-06-05T09:19:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 9.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-05T09:19:00-04:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-05T09:19:00-04:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-04T20:11:00-04:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-06-04T20:04:00-04:00",
+      "glucose": 126.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-06-04T10:00:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-04T10:00:00-04:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-04T09:59:00-04:00",
+      "glucose": null,
+      "ketone": 1.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-03T20:04:00-04:00",
+      "glucose": 122.2,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-06-03T10:16:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 13.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-03T10:16:00-04:00",
+      "glucose": 99,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-03T10:15:00-04:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-02T20:04:00-04:00",
+      "glucose": 130.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-06-02T15:30:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 11.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-02T15:30:00-04:00",
+      "glucose": 106,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-02T15:30:00-04:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-02T10:01:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 18.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-02T10:01:00-04:00",
+      "glucose": 99,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-02T10:00:00-04:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-06-01T20:04:00-04:00",
+      "glucose": 136.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-05-31T20:04:00-04:00",
+      "glucose": 133.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-05-30T20:04:00-04:00",
+      "glucose": 136.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-05-29T20:04:00-04:00",
+      "glucose": 131.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-05-29T09:55:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 10.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-29T09:55:00-04:00",
+      "glucose": 95,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-29T09:54:00-04:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-28T20:04:00-04:00",
+      "glucose": 112.4,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-05-28T08:33:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 10.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-28T08:33:00-04:00",
+      "glucose": 93,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-28T08:32:00-04:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-27T20:04:00-04:00",
+      "glucose": 115.4,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-05-27T18:14:00-04:00",
+      "glucose": 100.1,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-05-27T15:40:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 10.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-27T15:40:00-04:00",
+      "glucose": 91,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-27T15:39:00-04:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-27T09:58:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 17.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-27T09:58:00-04:00",
+      "glucose": 94,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-27T09:58:00-04:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-26T21:21:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 11.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-26T21:21:00-04:00",
+      "glucose": 81,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-26T21:20:00-04:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-05-08T20:00:00-04:00",
+      "glucose": 96.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-05-07T20:00:00-04:00",
+      "glucose": 102.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-05-06T20:00:00-04:00",
+      "glucose": 97.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-05-06T09:20:00-04:00",
+      "glucose": 101.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-05-04T20:00:00-04:00",
+      "glucose": 105.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-05-04T10:20:00-04:00",
+      "glucose": 104.4,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-05-02T20:00:00-04:00",
+      "glucose": 110.2,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-05-01T20:00:00-04:00",
+      "glucose": 109.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-04-30T20:00:00-04:00",
+      "glucose": 90.2,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-04-30T09:58:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-04-30T09:58:00-04:00",
+      "glucose": 70,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-04-30T09:57:00-04:00",
+      "glucose": null,
+      "ketone": 1.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-04-29T20:00:00-04:00",
+      "glucose": 75.1,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-04-29T16:16:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-04-29T16:16:00-04:00",
+      "glucose": 76,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-04-29T16:16:00-04:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-04-29T09:55:00-04:00",
+      "glucose": 92.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-04-02T20:04:00-04:00",
+      "glucose": 111.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-04-01T20:04:00-04:00",
+      "glucose": 107.1,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-31T20:04:00-04:00",
+      "glucose": 108.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-31T09:59:00-04:00",
+      "glucose": 107.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-28T10:25:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 16.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-28T10:25:00-04:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-28T10:24:00-04:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-27T20:04:00-04:00",
+      "glucose": 85.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-27T11:46:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 58.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-27T11:46:00-04:00",
+      "glucose": 106,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-27T11:46:00-04:00",
+      "glucose": null,
+      "ketone": 0.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-26T20:04:00-04:00",
+      "glucose": 100.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-25T20:04:00-04:00",
+      "glucose": 95.4,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-24T20:04:00-04:00",
+      "glucose": 101.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-23T20:04:00-04:00",
+      "glucose": 97.1,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-22T20:04:00-04:00",
+      "glucose": 117.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-21T20:04:00-04:00",
+      "glucose": 125.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-21T10:29:00-04:00",
+      "glucose": 111.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-20T14:34:00-04:00",
+      "glucose": 127.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-15T20:01:00-04:00",
+      "glucose": 123.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-14T20:01:00-04:00",
+      "glucose": 119.4,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-13T20:01:00-04:00",
+      "glucose": 104.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-12T20:01:00-04:00",
+      "glucose": 100.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-11T20:01:00-04:00",
+      "glucose": 118.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-11T11:41:00-04:00",
+      "glucose": 121.4,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-06T19:04:00-05:00",
+      "glucose": 88.1,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-03-06T11:24:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 13.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-06T11:24:00-05:00",
+      "glucose": 100,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-06T11:24:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-05T19:04:00-05:00",
+      "glucose": 82.1,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-05T10:55:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-05T10:55:00-05:00",
+      "glucose": 92,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-05T10:55:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-04T19:04:00-05:00",
+      "glucose": 81.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-04T10:48:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-04T10:48:00-05:00",
+      "glucose": 95,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-04T10:47:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-03T19:04:00-05:00",
+      "glucose": 80.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-03T10:53:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 8.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-03T10:53:00-05:00",
+      "glucose": 78,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-03T10:53:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-03-02T19:04:00-05:00",
+      "glucose": 82.3,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-01T19:04:00-05:00",
+      "glucose": 92.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-03-01T16:51:00-05:00",
+      "glucose": null,
+      "ketone": 0.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-28T19:04:00-05:00",
+      "glucose": 102.2,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-28T09:51:00-05:00",
+      "glucose": null,
+      "ketone": 0.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "Manual"
+    },
+    {
+      "ts": "2026-02-28T09:50:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 62.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-28T09:50:00-05:00",
+      "glucose": 113,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-28T09:50:00-05:00",
+      "glucose": null,
+      "ketone": 0.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-27T19:02:00-05:00",
+      "glucose": 101.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-27T09:24:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-27T09:24:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-27T09:23:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-26T19:01:00-05:00",
+      "glucose": 85.2,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-26T08:10:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-26T08:10:00-05:00",
+      "glucose": 87,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-26T08:09:00-05:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-25T19:01:00-05:00",
+      "glucose": 88.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-25T12:46:00-05:00",
+      "glucose": 100.3,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-25T09:34:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-25T09:34:00-05:00",
+      "glucose": 84,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-25T09:34:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-24T10:12:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-24T10:12:00-05:00",
+      "glucose": 91,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-24T10:11:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-23T19:01:00-05:00",
+      "glucose": 90.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-23T08:48:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 8.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-23T08:48:00-05:00",
+      "glucose": 109,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-23T08:47:00-05:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-22T19:01:00-05:00",
+      "glucose": 99.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-22T06:58:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 11.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-22T06:58:00-05:00",
+      "glucose": 102,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-22T06:58:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-21T19:01:00-05:00",
+      "glucose": 99.4,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-21T08:41:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-21T08:41:00-05:00",
+      "glucose": 85,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-21T08:40:00-05:00",
+      "glucose": null,
+      "ketone": 2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-20T19:01:00-05:00",
+      "glucose": 89.3,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-20T10:53:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-20T10:53:00-05:00",
+      "glucose": 105,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-20T10:52:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-19T19:01:00-05:00",
+      "glucose": 101.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-19T09:53:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 1.5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-19T09:53:00-05:00",
+      "glucose": 84,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-19T09:53:00-05:00",
+      "glucose": null,
+      "ketone": 3.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-18T19:01:00-05:00",
+      "glucose": 84.1,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-18T09:39:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-18T09:39:00-05:00",
+      "glucose": 91,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-18T09:38:00-05:00",
+      "glucose": null,
+      "ketone": 1.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-17T19:01:00-05:00",
+      "glucose": 92.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-17T09:46:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 1.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-17T09:46:00-05:00",
+      "glucose": 76,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-17T09:45:00-05:00",
+      "glucose": null,
+      "ketone": 3.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-16T19:01:00-05:00",
+      "glucose": 81.2,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-16T08:41:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-16T08:41:00-05:00",
+      "glucose": 85,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-16T08:40:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-15T19:01:00-05:00",
+      "glucose": 96.1,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-15T06:53:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-14T19:01:00-05:00",
+      "glucose": 99.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-14T09:32:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-14T09:32:00-05:00",
+      "glucose": 87,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-14T09:32:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-13T19:01:00-05:00",
+      "glucose": 95.9,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-13T15:09:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 12.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-13T15:09:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-13T15:06:00-05:00",
+      "glucose": 87,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-13T10:52:00-05:00",
+      "glucose": 90,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "Manual"
+    },
+    {
+      "ts": "2026-02-13T10:51:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-13T10:51:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-13T10:50:00-05:00",
+      "glucose": 90,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-12T19:32:00-05:00",
+      "glucose": 66,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-12T19:01:00-05:00",
+      "glucose": 101.3,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-12T09:43:00-05:00",
+      "glucose": null,
+      "ketone": 2.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-11T19:00:00-05:00",
+      "glucose": 80.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-11T10:30:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-10T19:00:00-05:00",
+      "glucose": 84.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-10T10:46:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-09T19:00:00-05:00",
+      "glucose": 93.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-08T19:00:00-05:00",
+      "glucose": 108.4,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-07T19:00:00-05:00",
+      "glucose": 97.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-07T10:10:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-06T19:00:00-05:00",
+      "glucose": 92.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-06T11:58:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-05T19:00:00-05:00",
+      "glucose": 93.1,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-05T11:08:00-05:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-04T19:00:00-05:00",
+      "glucose": 92.3,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-04T11:25:00-05:00",
+      "glucose": 97.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-04T09:50:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "Manual"
+    },
+    {
+      "ts": "2026-02-04T09:49:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 12.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-04T09:49:00-05:00",
+      "glucose": 93,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-04T09:49:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-03T10:55:00-05:00",
+      "glucose": 94.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-03T09:58:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-03T09:58:00-05:00",
+      "glucose": 79,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-03T09:58:00-05:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-02T10:50:00-05:00",
+      "glucose": 104.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-02T10:34:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-02-01T10:55:00-05:00",
+      "glucose": 97.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-02-01T05:21:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-31T09:59:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 13.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-31T09:59:00-05:00",
+      "glucose": 98,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-31T09:59:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-30T19:00:00-05:00",
+      "glucose": 91.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-30T16:55:00-05:00",
+      "glucose": 95.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-30T10:15:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 14.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-30T10:15:00-05:00",
+      "glucose": 102,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-30T10:15:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-29T09:50:00-05:00",
+      "glucose": 97.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-29T09:22:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-29T09:22:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-29T09:22:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-28T09:28:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-28T09:28:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-28T09:27:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-28T09:24:00-05:00",
+      "glucose": 104.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-27T10:09:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 12,
+      "tag": null,
+      "type": "GKI",
+      "src": "Calculated"
+    },
+    {
+      "ts": "2026-01-27T10:09:00-05:00",
+      "glucose": 108,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "Manual"
+    },
+    {
+      "ts": "2026-01-27T10:09:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "Manual"
+    },
+    {
+      "ts": "2026-01-27T10:06:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 12,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-27T10:06:00-05:00",
+      "glucose": 108,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-27T10:06:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-27T08:14:00-05:00",
+      "glucose": 99.7,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-26T09:34:00-05:00",
+      "glucose": 100.2,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-26T09:26:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-26T09:26:00-05:00",
+      "glucose": 89,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-26T09:26:00-05:00",
+      "glucose": null,
+      "ketone": 1.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-25T10:14:00-05:00",
+      "glucose": 94.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-25T07:28:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 7.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-25T07:28:00-05:00",
+      "glucose": 80,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-25T07:28:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-24T11:11:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-24T11:11:00-05:00",
+      "glucose": 95,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-24T11:10:00-05:00",
+      "glucose": null,
+      "ketone": 1.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-24T08:49:00-05:00",
+      "glucose": 90.8,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-23T10:09:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-23T10:09:00-05:00",
+      "glucose": 89,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-23T10:08:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-23T06:59:00-05:00",
+      "glucose": 90.3,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-22T08:59:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-22T08:59:00-05:00",
+      "glucose": 92,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-22T08:59:00-05:00",
+      "glucose": null,
+      "ketone": 1.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-22T08:44:00-05:00",
+      "glucose": 96.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-21T10:54:00-05:00",
+      "glucose": 101.5,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Android Health"
+    },
+    {
+      "ts": "2026-01-21T10:48:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-21T10:48:00-05:00",
+      "glucose": 98,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-21T10:48:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-20T09:59:00-05:00",
+      "glucose": 103.6,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-01-20T09:41:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-20T09:41:00-05:00",
+      "glucose": 104,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-20T09:40:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-19T11:59:00-05:00",
+      "glucose": 110,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose CGM",
+      "src": "Samsung Health"
+    },
+    {
+      "ts": "2026-01-19T11:28:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-19T11:28:00-05:00",
+      "glucose": 105,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-19T11:27:00-05:00",
+      "glucose": null,
+      "ketone": 1.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-18T12:56:00-05:00",
+      "glucose": null,
+      "ketone": 1.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-17T10:26:00-05:00",
+      "glucose": null,
+      "ketone": 1.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-16T07:30:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-16T07:30:00-05:00",
+      "glucose": 89,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-16T07:29:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-15T08:44:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-15T08:44:00-05:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-15T08:43:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-14T10:08:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-14T10:08:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-14T10:07:00-05:00",
+      "glucose": 80,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-13T09:59:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-13T09:59:00-05:00",
+      "glucose": 94,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-13T09:59:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-12T09:57:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-12T09:57:00-05:00",
+      "glucose": 102,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-12T09:57:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-11T10:31:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-11T10:31:00-05:00",
+      "glucose": 100,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-11T10:30:00-05:00",
+      "glucose": null,
+      "ketone": 1.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-10T10:46:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-10T10:46:00-05:00",
+      "glucose": 82,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-10T10:46:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-09T09:19:00-05:00",
+      "glucose": 78,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "Manual"
+    },
+    {
+      "ts": "2026-01-09T09:17:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-09T09:17:00-05:00",
+      "glucose": 78,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-09T09:17:00-05:00",
+      "glucose": null,
+      "ketone": 1.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-08T08:23:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-08T08:23:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-08T08:22:00-05:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-07T10:22:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-07T10:22:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-07T10:22:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-06T08:18:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "Calculated"
+    },
+    {
+      "ts": "2026-01-06T08:18:00-05:00",
+      "glucose": 83,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "Manual",
+      "note": "strange reading didn't log and I had to do manual"
+    },
+    {
+      "ts": "2026-01-06T08:18:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "Manual",
+      "note": "strange reading didn't log and I had to do manual"
+    },
+    {
+      "ts": "2026-01-06T08:13:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-06T08:13:00-05:00",
+      "glucose": 83,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-06T08:12:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-05T09:21:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-05T09:21:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-05T09:21:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-04T07:40:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-04T07:40:00-05:00",
+      "glucose": 87,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-04T07:40:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-03T21:41:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-03T21:41:00-05:00",
+      "glucose": 89,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-03T21:40:00-05:00",
+      "glucose": null,
+      "ketone": 1.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-03T11:40:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 11.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-03T11:40:00-05:00",
+      "glucose": 101,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-03T11:40:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-02T11:59:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-02T11:59:00-05:00",
+      "glucose": 85,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-02T11:58:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-01T21:31:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 7.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-01T21:31:00-05:00",
+      "glucose": 82,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-01T21:31:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-01T10:20:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 13.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-01T10:20:00-05:00",
+      "glucose": 96,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-01-01T10:19:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-31T10:00:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 13.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-31T10:00:00-05:00",
+      "glucose": 99,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-31T10:00:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-29T14:16:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 27.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-29T14:16:00-05:00",
+      "glucose": 100,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-29T14:15:00-05:00",
+      "glucose": null,
+      "ketone": 0.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-23T10:18:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 14.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-23T10:18:00-05:00",
+      "glucose": 103,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-23T10:17:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-22T10:07:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 30.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-22T10:07:00-05:00",
+      "glucose": 111,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-22T10:07:00-05:00",
+      "glucose": null,
+      "ketone": 0.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-21T08:14:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 14.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-21T08:14:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-21T08:13:00-05:00",
+      "glucose": 107,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-20T11:21:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-20T11:21:00-05:00",
+      "glucose": 89,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-20T11:21:00-05:00",
+      "glucose": null,
+      "ketone": 1.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-19T07:41:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-19T07:41:00-05:00",
+      "glucose": null,
+      "ketone": 1.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-19T07:40:00-05:00",
+      "glucose": 87,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-18T09:03:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-18T09:03:00-05:00",
+      "glucose": 98,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-18T09:03:00-05:00",
+      "glucose": null,
+      "ketone": 1.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-17T09:54:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 1.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-17T09:54:00-05:00",
+      "glucose": 73,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-17T09:54:00-05:00",
+      "glucose": null,
+      "ketone": 2.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-16T09:00:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-16T09:00:00-05:00",
+      "glucose": 83,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-16T09:00:00-05:00",
+      "glucose": null,
+      "ketone": 1.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-15T09:41:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-15T09:41:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-15T09:40:00-05:00",
+      "glucose": 99,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-14T09:06:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-14T09:06:00-05:00",
+      "glucose": 124,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-14T09:05:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-13T20:06:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-13T20:06:00-05:00",
+      "glucose": 107,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-13T20:06:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-13T10:30:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-13T10:30:00-05:00",
+      "glucose": 104,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-13T10:30:00-05:00",
+      "glucose": null,
+      "ketone": 1.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-12T23:09:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-12T23:09:00-05:00",
+      "glucose": null,
+      "ketone": 2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-12T23:08:00-05:00",
+      "glucose": 84,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-12T08:27:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-12T08:27:00-05:00",
+      "glucose": 73,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-12T08:27:00-05:00",
+      "glucose": null,
+      "ketone": 4.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-11T20:31:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 1.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-11T20:31:00-05:00",
+      "glucose": 71,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-11T20:30:00-05:00",
+      "glucose": null,
+      "ketone": 2.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-11T09:06:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 1.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-11T09:06:00-05:00",
+      "glucose": 94,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-11T09:06:00-05:00",
+      "glucose": null,
+      "ketone": 2.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-10T18:21:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-10T18:21:00-05:00",
+      "glucose": 92,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-10T18:21:00-05:00",
+      "glucose": null,
+      "ketone": 1.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-10T09:01:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-10T09:01:00-05:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-10T09:00:00-05:00",
+      "glucose": null,
+      "ketone": 1.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-09T17:58:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-09T17:58:00-05:00",
+      "glucose": 97,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-09T17:58:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-09T09:22:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-09T09:22:00-05:00",
+      "glucose": 95,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-09T09:21:00-05:00",
+      "glucose": null,
+      "ketone": 1.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-08T17:59:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-08T17:59:00-05:00",
+      "glucose": 110,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-08T17:59:00-05:00",
+      "glucose": null,
+      "ketone": 0.9,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-08T09:47:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 8.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-08T09:47:00-05:00",
+      "glucose": 106,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-08T09:46:00-05:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-07T17:25:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3,
+      "tag": null,
+      "type": "GKI",
+      "src": "Calculated"
+    },
+    {
+      "ts": "2025-12-07T17:25:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "Manual"
+    },
+    {
+      "ts": "2025-12-07T17:25:00-05:00",
+      "glucose": null,
+      "ketone": 1.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "Manual"
+    },
+    {
+      "ts": "2025-12-07T17:03:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-07T17:03:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-07T17:03:00-05:00",
+      "glucose": null,
+      "ketone": 1.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-07T07:39:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 8.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-07T07:39:00-05:00",
+      "glucose": 96,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-07T07:38:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-06T21:16:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 7.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-06T21:16:00-05:00",
+      "glucose": 79,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-06T21:15:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-06T07:30:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 7.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-06T07:30:00-05:00",
+      "glucose": 99,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-06T07:30:00-05:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-05T18:09:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 1.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-05T18:09:00-05:00",
+      "glucose": 77,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-05T18:09:00-05:00",
+      "glucose": null,
+      "ketone": 2.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-05T09:17:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-05T09:17:00-05:00",
+      "glucose": 94,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-05T09:17:00-05:00",
+      "glucose": null,
+      "ketone": 1.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-04T20:50:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-04T20:50:00-05:00",
+      "glucose": 74,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-04T20:49:00-05:00",
+      "glucose": null,
+      "ketone": 1.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-04T10:28:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-04T10:28:00-05:00",
+      "glucose": 84,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-04T10:26:00-05:00",
+      "glucose": null,
+      "ketone": 1.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-03T17:59:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 1.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-03T17:59:00-05:00",
+      "glucose": null,
+      "ketone": 2.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-03T17:58:00-05:00",
+      "glucose": 70,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-03T09:42:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-03T09:42:00-05:00",
+      "glucose": 90,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-03T09:42:00-05:00",
+      "glucose": null,
+      "ketone": 1.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-02T19:15:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 23.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-02T19:15:00-05:00",
+      "glucose": 84,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-02T19:14:00-05:00",
+      "glucose": null,
+      "ketone": 0.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-02T09:10:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 11.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-02T09:10:00-05:00",
+      "glucose": 105,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-02T09:09:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-01T22:31:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 17.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-01T22:31:00-05:00",
+      "glucose": 95,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-01T22:30:00-05:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-01T09:31:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 20.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-01T09:31:00-05:00",
+      "glucose": 113,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-12-01T09:31:00-05:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-11-30T20:55:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 10.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-11-30T20:55:00-05:00",
+      "glucose": 95,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-11-30T20:54:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-11-25T21:12:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 7.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-11-25T21:12:00-05:00",
+      "glucose": 84,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-11-25T21:12:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-11-04T23:40:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 10.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-11-04T23:40:00-05:00",
+      "glucose": 98,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-11-04T23:40:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-10-10T09:41:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 22.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-10-10T09:41:00-04:00",
+      "glucose": 123,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-10-10T09:41:00-04:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-10-09T21:14:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 13.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-10-09T21:14:00-04:00",
+      "glucose": 96,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-10-09T21:11:00-04:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-10-08T22:41:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 20.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-10-08T22:41:00-04:00",
+      "glucose": 109,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-10-08T22:40:00-04:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-27T13:58:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 17.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-27T13:58:00-04:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-27T13:57:00-04:00",
+      "glucose": 96,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-26T21:35:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 19.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-26T21:35:00-04:00",
+      "glucose": 105,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-26T21:35:00-04:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-26T08:54:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 15.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-26T08:54:00-04:00",
+      "glucose": 109,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-26T08:54:00-04:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-25T12:22:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 3.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-25T12:22:00-04:00",
+      "glucose": null,
+      "ketone": 1.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-25T12:21:00-04:00",
+      "glucose": 91,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-24T16:34:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-24T16:34:00-04:00",
+      "glucose": 78,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-24T16:33:00-04:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-24T08:59:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 7.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-24T08:59:00-04:00",
+      "glucose": 91,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-24T08:59:00-04:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-22T09:02:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 60,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-22T09:02:00-04:00",
+      "glucose": 108,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-09-22T09:02:00-04:00",
+      "glucose": null,
+      "ketone": 0.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-04-18T17:26:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 11.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-04-18T17:26:00-04:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-04-18T17:25:00-04:00",
+      "glucose": 102,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-03-27T15:24:00-04:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 15.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-03-27T15:24:00-04:00",
+      "glucose": null,
+      "ketone": 0.3,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-03-27T15:23:00-04:00",
+      "glucose": 84,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-23T15:59:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 25,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-23T15:59:00-05:00",
+      "glucose": null,
+      "ketone": 0.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-23T15:58:00-05:00",
+      "glucose": 90,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-22T12:26:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.1,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-22T12:26:00-05:00",
+      "glucose": 79,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-22T12:26:00-05:00",
+      "glucose": null,
+      "ketone": 2.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-21T09:18:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-21T09:18:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-21T09:17:00-05:00",
+      "glucose": 80,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-19T12:22:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 10,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-19T12:22:00-05:00",
+      "glucose": 90,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-19T12:22:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-18T17:34:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 8.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-18T17:34:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-18T17:33:00-05:00",
+      "glucose": 95,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-17T23:17:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-17T23:17:00-05:00",
+      "glucose": 80,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-17T23:16:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-17T10:35:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-17T10:35:00-05:00",
+      "glucose": 117,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-17T10:35:00-05:00",
+      "glucose": null,
+      "ketone": 1.5,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-16T18:11:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 6.6,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-16T18:11:00-05:00",
+      "glucose": 95,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-16T18:11:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-16T09:29:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 7.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-16T09:29:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-16T09:28:00-05:00",
+      "glucose": 103,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-15T19:38:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-15T19:38:00-05:00",
+      "glucose": null,
+      "ketone": 1.2,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-15T19:37:00-05:00",
+      "glucose": 107,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-15T14:18:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.4,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-15T14:18:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-15T14:17:00-05:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-14T17:12:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.9,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-14T17:12:00-05:00",
+      "glucose": 85,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-14T17:12:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-14T10:08:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.7,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-14T10:08:00-05:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-14T10:07:00-05:00",
+      "glucose": null,
+      "ketone": 1.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-13T17:31:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.8,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-13T17:31:00-05:00",
+      "glucose": 86,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-13T17:30:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-13T17:24:00-05:00",
+      "glucose": null,
+      "ketone": 0.5,
+      "gki": null,
+      "tag": "before-meal",
+      "type": "Ketones Blood",
+      "src": "GK+E64F",
+      "note": "esha"
+    },
+    {
+      "ts": "2025-02-13T17:24:00-05:00",
+      "glucose": 88,
+      "ketone": null,
+      "gki": null,
+      "tag": "before-meal",
+      "type": "Glucose Blood",
+      "src": "GK+E64F",
+      "note": "esha"
+    },
+    {
+      "ts": "2025-02-13T09:50:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 4.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-13T09:50:00-05:00",
+      "glucose": null,
+      "ketone": 1.1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-13T09:49:00-05:00",
+      "glucose": 83,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-13T09:44:00-05:00",
+      "glucose": 72,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-13T09:42:00-05:00",
+      "glucose": null,
+      "ketone": 0.4,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F",
+      "note": "esha"
+    },
+    {
+      "ts": "2025-02-12T19:58:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-12T19:58:00-05:00",
+      "glucose": 76,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F",
+      "note": "esha"
+    },
+    {
+      "ts": "2025-02-12T19:58:00-05:00",
+      "glucose": null,
+      "ketone": 0.8,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F",
+      "note": "esha"
+    },
+    {
+      "ts": "2025-02-12T18:13:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-12T17:42:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 5.2,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-12T17:42:00-05:00",
+      "glucose": 94,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-12T17:42:00-05:00",
+      "glucose": null,
+      "ketone": 1,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-12T16:39:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 2.5,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-12T16:39:00-05:00",
+      "glucose": 75,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2025-02-12T16:39:00-05:00",
+      "glucose": null,
+      "ketone": 1.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2024-09-14T18:34:00-04:00",
+      "glucose": null,
+      "ketone": 0.7,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    }
+  ]
+}

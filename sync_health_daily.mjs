@@ -34,8 +34,24 @@ const KNOWN_KETONES = {
   '2026-11-17': { bg: 97, bhb: 0.9, gki: 6.0, dbr: 107.8 },
   '2026-11-18': { bg: 91, bhb: 1.3, gki: 3.9, dbr: 70.0 },
   '2026-11-19': { bg: 86, bhb: 0.9, gki: 5.3, dbr: 95.6 },
-  '2026-11-20': { bg: 84.6, bhb: 0.5, gki: 9.4, dbr: 169.2 },
+  '2026-11-20': { bg: 85, bhb: 0.5, gki: 9.4, dbr: 170.0 },
 };
+const MYMOJO_VAULT_PATH = path.join(__dirname, 'mymojohealth_all_time_vault.json');
+if (fs.existsSync(MYMOJO_VAULT_PATH)) {
+  try {
+    const mm = JSON.parse(fs.readFileSync(MYMOJO_VAULT_PATH, 'utf8'));
+    for (const ds of mm.daily_summaries || []) {
+      if (ds.bhb_mmol_l != null) {
+        KNOWN_KETONES[ds.date] = {
+          bg: ds.bg_mg_dl ?? KNOWN_KETONES[ds.date]?.bg ?? null,
+          bhb: ds.bhb_mmol_l,
+          gki: ds.gki ?? KNOWN_KETONES[ds.date]?.gki ?? null,
+          dbr: ds.dbr ?? KNOWN_KETONES[ds.date]?.dbr ?? null,
+        };
+      }
+    }
+  } catch {}
+}
 
 function resolveGhealthBin() {
   if (fs.existsSync(DEFAULT_GHEALTH_BIN)) return DEFAULT_GHEALTH_BIN;
@@ -461,7 +477,18 @@ async function main() {
 
   const sortedDays = Object.keys(daily)
     .sort((a, b) => b.localeCompare(a))
-    .map((k) => daily[k]);
+    .map((k) => {
+      const rec = daily[k];
+      if (!rec.ketones && KNOWN_KETONES[k]) {
+        rec.ketones = {
+          bhb_mmol_l: KNOWN_KETONES[k].bhb,
+          gki: KNOWN_KETONES[k].gki,
+          dbr: KNOWN_KETONES[k].dbr,
+          source: 'MyMojoHealth GK+E64F',
+        };
+      }
+      return rec;
+    });
 
   // High-resolution 1-second Fitbit Air HR queries for Sleep Nadir & Post-Workout HRR
   const latestSleepDay = sortedDays.find((r) => r.sleep) || sortedDays[0];

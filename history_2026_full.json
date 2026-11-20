@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:52:50.398Z",
+  "generated_at": "2026-11-20T17:29:06.495Z",
   "year": 2026,
   "total_days": 324,
   "backfill_summary": {
@@ -224,7 +224,11 @@
       "weight_lb": 205.6,
       "bf_pct": 18.8,
       "trend_weight_lb": 205.4,
-      "mf_expenditure_kcal": 2319
+      "mf_expenditure_kcal": 2319,
+      "bhb_mmol": 0.6,
+      "gki": 7.6,
+      "dbr": 160,
+      "bg_mg_dl": 96
     },
     {
       "date": "2026-01-02",
@@ -241,7 +245,11 @@
       "hrv_ms": 51.9,
       "workouts": 3,
       "trend_weight_lb": 205.3,
-      "mf_expenditure_kcal": 2307
+      "mf_expenditure_kcal": 2307,
+      "bhb_mmol": 1.1,
+      "gki": 4.3,
+      "dbr": 77.3,
+      "bg_mg_dl": 85
     },
     {
       "date": "2026-01-03",
@@ -260,7 +268,11 @@
       "bf_pct": 18.4,
       "workouts": 4,
       "trend_weight_lb": 205.1,
-      "mf_expenditure_kcal": 2289
+      "mf_expenditure_kcal": 2289,
+      "bhb_mmol": 1.2,
+      "gki": 4.1,
+      "dbr": 84.2,
+      "bg_mg_dl": 101
     },
     {
       "date": "2026-01-04",
@@ -279,7 +291,11 @@
       "bf_pct": 17.9,
       "workouts": 7,
       "trend_weight_lb": 204.9,
-      "mf_expenditure_kcal": 2266
+      "mf_expenditure_kcal": 2266,
+      "bhb_mmol": 1.1,
+      "gki": 4.4,
+      "dbr": 79.1,
+      "bg_mg_dl": 87
     },
     {
       "date": "2026-01-05",
@@ -298,7 +314,11 @@
       "bf_pct": 17.9,
       "workouts": 3,
       "trend_weight_lb": 204.7,
-      "mf_expenditure_kcal": 2239
+      "mf_expenditure_kcal": 2239,
+      "bhb_mmol": 0.9,
+      "gki": 5.3,
+      "dbr": 95.6,
+      "bg_mg_dl": 86
     },
     {
       "date": "2026-01-06",
@@ -317,7 +337,11 @@
       "bf_pct": 18.2,
       "workouts": 3,
       "trend_weight_lb": 204.6,
-      "mf_expenditure_kcal": 2211
+      "mf_expenditure_kcal": 2211,
+      "bhb_mmol": 1.1,
+      "gki": 4.2,
+      "dbr": 75.5,
+      "bg_mg_dl": 83
     },
     {
       "date": "2026-01-07",
@@ -336,7 +360,11 @@
       "bf_pct": 18,
       "workouts": 5,
       "trend_weight_lb": 204.4,
-      "mf_expenditure_kcal": 2187
+      "mf_expenditure_kcal": 2187,
+      "bhb_mmol": 1,
+      "gki": 4.8,
+      "dbr": 86,
+      "bg_mg_dl": 86
     },
     {
       "date": "2026-01-08",
@@ -355,7 +383,11 @@
       "bf_pct": 17.9,
       "workouts": 4,
       "trend_weight_lb": 204.1,
-      "mf_expenditure_kcal": 2162
+      "mf_expenditure_kcal": 2162,
+      "bhb_mmol": 0.7,
+      "gki": 6.8,
+      "dbr": 122.9,
+      "bg_mg_dl": 86
     },
     {
       "date": "2026-01-09",
@@ -375,7 +407,11 @@
       "bf_pct": 17.8,
       "workouts": 4,
       "trend_weight_lb": 203.8,
-      "mf_expenditure_kcal": 2161
+      "mf_expenditure_kcal": 2161,
+      "bhb_mmol": 1.4,
+      "gki": 3.1,
+      "dbr": 55.7,
+      "bg_mg_dl": 78
     },
     {
       "date": "2026-01-10",
@@ -394,7 +430,11 @@
       "bf_pct": 17.9,
       "workouts": 3,
       "trend_weight_lb": 203.6,
-      "mf_expenditure_kcal": 2166
+      "mf_expenditure_kcal": 2166,
+      "bhb_mmol": 1,
+      "gki": 4.6,
+      "dbr": 82,
+      "bg_mg_dl": 82
     },
     {
       "date": "2026-01-11",
@@ -413,7 +453,11 @@
       "bf_pct": 17.9,
       "workouts": 3,
       "trend_weight_lb": 203.4,
-      "mf_expenditure_kcal": 2174
+      "mf_expenditure_kcal": 2174,
+      "bhb_mmol": 1.3,
+      "gki": 4.3,
+      "dbr": 76.9,
+      "bg_mg_dl": 100
     },
     {
       "date": "2026-01-12",
@@ -432,7 +476,11 @@
       "bf_pct": 18.2,
       "workouts": 5,
       "trend_weight_lb": 203.3,
-      "mf_expenditure_kcal": 2185
+      "mf_expenditure_kcal": 2185,
+      "bhb_mmol": 0.9,
+      "gki": 6.3,
+      "dbr": 113.3,
+      "bg_mg_dl": 102
     },
     {
       "date": "2026-01-13",
@@ -451,7 +499,11 @@
       "bf_pct": 17.7,
       "workouts": 5,
       "trend_weight_lb": 203.1,
-      "mf_expenditure_kcal": 2194
+      "mf_expenditure_kcal": 2194,
+      "bhb_mmol": 1,
+      "gki": 5.2,
+      "dbr": 94,
+      "bg_mg_dl": 94
     },
     {
       "date": "2026-01-14",
@@ -471,7 +523,11 @@
       "bf_pct": 17.7,
       "workouts": 7,
       "trend_weight_lb": 202.8,
-      "mf_expenditure_kcal": 2208
+      "mf_expenditure_kcal": 2208,
+      "bhb_mmol": 0.8,
+      "gki": 5.6,
+      "dbr": 100,
+      "bg_mg_dl": 80
     },
     {
       "date": "2026-01-15",
@@ -491,7 +547,11 @@
       "bf_pct": 17.4,
       "workouts": 2,
       "trend_weight_lb": 202.5,
-      "mf_expenditure_kcal": 2222
+      "mf_expenditure_kcal": 2222,
+      "bhb_mmol": 0.9,
+      "gki": 5.4,
+      "dbr": 97.8,
+      "bg_mg_dl": 88
     },
     {
       "date": "2026-01-16",
@@ -510,7 +570,11 @@
       "bf_pct": 17.8,
       "workouts": 4,
       "trend_weight_lb": 202.3,
-      "mf_expenditure_kcal": 2233
+      "mf_expenditure_kcal": 2233,
+      "bhb_mmol": 1.1,
+      "gki": 4.5,
+      "dbr": 80.9,
+      "bg_mg_dl": 89
     },
     {
       "date": "2026-01-17",
@@ -527,7 +591,8 @@
       "hrv_ms": 39.6,
       "workouts": 5,
       "trend_weight_lb": 202.2,
-      "mf_expenditure_kcal": 2242
+      "mf_expenditure_kcal": 2242,
+      "bhb_mmol": 1.4
     },
     {
       "date": "2026-01-18",
@@ -547,7 +612,8 @@
       "bf_pct": 17.8,
       "workouts": 5,
       "trend_weight_lb": 202.1,
-      "mf_expenditure_kcal": 2249
+      "mf_expenditure_kcal": 2249,
+      "bhb_mmol": 1.6
     },
     {
       "date": "2026-01-19",
@@ -567,7 +633,10 @@
       "workouts": 2,
       "bg_mg_dl": 110,
       "trend_weight_lb": 201.9,
-      "mf_expenditure_kcal": 2256
+      "mf_expenditure_kcal": 2256,
+      "bhb_mmol": 1.2,
+      "gki": 4.9,
+      "dbr": 87.5
     },
     {
       "date": "2026-01-20",
@@ -589,7 +658,10 @@
       "workouts": 2,
       "bg_mg_dl": 93.3,
       "trend_weight_lb": 201.9,
-      "mf_expenditure_kcal": 2260
+      "mf_expenditure_kcal": 2260,
+      "bhb_mmol": 1.1,
+      "gki": 5.3,
+      "dbr": 94.5
     },
     {
       "date": "2026-01-21",
@@ -610,7 +682,10 @@
       "workouts": 4,
       "bg_mg_dl": 96,
       "trend_weight_lb": 201.8,
-      "mf_expenditure_kcal": 2261
+      "mf_expenditure_kcal": 2261,
+      "bhb_mmol": 1.1,
+      "gki": 4.9,
+      "dbr": 89.1
     },
     {
       "date": "2026-01-22",
@@ -632,7 +707,10 @@
       "workouts": 7,
       "bg_mg_dl": 91.3,
       "trend_weight_lb": 201.6,
-      "mf_expenditure_kcal": 2262
+      "mf_expenditure_kcal": 2262,
+      "bhb_mmol": 1.2,
+      "gki": 4.3,
+      "dbr": 76.7
     },
     {
       "date": "2026-01-23",
@@ -654,7 +732,10 @@
       "workouts": 11,
       "bg_mg_dl": 89.9,
       "trend_weight_lb": 201.5,
-      "mf_expenditure_kcal": 2265
+      "mf_expenditure_kcal": 2265,
+      "bhb_mmol": 0.9,
+      "gki": 5.5,
+      "dbr": 98.9
     },
     {
       "date": "2026-01-24",
@@ -676,7 +757,10 @@
       "workouts": 6,
       "bg_mg_dl": 88.6,
       "trend_weight_lb": 201.5,
-      "mf_expenditure_kcal": 2263
+      "mf_expenditure_kcal": 2263,
+      "bhb_mmol": 1.3,
+      "gki": 4.1,
+      "dbr": 73.1
     },
     {
       "date": "2026-01-25",
@@ -698,7 +782,10 @@
       "workouts": 3,
       "bg_mg_dl": 91.9,
       "trend_weight_lb": 201.7,
-      "mf_expenditure_kcal": 2254
+      "mf_expenditure_kcal": 2254,
+      "bhb_mmol": 0.6,
+      "gki": 7.4,
+      "dbr": 133.3
     },
     {
       "date": "2026-01-26",
@@ -720,7 +807,10 @@
       "workouts": 4,
       "bg_mg_dl": 94.5,
       "trend_weight_lb": 201.5,
-      "mf_expenditure_kcal": 2243
+      "mf_expenditure_kcal": 2243,
+      "bhb_mmol": 1.3,
+      "gki": 3.8,
+      "dbr": 68.5
     },
     {
       "date": "2026-01-27",
@@ -742,7 +832,10 @@
       "workouts": 7,
       "bg_mg_dl": 98.4,
       "trend_weight_lb": 201.4,
-      "mf_expenditure_kcal": 2232
+      "mf_expenditure_kcal": 2232,
+      "bhb_mmol": 0.5,
+      "gki": 12,
+      "dbr": 216
     },
     {
       "date": "2026-01-28",
@@ -764,7 +857,10 @@
       "workouts": 7,
       "bg_mg_dl": 98.8,
       "trend_weight_lb": 201.1,
-      "mf_expenditure_kcal": 2224
+      "mf_expenditure_kcal": 2224,
+      "bhb_mmol": 0.8,
+      "gki": 6,
+      "dbr": 107.5
     },
     {
       "date": "2026-01-29",
@@ -785,7 +881,10 @@
       "workouts": 6,
       "bg_mg_dl": 90.3,
       "trend_weight_lb": 200.9,
-      "mf_expenditure_kcal": 2217
+      "mf_expenditure_kcal": 2217,
+      "bhb_mmol": 1.1,
+      "gki": 4.3,
+      "dbr": 78.2
     },
     {
       "date": "2026-01-30",
@@ -805,7 +904,10 @@
       "bf_pct": 17.4,
       "bg_mg_dl": 93,
       "trend_weight_lb": 200.7,
-      "mf_expenditure_kcal": 2213
+      "mf_expenditure_kcal": 2213,
+      "bhb_mmol": 0.4,
+      "gki": 14.2,
+      "dbr": 255
     },
     {
       "date": "2026-01-31",
@@ -827,7 +929,10 @@
       "workouts": 2,
       "bg_mg_dl": 91.7,
       "trend_weight_lb": 200.6,
-      "mf_expenditure_kcal": 2209
+      "mf_expenditure_kcal": 2209,
+      "bhb_mmol": 0.4,
+      "gki": 13.6,
+      "dbr": 245
     },
     {
       "date": "2026-02-01",
@@ -849,7 +954,8 @@
       "workouts": 2,
       "bg_mg_dl": 91.5,
       "trend_weight_lb": 200.6,
-      "mf_expenditure_kcal": 2208
+      "mf_expenditure_kcal": 2208,
+      "bhb_mmol": 0.6
     },
     {
       "date": "2026-02-02",
@@ -871,7 +977,8 @@
       "workouts": 3,
       "bg_mg_dl": 95.3,
       "trend_weight_lb": 200.4,
-      "mf_expenditure_kcal": 2209
+      "mf_expenditure_kcal": 2209,
+      "bhb_mmol": 0.6
     },
     {
       "date": "2026-02-03",
@@ -893,7 +1000,10 @@
       "workouts": 3,
       "bg_mg_dl": 88.1,
       "trend_weight_lb": 200,
-      "mf_expenditure_kcal": 2206
+      "mf_expenditure_kcal": 2206,
+      "bhb_mmol": 0.7,
+      "gki": 6.3,
+      "dbr": 112.9
     },
     {
       "date": "2026-02-04",
@@ -915,7 +1025,10 @@
       "workouts": 2,
       "bg_mg_dl": 91.7,
       "trend_weight_lb": 199.5,
-      "mf_expenditure_kcal": 2211
+      "mf_expenditure_kcal": 2211,
+      "bhb_mmol": 0.4,
+      "gki": 12.9,
+      "dbr": 232.5
     },
     {
       "date": "2026-02-05",
@@ -937,7 +1050,8 @@
       "workouts": 4,
       "bg_mg_dl": 92.3,
       "trend_weight_lb": 199.1,
-      "mf_expenditure_kcal": 2217
+      "mf_expenditure_kcal": 2217,
+      "bhb_mmol": 0.7
     },
     {
       "date": "2026-02-06",
@@ -957,7 +1071,8 @@
       "bf_pct": 17,
       "bg_mg_dl": 93.1,
       "trend_weight_lb": 198.9,
-      "mf_expenditure_kcal": 2223
+      "mf_expenditure_kcal": 2223,
+      "bhb_mmol": 0.5
     },
     {
       "date": "2026-02-07",
@@ -977,7 +1092,8 @@
       "workouts": 2,
       "bg_mg_dl": 92.7,
       "trend_weight_lb": 199,
-      "mf_expenditure_kcal": 2229
+      "mf_expenditure_kcal": 2229,
+      "bhb_mmol": 0.4
     },
     {
       "date": "2026-02-08",
@@ -1025,7 +1141,8 @@
       "workouts": 4,
       "bg_mg_dl": 93.7,
       "trend_weight_lb": 199.9,
-      "mf_expenditure_kcal": 2253
+      "mf_expenditure_kcal": 2253,
+      "bhb_mmol": 0.5
     },
     {
       "date": "2026-02-11",
@@ -1039,7 +1156,8 @@
       "workouts": 2,
       "bg_mg_dl": 84.8,
       "trend_weight_lb": 199.9,
-      "mf_expenditure_kcal": 2260
+      "mf_expenditure_kcal": 2260,
+      "bhb_mmol": 1
     },
     {
       "date": "2026-02-12",
@@ -1061,7 +1179,10 @@
       "workouts": 5,
       "bg_mg_dl": 80.7,
       "trend_weight_lb": 199.7,
-      "mf_expenditure_kcal": 2266
+      "mf_expenditure_kcal": 2266,
+      "bhb_mmol": 2.1,
+      "gki": 1.7,
+      "dbr": 31.4
     },
     {
       "date": "2026-02-13",
@@ -1082,7 +1203,10 @@
       "workouts": 4,
       "bg_mg_dl": 101.2,
       "trend_weight_lb": 199.2,
-      "mf_expenditure_kcal": 2270
+      "mf_expenditure_kcal": 2270,
+      "bhb_mmol": 0.8,
+      "gki": 6.3,
+      "dbr": 112.5
     },
     {
       "date": "2026-02-14",
@@ -1103,7 +1227,10 @@
       "workouts": 3,
       "bg_mg_dl": 95.8,
       "trend_weight_lb": 198.8,
-      "mf_expenditure_kcal": 2274
+      "mf_expenditure_kcal": 2274,
+      "bhb_mmol": 1,
+      "gki": 4.8,
+      "dbr": 87
     },
     {
       "date": "2026-02-15",
@@ -1125,7 +1252,8 @@
       "workouts": 5,
       "bg_mg_dl": 99.6,
       "trend_weight_lb": 198.5,
-      "mf_expenditure_kcal": 2284
+      "mf_expenditure_kcal": 2284,
+      "bhb_mmol": 0.9
     },
     {
       "date": "2026-02-16",
@@ -1139,7 +1267,10 @@
       "workouts": 5,
       "bg_mg_dl": 96.1,
       "trend_weight_lb": 198.1,
-      "mf_expenditure_kcal": 2294
+      "mf_expenditure_kcal": 2294,
+      "bhb_mmol": 1,
+      "gki": 4.7,
+      "dbr": 85
     },
     {
       "date": "2026-02-17",
@@ -1160,7 +1291,10 @@
       "workouts": 7,
       "bg_mg_dl": 81.2,
       "trend_weight_lb": 197.4,
-      "mf_expenditure_kcal": 2303
+      "mf_expenditure_kcal": 2303,
+      "bhb_mmol": 3.6,
+      "gki": 1.2,
+      "dbr": 21.1
     },
     {
       "date": "2026-02-18",
@@ -1175,7 +1309,10 @@
       "workouts": 6,
       "bg_mg_dl": 92.9,
       "trend_weight_lb": 197,
-      "mf_expenditure_kcal": 2316
+      "mf_expenditure_kcal": 2316,
+      "bhb_mmol": 1.5,
+      "gki": 3.4,
+      "dbr": 60.7
     },
     {
       "date": "2026-02-19",
@@ -1197,7 +1334,10 @@
       "workouts": 4,
       "bg_mg_dl": 84.1,
       "trend_weight_lb": 196.4,
-      "mf_expenditure_kcal": 2329
+      "mf_expenditure_kcal": 2329,
+      "bhb_mmol": 3.1,
+      "gki": 1.5,
+      "dbr": 27.1
     },
     {
       "date": "2026-02-20",
@@ -1211,7 +1351,10 @@
       "workouts": 5,
       "bg_mg_dl": 101.7,
       "trend_weight_lb": 195.9,
-      "mf_expenditure_kcal": 2345
+      "mf_expenditure_kcal": 2345,
+      "bhb_mmol": 1.1,
+      "gki": 5.3,
+      "dbr": 95.5
     },
     {
       "date": "2026-02-21",
@@ -1233,7 +1376,10 @@
       "workouts": 2,
       "bg_mg_dl": 89.2,
       "trend_weight_lb": 195.4,
-      "mf_expenditure_kcal": 2356
+      "mf_expenditure_kcal": 2356,
+      "bhb_mmol": 2,
+      "gki": 2.4,
+      "dbr": 42.5
     },
     {
       "date": "2026-02-22",
@@ -1255,7 +1401,10 @@
       "workouts": 1,
       "bg_mg_dl": 99.4,
       "trend_weight_lb": 194.8,
-      "mf_expenditure_kcal": 2364
+      "mf_expenditure_kcal": 2364,
+      "bhb_mmol": 0.5,
+      "gki": 11.3,
+      "dbr": 204
     },
     {
       "date": "2026-02-23",
@@ -1277,7 +1426,10 @@
       "workouts": 5,
       "bg_mg_dl": 99.9,
       "trend_weight_lb": 194.5,
-      "mf_expenditure_kcal": 2369
+      "mf_expenditure_kcal": 2369,
+      "bhb_mmol": 0.7,
+      "gki": 8.7,
+      "dbr": 155.7
     },
     {
       "date": "2026-02-24",
@@ -1302,7 +1454,10 @@
       "workouts": 3,
       "bg_mg_dl": 90.7,
       "trend_weight_lb": 194,
-      "mf_expenditure_kcal": 2376
+      "mf_expenditure_kcal": 2376,
+      "bhb_mmol": 1.1,
+      "gki": 4.6,
+      "dbr": 82.7
     },
     {
       "date": "2026-02-25",
@@ -1324,7 +1479,10 @@
       "workouts": 2,
       "bg_mg_dl": 91.8,
       "trend_weight_lb": 193.5,
-      "mf_expenditure_kcal": 2381
+      "mf_expenditure_kcal": 2381,
+      "bhb_mmol": 0.8,
+      "gki": 5.8,
+      "dbr": 105
     },
     {
       "date": "2026-02-26",
@@ -1346,7 +1504,10 @@
       "workouts": 2,
       "bg_mg_dl": 88.8,
       "trend_weight_lb": 193.2,
-      "mf_expenditure_kcal": 2386
+      "mf_expenditure_kcal": 2386,
+      "bhb_mmol": 0.7,
+      "gki": 6.9,
+      "dbr": 124.3
     },
     {
       "date": "2026-02-27",
@@ -1367,7 +1528,10 @@
       "workouts": 3,
       "bg_mg_dl": 85.2,
       "trend_weight_lb": 192.8,
-      "mf_expenditure_kcal": 2389
+      "mf_expenditure_kcal": 2389,
+      "bhb_mmol": 0.9,
+      "gki": 5.3,
+      "dbr": 95.6
     },
     {
       "date": "2026-02-28",
@@ -1389,7 +1553,10 @@
       "workouts": 6,
       "bg_mg_dl": 101.9,
       "trend_weight_lb": 192.7,
-      "mf_expenditure_kcal": 2397
+      "mf_expenditure_kcal": 2397,
+      "bhb_mmol": 0.1,
+      "gki": 62.8,
+      "dbr": 1130
     },
     {
       "date": "2026-03-01",
@@ -1411,7 +1578,8 @@
       "workouts": 2,
       "bg_mg_dl": 102.2,
       "trend_weight_lb": 193.1,
-      "mf_expenditure_kcal": 2400
+      "mf_expenditure_kcal": 2400,
+      "bhb_mmol": 0.1
     },
     {
       "date": "2026-03-02",
@@ -1448,7 +1616,10 @@
       "workouts": 3,
       "bg_mg_dl": 82.3,
       "trend_weight_lb": 193,
-      "mf_expenditure_kcal": 2411
+      "mf_expenditure_kcal": 2411,
+      "bhb_mmol": 0.5,
+      "gki": 8.7,
+      "dbr": 156
     },
     {
       "date": "2026-03-04",
@@ -1470,7 +1641,10 @@
       "workouts": 6,
       "bg_mg_dl": 80.8,
       "trend_weight_lb": 192.8,
-      "mf_expenditure_kcal": 2410
+      "mf_expenditure_kcal": 2410,
+      "bhb_mmol": 0.8,
+      "gki": 6.6,
+      "dbr": 118.8
     },
     {
       "date": "2026-03-05",
@@ -1491,7 +1665,10 @@
       "workouts": 1,
       "bg_mg_dl": 81.9,
       "trend_weight_lb": 192.9,
-      "mf_expenditure_kcal": 2407
+      "mf_expenditure_kcal": 2407,
+      "bhb_mmol": 0.8,
+      "gki": 6.4,
+      "dbr": 115
     },
     {
       "date": "2026-03-06",
@@ -1512,7 +1689,10 @@
       "workouts": 2,
       "bg_mg_dl": 82.1,
       "trend_weight_lb": 192.7,
-      "mf_expenditure_kcal": 2401
+      "mf_expenditure_kcal": 2401,
+      "bhb_mmol": 0.4,
+      "gki": 13.9,
+      "dbr": 250
     },
     {
       "date": "2026-03-07",
@@ -1814,7 +1994,7 @@
       "weight_lb": 195.2,
       "bf_pct": 15.4,
       "bhb_mmol": 0.1,
-      "gki": 59,
+      "gki": 58.9,
       "dbr": 1060,
       "bg_mg_dl": 100.5,
       "workouts": 8,
@@ -1835,7 +2015,7 @@
       "smm_lb": 86.9,
       "bhb_mmol": 0.3,
       "gki": 16.3,
-      "dbr": 293,
+      "dbr": 293.3,
       "bg_mg_dl": 95.2,
       "workouts": 4,
       "trend_weight_lb": 199.3,
@@ -2115,7 +2295,10 @@
       "workouts": 3,
       "bg_mg_dl": 90.1,
       "trend_weight_lb": 197.2,
-      "mf_expenditure_kcal": 2335
+      "mf_expenditure_kcal": 2335,
+      "bhb_mmol": 0.7,
+      "gki": 6,
+      "dbr": 108.6
     },
     {
       "date": "2026-04-30",
@@ -2126,7 +2309,10 @@
       "workouts": 3,
       "bg_mg_dl": 75.1,
       "trend_weight_lb": 197.2,
-      "mf_expenditure_kcal": 2335
+      "mf_expenditure_kcal": 2335,
+      "bhb_mmol": 1.7,
+      "gki": 2.3,
+      "dbr": 41.2
     },
     {
       "date": "2026-05-01",
@@ -2399,8 +2585,8 @@
       "sleep_min": 439,
       "sleep_eff": 96,
       "bhb_mmol": 0.4,
-      "gki": 11.2,
-      "dbr": 203,
+      "gki": 11.3,
+      "dbr": 202.5,
       "bg_mg_dl": 81,
       "workouts": 1,
       "trend_weight_lb": 199,
@@ -2425,9 +2611,9 @@
       "ffm_lb": 153.4,
       "vf_grade": 8,
       "smm_lb": 88,
-      "bhb_mmol": 0.3,
-      "gki": 17.3,
-      "dbr": 313,
+      "bhb_mmol": 0.5,
+      "gki": 10.1,
+      "dbr": 188,
       "bg_mg_dl": 99.5,
       "workouts": 3,
       "trend_weight_lb": 199.1,
@@ -2453,7 +2639,7 @@
       "vf_grade": 8,
       "smm_lb": 87.1,
       "bhb_mmol": 0.5,
-      "gki": 10.4,
+      "gki": 10.3,
       "dbr": 186,
       "bg_mg_dl": 115.3,
       "workouts": 5,
@@ -2551,7 +2737,10 @@
       "workouts": 4,
       "bg_mg_dl": 136.4,
       "trend_weight_lb": 199.3,
-      "mf_expenditure_kcal": 2304
+      "mf_expenditure_kcal": 2304,
+      "bhb_mmol": 0.5,
+      "gki": 11.8,
+      "dbr": 198
     },
     {
       "date": "2026-06-03",
@@ -2577,7 +2766,10 @@
       "workouts": 2,
       "bg_mg_dl": 130.7,
       "trend_weight_lb": 199.2,
-      "mf_expenditure_kcal": 2304
+      "mf_expenditure_kcal": 2304,
+      "bhb_mmol": 0.4,
+      "gki": 13.8,
+      "dbr": 247.5
     },
     {
       "date": "2026-06-04",
@@ -2601,7 +2793,10 @@
       "vf_grade": 8,
       "smm_lb": 86,
       "workouts": 1,
-      "bg_mg_dl": 122
+      "bg_mg_dl": 122,
+      "bhb_mmol": 1.5,
+      "gki": 3.3,
+      "dbr": 58.7
     },
     {
       "date": "2026-06-05",
@@ -2619,7 +2814,10 @@
       "rhr": 64,
       "hrv_ms": 41.1,
       "spo2_pct": 95.5,
-      "bg_mg_dl": 126.5
+      "bg_mg_dl": 126.5,
+      "bhb_mmol": 0.5,
+      "gki": 9.8,
+      "dbr": 176
     },
     {
       "date": "2026-06-06",
@@ -4080,7 +4278,11 @@
       "sleep_eff": 77,
       "rhr": 61,
       "hrv_ms": 23.5,
-      "spo2_pct": 97.1
+      "spo2_pct": 97.1,
+      "bhb_mmol": 0.4,
+      "gki": 13.9,
+      "dbr": 250,
+      "bg_mg_dl": 100
     },
     {
       "date": "2026-10-23",
@@ -4091,7 +4293,11 @@
       "rhr": 60,
       "hrv_ms": 32.9,
       "spo2_pct": 96.3,
-      "workouts": 2
+      "workouts": 2,
+      "bhb_mmol": 0.8,
+      "gki": 6.2,
+      "dbr": 111.3,
+      "bg_mg_dl": 89
     },
     {
       "date": "2026-10-24",
@@ -4103,7 +4309,10 @@
       "hrv_ms": 29.3,
       "spo2_pct": 96.7,
       "workouts": 2,
-      "bg_mg_dl": 90
+      "bg_mg_dl": 90,
+      "bhb_mmol": 0.6,
+      "gki": 8.3,
+      "dbr": 150
     },
     {
       "date": "2026-10-25",
@@ -4123,7 +4332,10 @@
       "spo2_pct": 96.2,
       "weight_lb": 198.6,
       "workouts": 3,
-      "bg_mg_dl": 93.6
+      "bg_mg_dl": 93.6,
+      "bhb_mmol": 0.5,
+      "gki": 10.4,
+      "dbr": 188
     },
     {
       "date": "2026-10-26",
@@ -4143,7 +4355,11 @@
       "spo2_pct": 96.1,
       "weight_lb": 199.8,
       "bf_pct": 26.3,
-      "workouts": 2
+      "workouts": 2,
+      "bhb_mmol": 0.4,
+      "gki": 14.7,
+      "dbr": 265,
+      "bg_mg_dl": 106
     },
     {
       "date": "2026-10-27",
@@ -4162,7 +4378,10 @@
       "hrv_ms": 30,
       "spo2_pct": 96,
       "workouts": 4,
-      "bg_mg_dl": 97.2
+      "bg_mg_dl": 97.2,
+      "bhb_mmol": 0.4,
+      "gki": 13.6,
+      "dbr": 245
     },
     {
       "date": "2026-10-28",
@@ -4181,7 +4400,10 @@
       "hrv_ms": 27.3,
       "spo2_pct": 98.2,
       "workouts": 5,
-      "bg_mg_dl": 84.6
+      "bg_mg_dl": 84.6,
+      "bhb_mmol": 0.7,
+      "gki": 6.7,
+      "dbr": 120
     },
     {
       "date": "2026-10-29",
@@ -4202,7 +4424,10 @@
       "weight_lb": 198.2,
       "bf_pct": 25.7,
       "workouts": 3,
-      "bg_mg_dl": 82.4
+      "bg_mg_dl": 82.4,
+      "bhb_mmol": 0.6,
+      "gki": 7.6,
+      "dbr": 136.7
     },
     {
       "date": "2026-10-30",
@@ -4214,7 +4439,10 @@
       "hrv_ms": 40,
       "spo2_pct": 97.8,
       "workouts": 3,
-      "bg_mg_dl": 79.2
+      "bg_mg_dl": 79.2,
+      "bhb_mmol": 0.3,
+      "gki": 14.6,
+      "dbr": 263.3
     },
     {
       "date": "2026-10-31",
@@ -4422,7 +4650,7 @@
       "vf_grade": 9,
       "smm_lb": 85.8,
       "bhb_mmol": 0.9,
-      "gki": 4.2,
+      "gki": 4.3,
       "dbr": 76.7,
       "bg_mg_dl": 69,
       "workouts": 2
@@ -4502,7 +4730,7 @@
       "vf_grade": 10,
       "smm_lb": 85.3,
       "bhb_mmol": 0.9,
-      "gki": 5.4,
+      "gki": 5.5,
       "dbr": 98.9,
       "bg_mg_dl": 88.2,
       "workouts": 2
@@ -4623,7 +4851,10 @@
       "ffm_lb": 145.7,
       "vf_grade": 9,
       "smm_lb": 83.3,
-      "bg_mg_dl": 84.6
+      "bg_mg_dl": 84.6,
+      "bhb_mmol": 0.5,
+      "gki": 9.4,
+      "dbr": 170
     }
   ]
 }

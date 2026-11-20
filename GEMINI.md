@@ -6,6 +6,7 @@
 - **Biometric Laws & Playbook**: `SHAUN_PERSONAL_KETOVORE_PLAYBOOK.md`
 - **Master Multi-Creator Blueprint & Catalog**: `SUPER_KETOVORE_LIFESTYLE_AND_WORKOUT_PROGRAM.md`, `CREATOR_VIDEO_LIBRARY_CATALOG.md`, `PROJECT.md`
 - **All-Time `OxeFit XS1` Cloud Vault & Peak-Era Synopsis**: `OXEFIT_ALL_TIME_FORENSIC_SYNOPSIS.md`, `oxefit_all_time_vault.json`, `analyze_oxefit_all_time.mjs` (`124` sessions from `2024-12-19` Day 1 -> present via `https://app.oxefit.com`, `userId: 0e9e073a-bc9c-448c-8d5c-b8d349fac3fa`; re-pull anytime via `chrome-devtools-mcp` once Chrome remote debugging is active).
+- **All-Time `MyMojoHealth` (`Keto-Mojo GK+E64F`) Cloud Vault**: `mymojohealth_all_time_vault.json`, `analyze_mymojo_all_time.mjs` (`603` total rows across `176` unique days / `144` Ketone days / `132` Blood Glucose days from `2024-09-14` Day 1 -> present via `https://app.mymojohealth.com/my/readings`, meter `GK+E64F`; re-pull anytime via the built-in `browser` subagent on `https://app.mymojohealth.com/my/readings`). Note: `/my/integrations` has no personal API token or direct CSV download (`Export Readings` emails a 48h link), and lists `Withings`, `Cronometer`, `Heads Up`, `Biocanic`, `Nutrisense`, and `Carb Manager` as API partners (`Oura` incoming active).
 
 ## 2. Dashboard Sync & Deployment Rules
 - **Live URL**: `https://shaunf1p.github.io/super-ketovore-dashboard/`

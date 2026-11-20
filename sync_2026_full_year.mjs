@@ -558,6 +558,20 @@ async function main() {
     o.dbr = k.dbr;
     if (!o.bg_mg_dl) o.bg_mg_dl = k.bg;
   }
+  // Overlay all-time MyMojoHealth Cloud Vault (603 rows / 144 ketone days)
+  const mymojoVaultPath = path.join(__dirname, 'mymojohealth_all_time_vault.json');
+  if (fs.existsSync(mymojoVaultPath)) {
+    const mm = JSON.parse(fs.readFileSync(mymojoVaultPath, 'utf8'));
+    for (const ds of mm.daily_summaries || []) {
+      if (ds.date >= '2026-01-01') {
+        const o = getDay(ds.date);
+        if (ds.bhb_mmol_l != null) o.bhb_mmol = ds.bhb_mmol_l;
+        if (ds.gki != null) o.gki = ds.gki;
+        if (ds.dbr != null) o.dbr = ds.dbr;
+        if (ds.bg_mg_dl != null && !o.bg_mg_dl) o.bg_mg_dl = ds.bg_mg_dl;
+      }
+    }
+  }
   for (const ex of exPts) {
     const d = (ex.start || '').slice(0, 10);
     if (d && d >= '2026-01-01') {
