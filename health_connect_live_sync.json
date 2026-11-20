@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-19T23:31:06.054Z",
+  "generated_at": "2026-11-20T01:26:50.197Z",
   "window_start": "2026-11-12",
   "window_end": "2026-11-19",
   "paired_devices": [
     {
       "name": "Fitbit Air",
       "type": "TRACKER",
-      "battery_pct": 46,
-      "last_sync_utc": "2026-11-19T23:17:34Z"
+      "battery_pct": 44,
+      "last_sync_utc": "2026-11-20T01:19:05Z"
     },
     {
       "name": "MobileTrack",
@@ -45,7 +45,7 @@
       "score": 68,
       "am_dbr": 95.6,
       "am_gki": 5.3,
-      "active_step_flux": 3927
+      "active_step_flux": 4073
     },
     "vagal_hrr": {
       "workout_date": "2026-11-16",
@@ -61,9 +61,9 @@
   "daily_records": [
     {
       "date": "2026-11-19",
-      "steps": 3311,
-      "total_calories_burned_kcal": 2030,
-      "intake_kcal": 1295,
+      "steps": 4073,
+      "total_calories_burned_kcal": 2335,
+      "intake_kcal": 2105,
       "resting_hr_bpm": 67,
       "hrv": {
         "avg_rmssd_ms": 25.8,
@@ -120,6 +120,17 @@
         "am_dbr": 95.6
       },
       "exercises": [
+        {
+          "name": "Strength training",
+          "type": "STRENGTH_TRAINING",
+          "start": "2026-11-19T19:45:30-05:00",
+          "end": "2026-11-19T19:56:38-05:00",
+          "active_seconds": 668,
+          "calories_kcal": 53,
+          "avg_hr_bpm": 111,
+          "steps": null,
+          "source": "Fitbit Air"
+        },
         {
           "name": "Strength training",
           "type": "STRENGTH_TRAINING",
