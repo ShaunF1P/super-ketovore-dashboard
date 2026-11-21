@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T21:42:30.361Z",
+  "generated_at": "2026-11-21T22:01:28.911Z",
   "year": 2026,
   "total_days": 325,
   "backfill_summary": {
@@ -4879,11 +4879,11 @@
       "dbr": 150,
       "workouts": 1,
       "nutrition": {
-        "kcal": 1670,
-        "protein_g": 110,
-        "fat_g": 122,
-        "carbs_g": 26.6,
-        "fiber_g": 4.8
+        "kcal": 1740,
+        "protein_g": 112,
+        "fat_g": 124.5,
+        "carbs_g": 38.6,
+        "fiber_g": 7.3
       }
     }
   ]
