@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-21T16:47:31.236Z",
+  "generated_at": "2026-11-21T21:40:50.724Z",
   "window_start": "2026-11-14",
   "window_end": "2026-11-21",
   "paired_devices": [
     {
       "name": "Fitbit Air",
       "type": "TRACKER",
-      "battery_pct": 70,
-      "last_sync_utc": "2026-11-21T16:46:00Z"
+      "battery_pct": 64,
+      "last_sync_utc": "2026-11-21T21:28:43Z"
     },
     {
       "name": "MobileTrack",
@@ -61,9 +61,9 @@
   "daily_records": [
     {
       "date": "2026-11-21",
-      "steps": 2643,
-      "total_calories_burned_kcal": 1375,
-      "intake_kcal": 285,
+      "steps": 4362,
+      "total_calories_burned_kcal": 2085,
+      "intake_kcal": 1670,
       "resting_hr_bpm": 66,
       "hrv": {
         "avg_rmssd_ms": 40.8,

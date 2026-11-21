@@ -76,7 +76,7 @@ const VERIFIED_KETOVORE_MEALS_NOV = [
   { date: '2026-11-18', hour: 15, minute: 45, meal: 'Ketovore Surge: 6oz 80/20 Burger w/ White American + Cafe Mocha Slate + 2.5 tbsp MCT + 3x 7oz Turkey Burgers', kcal: 1880, protein: 176, fat: 124.5, carbs: 12.5, fiber: 2 },
   { date: '2026-11-19', hour: 20, minute: 0, meal: 'Dual-OxeFit PR Day: Coffee+MCT+Slate + 16oz Grass-Fed Beef + 3x LMNT + Supps + 13x BWW Tallow Wings', kcal: 2105, protein: 209, fat: 132.1, carbs: 10.3, fiber: 2.8 },
   { date: '2026-11-20', hour: 17, minute: 20, meal: 'Fri Complete <=5:30p: AM Coffee+MCT+Mocha Slate + 3:30p 3x Thighs/3x Wings/Slate + 5:20p 4oz Salmon+LMNT', kcal: 1650, protein: 183, fat: 98.5, carbs: 9.0, fiber: 4.0 },
-  { date: '2026-11-21', hour: 11, minute: 30, meal: 'Sat CLT/GSO Morning: 2:00 AM 2 Whole Eggs + 11:30 AM 8oz Black Coffee, 1 tbsp MCT Oil & LMNT', kcal: 285, protein: 12.6, fat: 24.0, carbs: 1.3, fiber: 0.0 },
+  { date: '2026-11-21', hour: 16, minute: 30, meal: 'Sat Kernersville: 2a Boiled Eggs + 11:30a Coffee/MCT/LMNT + 4:30p Gaslight on Main (Salmon, Filet, Crab Cake, 3 Brussels/Goat Cheese, Side Caesar)', kcal: 1670, protein: 109.6, fat: 122.0, carbs: 26.6, fiber: 4.8 },
 ];
 
 const VERIFIED_KETONES_2026 = {
