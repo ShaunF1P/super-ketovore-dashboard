@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T00:08:09.416Z",
+  "generated_at": "2026-11-21T16:30:02.855Z",
   "year": 2026,
-  "total_days": 324,
+  "total_days": 325,
   "backfill_summary": {
     "pushed_nutrition_days": 0,
     "pushed_weight_days": 0,
@@ -190,7 +190,7 @@
     },
     {
       "month": "2026-11",
-      "days_tracked": 20,
+      "days_tracked": 21,
       "start_weight_lb": 209.6,
       "end_weight_lb": 199.6,
       "min_weight_lb": 198.4,
@@ -198,13 +198,13 @@
       "avg_steps": 8147,
       "peak_steps": 16391,
       "avg_burn_kcal": 2824,
-      "logged_nutrition_days": 13,
+      "logged_nutrition_days": 14,
       "avg_intake_kcal": 1616,
       "avg_protein_g": 141,
       "avg_sleep_hm": "7h 21m",
       "avg_hrv_ms": 33.9,
       "avg_rhr_bpm": 64,
-      "total_workouts": 32
+      "total_workouts": 33
     }
   ],
   "daily_records": [
@@ -4839,8 +4839,8 @@
     },
     {
       "date": "2026-11-20",
-      "steps": 5382,
-      "burn_kcal": 2325,
+      "steps": 6694,
+      "burn_kcal": 3023,
       "sleep_min": 410,
       "sleep_eff": 98,
       "rhr": 68,
@@ -4862,6 +4862,28 @@
         "fat_g": 98.5,
         "carbs_g": 9,
         "fiber_g": 4
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "steps": 2438,
+      "burn_kcal": 1316,
+      "sleep_min": 297,
+      "sleep_eff": 91,
+      "rhr": 66,
+      "hrv_ms": 40.8,
+      "spo2_pct": 97.5,
+      "bg_mg_dl": 90,
+      "bhb_mmol": 0.6,
+      "gki": 8.3,
+      "dbr": 150,
+      "workouts": 1,
+      "nutrition": {
+        "kcal": 145,
+        "protein_g": 12.6,
+        "fat_g": 10,
+        "carbs_g": 0.8,
+        "fiber_g": 0
       }
     }
   ]

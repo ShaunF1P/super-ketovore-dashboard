@@ -1,14 +1,24 @@
 {
-  "extracted_at": "2026-11-20T17:25:59.003Z",
+  "extracted_at": "2026-11-21T16:26:49.584Z",
   "source": "https://app.mymojohealth.com/my/readings",
   "meter_device": "GK+E64F",
-  "total_rows": 603,
-  "unique_days": 176,
-  "ketone_days": 144,
-  "blood_glucose_days": 132,
+  "total_rows": 606,
+  "unique_days": 177,
+  "ketone_days": 145,
+  "blood_glucose_days": 133,
   "earliest_ts": "2024-09-14T18:34:00-04:00",
-  "latest_ts": "2026-11-20T08:10:00-05:00",
+  "latest_ts": "2026-11-21T10:48:00-05:00",
   "daily_summaries": [
+    {
+      "date": "2026-11-21",
+      "bg_mg_dl": 90,
+      "bhb_mmol_l": 0.6,
+      "gki": 8.3,
+      "dbr": 150,
+      "bg_count": 1,
+      "bhb_count": 1,
+      "cgm_count": 0
+    },
     {
       "date": "2026-11-20",
       "bg_mg_dl": 85,
@@ -1771,6 +1781,33 @@
     }
   ],
   "readings": [
+    {
+      "ts": "2026-11-21T10:48:00-05:00",
+      "glucose": null,
+      "ketone": null,
+      "gki": 8.3,
+      "tag": null,
+      "type": "GKI",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-21T10:48:00-05:00",
+      "glucose": 90,
+      "ketone": null,
+      "gki": null,
+      "tag": null,
+      "type": "Glucose Blood",
+      "src": "GK+E64F"
+    },
+    {
+      "ts": "2026-11-21T10:48:00-05:00",
+      "glucose": null,
+      "ketone": 0.6,
+      "gki": null,
+      "tag": null,
+      "type": "Ketones Blood",
+      "src": "GK+E64F"
+    },
     {
       "ts": "2026-11-20T08:10:00-05:00",
       "glucose": null,
