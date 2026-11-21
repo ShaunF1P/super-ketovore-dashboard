@@ -10,18 +10,21 @@
 
 ---
 
-## 2. Lifetime `OxeFit XS1` Vault Totals (`Dec 19, 2024 – Nov 19, 2026`)
+## 2. Lifetime `OxeFit XS1` Vault Totals (`Dec 19, 2024 – Nov 20, 2026`)
 
-- **Total Completed Sessions**: **`124`** (`100%` of account history synced to `oxefit_all_time_vault.json`)
-- **Total Mechanical Volume Lifted**: **`1,087,592 lb`** (`1.088 Million lbs`)
-- **Total Sets / Reps / Time Under Tension**: **`1,362` sets** | **`16,129` reps** | **`19.59 hours` pure motorized TUT**
-- **Three Newly Uncovered November 2026 PRs**:
+- **Total Completed Sessions**: **`125`** (`100%` of account history synced to `oxefit_all_time_vault.json`)
+- **Total Mechanical Volume Lifted**: **`1,094,640 lb`** (`1,095,586 lb` API cumulative — `1.096 Million lbs`)
+- **Total Sets / Reps / Time Under Tension**: **`1,368` sets** | **`16,189` reps** | **`19.63 hours` pure motorized TUT**
+- **Four Newly Uncovered November 2026 All-Time PRs (`In 5 Days!`)**:
   1. **`Mon Nov 16, 2026` (`3:11 PM EST` — `5,240 lb` in `75s` TUT)**: **All-Time `OxeFit` Bench Press Working-Load PR of `187 lb` (`3 x 10` = `30` reps, `252 lb` e1RM, `750 W` peak power)** — set *during* a `-7 lb` ketogenic cut!
   2. **`Thu Nov 19, 2026` Session #1 (`12:47 PM EST` — `9,800 lb` in `181s` TUT, `9` sets)**:
      - **Bench Press (`4 sets`, `36` reps, `6,620 lb` vol)**: `184 lb x 10` (`729 W`, `0.89 m/s` peak / `0.48 m/s` avg), `184 lb x 10` (`690 W`, `0.44 m/s`), `184 lb x 10` (`750 W`, `0.36 m/s`), `184 lb x 6` (`591 W`, `0.33 m/s` — `248 lb` e1RM).
      - **Seated Shoulder Press (`5 sets`, `40` reps, `3,180 lb` vol)**: `68x10` (`352 W`, `0.61 m/s`), `75x10` (`375 W`, `0.62 m/s`), **`110 lb x 5` (`357 W`, `125 lb` ALL-TIME Seated Shoulder Press e1RM PR!)**, `80x5` (`281 W`), **`80x10` (`380 W` ALL-TIME Seated Shoulder Press Power PR, `0.64 m/s`)**.
   3. **`Thu Nov 19, 2026` Session #2 (`7:54 PM EST` — `2,678 lb` in `93.5s` TUT / `2m 33s` Pre-Dinner GLUT4 Trigger!)**:
      - **Bench Chest Fly (`3 sets`, `60` reps: `40x20, 50x20, 44x20`)**: **`327 W` ALL-TIME BENCH CHEST FLY POWER PR** (`beating May 28's 298 W by +29 W!`) with **`99.9%` Left/Right Symmetry (`1,340 lb` Left vs `1,338 lb` Right — `0.0 lb` delta on Sets 1 & 2!)**, pushing single-day Thursday volume to **`12,478 lb`**!
+  4. **`Fri Nov 20, 2026` Session #125 (`2:56–3:16 PM EST` — `7,048 lb` in `160s` TUT, `6` OxeFit Pull Sets + `3 x 10` `Freak Athlete Hyper Pro` Reverse Hypers)**:
+     - **Seated Row (`3 x 10 @ 109 lb`, `3,271 lb` vol, `147 lb` e1RM)**: **`863 W` ALL-TIME SEATED ROW POWER PR** (`beating Mar 6, 2026's 775 W record by +88 W / +11.4%` — all three sets [`799 W, 863 W, 802 W`] beat the old lifetime record!).
+     - **Lat Pulldown (`3 x 10 @ 126 lb`, `3,777 lb` vol, `170 lb` e1RM)**: Peaked on Set 3 at **`1,047 W` (`1.87 m/s` max / `0.81 m/s` avg)**, bringing **7-Day Rolling `OxeFit` Volume (`Nov 14–20`) to `32,284 lb` (`96.3%` of `ERA 3`'s `33,516 lb/wk` Peak Shred!)**.
 
 ---
 

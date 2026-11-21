@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-11-19T23:55:29.495Z",
+  "exported_at": "2026-11-20T23:57:29.640Z",
   "user_id": "0e9e073a-bc9c-448c-8d5c-b8d349fac3fa",
-  "total_sessions": 124,
+  "total_sessions": 125,
   "first_session_date": "2024-12-19",
-  "latest_session_date": "2026-11-19",
+  "latest_session_date": "2026-11-20",
   "all_time_stats": {
     "activities": [
       {
@@ -133,11 +133,11 @@
         "totalDistance": 15118.483283996582
       }
     ],
-    "totalSessionTime": 76168939,
-    "totalTimeUnderTension": 51566842,
+    "totalSessionTime": 76449408,
+    "totalTimeUnderTension": 51820803,
     "totalVolume": {
-      "lb": 1085852,
-      "kg": 492108.2
+      "lb": 1095586,
+      "kg": 496519.6
     },
     "totalEnergy": 477535.3791503906,
     "totalCalories": 764.0565569780518,
@@ -272,17 +272,176 @@
         "totalDistance": 2932.46923828125
       }
     ],
-    "totalSessionTime": 33667382,
-    "totalTimeUnderTension": 28785267,
+    "totalSessionTime": 33947851,
+    "totalTimeUnderTension": 29039228,
     "totalVolume": {
-      "lb": 812525,
-      "kg": 368236.3
+      "lb": 822259,
+      "kg": 372647.7
     },
     "totalEnergy": 156621.25,
     "totalCalories": 250.59398371175283,
     "totalDistance": 4085.1842651367188
   },
   "sessions": [
+    {
+      "id": "07143899-1cfd-488b-b97c-e61402e0bbe2",
+      "date": "2026-11-20",
+      "started": "2026-11-20T19:56:48.030Z",
+      "completed": "2026-11-20T20:16:47.998Z",
+      "title": "XS1 Quick Start",
+      "session_wall_sec": 1200,
+      "elapsed_sec": 182,
+      "tut_sec": 160,
+      "hr_max": 136,
+      "hr_avg": 99,
+      "exercise_count": 2,
+      "set_count": 6,
+      "total_volume_lb": 7048,
+      "cardio_dist_m": 0,
+      "cardio_energy": 0,
+      "exercises": [
+        {
+          "name": "Lat Pulldown",
+          "code": "B_LP_XP1",
+          "type": "Strength",
+          "sets": 3,
+          "reps": 30,
+          "volume_lb": 3777,
+          "base_lb": 126,
+          "pred_1rm_lb": 170,
+          "power_max_w": 1047,
+          "power_avg_w": 416,
+          "vel_max_ms": 1.87,
+          "vel_avg_ms": 0.74,
+          "vel_ecc_ms": -0.47,
+          "tut_sec": 84,
+          "rom_m": 0.68,
+          "hr_max": 99,
+          "left_vol_lb": null,
+          "right_vol_lb": null,
+          "left_pwr_max_w": null,
+          "right_pwr_max_w": null,
+          "cardio_dist_m": 0,
+          "cardio_kcal": 0
+        },
+        {
+          "name": "Seated Row",
+          "code": "MF_SR",
+          "type": "Strength",
+          "sets": 3,
+          "reps": 30,
+          "volume_lb": 3271,
+          "base_lb": 109,
+          "pred_1rm_lb": 147,
+          "power_max_w": 863,
+          "power_avg_w": 349,
+          "vel_max_ms": 1.78,
+          "vel_avg_ms": 0.72,
+          "vel_ecc_ms": -0.4,
+          "tut_sec": 76,
+          "rom_m": 0.44,
+          "hr_max": 136,
+          "left_vol_lb": null,
+          "right_vol_lb": null,
+          "left_pwr_max_w": null,
+          "right_pwr_max_w": null,
+          "cardio_dist_m": 0,
+          "cardio_kcal": 0
+        }
+      ],
+      "sets": [
+        {
+          "ex": "Lat Pulldown",
+          "code": "B_LP_XP1",
+          "set": 1,
+          "lb": 126,
+          "reps": 10,
+          "vol_lb": 1259,
+          "v_max": 1.8,
+          "v_avg": 0.76,
+          "v_ecc": -0.43,
+          "p_max": 1006,
+          "p_avg": 427,
+          "tut_s": 29.6,
+          "e1rm": 170
+        },
+        {
+          "ex": "Lat Pulldown",
+          "code": "B_LP_XP1",
+          "set": 2,
+          "lb": 126,
+          "reps": 10,
+          "vol_lb": 1259,
+          "v_max": 1.8,
+          "v_avg": 0.66,
+          "v_ecc": -0.48,
+          "p_max": 1006,
+          "p_avg": 369,
+          "tut_s": 29.2,
+          "e1rm": 170
+        },
+        {
+          "ex": "Lat Pulldown",
+          "code": "B_LP_XP1",
+          "set": 3,
+          "lb": 126,
+          "reps": 10,
+          "vol_lb": 1259,
+          "v_max": 1.87,
+          "v_avg": 0.81,
+          "v_ecc": -0.5,
+          "p_max": 1047,
+          "p_avg": 456,
+          "tut_s": 25.3,
+          "e1rm": 170
+        },
+        {
+          "ex": "Seated Row",
+          "code": "MF_SR",
+          "set": 1,
+          "lb": 109,
+          "reps": 10,
+          "vol_lb": 1090,
+          "v_max": 1.65,
+          "v_avg": 0.71,
+          "v_ecc": -0.39,
+          "p_max": 799,
+          "p_avg": 345,
+          "tut_s": 23.6,
+          "e1rm": 147
+        },
+        {
+          "ex": "Seated Row",
+          "code": "MF_SR",
+          "set": 2,
+          "lb": 109,
+          "reps": 10,
+          "vol_lb": 1090,
+          "v_max": 1.78,
+          "v_avg": 0.73,
+          "v_ecc": -0.43,
+          "p_max": 863,
+          "p_avg": 354,
+          "tut_s": 26,
+          "e1rm": 147
+        },
+        {
+          "ex": "Seated Row",
+          "code": "MF_SR",
+          "set": 3,
+          "lb": 109,
+          "reps": 10,
+          "vol_lb": 1090,
+          "v_max": 1.65,
+          "v_avg": 0.72,
+          "v_ecc": -0.38,
+          "p_max": 802,
+          "p_avg": 349,
+          "tut_s": 26.8,
+          "e1rm": 147
+        }
+      ]
+    },
     {
       "id": "fd666cff-c2ec-4b27-b241-5f7164429e48",
       "date": "2026-11-19",
